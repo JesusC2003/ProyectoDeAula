@@ -45,6 +45,7 @@
     <Compile Include="Aplicado.cs" />
     <Compile Include="Empresa.cs" />
     <Compile Include="Encargado.cs" />
+    <Compile Include="Galpon.cs" />
     <Compile Include="Inventario.cs" />
     <Compile Include="Medicamento.cs" />
     <Compile Include="PersonalGranja.cs" />

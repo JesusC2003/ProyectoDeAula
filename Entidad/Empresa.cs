@@ -8,33 +8,23 @@ namespace Entidad
 {
     public class Empresa
     {
-        public Empresa()
+        public Empresa(string nIT, string nombre, string telefono, string direccion, string email, List<PersonalGranja> personalId)
         {
-            NIT = string.Empty;
-            Nombre = string.Empty;
-            Telefono = string.Empty;
-            Direccion = string.Empty;
-            Email = string.Empty;
-        }
-
-        public Empresa(string nit, string nombre, string telefono, string direccion, string email)
-        {
-            NIT = nit;
+            NIT = nIT;
             Nombre = nombre;
             Telefono = telefono;
             Direccion = direccion;
             Email = email;
+            PersonalId = personalId;
         }
 
-        public override string ToString()
-        {
-            return $"NIT:{NIT}; NOMBRE:{Nombre}; TELEFONO:{Telefono}; DIRECCION:{Direccion}; EMAIL:{Email}";
-        }
-        
-        public string NIT { get; set; }
-        public string Nombre { get; set; }
-        public string Telefono { get; set; }
-        public string Direccion { get; set; }
-        public string Email { get; set; }
+        public override string ToString() => $"{NIT};{Nombre};{Telefono};{Direccion};{Email};{PersonalId}; ";
+
+        public string NIT { get; set; } = string.Empty;
+        public string Nombre { get; set; } = string.Empty;
+        public string Telefono { get; set; } = string.Empty;
+        public string Direccion { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+        public List<PersonalGranja> PersonalId { get; set; }
     }
 }
