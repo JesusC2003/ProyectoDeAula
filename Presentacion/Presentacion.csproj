@@ -46,11 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FmrGalpon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmrGalpon.Designer.cs">
+      <DependentUpon>FmrGalpon.cs</DependentUpon>
+    </Compile>
     <Compile Include="FmrMenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FmrMenuPrincipal.Designer.cs">
       <DependentUpon>FmrMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmrPersonalGranja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmrPersonalGranja.Designer.cs">
+      <DependentUpon>FmrPersonalGranja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmrPollo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmrPollo.Designer.cs">
+      <DependentUpon>FmrPollo.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -60,8 +78,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FmrGalpon.resx">
+      <DependentUpon>FmrGalpon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FmrMenuPrincipal.resx">
       <DependentUpon>FmrMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmrPersonalGranja.resx">
+      <DependentUpon>FmrPersonalGranja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmrPollo.resx">
+      <DependentUpon>FmrPollo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -113,6 +140,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\4115235-exit-logout-sign-out_114030.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disk1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_modify_icon_149489 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seo-social-web-network-internet_262_icon-icons.com_61518.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\busqueda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mbriclose_99502.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_102866.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_minimize_minus_delete_icon_219231.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expand_fullscreen_enlarge_maximize_icon_219215.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\systemshutdown_103390.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treatment_drug_medication_capsules_drugs_medicine_pill_capsule_pills_icon_210667.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\systemshutdown_1033901.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3592856-general-group-office-personal-relation-team-team-structure_107770.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
