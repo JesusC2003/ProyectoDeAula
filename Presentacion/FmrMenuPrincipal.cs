@@ -121,6 +121,11 @@ namespace Presentacion
             SubMenuInventario.Visible = true;
         }
 
-
+        private void BtnClose_Click(object sender, EventArgs e)
+        {
+            FmrIniciarSeccion fmrIniciarSeccion=new FmrIniciarSeccion();
+            fmrIniciarSeccion.Show();
+            this.Hide();
+        }
     }
 }

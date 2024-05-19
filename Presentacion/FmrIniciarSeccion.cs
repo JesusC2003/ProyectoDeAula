@@ -16,7 +16,29 @@ namespace Presentacion
         {
             InitializeComponent();
         }
+        private void ValidarInfo()
+        {
+            string Usuario = this.txtUsuario.Text;
+            string Contraseña = this.txtContraseña.Text;
 
+            if (Usuario == "UNICESAR" && Contraseña == "12345")
+            {
+                FmrMenuPrincipal fmrMenu = new FmrMenuPrincipal();
+                fmrMenu.Show();
+                this.Hide();
+                Vaciartodo();
+            }
+            else
+            {
+                MessageBox.Show("Usuario o contraseña no valido","Mensaje",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                Vaciartodo();
+            }
+        }
+        private void Vaciartodo()
+        {
+            txtContraseña.Text = string.Empty;
+            txtUsuario.Text = string.Empty;
+        }
         private void txtUsuario_Enter(object sender, EventArgs e)
         {
             if (txtUsuario.Text == "Usuario")
@@ -55,6 +77,11 @@ namespace Presentacion
                 txtContraseña.UseSystemPasswordChar = false;
 
             }
+        }
+
+        private void BtnAcceder_Click(object sender, EventArgs e)
+        {
+            ValidarInfo();
         }
     }
 }

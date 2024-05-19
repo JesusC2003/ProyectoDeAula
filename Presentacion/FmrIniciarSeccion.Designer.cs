@@ -108,6 +108,7 @@
             this.BtnAcceder.TabIndex = 4;
             this.BtnAcceder.Text = "Acceder";
             this.BtnAcceder.UseVisualStyleBackColor = false;
+            this.BtnAcceder.Click += new System.EventHandler(this.BtnAcceder_Click);
             // 
             // pictureBox2
             // 
