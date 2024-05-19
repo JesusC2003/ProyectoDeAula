@@ -159,6 +159,7 @@
             BtnMedicamento.Text = "Medicamento";
             BtnMedicamento.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             BtnMedicamento.UseVisualStyleBackColor = false;
+            BtnMedicamento.Click += new System.EventHandler(this.BtnMedicamento_Click);
             // 
             // BtnAlimento
             // 
@@ -177,6 +178,7 @@
             BtnAlimento.TabIndex = 2;
             BtnAlimento.Text = "Alimento";
             BtnAlimento.UseVisualStyleBackColor = false;
+            BtnAlimento.Click += new System.EventHandler(this.BtnAlimento_Click);
             // 
             // BtnGalpon
             // 
@@ -196,6 +198,7 @@
             BtnGalpon.Text = "Galpon";
             BtnGalpon.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             BtnGalpon.UseVisualStyleBackColor = false;
+            BtnGalpon.Click += new System.EventHandler(this.BtnGalpon_Click);
             // 
             // BtnPollo
             // 

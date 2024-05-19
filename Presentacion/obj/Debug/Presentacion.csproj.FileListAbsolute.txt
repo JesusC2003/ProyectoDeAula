@@ -1,4 +1,3 @@
-
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensys\ProyectoDeAula\Presentacion\bin\Debug\Presentacion.exe.config
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensys\ProyectoDeAula\Presentacion\bin\Debug\Presentacion.exe
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensys\ProyectoDeAula\Presentacion\bin\Debug\Presentacion.pdb
@@ -32,4 +31,5 @@ C:\Users\ASUS\Documents\UNIVERSIDAD POPULAR DEL CESAR\PROGRAMACIÓN III\Proyecto
 C:\Users\ASUS\Documents\UNIVERSIDAD POPULAR DEL CESAR\PROGRAMACIÓN III\ProyectoDeAula\Presentacion\obj\Debug\Presenta.BC77CD05.Up2Date
 C:\Users\ASUS\Documents\UNIVERSIDAD POPULAR DEL CESAR\PROGRAMACIÓN III\ProyectoDeAula\Presentacion\obj\Debug\Presentacion.exe
 C:\Users\ASUS\Documents\UNIVERSIDAD POPULAR DEL CESAR\PROGRAMACIÓN III\ProyectoDeAula\Presentacion\obj\Debug\Presentacion.pdb
-
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensys\ProyectoDeAula\Presentacion\obj\Debug\Presentacion.FmrAlimento.resources
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensys\ProyectoDeAula\Presentacion\obj\Debug\Presentacion.FmrMedicamento.resources

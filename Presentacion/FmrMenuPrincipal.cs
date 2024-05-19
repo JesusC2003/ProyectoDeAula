@@ -82,5 +82,19 @@ namespace Presentacion
             AbrirFmr(new FmrPollo());
         }
 
+        private void BtnGalpon_Click(object sender, EventArgs e)
+        {
+            AbrirFmr(new FmrGalpon());
+        }
+
+        private void BtnAlimento_Click(object sender, EventArgs e)
+        {
+            AbrirFmr(new FmrAlimento());
+        }
+
+        private void BtnMedicamento_Click(object sender, EventArgs e)
+        {
+            AbrirFmr(new FmrMedicamento());
+        }
     }
 }

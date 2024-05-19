@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FmrAlimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmrAlimento.Designer.cs">
+      <DependentUpon>FmrAlimento.cs</DependentUpon>
+    </Compile>
     <Compile Include="FmrGalpon.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FmrGalpon.Designer.cs">
       <DependentUpon>FmrGalpon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmrMedicamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmrMedicamento.Designer.cs">
+      <DependentUpon>FmrMedicamento.cs</DependentUpon>
     </Compile>
     <Compile Include="FmrMenuPrincipal.cs">
       <SubType>Form</SubType>
@@ -78,8 +90,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FmrAlimento.resx">
+      <DependentUpon>FmrAlimento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FmrGalpon.resx">
       <DependentUpon>FmrGalpon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmrMedicamento.resx">
+      <DependentUpon>FmrMedicamento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FmrMenuPrincipal.resx">
       <DependentUpon>FmrMenuPrincipal.cs</DependentUpon>
