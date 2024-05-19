@@ -34,57 +34,53 @@
             System.Windows.Forms.Button BtnEliminarPersonal;
             System.Windows.Forms.Button BtnModificalPersonal;
             System.Windows.Forms.Button BtnGuardarPersonal;
-            System.Windows.Forms.Button BtnInventario;
             System.Windows.Forms.Button BtnPersonal;
             System.Windows.Forms.Button BtnClose;
             System.Windows.Forms.Button BtnMedicamento;
             System.Windows.Forms.Button BtnAlimento;
             System.Windows.Forms.Button BtnGalpon;
             System.Windows.Forms.Button BtnPollo;
+            System.Windows.Forms.Button BtnInventario;
             this.panelbotones = new System.Windows.Forms.Panel();
-            this.SubMenuPersonal = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
             this.SubMenuInventario = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.SubMenuPersonal = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.panel14 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.panelFmr = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.BtnMinimizar = new System.Windows.Forms.PictureBox();
-            this.BtnMaximizar = new System.Windows.Forms.PictureBox();
-            this.BtnCerrar = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.BtnDeslizar = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panelFmr = new System.Windows.Forms.Panel();
+            this.panelMenus = new System.Windows.Forms.Panel();
             BtnInventarioP = new System.Windows.Forms.Button();
             BtnInventarioG = new System.Windows.Forms.Button();
             BtnInventarioM = new System.Windows.Forms.Button();
             BtnEliminarPersonal = new System.Windows.Forms.Button();
             BtnModificalPersonal = new System.Windows.Forms.Button();
             BtnGuardarPersonal = new System.Windows.Forms.Button();
-            BtnInventario = new System.Windows.Forms.Button();
             BtnPersonal = new System.Windows.Forms.Button();
             BtnClose = new System.Windows.Forms.Button();
             BtnMedicamento = new System.Windows.Forms.Button();
             BtnAlimento = new System.Windows.Forms.Button();
             BtnGalpon = new System.Windows.Forms.Button();
             BtnPollo = new System.Windows.Forms.Button();
+            BtnInventario = new System.Windows.Forms.Button();
             this.panelbotones.SuspendLayout();
-            this.SubMenuPersonal.SuspendLayout();
             this.SubMenuInventario.SuspendLayout();
+            this.SubMenuPersonal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnDeslizar)).BeginInit();
             this.panelFmr.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnMaximizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnCerrar)).BeginInit();
+            this.panelMenus.SuspendLayout();
             this.SuspendLayout();
             // 
             // BtnInventarioP
@@ -97,9 +93,9 @@
             BtnInventarioP.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             BtnInventarioP.ForeColor = System.Drawing.Color.White;
             BtnInventarioP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            BtnInventarioP.Location = new System.Drawing.Point(10, 4);
+            BtnInventarioP.Location = new System.Drawing.Point(3, 3);
             BtnInventarioP.Name = "BtnInventarioP";
-            BtnInventarioP.Size = new System.Drawing.Size(139, 30);
+            BtnInventarioP.Size = new System.Drawing.Size(129, 30);
             BtnInventarioP.TabIndex = 12;
             BtnInventarioP.Text = "Inventario Pollo";
             BtnInventarioP.UseVisualStyleBackColor = false;
@@ -115,9 +111,9 @@
             BtnInventarioG.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             BtnInventarioG.ForeColor = System.Drawing.Color.White;
             BtnInventarioG.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            BtnInventarioG.Location = new System.Drawing.Point(10, 41);
+            BtnInventarioG.Location = new System.Drawing.Point(3, 39);
             BtnInventarioG.Name = "BtnInventarioG";
-            BtnInventarioG.Size = new System.Drawing.Size(139, 30);
+            BtnInventarioG.Size = new System.Drawing.Size(129, 30);
             BtnInventarioG.TabIndex = 14;
             BtnInventarioG.Text = "Inventario Galpon";
             BtnInventarioG.UseVisualStyleBackColor = false;
@@ -153,7 +149,7 @@
             BtnEliminarPersonal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             BtnEliminarPersonal.Location = new System.Drawing.Point(3, 76);
             BtnEliminarPersonal.Name = "BtnEliminarPersonal";
-            BtnEliminarPersonal.Size = new System.Drawing.Size(146, 28);
+            BtnEliminarPersonal.Size = new System.Drawing.Size(125, 28);
             BtnEliminarPersonal.TabIndex = 16;
             BtnEliminarPersonal.Text = "Eliminar";
             BtnEliminarPersonal.UseVisualStyleBackColor = false;
@@ -169,9 +165,9 @@
             BtnModificalPersonal.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             BtnModificalPersonal.ForeColor = System.Drawing.Color.White;
             BtnModificalPersonal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            BtnModificalPersonal.Location = new System.Drawing.Point(10, 41);
+            BtnModificalPersonal.Location = new System.Drawing.Point(3, 39);
             BtnModificalPersonal.Name = "BtnModificalPersonal";
-            BtnModificalPersonal.Size = new System.Drawing.Size(139, 30);
+            BtnModificalPersonal.Size = new System.Drawing.Size(125, 30);
             BtnModificalPersonal.TabIndex = 14;
             BtnModificalPersonal.Text = "Modificar";
             BtnModificalPersonal.UseVisualStyleBackColor = false;
@@ -187,32 +183,13 @@
             BtnGuardarPersonal.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             BtnGuardarPersonal.ForeColor = System.Drawing.Color.White;
             BtnGuardarPersonal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            BtnGuardarPersonal.Location = new System.Drawing.Point(10, 4);
+            BtnGuardarPersonal.Location = new System.Drawing.Point(3, 4);
             BtnGuardarPersonal.Name = "BtnGuardarPersonal";
-            BtnGuardarPersonal.Size = new System.Drawing.Size(139, 30);
+            BtnGuardarPersonal.Size = new System.Drawing.Size(125, 30);
             BtnGuardarPersonal.TabIndex = 12;
             BtnGuardarPersonal.Text = "Guardar";
             BtnGuardarPersonal.UseVisualStyleBackColor = false;
             BtnGuardarPersonal.Click += new System.EventHandler(this.BtnGuardarPersonal_Click);
-            // 
-            // BtnInventario
-            // 
-            BtnInventario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            BtnInventario.Cursor = System.Windows.Forms.Cursors.Hand;
-            BtnInventario.FlatAppearance.BorderSize = 0;
-            BtnInventario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            BtnInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            BtnInventario.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            BtnInventario.ForeColor = System.Drawing.Color.White;
-            BtnInventario.Image = global::Presentacion.Properties.Resources.clipboard_note_document_report_paper_icon_192535;
-            BtnInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            BtnInventario.Location = new System.Drawing.Point(6, 388);
-            BtnInventario.Name = "BtnInventario";
-            BtnInventario.Size = new System.Drawing.Size(182, 41);
-            BtnInventario.TabIndex = 10;
-            BtnInventario.Text = "Inventario";
-            BtnInventario.UseVisualStyleBackColor = false;
-            BtnInventario.Click += new System.EventHandler(this.BtnInventario_Click);
             // 
             // BtnPersonal
             // 
@@ -327,11 +304,31 @@
             BtnPollo.UseVisualStyleBackColor = false;
             BtnPollo.Click += new System.EventHandler(this.BtnPollo_Click);
             // 
+            // BtnInventario
+            // 
+            BtnInventario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            BtnInventario.Cursor = System.Windows.Forms.Cursors.Hand;
+            BtnInventario.FlatAppearance.BorderSize = 0;
+            BtnInventario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            BtnInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            BtnInventario.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            BtnInventario.ForeColor = System.Drawing.Color.White;
+            BtnInventario.Image = global::Presentacion.Properties.Resources.clipboard_note_document_report_paper_icon_192535;
+            BtnInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            BtnInventario.Location = new System.Drawing.Point(4, 388);
+            BtnInventario.Name = "BtnInventario";
+            BtnInventario.Size = new System.Drawing.Size(188, 39);
+            BtnInventario.TabIndex = 11;
+            BtnInventario.Text = "Inventario";
+            BtnInventario.UseVisualStyleBackColor = false;
+            BtnInventario.Click += new System.EventHandler(this.BtnInventario_Click);
+            // 
             // panelbotones
             // 
             this.panelbotones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.panelbotones.Controls.Add(this.SubMenuPersonal);
+            this.panelbotones.Controls.Add(BtnInventario);
             this.panelbotones.Controls.Add(this.SubMenuInventario);
+            this.panelbotones.Controls.Add(this.SubMenuPersonal);
             this.panelbotones.Controls.Add(this.panel6);
             this.panelbotones.Controls.Add(BtnPersonal);
             this.panelbotones.Controls.Add(this.panel4);
@@ -344,46 +341,8 @@
             this.panelbotones.Controls.Add(BtnPollo);
             this.panelbotones.Location = new System.Drawing.Point(3, 2);
             this.panelbotones.Name = "panelbotones";
-            this.panelbotones.Size = new System.Drawing.Size(188, 573);
+            this.panelbotones.Size = new System.Drawing.Size(199, 573);
             this.panelbotones.TabIndex = 2;
-            // 
-            // SubMenuPersonal
-            // 
-            this.SubMenuPersonal.Controls.Add(this.panel12);
-            this.SubMenuPersonal.Controls.Add(BtnEliminarPersonal);
-            this.SubMenuPersonal.Controls.Add(this.panel13);
-            this.SubMenuPersonal.Controls.Add(BtnModificalPersonal);
-            this.SubMenuPersonal.Controls.Add(this.panel14);
-            this.SubMenuPersonal.Controls.Add(BtnGuardarPersonal);
-            this.SubMenuPersonal.Location = new System.Drawing.Point(39, 370);
-            this.SubMenuPersonal.Name = "SubMenuPersonal";
-            this.SubMenuPersonal.Size = new System.Drawing.Size(149, 105);
-            this.SubMenuPersonal.TabIndex = 10;
-            this.SubMenuPersonal.Visible = false;
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(200)))));
-            this.panel12.Location = new System.Drawing.Point(0, 75);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(5, 28);
-            this.panel12.TabIndex = 15;
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(200)))));
-            this.panel13.Location = new System.Drawing.Point(0, 40);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(5, 28);
-            this.panel13.TabIndex = 13;
-            // 
-            // panel14
-            // 
-            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(200)))));
-            this.panel14.Location = new System.Drawing.Point(0, 4);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(5, 28);
-            this.panel14.TabIndex = 11;
             // 
             // SubMenuInventario
             // 
@@ -393,9 +352,9 @@
             this.SubMenuInventario.Controls.Add(BtnInventarioG);
             this.SubMenuInventario.Controls.Add(this.panel9);
             this.SubMenuInventario.Controls.Add(BtnInventarioP);
-            this.SubMenuInventario.Location = new System.Drawing.Point(36, 422);
+            this.SubMenuInventario.Location = new System.Drawing.Point(46, 426);
             this.SubMenuInventario.Name = "SubMenuInventario";
-            this.SubMenuInventario.Size = new System.Drawing.Size(149, 105);
+            this.SubMenuInventario.Size = new System.Drawing.Size(153, 105);
             this.SubMenuInventario.TabIndex = 9;
             this.SubMenuInventario.Visible = false;
             // 
@@ -422,6 +381,44 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(5, 28);
             this.panel9.TabIndex = 11;
+            // 
+            // SubMenuPersonal
+            // 
+            this.SubMenuPersonal.Controls.Add(this.panel12);
+            this.SubMenuPersonal.Controls.Add(BtnEliminarPersonal);
+            this.SubMenuPersonal.Controls.Add(this.panel13);
+            this.SubMenuPersonal.Controls.Add(BtnModificalPersonal);
+            this.SubMenuPersonal.Controls.Add(this.panel14);
+            this.SubMenuPersonal.Controls.Add(BtnGuardarPersonal);
+            this.SubMenuPersonal.Location = new System.Drawing.Point(57, 376);
+            this.SubMenuPersonal.Name = "SubMenuPersonal";
+            this.SubMenuPersonal.Size = new System.Drawing.Size(135, 105);
+            this.SubMenuPersonal.TabIndex = 10;
+            this.SubMenuPersonal.Visible = false;
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(200)))));
+            this.panel12.Location = new System.Drawing.Point(0, 75);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(5, 28);
+            this.panel12.TabIndex = 15;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(200)))));
+            this.panel13.Location = new System.Drawing.Point(0, 40);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(5, 28);
+            this.panel13.TabIndex = 13;
+            // 
+            // panel14
+            // 
+            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(200)))));
+            this.panel14.Location = new System.Drawing.Point(0, 4);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(5, 28);
+            this.panel14.TabIndex = 11;
             // 
             // panel6
             // 
@@ -475,71 +472,6 @@
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // panelFmr
-            // 
-            this.panelFmr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.panelFmr.Controls.Add(this.label1);
-            this.panelFmr.Location = new System.Drawing.Point(200, 53);
-            this.panelFmr.Name = "panelFmr";
-            this.panelFmr.Size = new System.Drawing.Size(678, 511);
-            this.panelFmr.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.label1.Font = new System.Drawing.Font("Pristina", 99.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(141, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(436, 186);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Hensys";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.panel1.Controls.Add(this.BtnMinimizar);
-            this.panel1.Controls.Add(this.BtnMaximizar);
-            this.panel1.Controls.Add(this.BtnCerrar);
-            this.panel1.Location = new System.Drawing.Point(3, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(889, 34);
-            this.panel1.TabIndex = 5;
-            // 
-            // BtnMinimizar
-            // 
-            this.BtnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnMinimizar.Image = global::Presentacion.Properties.Resources.remove_minimize_minus_delete_icon_219231;
-            this.BtnMinimizar.Location = new System.Drawing.Point(727, 0);
-            this.BtnMinimizar.Name = "BtnMinimizar";
-            this.BtnMinimizar.Size = new System.Drawing.Size(34, 31);
-            this.BtnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BtnMinimizar.TabIndex = 2;
-            this.BtnMinimizar.TabStop = false;
-            // 
-            // BtnMaximizar
-            // 
-            this.BtnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnMaximizar.Image = global::Presentacion.Properties.Resources.expand_fullscreen_enlarge_maximize_icon_219215;
-            this.BtnMaximizar.Location = new System.Drawing.Point(778, 0);
-            this.BtnMaximizar.Name = "BtnMaximizar";
-            this.BtnMaximizar.Size = new System.Drawing.Size(34, 31);
-            this.BtnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BtnMaximizar.TabIndex = 1;
-            this.BtnMaximizar.TabStop = false;
-            // 
-            // BtnCerrar
-            // 
-            this.BtnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnCerrar.Image = global::Presentacion.Properties.Resources.delete_102866;
-            this.BtnCerrar.Location = new System.Drawing.Point(830, 0);
-            this.BtnCerrar.Name = "BtnCerrar";
-            this.BtnCerrar.Size = new System.Drawing.Size(34, 31);
-            this.BtnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BtnCerrar.TabIndex = 0;
-            this.BtnCerrar.TabStop = false;
-            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(200)))));
@@ -556,28 +488,68 @@
             this.panel7.Size = new System.Drawing.Size(5, 39);
             this.panel7.TabIndex = 9;
             // 
+            // BtnDeslizar
+            // 
+            this.BtnDeslizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BtnDeslizar.Image = global::Presentacion.Properties.Resources._3844437_hamburger_list_menu_more_navigation_110311;
+            this.BtnDeslizar.Location = new System.Drawing.Point(0, 0);
+            this.BtnDeslizar.Name = "BtnDeslizar";
+            this.BtnDeslizar.Size = new System.Drawing.Size(32, 32);
+            this.BtnDeslizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.BtnDeslizar.TabIndex = 11;
+            this.BtnDeslizar.TabStop = false;
+            this.BtnDeslizar.Click += new System.EventHandler(this.BtnDeslizar_Click_1);
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.label1.Font = new System.Drawing.Font("Pristina", 99.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(141, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(436, 186);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Hensys";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panelFmr
+            // 
+            this.panelFmr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.panelFmr.Controls.Add(this.label1);
+            this.panelFmr.Location = new System.Drawing.Point(208, 53);
+            this.panelFmr.Name = "panelFmr";
+            this.panelFmr.Size = new System.Drawing.Size(678, 511);
+            this.panelFmr.TabIndex = 3;
+            // 
+            // panelMenus
+            // 
+            this.panelMenus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(200)))));
+            this.panelMenus.Controls.Add(this.BtnDeslizar);
+            this.panelMenus.Location = new System.Drawing.Point(200, 2);
+            this.panelMenus.Name = "panelMenus";
+            this.panelMenus.Size = new System.Drawing.Size(690, 32);
+            this.panelMenus.TabIndex = 12;
+            // 
             // FmrMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.ClientSize = new System.Drawing.Size(891, 576);
+            this.Controls.Add(this.panelMenus);
             this.Controls.Add(this.panel7);
-            this.Controls.Add(BtnInventario);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panelFmr);
             this.Controls.Add(this.panelbotones);
             this.Name = "FmrMenuPrincipal";
             this.Text = "FmrMenuPrincipalcs";
             this.panelbotones.ResumeLayout(false);
-            this.SubMenuPersonal.ResumeLayout(false);
             this.SubMenuInventario.ResumeLayout(false);
+            this.SubMenuPersonal.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.BtnDeslizar)).EndInit();
             this.panelFmr.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnMaximizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnCerrar)).EndInit();
+            this.panelMenus.ResumeLayout(false);
+            this.panelMenus.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -586,12 +558,6 @@
         private System.Windows.Forms.Panel panelbotones;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Panel panelFmr;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox BtnCerrar;
-        private System.Windows.Forms.PictureBox BtnMinimizar;
-        private System.Windows.Forms.PictureBox BtnMaximizar;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
@@ -606,5 +572,9 @@
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.PictureBox BtnDeslizar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panelFmr;
+        private System.Windows.Forms.Panel panelMenus;
     }
 }

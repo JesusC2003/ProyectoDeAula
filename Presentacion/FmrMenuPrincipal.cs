@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Net.NetworkInformation;
 namespace Presentacion
 {
     public partial class FmrMenuPrincipal : Form
@@ -19,10 +20,11 @@ namespace Presentacion
         }
         FmrPersonalGranja granja=new FmrPersonalGranja();
 
-        public void BtnInventario_Click(object sender, EventArgs e)
-        {
-            SubMenuInventario.Visible = true;
-        }
+        [DllImport("user32.dll", EntryPoint= "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.dll", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
+
 
         public void BtnInventarioP_Click(object sender, EventArgs e)
         {
@@ -101,5 +103,24 @@ namespace Presentacion
         {
             AbrirFmr(new FmrMedicamento());
         }
+
+        private void BtnDeslizar_Click_1(object sender, EventArgs e)
+        {
+            if (panelbotones.Width == 199)
+            {
+                panelbotones.Width = 46;
+            }
+            else
+            {
+                panelbotones.Width = 199;
+            }
+        }
+
+        private void BtnInventario_Click(object sender, EventArgs e)
+        {
+            SubMenuInventario.Visible = true;
+        }
+
+
     }
 }

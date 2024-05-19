@@ -83,6 +83,16 @@ namespace Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _3844437_hamburger_list_menu_more_navigation_110311 {
+            get {
+                object obj = ResourceManager.GetObject("3844437-hamburger-list-menu-more-navigation_110311", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _4115235_exit_logout_sign_out_114030 {
             get {
                 object obj = ResourceManager.GetObject("4115235-exit-logout-sign-out_114030", resourceCulture);

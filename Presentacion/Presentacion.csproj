@@ -222,5 +222,8 @@
   <ItemGroup>
     <None Include="Resources\3592856-general-group-office-personal-relation-team-team-structure_107770.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3844437-hamburger-list-menu-more-navigation_110311.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

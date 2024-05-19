@@ -136,6 +136,9 @@
   <data name="treatment_drug_medication_capsules_drugs_medicine_pill_capsule_pills_icon_210667" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\treatment_drug_medication_capsules_drugs_medicine_pill_capsule_pills_icon_210667.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="systemshutdown_1033901" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\systemshutdown_1033901.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="systemshutdown_103390" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\systemshutdown_103390.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -151,14 +154,17 @@
   <data name="disk1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\disk1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="house_home_icon_143301" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\house_home_icon_143301.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="expand_fullscreen_enlarge_maximize_icon_219215" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\expand_fullscreen_enlarge_maximize_icon_219215.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="seo-social-web-network-internet_262_icon-icons.com_61518" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\seo-social-web-network-internet_262_icon-icons.com_61518.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="expand_fullscreen_enlarge_maximize_icon_219215" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\expand_fullscreen_enlarge_maximize_icon_219215.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="3592856-general-group-office-personal-relation-team-team-structure_107770" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3592856-general-group-office-personal-relation-team-team-structure_107770.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="house_home_icon_143301" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\house_home_icon_143301.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="food_gardening_grading_sack_grain_wheat_icon_255203" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\food_gardening_grading_sack_grain_wheat_icon_255203.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,10 +172,7 @@
   <data name="22266chicken_98785 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\22266chicken_98785 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="systemshutdown_1033901" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\systemshutdown_1033901.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="3592856-general-group-office-personal-relation-team-team-structure_107770" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3592856-general-group-office-personal-relation-team-team-structure_107770.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="3844437-hamburger-list-menu-more-navigation_110311" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3844437-hamburger-list-menu-more-navigation_110311.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
