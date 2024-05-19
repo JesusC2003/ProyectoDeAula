@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensys\ProyectoDeAula\Logica\bin\Debug\Logica.dll
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensys\ProyectoDeAula\Logica\bin\Debug\Logica.pdb
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensys\ProyectoDeAula\Logica\bin\Debug\Datos.dll
@@ -10,7 +9,6 @@ C:\Users\hewlett packard\OneDrive\Escritorio\Hensys\ProyectoDeAula\Logica\obj\De
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensys\ProyectoDeAula\Logica\obj\Debug\Logica.csproj.Up2Date
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensys\ProyectoDeAula\Logica\obj\Debug\Logica.dll
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensys\ProyectoDeAula\Logica\obj\Debug\Logica.pdb
-=======
 C:\Users\ASUS\Documents\UNIVERSIDAD POPULAR DEL CESAR\PROGRAMACIÓN III\ProyectoDeAula\Logica\bin\Debug\Logica.dll
 C:\Users\ASUS\Documents\UNIVERSIDAD POPULAR DEL CESAR\PROGRAMACIÓN III\ProyectoDeAula\Logica\bin\Debug\Logica.pdb
 C:\Users\ASUS\Documents\UNIVERSIDAD POPULAR DEL CESAR\PROGRAMACIÓN III\ProyectoDeAula\Logica\bin\Debug\Datos.dll
@@ -22,4 +20,4 @@ C:\Users\ASUS\Documents\UNIVERSIDAD POPULAR DEL CESAR\PROGRAMACIÓN III\Proyecto
 C:\Users\ASUS\Documents\UNIVERSIDAD POPULAR DEL CESAR\PROGRAMACIÓN III\ProyectoDeAula\Logica\obj\Debug\Logica.csproj.Up2Date
 C:\Users\ASUS\Documents\UNIVERSIDAD POPULAR DEL CESAR\PROGRAMACIÓN III\ProyectoDeAula\Logica\obj\Debug\Logica.dll
 C:\Users\ASUS\Documents\UNIVERSIDAD POPULAR DEL CESAR\PROGRAMACIÓN III\ProyectoDeAula\Logica\obj\Debug\Logica.pdb
->>>>>>> d50c7904156aa4b5adb3cf6644fde742583e327e
+
