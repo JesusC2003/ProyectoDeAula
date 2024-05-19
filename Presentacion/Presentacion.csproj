@@ -58,6 +58,12 @@
     <Compile Include="FmrGalpon.Designer.cs">
       <DependentUpon>FmrGalpon.cs</DependentUpon>
     </Compile>
+    <Compile Include="FmrInventarioPollo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmrInventarioPollo.Designer.cs">
+      <DependentUpon>FmrInventarioPollo.cs</DependentUpon>
+    </Compile>
     <Compile Include="FmrMedicamento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FmrGalpon.resx">
       <DependentUpon>FmrGalpon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmrInventarioPollo.resx">
+      <DependentUpon>FmrInventarioPollo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FmrMedicamento.resx">
       <DependentUpon>FmrMedicamento.cs</DependentUpon>

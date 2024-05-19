@@ -26,6 +26,8 @@ namespace Presentacion
 
         public void BtnInventarioP_Click(object sender, EventArgs e)
         {
+
+            AbrirFmr(new FmrInventarioPollo());
             SubMenuInventario.Visible = false;  
         }
 
