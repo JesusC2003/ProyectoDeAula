@@ -46,7 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FmrGalpon.cs" />
+    <Compile Include="FmrGalpon.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FmrGalpon.Designer.cs">
       <DependentUpon>FmrGalpon.cs</DependentUpon>
     </Compile>
