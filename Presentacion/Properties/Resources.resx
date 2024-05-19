@@ -124,6 +124,12 @@
   <data name="remove_minimize_minus_delete_icon_219231" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\remove_minimize_minus_delete_icon_219231.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="user_icon-icons.com_66546" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user_icon-icons.com_66546.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete_102866" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete_102866.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="fondo4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondo4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -136,14 +142,11 @@
   <data name="treatment_drug_medication_capsules_drugs_medicine_pill_capsule_pills_icon_210667" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\treatment_drug_medication_capsules_drugs_medicine_pill_capsule_pills_icon_210667.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="systemshutdown_1033901" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\systemshutdown_1033901.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="systemshutdown_103390" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\systemshutdown_103390.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="delete_102866" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\delete_102866.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="systemshutdown_1033901" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\systemshutdown_1033901.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="4115235-exit-logout-sign-out_114030" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4115235-exit-logout-sign-out_114030.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -174,5 +177,8 @@
   </data>
   <data name="3844437-hamburger-list-menu-more-navigation_110311" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3844437-hamburger-list-menu-more-navigation_110311.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder-lock-4341303_120563" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconfinder-lock-4341303_120563.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

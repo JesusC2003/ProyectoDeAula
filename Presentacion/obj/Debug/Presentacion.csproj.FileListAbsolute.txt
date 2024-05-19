@@ -36,3 +36,4 @@ C:\Users\hewlett packard\OneDrive\Escritorio\Hensys\ProyectoDeAula\Presentacion\
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensys\ProyectoDeAula\Presentacion\obj\Debug\Presentacion.FmrInventarioPollo.resources
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensys\ProyectoDeAula\Presentacion\obj\Debug\Presentacion.FmrInventarioMedicamento.resources
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensys\ProyectoDeAula\Presentacion\obj\Debug\Presentacion.FmrInventarioGalpon.resources
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensys\ProyectoDeAula\Presentacion\obj\Debug\Presentacion.FmrIniciarSeccion.resources

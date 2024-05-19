@@ -193,6 +193,16 @@ namespace Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_lock_4341303_120563 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder-lock-4341303_120563", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mbriclose_99502 {
             get {
                 object obj = ResourceManager.GetObject("mbriclose_99502", resourceCulture);
@@ -246,6 +256,16 @@ namespace Presentacion.Properties {
         internal static System.Drawing.Bitmap treatment_drug_medication_capsules_drugs_medicine_pill_capsule_pills_icon_210667 {
             get {
                 object obj = ResourceManager.GetObject("treatment_drug_medication_capsules_drugs_medicine_pill_capsule_pills_icon_210667", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_icon_icons_com_66546 {
+            get {
+                object obj = ResourceManager.GetObject("user_icon-icons.com_66546", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
