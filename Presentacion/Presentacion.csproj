@@ -58,6 +58,18 @@
     <Compile Include="FmrGalpon.Designer.cs">
       <DependentUpon>FmrGalpon.cs</DependentUpon>
     </Compile>
+    <Compile Include="FmrInventarioGalpon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmrInventarioGalpon.Designer.cs">
+      <DependentUpon>FmrInventarioGalpon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmrInventarioMedicamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmrInventarioMedicamento.Designer.cs">
+      <DependentUpon>FmrInventarioMedicamento.cs</DependentUpon>
+    </Compile>
     <Compile Include="FmrInventarioPollo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +113,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FmrGalpon.resx">
       <DependentUpon>FmrGalpon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmrInventarioGalpon.resx">
+      <DependentUpon>FmrInventarioGalpon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmrInventarioMedicamento.resx">
+      <DependentUpon>FmrInventarioMedicamento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FmrInventarioPollo.resx">
       <DependentUpon>FmrInventarioPollo.cs</DependentUpon>

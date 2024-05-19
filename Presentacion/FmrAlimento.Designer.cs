@@ -53,7 +53,7 @@
             this.BtnBuscarAlimento.ForeColor = System.Drawing.Color.White;
             this.BtnBuscarAlimento.Image = global::Presentacion.Properties.Resources.busqueda;
             this.BtnBuscarAlimento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnBuscarAlimento.Location = new System.Drawing.Point(493, 472);
+            this.BtnBuscarAlimento.Location = new System.Drawing.Point(544, 472);
             this.BtnBuscarAlimento.Name = "BtnBuscarAlimento";
             this.BtnBuscarAlimento.Size = new System.Drawing.Size(122, 38);
             this.BtnBuscarAlimento.TabIndex = 89;
@@ -66,7 +66,7 @@
             this.BtnEliminarAlimento.ForeColor = System.Drawing.Color.White;
             this.BtnEliminarAlimento.Image = global::Presentacion.Properties.Resources.seo_social_web_network_internet_262_icon_icons_com_61518;
             this.BtnEliminarAlimento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnEliminarAlimento.Location = new System.Drawing.Point(341, 472);
+            this.BtnEliminarAlimento.Location = new System.Drawing.Point(368, 472);
             this.BtnEliminarAlimento.Name = "BtnEliminarAlimento";
             this.BtnEliminarAlimento.Size = new System.Drawing.Size(136, 38);
             this.BtnEliminarAlimento.TabIndex = 88;
@@ -80,7 +80,7 @@
             this.BtnModificarAlimento.ForeColor = System.Drawing.Color.White;
             this.BtnModificarAlimento.Image = global::Presentacion.Properties.Resources.edit_modify_icon_149489__1_;
             this.BtnModificarAlimento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnModificarAlimento.Location = new System.Drawing.Point(167, 472);
+            this.BtnModificarAlimento.Location = new System.Drawing.Point(183, 472);
             this.BtnModificarAlimento.Name = "BtnModificarAlimento";
             this.BtnModificarAlimento.Size = new System.Drawing.Size(146, 38);
             this.BtnModificarAlimento.TabIndex = 87;
@@ -93,7 +93,7 @@
             this.BtnGuardarAlimento.ForeColor = System.Drawing.Color.White;
             this.BtnGuardarAlimento.Image = global::Presentacion.Properties.Resources.disk1;
             this.BtnGuardarAlimento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnGuardarAlimento.Location = new System.Drawing.Point(1, 472);
+            this.BtnGuardarAlimento.Location = new System.Drawing.Point(12, 472);
             this.BtnGuardarAlimento.Name = "BtnGuardarAlimento";
             this.BtnGuardarAlimento.Size = new System.Drawing.Size(132, 38);
             this.BtnGuardarAlimento.TabIndex = 86;
@@ -122,7 +122,7 @@
             // 
             this.BtnSalirAlimento.BackColor = System.Drawing.Color.Red;
             this.BtnSalirAlimento.Image = global::Presentacion.Properties.Resources._4115235_exit_logout_sign_out_114030;
-            this.BtnSalirAlimento.Location = new System.Drawing.Point(563, 0);
+            this.BtnSalirAlimento.Location = new System.Drawing.Point(626, -1);
             this.BtnSalirAlimento.Name = "BtnSalirAlimento";
             this.BtnSalirAlimento.Size = new System.Drawing.Size(52, 38);
             this.BtnSalirAlimento.TabIndex = 90;
@@ -232,7 +232,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(616, 511);
+            this.ClientSize = new System.Drawing.Size(678, 511);
             this.Controls.Add(this.CboMarcaAlimento);
             this.Controls.Add(this.CboTipoAlimento);
             this.Controls.Add(this.label7);

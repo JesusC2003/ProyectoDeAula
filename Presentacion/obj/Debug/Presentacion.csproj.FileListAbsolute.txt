@@ -34,3 +34,5 @@ C:\Users\ASUS\Documents\UNIVERSIDAD POPULAR DEL CESAR\PROGRAMACIÓN III\Proyecto
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensys\ProyectoDeAula\Presentacion\obj\Debug\Presentacion.FmrAlimento.resources
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensys\ProyectoDeAula\Presentacion\obj\Debug\Presentacion.FmrMedicamento.resources
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensys\ProyectoDeAula\Presentacion\obj\Debug\Presentacion.FmrInventarioPollo.resources
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensys\ProyectoDeAula\Presentacion\obj\Debug\Presentacion.FmrInventarioMedicamento.resources
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensys\ProyectoDeAula\Presentacion\obj\Debug\Presentacion.FmrInventarioGalpon.resources

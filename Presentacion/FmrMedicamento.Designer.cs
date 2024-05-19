@@ -43,7 +43,7 @@
             // 
             this.BtnSalirMedicamento.BackColor = System.Drawing.Color.Red;
             this.BtnSalirMedicamento.Image = global::Presentacion.Properties.Resources._4115235_exit_logout_sign_out_114030;
-            this.BtnSalirMedicamento.Location = new System.Drawing.Point(562, 1);
+            this.BtnSalirMedicamento.Location = new System.Drawing.Point(626, 0);
             this.BtnSalirMedicamento.Name = "BtnSalirMedicamento";
             this.BtnSalirMedicamento.Size = new System.Drawing.Size(52, 38);
             this.BtnSalirMedicamento.TabIndex = 106;
@@ -55,7 +55,7 @@
             this.BtnBuscarMedicamento.ForeColor = System.Drawing.Color.White;
             this.BtnBuscarMedicamento.Image = global::Presentacion.Properties.Resources.busqueda;
             this.BtnBuscarMedicamento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnBuscarMedicamento.Location = new System.Drawing.Point(492, 461);
+            this.BtnBuscarMedicamento.Location = new System.Drawing.Point(544, 459);
             this.BtnBuscarMedicamento.Name = "BtnBuscarMedicamento";
             this.BtnBuscarMedicamento.Size = new System.Drawing.Size(122, 38);
             this.BtnBuscarMedicamento.TabIndex = 105;
@@ -68,7 +68,7 @@
             this.BtnEliminarMedicamento.ForeColor = System.Drawing.Color.White;
             this.BtnEliminarMedicamento.Image = global::Presentacion.Properties.Resources.seo_social_web_network_internet_262_icon_icons_com_61518;
             this.BtnEliminarMedicamento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnEliminarMedicamento.Location = new System.Drawing.Point(335, 461);
+            this.BtnEliminarMedicamento.Location = new System.Drawing.Point(374, 459);
             this.BtnEliminarMedicamento.Name = "BtnEliminarMedicamento";
             this.BtnEliminarMedicamento.Size = new System.Drawing.Size(136, 38);
             this.BtnEliminarMedicamento.TabIndex = 104;
@@ -82,7 +82,7 @@
             this.BtnModificarMedicamento.ForeColor = System.Drawing.Color.White;
             this.BtnModificarMedicamento.Image = global::Presentacion.Properties.Resources.edit_modify_icon_149489__1_;
             this.BtnModificarMedicamento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnModificarMedicamento.Location = new System.Drawing.Point(174, 459);
+            this.BtnModificarMedicamento.Location = new System.Drawing.Point(203, 461);
             this.BtnModificarMedicamento.Name = "BtnModificarMedicamento";
             this.BtnModificarMedicamento.Size = new System.Drawing.Size(146, 38);
             this.BtnModificarMedicamento.TabIndex = 103;
@@ -95,7 +95,7 @@
             this.BtnGuardarMedicamento.ForeColor = System.Drawing.Color.White;
             this.BtnGuardarMedicamento.Image = global::Presentacion.Properties.Resources.disk1;
             this.BtnGuardarMedicamento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnGuardarMedicamento.Location = new System.Drawing.Point(12, 459);
+            this.BtnGuardarMedicamento.Location = new System.Drawing.Point(29, 461);
             this.BtnGuardarMedicamento.Name = "BtnGuardarMedicamento";
             this.BtnGuardarMedicamento.Size = new System.Drawing.Size(132, 38);
             this.BtnGuardarMedicamento.TabIndex = 102;
@@ -143,7 +143,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(632, 511);
+            this.ClientSize = new System.Drawing.Size(678, 511);
             this.Controls.Add(this.txtNombreMedicamento);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BtnSalirMedicamento);

@@ -30,6 +30,7 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dtgInventarioPollo = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.ClmIDPollo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,6 +47,8 @@
             // 
             this.dtgInventarioPollo.AllowUserToAddRows = false;
             this.dtgInventarioPollo.AllowUserToDeleteRows = false;
+            this.dtgInventarioPollo.AllowUserToResizeColumns = false;
+            this.dtgInventarioPollo.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Navy;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
@@ -54,15 +57,16 @@
             this.dtgInventarioPollo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgInventarioPollo.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtgInventarioPollo.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Navy;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtgInventarioPollo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgInventarioPollo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgInventarioPollo.ColumnHeadersHeight = 24;
+            this.dtgInventarioPollo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dtgInventarioPollo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ClmIDPollo,
             this.ClmEstadoPollo,
@@ -71,17 +75,28 @@
             this.ClmRazaPollo,
             this.ClmPeriodoEngorde,
             this.ClmPeso});
-            this.dtgInventarioPollo.Location = new System.Drawing.Point(12, 67);
+            this.dtgInventarioPollo.EnableHeadersVisualStyles = false;
+            this.dtgInventarioPollo.Location = new System.Drawing.Point(5, 61);
+            this.dtgInventarioPollo.MultiSelect = false;
             this.dtgInventarioPollo.Name = "dtgInventarioPollo";
             this.dtgInventarioPollo.ReadOnly = true;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgInventarioPollo.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dtgInventarioPollo.RowHeadersVisible = false;
             this.dtgInventarioPollo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgInventarioPollo.Size = new System.Drawing.Size(608, 440);
+            this.dtgInventarioPollo.Size = new System.Drawing.Size(666, 440);
             this.dtgInventarioPollo.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Pristina", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(193, 9);
+            this.label1.Location = new System.Drawing.Point(195, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(225, 41);
             this.label1.TabIndex = 1;
@@ -153,7 +168,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(632, 511);
+            this.BackColor = System.Drawing.Color.Silver;
+            this.ClientSize = new System.Drawing.Size(678, 511);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dtgInventarioPollo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

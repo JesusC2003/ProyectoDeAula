@@ -175,7 +175,7 @@
             // 
             this.BtnSalirPollo.BackColor = System.Drawing.Color.Red;
             this.BtnSalirPollo.Image = global::Presentacion.Properties.Resources._4115235_exit_logout_sign_out_114030;
-            this.BtnSalirPollo.Location = new System.Drawing.Point(579, 0);
+            this.BtnSalirPollo.Location = new System.Drawing.Point(626, 0);
             this.BtnSalirPollo.Name = "BtnSalirPollo";
             this.BtnSalirPollo.Size = new System.Drawing.Size(52, 38);
             this.BtnSalirPollo.TabIndex = 82;
@@ -187,7 +187,7 @@
             this.BtnBuscarPollo.ForeColor = System.Drawing.Color.White;
             this.BtnBuscarPollo.Image = global::Presentacion.Properties.Resources.busqueda;
             this.BtnBuscarPollo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnBuscarPollo.Location = new System.Drawing.Point(509, 473);
+            this.BtnBuscarPollo.Location = new System.Drawing.Point(544, 471);
             this.BtnBuscarPollo.Name = "BtnBuscarPollo";
             this.BtnBuscarPollo.Size = new System.Drawing.Size(122, 38);
             this.BtnBuscarPollo.TabIndex = 81;
@@ -200,7 +200,7 @@
             this.BtnEliminarPollo.ForeColor = System.Drawing.Color.White;
             this.BtnEliminarPollo.Image = global::Presentacion.Properties.Resources.seo_social_web_network_internet_262_icon_icons_com_61518;
             this.BtnEliminarPollo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnEliminarPollo.Location = new System.Drawing.Point(345, 473);
+            this.BtnEliminarPollo.Location = new System.Drawing.Point(373, 471);
             this.BtnEliminarPollo.Name = "BtnEliminarPollo";
             this.BtnEliminarPollo.Size = new System.Drawing.Size(136, 38);
             this.BtnEliminarPollo.TabIndex = 80;
@@ -214,7 +214,7 @@
             this.BtnModificarPollo.ForeColor = System.Drawing.Color.White;
             this.BtnModificarPollo.Image = global::Presentacion.Properties.Resources.edit_modify_icon_149489__1_;
             this.BtnModificarPollo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnModificarPollo.Location = new System.Drawing.Point(174, 471);
+            this.BtnModificarPollo.Location = new System.Drawing.Point(193, 471);
             this.BtnModificarPollo.Name = "BtnModificarPollo";
             this.BtnModificarPollo.Size = new System.Drawing.Size(146, 38);
             this.BtnModificarPollo.TabIndex = 79;
@@ -227,7 +227,7 @@
             this.BtnGuardarPollo.ForeColor = System.Drawing.Color.White;
             this.BtnGuardarPollo.Image = global::Presentacion.Properties.Resources.disk1;
             this.BtnGuardarPollo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnGuardarPollo.Location = new System.Drawing.Point(2, 473);
+            this.BtnGuardarPollo.Location = new System.Drawing.Point(12, 473);
             this.BtnGuardarPollo.Name = "BtnGuardarPollo";
             this.BtnGuardarPollo.Size = new System.Drawing.Size(132, 38);
             this.BtnGuardarPollo.TabIndex = 78;
@@ -239,7 +239,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(632, 511);
+            this.ClientSize = new System.Drawing.Size(678, 511);
             this.Controls.Add(this.BtnSalirPollo);
             this.Controls.Add(this.BtnBuscarPollo);
             this.Controls.Add(this.BtnEliminarPollo);

@@ -55,7 +55,7 @@
             // 
             this.BtnSalirPersonal.BackColor = System.Drawing.Color.Red;
             this.BtnSalirPersonal.Image = global::Presentacion.Properties.Resources._4115235_exit_logout_sign_out_114030;
-            this.BtnSalirPersonal.Location = new System.Drawing.Point(588, 0);
+            this.BtnSalirPersonal.Location = new System.Drawing.Point(638, 0);
             this.BtnSalirPersonal.Name = "BtnSalirPersonal";
             this.BtnSalirPersonal.Size = new System.Drawing.Size(40, 36);
             this.BtnSalirPersonal.TabIndex = 99;
@@ -67,13 +67,12 @@
             this.BtnBuscarPersonal.ForeColor = System.Drawing.Color.White;
             this.BtnBuscarPersonal.Image = global::Presentacion.Properties.Resources.busqueda;
             this.BtnBuscarPersonal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnBuscarPersonal.Location = new System.Drawing.Point(334, 470);
+            this.BtnBuscarPersonal.Location = new System.Drawing.Point(371, 468);
             this.BtnBuscarPersonal.Name = "BtnBuscarPersonal";
             this.BtnBuscarPersonal.Size = new System.Drawing.Size(122, 38);
             this.BtnBuscarPersonal.TabIndex = 98;
             this.BtnBuscarPersonal.Text = "Buscar";
             this.BtnBuscarPersonal.UseVisualStyleBackColor = false;
-            this.BtnBuscarPersonal.Visible = false;
             // 
             // BtnEliminarPersonal
             // 
@@ -81,13 +80,12 @@
             this.BtnEliminarPersonal.ForeColor = System.Drawing.Color.White;
             this.BtnEliminarPersonal.Image = global::Presentacion.Properties.Resources.seo_social_web_network_internet_262_icon_icons_com_61518;
             this.BtnEliminarPersonal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnEliminarPersonal.Location = new System.Drawing.Point(176, 470);
+            this.BtnEliminarPersonal.Location = new System.Drawing.Point(206, 468);
             this.BtnEliminarPersonal.Name = "BtnEliminarPersonal";
             this.BtnEliminarPersonal.Size = new System.Drawing.Size(136, 38);
             this.BtnEliminarPersonal.TabIndex = 97;
             this.BtnEliminarPersonal.Text = "Eliminar";
             this.BtnEliminarPersonal.UseVisualStyleBackColor = false;
-            this.BtnEliminarPersonal.Visible = false;
             // 
             // BtnModificarPersonal
             // 
@@ -96,7 +94,7 @@
             this.BtnModificarPersonal.ForeColor = System.Drawing.Color.White;
             this.BtnModificarPersonal.Image = global::Presentacion.Properties.Resources.edit_modify_icon_149489__1_;
             this.BtnModificarPersonal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnModificarPersonal.Location = new System.Drawing.Point(482, 468);
+            this.BtnModificarPersonal.Location = new System.Drawing.Point(532, 468);
             this.BtnModificarPersonal.Name = "BtnModificarPersonal";
             this.BtnModificarPersonal.Size = new System.Drawing.Size(146, 38);
             this.BtnModificarPersonal.TabIndex = 96;
@@ -109,7 +107,7 @@
             this.BtnGuardarPersonal.ForeColor = System.Drawing.Color.White;
             this.BtnGuardarPersonal.Image = global::Presentacion.Properties.Resources.disk1;
             this.BtnGuardarPersonal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnGuardarPersonal.Location = new System.Drawing.Point(0, 470);
+            this.BtnGuardarPersonal.Location = new System.Drawing.Point(12, 468);
             this.BtnGuardarPersonal.Name = "BtnGuardarPersonal";
             this.BtnGuardarPersonal.Size = new System.Drawing.Size(148, 38);
             this.BtnGuardarPersonal.TabIndex = 95;
@@ -152,7 +150,6 @@
             this.label5.Size = new System.Drawing.Size(74, 19);
             this.label5.TabIndex = 87;
             this.label5.Text = "Telefono";
- 
             // 
             // label3
             // 
@@ -262,7 +259,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(632, 511);
+            this.ClientSize = new System.Drawing.Size(678, 511);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.CboRol);

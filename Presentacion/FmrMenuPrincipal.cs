@@ -33,11 +33,13 @@ namespace Presentacion
 
         public void BtnInventarioG_Click(object sender, EventArgs e)
         {
+            AbrirFmr(new FmrInventarioGalpon());
             SubMenuInventario.Visible = false;
         }
 
         public void BtnInventarioM_Click(object sender, EventArgs e)
         {
+            AbrirFmr(new FmrInventarioMedicamento());
             SubMenuInventario.Visible = false;
         }
 
@@ -50,6 +52,7 @@ namespace Presentacion
 
         public void BtnEliminarPersonal_Click(object sender, EventArgs e)
         {
+            AbrirFmr(new FmrPersonalGranja());
             SubMenuPersonal.Visible = false;
         }
 

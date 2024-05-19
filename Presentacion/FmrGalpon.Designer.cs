@@ -47,7 +47,7 @@
             // 
             this.BtnSalirGalpon.BackColor = System.Drawing.Color.Red;
             this.BtnSalirGalpon.Image = global::Presentacion.Properties.Resources._4115235_exit_logout_sign_out_114030;
-            this.BtnSalirGalpon.Location = new System.Drawing.Point(579, 0);
+            this.BtnSalirGalpon.Location = new System.Drawing.Point(626, 1);
             this.BtnSalirGalpon.Name = "BtnSalirGalpon";
             this.BtnSalirGalpon.Size = new System.Drawing.Size(52, 38);
             this.BtnSalirGalpon.TabIndex = 99;
@@ -59,7 +59,7 @@
             this.BtnBuscarGalpon.ForeColor = System.Drawing.Color.White;
             this.BtnBuscarGalpon.Image = global::Presentacion.Properties.Resources.busqueda;
             this.BtnBuscarGalpon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnBuscarGalpon.Location = new System.Drawing.Point(509, 473);
+            this.BtnBuscarGalpon.Location = new System.Drawing.Point(544, 473);
             this.BtnBuscarGalpon.Name = "BtnBuscarGalpon";
             this.BtnBuscarGalpon.Size = new System.Drawing.Size(122, 38);
             this.BtnBuscarGalpon.TabIndex = 98;
@@ -72,7 +72,7 @@
             this.BtnEliminarGalpon.ForeColor = System.Drawing.Color.White;
             this.BtnEliminarGalpon.Image = global::Presentacion.Properties.Resources.seo_social_web_network_internet_262_icon_icons_com_61518;
             this.BtnEliminarGalpon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnEliminarGalpon.Location = new System.Drawing.Point(345, 473);
+            this.BtnEliminarGalpon.Location = new System.Drawing.Point(364, 473);
             this.BtnEliminarGalpon.Name = "BtnEliminarGalpon";
             this.BtnEliminarGalpon.Size = new System.Drawing.Size(136, 38);
             this.BtnEliminarGalpon.TabIndex = 97;
@@ -86,7 +86,7 @@
             this.BtnModificarGalpon.ForeColor = System.Drawing.Color.White;
             this.BtnModificarGalpon.Image = global::Presentacion.Properties.Resources.edit_modify_icon_149489__1_;
             this.BtnModificarGalpon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnModificarGalpon.Location = new System.Drawing.Point(174, 473);
+            this.BtnModificarGalpon.Location = new System.Drawing.Point(185, 473);
             this.BtnModificarGalpon.Name = "BtnModificarGalpon";
             this.BtnModificarGalpon.Size = new System.Drawing.Size(146, 38);
             this.BtnModificarGalpon.TabIndex = 96;
@@ -99,7 +99,7 @@
             this.BtnGuardarGalpon.ForeColor = System.Drawing.Color.White;
             this.BtnGuardarGalpon.Image = global::Presentacion.Properties.Resources.disk1;
             this.BtnGuardarGalpon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnGuardarGalpon.Location = new System.Drawing.Point(2, 473);
+            this.BtnGuardarGalpon.Location = new System.Drawing.Point(12, 473);
             this.BtnGuardarGalpon.Name = "BtnGuardarGalpon";
             this.BtnGuardarGalpon.Size = new System.Drawing.Size(132, 38);
             this.BtnGuardarGalpon.TabIndex = 95;
@@ -188,7 +188,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(632, 511);
+            this.ClientSize = new System.Drawing.Size(678, 511);
             this.Controls.Add(this.txtCapacidadMaxima);
             this.Controls.Add(this.BtnSalirGalpon);
             this.Controls.Add(this.BtnBuscarGalpon);
