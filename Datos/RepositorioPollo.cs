@@ -6,23 +6,28 @@ using System.Threading.Tasks;
 
 namespace Datos
 {
-    public class RepositorioPersonalGranja : Archivo
+    public class RepositorioPollo : Archivo
     {
-        public RepositorioPersonalGranja(string RutaArchivo) : base(RutaArchivo) { }
-
-        public override void Eliminar()
+        public RepositorioPollo(string RutaArchivo) : base(RutaArchivo)
         {
-            throw new NotImplementedException();
-        }
 
+        }
         public override void Guardar()
         {
             throw new NotImplementedException();
         }
-
         public override void Modificar()
         {
             throw new NotImplementedException();
         }
+        public override void Eliminar()
+        {  
+            throw new NotImplementedException();
+        }
+ 
+
+        
+
+        
     }
 }

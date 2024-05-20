@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Archivo.cs" />
     <Compile Include="RepositorioAlimento.cs" />
     <Compile Include="RepositorioAplicado.cs" />
     <Compile Include="RepositorioEmpresa.cs" />
@@ -50,7 +51,7 @@
     <Compile Include="RepositorioInventario.cs" />
     <Compile Include="RepositorioMedicamento.cs" />
     <Compile Include="RepositorioPersonalGranja.cs" />
-    <Compile Include="RespositorioPollo.cs" />
+    <Compile Include="RepositorioPollo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entidad\Entidad.csproj">

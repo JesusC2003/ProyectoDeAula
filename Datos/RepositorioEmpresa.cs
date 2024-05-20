@@ -7,8 +7,23 @@ using Entidad;
 
 namespace Datos
 {
-    public class RepositorioEmpresa
+    public class RepositorioEmpresa : Archivo
     {
-                
+        public RepositorioEmpresa(string RutaArchivo) : base(RutaArchivo) { }
+        
+        public override void Eliminar()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Guardar()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Modificar()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
