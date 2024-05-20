@@ -23,7 +23,7 @@ namespace Entidad
             MedicamentoAplicado = medicamentoAplicado;
         }
 
-        public override string ToString() => $"{IdPollo};{Estado};{Fechaingreso};{FechaSalida};{RazaPollo};{PeriodoEngorde};{Peso};{Codigolnventario};{CodigoGalpon};{MedicamentoAplicado} ";
+        public override string ToString() => $"{IdPollo};{Estado};{Fechaingreso};{FechaSalida};{RazaPollo};{PeriodoEngorde};{Peso};";//{Codigolnventario};{CodigoGalpon};{MedicamentoAplicado}";
 
         public string IdPollo { get; set; } = string.Empty;
         public string Estado { get; set; } = string.Empty;
@@ -35,5 +35,6 @@ namespace Entidad
         public Inventario Codigolnventario { get; set; } 
         public Galpon CodigoGalpon { get; set; }
         public List<Aplicado> MedicamentoAplicado { get; set; }
+
     }
 }

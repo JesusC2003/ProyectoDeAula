@@ -25,6 +25,7 @@ namespace Entidad
         public List<Pollo> Polloid { get; set; }
         public List<Medicamento> MedicamentoCodigo { get; set; }
         public List<Galpon> GalponId { get; set; }
-        public PersonalGranja IdPersonalGranja { get; set; }        
+        public PersonalGranja IdPersonalGranja { get; set; }
+
     }
 }

@@ -118,7 +118,6 @@ namespace Logica
         public Pollo pollo { get; set; }
         public string Mensaje { get; set; }
         public bool Encontrado { get; set; }
-
         public PolloRespuesta(Pollo pollito)
         {
             pollo = new Pollo();
@@ -136,7 +135,6 @@ namespace Logica
         public List<Pollo> Pollos { get; set; }
         public string Mensaje { get; set; }
         public bool Encontrado { get; set; }
-
         public ConsultaPolloRespuesta(List<Pollo> pollitos)
         {
             Pollos = new List<Pollo>();
