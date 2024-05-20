@@ -9,6 +9,7 @@ namespace Entidad
 {
     public class Galpon
     {
+        public Galpon() { }
         public Galpon(string idGalpon, string estado, DateTime fechaCreacion, int capacidadMaxima, Alimento codigoAlimento)
         {
             IdGalpon = idGalpon;

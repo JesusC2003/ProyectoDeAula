@@ -8,6 +8,7 @@ namespace Entidad
 {
     public class Empresa
     {
+        public Empresa() { }
         public Empresa(string nIT, string nombre, string telefono, string direccion, string email, List<PersonalGranja> personalId)
         {
             NIT = nIT;

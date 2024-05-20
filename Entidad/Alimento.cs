@@ -8,6 +8,7 @@ namespace Entidad
 {
     public class Alimento
     {
+        public Alimento() { }
         public Alimento(string codigoAlimento, string marca, double precioAlimento, string tipoAlimento, int cantidadAlimento, int frecuenciaAlimento, Inventario inventarioNombre)
         {
             CodigoAlimento = codigoAlimento;

@@ -8,6 +8,7 @@ namespace Entidad
 {
     public class Aplicado
     {
+        public Aplicado() { }
         public Aplicado(string numeroSerie, DateTime fechaAplicacion, Pollo polloId, Medicamento medicamentoCodigo)
         {
             NumeroSerie = numeroSerie;

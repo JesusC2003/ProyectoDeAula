@@ -9,6 +9,7 @@ namespace Entidad
 {
     public class PersonalGranja
     {
+        public PersonalGranja() { }
         public PersonalGranja(string idPersonal, string nombres, string apellido1, string apellido2, string telefono, string rol, string emailpersonal, DateTime fechaNacimiento, Empresa nitEmpresa)
         {
             IdPersonal = idPersonal;

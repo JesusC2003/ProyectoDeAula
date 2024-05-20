@@ -8,6 +8,7 @@ namespace Entidad
 {
     public class Encargado
     {
+        public Encargado() { }
         public Encargado(string numeroSerie, string ocupacion, PersonalGranja personalId, Galpon galponId)
         {
             NumeroSerie = numeroSerie;

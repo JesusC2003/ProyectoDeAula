@@ -8,6 +8,7 @@ namespace Entidad
 {
     public class Inventario
     {
+        public Inventario() { } 
         public Inventario(string nombrelnventario, DateTime fechaUltimaActualizacion, DateTime fechaRecepcion, string proveedor, PersonalGranja idPersonalGranja)
         {
             Nombrelnventario = nombrelnventario;

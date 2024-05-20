@@ -9,21 +9,20 @@ namespace Entidad
     public class Pollo
     {
         public Pollo() { }
-        public Pollo(string idPollo, string estado, DateTime fechaingreso, DateTime fechaSalida, string razaPollo, int periodoEngorde, double peso, Inventario codigolnventario, Galpon codigoGalpon, List<Aplicado> medicamentoAplicado)
+        public Pollo(string idPollo, string estado, DateTime fechaSalida, string razaPollo, double peso, Inventario codigolnventario, Galpon codigoGalpon, List<Aplicado> medicamentoAplicado)
         {
             IdPollo = idPollo;
             Estado = estado;
-            Fechaingreso = fechaingreso;
             FechaSalida = fechaSalida;
-            RazaPollo = razaPollo;
-            PeriodoEngorde = periodoEngorde;
+            RazaPollo = razaPollo;            
             Peso = peso;
             Codigolnventario = codigolnventario;
             CodigoGalpon = codigoGalpon;
             MedicamentoAplicado = medicamentoAplicado;
         }
 
-        public override string ToString() => $"{IdPollo};{Estado};{Fechaingreso};{FechaSalida};{RazaPollo};{PeriodoEngorde};{Peso};";//{Codigolnventario};{CodigoGalpon};{MedicamentoAplicado}";
+        public override string ToString() => $"{IdPollo};{Estado};{Fechaingreso};{FechaSalida};" +
+            $"{RazaPollo};{PeriodoEngorde};{Peso};";//{Codigolnventario};{CodigoGalpon};{MedicamentoAplicado}";
 
         public string IdPollo { get; set; } = string.Empty;
         public string Estado { get; set; } = string.Empty;
