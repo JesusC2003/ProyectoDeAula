@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entidad;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,19 +9,17 @@ namespace Datos
 {
     public class RepositorioPollo : Archivo
     {
-        public RepositorioPollo(string RutaArchivo) : base(RutaArchivo)
-        {
-
-        }
-        public override void Guardar()
+        public RepositorioPollo(string RutaArchivo) : base(RutaArchivo) { }
+    
+        public void Guardar(Pollo pollo)
         {
             throw new NotImplementedException();
         }
-        public override void Modificar()
+        public void Modificar()
         {
             throw new NotImplementedException();
         }
-        public override void Eliminar()
+        public void Eliminar(string IDPollo)
         {  
             throw new NotImplementedException();
         }

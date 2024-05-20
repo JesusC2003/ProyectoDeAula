@@ -8,6 +8,7 @@ namespace Entidad
 {
     public class Pollo
     {
+        public Pollo() { }
         public Pollo(string idPollo, string estado, DateTime fechaingreso, DateTime fechaSalida, string razaPollo, int periodoEngorde, double peso, Inventario codigolnventario, Galpon codigoGalpon, List<Aplicado> medicamentoAplicado)
         {
             IdPollo = idPollo;

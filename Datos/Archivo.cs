@@ -13,12 +13,6 @@ namespace Datos
         public Archivo(string RutaArchivo)
         {
             this.RutaDeArchivo = RutaArchivo;
-        }
-                
-        public abstract void Guardar();
-        public abstract void Modificar();
-        public abstract void Eliminar();
-        
-
+        }              
     }
 }

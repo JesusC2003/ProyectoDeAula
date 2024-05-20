@@ -10,17 +10,17 @@ namespace Datos
     {
         public RepositorioPersonalGranja(string RutaArchivo) : base(RutaArchivo) { }
 
-        public override void Eliminar()
+        public void Eliminar()
         {
             throw new NotImplementedException();
         }
 
-        public override void Guardar()
+        public void Guardar()
         {
             throw new NotImplementedException();
         }
 
-        public override void Modificar()
+        public void Modificar()
         {
             throw new NotImplementedException();
         }
