@@ -9,23 +9,17 @@ namespace Entidad
     public class Empresa
     {
         public Empresa() { }
-        public Empresa(string nIT, string nombre, string telefono, string direccion, string email, List<PersonalGranja> personalId)
+
+        public override string ToString()
         {
-            NIT = nIT;
-            Nombre = nombre;
-            Telefono = telefono;
-            Direccion = direccion;
-            Email = email;
-            PersonalId = personalId;
+            return $"{NIT};{Nombre};{Telefono};{Direccion};{Email};";
         }
 
-        public override string ToString() => $"{NIT};{Nombre};{Telefono};{Direccion};{Email};{PersonalId}; ";
-
-        public string NIT { get; set; } = string.Empty;
-        public string Nombre { get; set; } = string.Empty;
-        public string Telefono { get; set; } = string.Empty;
-        public string Direccion { get; set; } = string.Empty;
-        public string Email { get; set; } = string.Empty;
-        public List<PersonalGranja> PersonalId { get; set; }
+        public const string NIT  = "12345678-9";
+        public const string Nombre = "Pollo Feliz";
+        public const string Telefono = "3214567809";
+        public const string Direccion = "Kilometro 4 vía La Paz";
+        public const string Email = "pollofeliz@coorporation.co";
+        public List<PersonalGranja> ListaPersonal{ get; set; }
     }
 }

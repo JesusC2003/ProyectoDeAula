@@ -11,7 +11,7 @@ namespace Logica
     public class PolloServicio
     {
         private readonly RepositorioPollo repositorioPollo;
-        private string RutaArchivo = "POLLOS.txt";
+        private string RutaArchivo = "C:\\Users\\ASUS\\Documents\\UNIVERSIDAD POPULAR DEL CESAR\\PROGRAMACIÓN III\\ProyectoDeAula\\Datos\\ArchivosTxt\\POLLO.txt";
         private List<Pollo> pollos;
         public PolloServicio() { 
             repositorioPollo = new RepositorioPollo(RutaArchivo);
