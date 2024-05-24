@@ -9,3 +9,14 @@ C:\Users\ASUS\Documents\UNIVERSIDAD POPULAR DEL CESAR\PROGRAMACIÓN III\Proyecto
 C:\Users\ASUS\Documents\UNIVERSIDAD POPULAR DEL CESAR\PROGRAMACIÓN III\ProyectoDeAula\Logica\obj\Debug\Logica.csproj.Up2Date
 C:\Users\ASUS\Documents\UNIVERSIDAD POPULAR DEL CESAR\PROGRAMACIÓN III\ProyectoDeAula\Logica\obj\Debug\Logica.dll
 C:\Users\ASUS\Documents\UNIVERSIDAD POPULAR DEL CESAR\PROGRAMACIÓN III\ProyectoDeAula\Logica\obj\Debug\Logica.pdb
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\bin\Debug\Logica.dll
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\bin\Debug\Logica.pdb
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\bin\Debug\Datos.dll
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\bin\Debug\Entidad.dll
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\bin\Debug\Datos.pdb
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\bin\Debug\Entidad.pdb
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\obj\Debug\Logica.csproj.AssemblyReference.cache
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\obj\Debug\Logica.csproj.Up2Date
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\obj\Debug\Logica.dll
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\obj\Debug\Logica.pdb

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Button BtnInventarioP;
             System.Windows.Forms.Button BtnInventarioG;
             System.Windows.Forms.Button BtnInventarioM;
@@ -60,7 +61,10 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panelFmr = new System.Windows.Forms.Panel();
+            this.labelFecha = new System.Windows.Forms.Label();
+            this.labelHora = new System.Windows.Forms.Label();
             this.panelMenus = new System.Windows.Forms.Panel();
+            this.HoraFecha = new System.Windows.Forms.Timer(this.components);
             this.BtnDeslizar = new System.Windows.Forms.PictureBox();
             BtnInventarioP = new System.Windows.Forms.Button();
             BtnInventarioG = new System.Windows.Forms.Button();
@@ -220,7 +224,7 @@
             this.SubMenuInventario.Controls.Add(BtnInventarioG);
             this.SubMenuInventario.Controls.Add(this.panel9);
             this.SubMenuInventario.Controls.Add(BtnInventarioP);
-            this.SubMenuInventario.Location = new System.Drawing.Point(46, 426);
+            this.SubMenuInventario.Location = new System.Drawing.Point(46, 322);
             this.SubMenuInventario.Name = "SubMenuInventario";
             this.SubMenuInventario.Size = new System.Drawing.Size(153, 105);
             this.SubMenuInventario.TabIndex = 9;
@@ -258,7 +262,7 @@
             this.SubMenuPersonal.Controls.Add(BtnModificalPersonal);
             this.SubMenuPersonal.Controls.Add(this.panel14);
             this.SubMenuPersonal.Controls.Add(BtnGuardarPersonal);
-            this.SubMenuPersonal.Location = new System.Drawing.Point(57, 376);
+            this.SubMenuPersonal.Location = new System.Drawing.Point(57, 264);
             this.SubMenuPersonal.Name = "SubMenuPersonal";
             this.SubMenuPersonal.Size = new System.Drawing.Size(135, 105);
             this.SubMenuPersonal.TabIndex = 10;
@@ -291,7 +295,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(200)))));
-            this.panel6.Location = new System.Drawing.Point(0, 288);
+            this.panel6.Location = new System.Drawing.Point(1, 172);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(5, 39);
             this.panel6.TabIndex = 8;
@@ -299,7 +303,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(200)))));
-            this.panel4.Location = new System.Drawing.Point(0, 241);
+            this.panel4.Location = new System.Drawing.Point(0, 116);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(5, 39);
             this.panel4.TabIndex = 6;
@@ -307,7 +311,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(200)))));
-            this.panel3.Location = new System.Drawing.Point(0, 196);
+            this.panel3.Location = new System.Drawing.Point(0, 58);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(5, 39);
             this.panel3.TabIndex = 6;
@@ -315,7 +319,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(200)))));
-            this.panel2.Location = new System.Drawing.Point(0, 151);
+            this.panel2.Location = new System.Drawing.Point(1, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(5, 39);
             this.panel2.TabIndex = 5;
@@ -343,7 +347,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(200)))));
-            this.panel5.Location = new System.Drawing.Point(3, 338);
+            this.panel5.Location = new System.Drawing.Point(3, 234);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(5, 39);
             this.panel5.TabIndex = 6;
@@ -351,7 +355,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(200)))));
-            this.panel7.Location = new System.Drawing.Point(3, 390);
+            this.panel7.Location = new System.Drawing.Point(3, 289);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(5, 39);
             this.panel7.TabIndex = 9;
@@ -371,11 +375,31 @@
             // panelFmr
             // 
             this.panelFmr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.panelFmr.Controls.Add(this.labelFecha);
+            this.panelFmr.Controls.Add(this.labelHora);
             this.panelFmr.Controls.Add(this.label1);
             this.panelFmr.Location = new System.Drawing.Point(208, 53);
             this.panelFmr.Name = "panelFmr";
             this.panelFmr.Size = new System.Drawing.Size(678, 511);
             this.panelFmr.TabIndex = 3;
+            // 
+            // labelFecha
+            // 
+            this.labelFecha.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFecha.ForeColor = System.Drawing.Color.White;
+            this.labelFecha.Location = new System.Drawing.Point(555, 481);
+            this.labelFecha.Name = "labelFecha";
+            this.labelFecha.Size = new System.Drawing.Size(94, 30);
+            this.labelFecha.TabIndex = 2;
+            // 
+            // labelHora
+            // 
+            this.labelHora.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHora.ForeColor = System.Drawing.Color.White;
+            this.labelHora.Location = new System.Drawing.Point(530, 451);
+            this.labelHora.Name = "labelHora";
+            this.labelHora.Size = new System.Drawing.Size(145, 30);
+            this.labelHora.TabIndex = 1;
             // 
             // panelMenus
             // 
@@ -385,6 +409,10 @@
             this.panelMenus.Name = "panelMenus";
             this.panelMenus.Size = new System.Drawing.Size(690, 32);
             this.panelMenus.TabIndex = 12;
+            // 
+            // HoraFecha
+            // 
+            this.HoraFecha.Tick += new System.EventHandler(this.HoraFecha_Tick);
             // 
             // BtnDeslizar
             // 
@@ -409,7 +437,7 @@
             BtnInventario.ForeColor = System.Drawing.Color.White;
             BtnInventario.Image = global::Presentacion.Properties.Resources.clipboard_note_document_report_paper_icon_192535;
             BtnInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            BtnInventario.Location = new System.Drawing.Point(4, 388);
+            BtnInventario.Location = new System.Drawing.Point(4, 287);
             BtnInventario.Name = "BtnInventario";
             BtnInventario.Size = new System.Drawing.Size(188, 39);
             BtnInventario.TabIndex = 11;
@@ -428,7 +456,7 @@
             BtnPersonal.ForeColor = System.Drawing.Color.White;
             BtnPersonal.Image = global::Presentacion.Properties.Resources._3592856_general_group_office_personal_relation_team_team_structure_107770;
             BtnPersonal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            BtnPersonal.Location = new System.Drawing.Point(6, 336);
+            BtnPersonal.Location = new System.Drawing.Point(6, 232);
             BtnPersonal.Name = "BtnPersonal";
             BtnPersonal.Size = new System.Drawing.Size(185, 41);
             BtnPersonal.TabIndex = 7;
@@ -464,7 +492,7 @@
             BtnMedicamento.ForeColor = System.Drawing.Color.White;
             BtnMedicamento.Image = global::Presentacion.Properties.Resources.treatment_drug_medication_capsules_drugs_medicine_pill_capsule_pills_icon_210667;
             BtnMedicamento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            BtnMedicamento.Location = new System.Drawing.Point(3, 286);
+            BtnMedicamento.Location = new System.Drawing.Point(4, 170);
             BtnMedicamento.Name = "BtnMedicamento";
             BtnMedicamento.Size = new System.Drawing.Size(185, 41);
             BtnMedicamento.TabIndex = 3;
@@ -484,7 +512,7 @@
             BtnAlimento.ForeColor = System.Drawing.Color.White;
             BtnAlimento.Image = global::Presentacion.Properties.Resources.food_gardening_grading_sack_grain_wheat_icon_255203;
             BtnAlimento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            BtnAlimento.Location = new System.Drawing.Point(3, 241);
+            BtnAlimento.Location = new System.Drawing.Point(3, 116);
             BtnAlimento.Name = "BtnAlimento";
             BtnAlimento.Size = new System.Drawing.Size(188, 39);
             BtnAlimento.TabIndex = 2;
@@ -503,7 +531,7 @@
             BtnGalpon.ForeColor = System.Drawing.Color.White;
             BtnGalpon.Image = global::Presentacion.Properties.Resources.house_home_icon_143301;
             BtnGalpon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            BtnGalpon.Location = new System.Drawing.Point(3, 196);
+            BtnGalpon.Location = new System.Drawing.Point(3, 58);
             BtnGalpon.Name = "BtnGalpon";
             BtnGalpon.Size = new System.Drawing.Size(188, 39);
             BtnGalpon.TabIndex = 1;
@@ -523,7 +551,7 @@
             BtnPollo.ForeColor = System.Drawing.Color.White;
             BtnPollo.Image = global::Presentacion.Properties.Resources._22266chicken_98785__1_;
             BtnPollo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            BtnPollo.Location = new System.Drawing.Point(3, 150);
+            BtnPollo.Location = new System.Drawing.Point(4, 2);
             BtnPollo.Name = "BtnPollo";
             BtnPollo.Size = new System.Drawing.Size(185, 40);
             BtnPollo.TabIndex = 0;
@@ -577,5 +605,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelFmr;
         private System.Windows.Forms.Panel panelMenus;
+        private System.Windows.Forms.Label labelFecha;
+        private System.Windows.Forms.Label labelHora;
+        private System.Windows.Forms.Timer HoraFecha;
     }
 }

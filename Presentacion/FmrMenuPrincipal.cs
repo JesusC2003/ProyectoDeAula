@@ -16,6 +16,8 @@ namespace Presentacion
         public FmrMenuPrincipal()
         {
             InitializeComponent();
+            HoraFecha.Enabled = true;
+            OcultarSubMenu();
            
         }
         FmrPersonalGranja granja=new FmrPersonalGranja();
@@ -25,48 +27,61 @@ namespace Presentacion
         [DllImport("user32.dll", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
 
-
+        public void MostrarSubMenu(Panel SubMenu)
+        {
+            if  (SubMenu.Visible == false)
+            {
+                OcultarSubMenu();
+                SubMenu.Visible = true;
+            }
+            else
+                SubMenuInventario.Visible = false;
+        }
+        public void OcultarSubMenu()
+        {
+            SubMenuInventario.Visible = false;
+            SubMenuPersonal.Visible = false;
+        }
         public void BtnInventarioP_Click(object sender, EventArgs e)
         {
 
             AbrirFmr(new FmrInventarioPollo());
-            SubMenuInventario.Visible = false;  
+           
         }
 
         public void BtnInventarioG_Click(object sender, EventArgs e)
         {
             AbrirFmr(new FmrInventarioGalpon());
-            SubMenuInventario.Visible = false;
         }
 
         public void BtnInventarioM_Click(object sender, EventArgs e)
         {
             AbrirFmr(new FmrInventarioMedicamento());
-            SubMenuInventario.Visible = false;
+           
         }
 
         public void BtnModificalPersonal_Click(object sender, EventArgs e)
         {
             AbrirFmr(new FmrPersonalGranja());
-            SubMenuPersonal.Visible = false;
+         
   
         }
 
         public void BtnEliminarPersonal_Click(object sender, EventArgs e)
         {
             AbrirFmr(new FmrPersonalGranja());
-            SubMenuPersonal.Visible = false;
+           
         }
 
         public void BtnGuardarPersonal_Click(object sender, EventArgs e)
         {
             AbrirFmr(new FmrPersonalGranja());
-            SubMenuPersonal.Visible = false;
+          
         }
 
         public void BtnPersonal_Click(object sender, EventArgs e)
         {
-            SubMenuPersonal.Visible = true;
+            MostrarSubMenu(SubMenuPersonal);
         }
 
         public void AbrirFmr(object Fmr)
@@ -118,12 +133,18 @@ namespace Presentacion
 
         private void BtnInventario_Click(object sender, EventArgs e)
         {
-            SubMenuInventario.Visible = true;
+            MostrarSubMenu(SubMenuInventario);
         }
 
         private void BtnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void HoraFecha_Tick(object sender, EventArgs e)
+        {
+            labelHora.Text = DateTime.Now.ToString("hh:mm:ss tt");
+            labelFecha.Text = DateTime.Now.ToString("dd/MM/yy");
         }
     }
 }

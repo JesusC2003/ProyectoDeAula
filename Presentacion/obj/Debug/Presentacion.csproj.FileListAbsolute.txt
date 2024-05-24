@@ -14,3 +14,28 @@ C:\Users\ASUS\Documents\UNIVERSIDAD POPULAR DEL CESAR\PROGRAMACIÓN III\Proyecto
 C:\Users\ASUS\Documents\UNIVERSIDAD POPULAR DEL CESAR\PROGRAMACIÓN III\ProyectoDeAula\Presentacion\obj\Debug\Presentacion.exe
 C:\Users\ASUS\Documents\UNIVERSIDAD POPULAR DEL CESAR\PROGRAMACIÓN III\ProyectoDeAula\Presentacion\obj\Debug\Presentacion.pdb
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensys\ProyectoDeAula\Presentacion\bin\Debug\Presentacion.exe
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Presentacion\bin\Debug\Presentacion.exe
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Presentacion\bin\Debug\Entidad.dll
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Presentacion\bin\Debug\Logica.dll
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Presentacion\bin\Debug\Entidad.pdb
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Presentacion\bin\Debug\Logica.pdb
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Presentacion\obj\Debug\Presentacion.csproj.AssemblyReference.cache
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Presentacion\obj\Debug\Presentacion.FmrAlimento.resources
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Presentacion\obj\Debug\Presentacion.FmrGalpon.resources
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Presentacion\obj\Debug\Presentacion.FmrIniciarSeccion.resources
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Presentacion\obj\Debug\Presentacion.FmrInventarioGalpon.resources
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Presentacion\obj\Debug\Presentacion.FmrInventarioMedicamento.resources
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Presentacion\obj\Debug\Presentacion.FmrInventarioPollo.resources
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Presentacion\obj\Debug\Presentacion.FmrMedicamento.resources
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Presentacion\obj\Debug\Presentacion.FmrMenuPrincipal.resources
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Presentacion\obj\Debug\Presentacion.FmrMPrincipal.resources
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Presentacion\obj\Debug\Presentacion.FmrPersonalGranja.resources
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Presentacion\obj\Debug\Presentacion.FmrPollo.resources
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.cache
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Presentacion\obj\Debug\Presenta.BC77CD05.Up2Date
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Presentacion\obj\Debug\Presentacion.pdb
