@@ -16,5 +16,11 @@ namespace Presentacion
         {
             InitializeComponent();
         }
+
+        private void BtnEliminarMedicamento_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

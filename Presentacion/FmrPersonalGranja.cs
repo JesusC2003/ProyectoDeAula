@@ -17,7 +17,9 @@ namespace Presentacion
             InitializeComponent();
         }
 
+        private void BtnBuscarPersonal_Click(object sender, EventArgs e)
+        {
 
-
+        }
     }
 }

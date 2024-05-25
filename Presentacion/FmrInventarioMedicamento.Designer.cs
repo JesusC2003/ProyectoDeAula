@@ -35,7 +35,9 @@
             this.ClmCodigoMedicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClmNombreMedicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClmPolloMedicado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BtnSalirInventarioMedicamento = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgInventarioMedicamento)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnSalirInventarioMedicamento)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -82,7 +84,7 @@
             this.dtgInventarioMedicamento.ReadOnly = true;
             this.dtgInventarioMedicamento.RowHeadersVisible = false;
             this.dtgInventarioMedicamento.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgInventarioMedicamento.Size = new System.Drawing.Size(607, 440);
+            this.dtgInventarioMedicamento.Size = new System.Drawing.Size(607, 479);
             this.dtgInventarioMedicamento.TabIndex = 3;
             // 
             // ClmCodigoMedicamento
@@ -112,18 +114,31 @@
             this.ClmPolloMedicado.ReadOnly = true;
             this.ClmPolloMedicado.Width = 195;
             // 
+            // BtnSalirInventarioMedicamento
+            // 
+            this.BtnSalirInventarioMedicamento.BackColor = System.Drawing.Color.Red;
+            this.BtnSalirInventarioMedicamento.Image = global::Presentacion.Properties.Resources._4115235_exit_logout_sign_out_114030;
+            this.BtnSalirInventarioMedicamento.Location = new System.Drawing.Point(655, 0);
+            this.BtnSalirInventarioMedicamento.Name = "BtnSalirInventarioMedicamento";
+            this.BtnSalirInventarioMedicamento.Size = new System.Drawing.Size(24, 22);
+            this.BtnSalirInventarioMedicamento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnSalirInventarioMedicamento.TabIndex = 124;
+            this.BtnSalirInventarioMedicamento.TabStop = false;
+            // 
             // FmrInventarioMedicamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(678, 511);
+            this.ClientSize = new System.Drawing.Size(678, 560);
+            this.Controls.Add(this.BtnSalirInventarioMedicamento);
             this.Controls.Add(this.dtgInventarioMedicamento);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FmrInventarioMedicamento";
             this.Text = "FmrInventarioMedicamento";
             ((System.ComponentModel.ISupportInitialize)(this.dtgInventarioMedicamento)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnSalirInventarioMedicamento)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -135,5 +150,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ClmCodigoMedicamento;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClmNombreMedicamento;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClmPolloMedicado;
+        private System.Windows.Forms.PictureBox BtnSalirInventarioMedicamento;
     }
 }
