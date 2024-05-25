@@ -37,7 +37,9 @@
             this.ClmFechaCreacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClmCapacidadMaxima = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClmCodigoAlimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BtnSalirInventarioGalpon = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgInventarioMedicamento)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnSalirInventarioGalpon)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -87,7 +89,7 @@
             this.dtgInventarioMedicamento.ReadOnly = true;
             this.dtgInventarioMedicamento.RowHeadersVisible = false;
             this.dtgInventarioMedicamento.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgInventarioMedicamento.Size = new System.Drawing.Size(608, 446);
+            this.dtgInventarioMedicamento.Size = new System.Drawing.Size(608, 495);
             this.dtgInventarioMedicamento.TabIndex = 4;
             // 
             // ClmIDGalpon
@@ -134,18 +136,31 @@
             this.ClmCodigoAlimento.ReadOnly = true;
             this.ClmCodigoAlimento.Width = 145;
             // 
+            // BtnSalirInventarioGalpon
+            // 
+            this.BtnSalirInventarioGalpon.BackColor = System.Drawing.Color.Red;
+            this.BtnSalirInventarioGalpon.Image = global::Presentacion.Properties.Resources._4115235_exit_logout_sign_out_114030;
+            this.BtnSalirInventarioGalpon.Location = new System.Drawing.Point(655, -1);
+            this.BtnSalirInventarioGalpon.Name = "BtnSalirInventarioGalpon";
+            this.BtnSalirInventarioGalpon.Size = new System.Drawing.Size(24, 22);
+            this.BtnSalirInventarioGalpon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnSalirInventarioGalpon.TabIndex = 124;
+            this.BtnSalirInventarioGalpon.TabStop = false;
+            // 
             // FmrInventarioGalpon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(678, 511);
+            this.ClientSize = new System.Drawing.Size(678, 560);
+            this.Controls.Add(this.BtnSalirInventarioGalpon);
             this.Controls.Add(this.dtgInventarioMedicamento);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FmrInventarioGalpon";
             this.Text = "FmrInventarioGalpon";
             ((System.ComponentModel.ISupportInitialize)(this.dtgInventarioMedicamento)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnSalirInventarioGalpon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -159,5 +174,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ClmFechaCreacion;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClmCapacidadMaxima;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClmCodigoAlimento;
+        private System.Windows.Forms.PictureBox BtnSalirInventarioGalpon;
     }
 }
