@@ -32,7 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dtgInventarioPollo = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.ClmIDPollo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClmEstadoPollo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClmFechaIngreso = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,7 +39,10 @@
             this.ClmRazaPollo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClmPeriodoEngorde = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClmPeso = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.BtnSalirInventarioPollo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgInventarioPollo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnSalirInventarioPollo)).BeginInit();
             this.SuspendLayout();
             // 
             // dtgInventarioPollo
@@ -90,18 +92,8 @@
             this.dtgInventarioPollo.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dtgInventarioPollo.RowHeadersVisible = false;
             this.dtgInventarioPollo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgInventarioPollo.Size = new System.Drawing.Size(666, 440);
+            this.dtgInventarioPollo.Size = new System.Drawing.Size(666, 475);
             this.dtgInventarioPollo.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Pristina", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(195, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(225, 41);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Inventario Pollo";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ClmIDPollo
             // 
@@ -164,18 +156,41 @@
             this.ClmPeso.ReadOnly = true;
             this.ClmPeso.Width = 70;
             // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Pristina", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(206, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(225, 41);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Inventario Pollo";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // BtnSalirInventarioPollo
+            // 
+            this.BtnSalirInventarioPollo.BackColor = System.Drawing.Color.Red;
+            this.BtnSalirInventarioPollo.Image = global::Presentacion.Properties.Resources._4115235_exit_logout_sign_out_114030;
+            this.BtnSalirInventarioPollo.Location = new System.Drawing.Point(656, -1);
+            this.BtnSalirInventarioPollo.Name = "BtnSalirInventarioPollo";
+            this.BtnSalirInventarioPollo.Size = new System.Drawing.Size(24, 22);
+            this.BtnSalirInventarioPollo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnSalirInventarioPollo.TabIndex = 124;
+            this.BtnSalirInventarioPollo.TabStop = false;
+            // 
             // FmrInventarioPollo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(678, 511);
+            this.ClientSize = new System.Drawing.Size(678, 560);
+            this.Controls.Add(this.BtnSalirInventarioPollo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dtgInventarioPollo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FmrInventarioPollo";
             this.Text = "FmrInventarioPollo";
             ((System.ComponentModel.ISupportInitialize)(this.dtgInventarioPollo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnSalirInventarioPollo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -191,5 +206,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ClmRazaPollo;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClmPeriodoEngorde;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClmPeso;
+        private System.Windows.Forms.PictureBox BtnSalirInventarioPollo;
     }
 }
