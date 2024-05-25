@@ -20,8 +20,7 @@ namespace Logica
         public string Guardar(string empresa)
         {            
             repositorio.Guardar(empresa);
-            return $"|MENSAJE DE CONFIRMACIÓN| - Se ha completado el registro satisfactoriamente";
-                
+            return $"|MENSAJE DE CONFIRMACIÓN| - Se ha completado el registro satisfactoriamente"; 
         }
     }
 }

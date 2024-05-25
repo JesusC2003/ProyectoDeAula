@@ -24,7 +24,7 @@ namespace Entidad
         private int edad;
         public override string ToString()
         {
-            return $"{IdPersonal};{Nombres};{Apellido1};{Apellido2};{Telefono};{Rol};{EmailPersonal};{Convert.ToString(edad =CalcularEdad(FechaNacimiento))};";
+            return $"{IdPersonal};{Nombres};{Apellido1};{Apellido2};{Telefono};{Rol};{EmailPersonal};{FechaNacimiento};";
         }
 
         public string IdPersonal { get; set; }

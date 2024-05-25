@@ -23,7 +23,6 @@ namespace Entidad
         public string Ocupacion { get; set; }
         public PersonalGranja PersonalId { get; set; }
         public Galpon GalponId { get; set; }
-
     }
 }
     

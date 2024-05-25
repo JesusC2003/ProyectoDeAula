@@ -26,15 +26,15 @@ namespace Pruebas
             //Console.ReadKey();
 
             //prueba del metodo edad
-             //PersonalGranja person=new PersonalGranja();
-             //DateTime fechaNacimiento = new DateTime(2003, 11, 1);
-             //var edad =  person.CalcularEdad(fechaNacimiento);
+            //PersonalGranja person=new PersonalGranja();
+            //DateTime fechaNacimiento = new DateTime(2003, 11, 1);
+            //var edad =  person.CalcularEdad(fechaNacimiento);
             //Console.WriteLine(edad);
             //Console.ReadKey();  
 
 
             //Console.WriteLine(" --------------------PRUEBA DEL METODO GUARDAR EN ARCHIVOS-------------------");
-            
+
             //Pollo pollo = new Pollo("123456", "Viva", new DateTime(2024, 7, 5), "Criolla", 46.5, null, null, null);
             //Console.WriteLine(pollo.ToString());         
             //Console.ReadLine();
@@ -53,69 +53,69 @@ namespace Pruebas
             //}
             //Console.ReadLine();
 
-            
+
             //----------------------------------------------------------------------------------------------------------------------------------------
-            //Empresa empresa = new Empresa();
-            //List<PersonalGranja> ListaPersonas = new List<PersonalGranja>();
-            //PersonalGranja persona = new PersonalGranja(
-            //    "12345",
-            //    "Juan",
-            //    "Perez",
-            //    "Gonzales",
-            //    "3214567809",
-            //    "Oficios Varios",
-            //    "Juan@gmail.com",
-            //    new DateTime(2000, 05, 22));
-            //PersonalGranja persona2 = new PersonalGranja(
-            //    "67890",
-            //    "Camila",
-            //    "Gutierres",
-            //    "Mendoza",
-            //    "3004896213",
-            //    "Secretaria",
-            //    "Cami@gmail.com",
-            //    new DateTime(1995, 02, 12));
-            //PersonalGranja persona3 = new PersonalGranja(
-            //    "54321",
-            //    "María",
-            //    "Gnecco",
-            //    "Bustamante",
-            //    "3108976543",
-            //    "Gerente",
-            //    "Maria@gmail.com",
-            //    new DateTime(2003, 01, 07));
+            Empresa empresa = new Empresa();
+            List<PersonalGranja> ListaPersonas = new List<PersonalGranja>();
+            PersonalGranja persona = new PersonalGranja(
+                "12345",
+                "Juan",
+                "Perez",
+                "Gonzales",
+                "3214567809",
+                "Oficios Varios",
+                "Juan@gmail.com",
+                new DateTime(2000, 05, 22));
+            PersonalGranja persona2 = new PersonalGranja(
+                "67890",
+                "Camila",
+                "Gutierres",
+                "Mendoza",
+                "3004896213",
+                "Secretaria",
+                "Cami@gmail.com",
+                new DateTime(1995, 02, 12));
+            PersonalGranja persona3 = new PersonalGranja(
+                "54321",
+                "María",
+                "Gnecco",
+                "Bustamante",
+                "3108976543",
+                "Gerente",
+                "Maria@gmail.com",
+                new DateTime(2003, 01, 07));
 
-            //ListaPersonas.Add(persona);
-            //ListaPersonas.Add(persona2);
-            //ListaPersonas.Add(persona3);
+            ListaPersonas.Add(persona);
+            ListaPersonas.Add(persona2);
+            ListaPersonas.Add(persona3);
 
-            //empresa.ListaPersonal = ListaPersonas;
-            //int TotalDatos = empresa.ListaPersonal.Count;
-            //int Bandera = 1;
-            //Console.WriteLine("--------- DATOS DE LA EMPRESA -------------");
-            //Console.WriteLine();
-            //separarInfoEmpresa(empresa.ToString());
-            //Console.WriteLine();            
-            //Console.WriteLine("************ LISTA DE EMPLEADOS ************");
-            //foreach (var item in empresa.ListaPersonal)
-            //{                
-            //    separarInfoPersonal(item.ToString());
-            //    if (Bandera < TotalDatos)
-            //    {
-            //        Console.WriteLine("+++++++++++++++++++++++++++++++++++++++++++");
-            //    }
-            //    Bandera++;
-            //}
-            //Console.WriteLine("-------------------------------------------");
-            //Console.ReadKey();
+            empresa.ListaPersonal = ListaPersonas;
+            int TotalDatos = empresa.ListaPersonal.Count;
+            int Bandera = 1;
+            Console.WriteLine("--------- DATOS DE LA EMPRESA -------------");
+            Console.WriteLine();
+            separarInfoEmpresa(empresa.ToString());
+            Console.WriteLine();
+            Console.WriteLine("************ LISTA DE EMPLEADOS ************");
+            foreach (var item in empresa.ListaPersonal)
+            {
+                separarInfoPersonal(item.ToString());
+                if (Bandera < TotalDatos)
+                {
+                    Console.WriteLine("+++++++++++++++++++++++++++++++++++++++++++");
+                }
+                Bandera++;
+            }
+            Console.WriteLine("-------------------------------------------");
+            Console.ReadKey();
             //-----------------------------------------------------------------------------------------------------------------------------------------
 
 
 
-            Empresa empresa = new Empresa();
-            EmpresaServicio empresaServicio = new EmpresaServicio();
-            Console.WriteLine(empresaServicio.Guardar(empresa.ToString()));
-            Console.ReadKey();
+            //Empresa empresa = new Empresa();
+            //EmpresaServicio empresaServicio = new EmpresaServicio();
+            //Console.WriteLine(empresaServicio.Guardar(empresa.ToString()));
+            //Console.ReadKey();
 
 
 
