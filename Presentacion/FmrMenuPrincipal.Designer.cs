@@ -57,9 +57,13 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panelMenus = new System.Windows.Forms.Panel();
+            this.BtnMaximizar = new System.Windows.Forms.PictureBox();
+            this.BtnMinimizar = new System.Windows.Forms.PictureBox();
+            this.BtnSalirPrograma = new System.Windows.Forms.PictureBox();
             this.HoraFecha = new System.Windows.Forms.Timer(this.components);
             this.panellogo = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelSubMenuPollo = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
             this.panel18 = new System.Windows.Forms.Panel();
@@ -89,10 +93,6 @@
             this.labelHora = new System.Windows.Forms.Label();
             this.labelFecha = new System.Windows.Forms.Label();
             this.panelContenedor = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.BtnSalirPrograma = new System.Windows.Forms.PictureBox();
-            this.BtnMinimizar = new System.Windows.Forms.PictureBox();
-            this.BtnMaximizar = new System.Windows.Forms.PictureBox();
             BtnGuardarPollo = new System.Windows.Forms.Button();
             BtnModificalPollo = new System.Windows.Forms.Button();
             BtnEliminarPollo = new System.Windows.Forms.Button();
@@ -119,7 +119,11 @@
             BtnPollo = new System.Windows.Forms.Button();
             BtnSalir = new System.Windows.Forms.Button();
             this.panelMenus.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnMaximizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnSalirPrograma)).BeginInit();
             this.panellogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelSubMenuPollo.SuspendLayout();
             this.SubMenuGalpon.SuspendLayout();
             this.SubMenuAlimento.SuspendLayout();
@@ -128,10 +132,6 @@
             this.PanelSubMenuPersonal.SuspendLayout();
             this.PanelSubMenuMedicamento.SuspendLayout();
             this.panelContenedor.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnSalirPrograma)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnMaximizar)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnGuardarPollo
@@ -476,6 +476,147 @@
             BtnInventarioGalpon.UseVisualStyleBackColor = false;
             BtnInventarioGalpon.Click += new System.EventHandler(this.BtnInventarioGalpon_Click);
             // 
+            // BtnInventario
+            // 
+            BtnInventario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            BtnInventario.Cursor = System.Windows.Forms.Cursors.Hand;
+            BtnInventario.Dock = System.Windows.Forms.DockStyle.Top;
+            BtnInventario.FlatAppearance.BorderSize = 0;
+            BtnInventario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            BtnInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            BtnInventario.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            BtnInventario.ForeColor = System.Drawing.Color.White;
+            BtnInventario.Image = global::Presentacion.Properties.Resources.clipboard_note_document_report_paper_icon_192535;
+            BtnInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            BtnInventario.Location = new System.Drawing.Point(0, 873);
+            BtnInventario.Name = "BtnInventario";
+            BtnInventario.Size = new System.Drawing.Size(193, 33);
+            BtnInventario.TabIndex = 13;
+            BtnInventario.Text = "Inventario";
+            BtnInventario.UseVisualStyleBackColor = false;
+            BtnInventario.Click += new System.EventHandler(this.BtnInventario_Click);
+            // 
+            // BtnPersonal
+            // 
+            BtnPersonal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            BtnPersonal.Cursor = System.Windows.Forms.Cursors.Hand;
+            BtnPersonal.Dock = System.Windows.Forms.DockStyle.Top;
+            BtnPersonal.FlatAppearance.BorderSize = 0;
+            BtnPersonal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            BtnPersonal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            BtnPersonal.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            BtnPersonal.ForeColor = System.Drawing.Color.White;
+            BtnPersonal.Image = global::Presentacion.Properties.Resources._3592856_general_group_office_personal_relation_team_team_structure_107770;
+            BtnPersonal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            BtnPersonal.Location = new System.Drawing.Point(0, 737);
+            BtnPersonal.Name = "BtnPersonal";
+            BtnPersonal.Size = new System.Drawing.Size(193, 30);
+            BtnPersonal.TabIndex = 11;
+            BtnPersonal.Text = "Personal";
+            BtnPersonal.UseVisualStyleBackColor = false;
+            BtnPersonal.Click += new System.EventHandler(this.BtnPersonal_Click);
+            // 
+            // button4
+            // 
+            button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            button4.Dock = System.Windows.Forms.DockStyle.Top;
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            button4.ForeColor = System.Drawing.Color.White;
+            button4.Image = global::Presentacion.Properties.Resources.treatment_drug_medication_capsules_drugs_medicine_pill_capsule_pills_icon_210667;
+            button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            button4.Location = new System.Drawing.Point(0, 605);
+            button4.Name = "button4";
+            button4.Size = new System.Drawing.Size(193, 30);
+            button4.TabIndex = 9;
+            button4.Text = "Medicamento";
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // BtnAlimento
+            // 
+            BtnAlimento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            BtnAlimento.Cursor = System.Windows.Forms.Cursors.Hand;
+            BtnAlimento.Dock = System.Windows.Forms.DockStyle.Top;
+            BtnAlimento.FlatAppearance.BorderSize = 0;
+            BtnAlimento.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            BtnAlimento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            BtnAlimento.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            BtnAlimento.ForeColor = System.Drawing.Color.White;
+            BtnAlimento.Image = global::Presentacion.Properties.Resources.food_gardening_grading_sack_grain_wheat_icon_255203;
+            BtnAlimento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            BtnAlimento.Location = new System.Drawing.Point(0, 466);
+            BtnAlimento.Name = "BtnAlimento";
+            BtnAlimento.Size = new System.Drawing.Size(193, 30);
+            BtnAlimento.TabIndex = 7;
+            BtnAlimento.Text = "Alimento";
+            BtnAlimento.UseVisualStyleBackColor = false;
+            BtnAlimento.Click += new System.EventHandler(this.BtnAlimento_Click);
+            // 
+            // BtnGalpon
+            // 
+            BtnGalpon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            BtnGalpon.Cursor = System.Windows.Forms.Cursors.Hand;
+            BtnGalpon.Dock = System.Windows.Forms.DockStyle.Top;
+            BtnGalpon.FlatAppearance.BorderSize = 0;
+            BtnGalpon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            BtnGalpon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            BtnGalpon.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            BtnGalpon.ForeColor = System.Drawing.Color.White;
+            BtnGalpon.Image = global::Presentacion.Properties.Resources.house_home_icon_143301;
+            BtnGalpon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            BtnGalpon.Location = new System.Drawing.Point(0, 334);
+            BtnGalpon.Name = "BtnGalpon";
+            BtnGalpon.Size = new System.Drawing.Size(193, 30);
+            BtnGalpon.TabIndex = 5;
+            BtnGalpon.Text = "Galpon";
+            BtnGalpon.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            BtnGalpon.UseVisualStyleBackColor = false;
+            BtnGalpon.Click += new System.EventHandler(this.BtnGalpon_Click);
+            // 
+            // BtnPollo
+            // 
+            BtnPollo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            BtnPollo.Cursor = System.Windows.Forms.Cursors.Hand;
+            BtnPollo.Dock = System.Windows.Forms.DockStyle.Top;
+            BtnPollo.FlatAppearance.BorderSize = 0;
+            BtnPollo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            BtnPollo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            BtnPollo.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            BtnPollo.ForeColor = System.Drawing.Color.White;
+            BtnPollo.Image = global::Presentacion.Properties.Resources._22266chicken_98785__1_;
+            BtnPollo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            BtnPollo.Location = new System.Drawing.Point(0, 197);
+            BtnPollo.Name = "BtnPollo";
+            BtnPollo.Size = new System.Drawing.Size(193, 28);
+            BtnPollo.TabIndex = 3;
+            BtnPollo.Text = "Pollo";
+            BtnPollo.UseVisualStyleBackColor = false;
+            BtnPollo.Click += new System.EventHandler(this.BtnPollo_Click);
+            // 
+            // BtnSalir
+            // 
+            BtnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            BtnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
+            BtnSalir.Dock = System.Windows.Forms.DockStyle.Bottom;
+            BtnSalir.FlatAppearance.BorderSize = 0;
+            BtnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            BtnSalir.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            BtnSalir.ForeColor = System.Drawing.Color.White;
+            BtnSalir.Image = global::Presentacion.Properties.Resources.systemshutdown_103390;
+            BtnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            BtnSalir.Location = new System.Drawing.Point(0, 1014);
+            BtnSalir.Name = "BtnSalir";
+            BtnSalir.Size = new System.Drawing.Size(193, 35);
+            BtnSalir.TabIndex = 5;
+            BtnSalir.Text = "Salir";
+            BtnSalir.UseVisualStyleBackColor = false;
+            BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
+            // 
             // tabPage1
             // 
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
@@ -507,6 +648,39 @@
             this.panelMenus.Size = new System.Drawing.Size(708, 24);
             this.panelMenus.TabIndex = 12;
             // 
+            // BtnMaximizar
+            // 
+            this.BtnMaximizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(62)))), ((int)(((byte)(65)))));
+            this.BtnMaximizar.Image = global::Presentacion.Properties.Resources.expand_fullscreen_enlarge_maximize_icon_219215;
+            this.BtnMaximizar.Location = new System.Drawing.Point(645, 0);
+            this.BtnMaximizar.Name = "BtnMaximizar";
+            this.BtnMaximizar.Size = new System.Drawing.Size(25, 24);
+            this.BtnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnMaximizar.TabIndex = 2;
+            this.BtnMaximizar.TabStop = false;
+            // 
+            // BtnMinimizar
+            // 
+            this.BtnMinimizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(62)))), ((int)(((byte)(65)))));
+            this.BtnMinimizar.Image = global::Presentacion.Properties.Resources.remove_minimize_minus_delete_icon_219231;
+            this.BtnMinimizar.Location = new System.Drawing.Point(605, 0);
+            this.BtnMinimizar.Name = "BtnMinimizar";
+            this.BtnMinimizar.Size = new System.Drawing.Size(25, 24);
+            this.BtnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnMinimizar.TabIndex = 1;
+            this.BtnMinimizar.TabStop = false;
+            // 
+            // BtnSalirPrograma
+            // 
+            this.BtnSalirPrograma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(62)))), ((int)(((byte)(65)))));
+            this.BtnSalirPrograma.Image = global::Presentacion.Properties.Resources.mbriclose_99502;
+            this.BtnSalirPrograma.Location = new System.Drawing.Point(683, 0);
+            this.BtnSalirPrograma.Name = "BtnSalirPrograma";
+            this.BtnSalirPrograma.Size = new System.Drawing.Size(25, 24);
+            this.BtnSalirPrograma.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnSalirPrograma.TabIndex = 0;
+            this.BtnSalirPrograma.TabStop = false;
+            // 
             // HoraFecha
             // 
             this.HoraFecha.Tick += new System.EventHandler(this.HoraFecha_Tick);
@@ -533,6 +707,16 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Hensys";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Presentacion.Properties.Resources.fondo4;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(193, 144);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // panelSubMenuPollo
             // 
@@ -832,190 +1016,6 @@
             this.panelContenedor.Size = new System.Drawing.Size(678, 560);
             this.panelContenedor.TabIndex = 3;
             // 
-            // BtnInventario
-            // 
-            BtnInventario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            BtnInventario.Cursor = System.Windows.Forms.Cursors.Hand;
-            BtnInventario.Dock = System.Windows.Forms.DockStyle.Top;
-            BtnInventario.FlatAppearance.BorderSize = 0;
-            BtnInventario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            BtnInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            BtnInventario.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            BtnInventario.ForeColor = System.Drawing.Color.White;
-            BtnInventario.Image = global::Presentacion.Properties.Resources.clipboard_note_document_report_paper_icon_192535;
-            BtnInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            BtnInventario.Location = new System.Drawing.Point(0, 873);
-            BtnInventario.Name = "BtnInventario";
-            BtnInventario.Size = new System.Drawing.Size(193, 33);
-            BtnInventario.TabIndex = 13;
-            BtnInventario.Text = "Inventario";
-            BtnInventario.UseVisualStyleBackColor = false;
-            BtnInventario.Click += new System.EventHandler(this.BtnInventario_Click);
-            // 
-            // BtnPersonal
-            // 
-            BtnPersonal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            BtnPersonal.Cursor = System.Windows.Forms.Cursors.Hand;
-            BtnPersonal.Dock = System.Windows.Forms.DockStyle.Top;
-            BtnPersonal.FlatAppearance.BorderSize = 0;
-            BtnPersonal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            BtnPersonal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            BtnPersonal.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            BtnPersonal.ForeColor = System.Drawing.Color.White;
-            BtnPersonal.Image = global::Presentacion.Properties.Resources._3592856_general_group_office_personal_relation_team_team_structure_107770;
-            BtnPersonal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            BtnPersonal.Location = new System.Drawing.Point(0, 737);
-            BtnPersonal.Name = "BtnPersonal";
-            BtnPersonal.Size = new System.Drawing.Size(193, 30);
-            BtnPersonal.TabIndex = 11;
-            BtnPersonal.Text = "Personal";
-            BtnPersonal.UseVisualStyleBackColor = false;
-            BtnPersonal.Click += new System.EventHandler(this.BtnPersonal_Click);
-            // 
-            // button4
-            // 
-            button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            button4.Dock = System.Windows.Forms.DockStyle.Top;
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            button4.ForeColor = System.Drawing.Color.White;
-            button4.Image = global::Presentacion.Properties.Resources.treatment_drug_medication_capsules_drugs_medicine_pill_capsule_pills_icon_210667;
-            button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button4.Location = new System.Drawing.Point(0, 605);
-            button4.Name = "button4";
-            button4.Size = new System.Drawing.Size(193, 30);
-            button4.TabIndex = 9;
-            button4.Text = "Medicamento";
-            button4.UseVisualStyleBackColor = false;
-            button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // BtnAlimento
-            // 
-            BtnAlimento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            BtnAlimento.Cursor = System.Windows.Forms.Cursors.Hand;
-            BtnAlimento.Dock = System.Windows.Forms.DockStyle.Top;
-            BtnAlimento.FlatAppearance.BorderSize = 0;
-            BtnAlimento.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            BtnAlimento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            BtnAlimento.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            BtnAlimento.ForeColor = System.Drawing.Color.White;
-            BtnAlimento.Image = global::Presentacion.Properties.Resources.food_gardening_grading_sack_grain_wheat_icon_255203;
-            BtnAlimento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            BtnAlimento.Location = new System.Drawing.Point(0, 466);
-            BtnAlimento.Name = "BtnAlimento";
-            BtnAlimento.Size = new System.Drawing.Size(193, 30);
-            BtnAlimento.TabIndex = 7;
-            BtnAlimento.Text = "Alimento";
-            BtnAlimento.UseVisualStyleBackColor = false;
-            BtnAlimento.Click += new System.EventHandler(this.BtnAlimento_Click);
-            // 
-            // BtnGalpon
-            // 
-            BtnGalpon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            BtnGalpon.Cursor = System.Windows.Forms.Cursors.Hand;
-            BtnGalpon.Dock = System.Windows.Forms.DockStyle.Top;
-            BtnGalpon.FlatAppearance.BorderSize = 0;
-            BtnGalpon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            BtnGalpon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            BtnGalpon.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            BtnGalpon.ForeColor = System.Drawing.Color.White;
-            BtnGalpon.Image = global::Presentacion.Properties.Resources.house_home_icon_143301;
-            BtnGalpon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            BtnGalpon.Location = new System.Drawing.Point(0, 334);
-            BtnGalpon.Name = "BtnGalpon";
-            BtnGalpon.Size = new System.Drawing.Size(193, 30);
-            BtnGalpon.TabIndex = 5;
-            BtnGalpon.Text = "Galpon";
-            BtnGalpon.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            BtnGalpon.UseVisualStyleBackColor = false;
-            BtnGalpon.Click += new System.EventHandler(this.BtnGalpon_Click);
-            // 
-            // BtnPollo
-            // 
-            BtnPollo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            BtnPollo.Cursor = System.Windows.Forms.Cursors.Hand;
-            BtnPollo.Dock = System.Windows.Forms.DockStyle.Top;
-            BtnPollo.FlatAppearance.BorderSize = 0;
-            BtnPollo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            BtnPollo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            BtnPollo.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            BtnPollo.ForeColor = System.Drawing.Color.White;
-            BtnPollo.Image = global::Presentacion.Properties.Resources._22266chicken_98785__1_;
-            BtnPollo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            BtnPollo.Location = new System.Drawing.Point(0, 197);
-            BtnPollo.Name = "BtnPollo";
-            BtnPollo.Size = new System.Drawing.Size(193, 28);
-            BtnPollo.TabIndex = 3;
-            BtnPollo.Text = "Pollo";
-            BtnPollo.UseVisualStyleBackColor = false;
-            BtnPollo.Click += new System.EventHandler(this.BtnPollo_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Presentacion.Properties.Resources.fondo4;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(193, 144);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // BtnSalirPrograma
-            // 
-            this.BtnSalirPrograma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(62)))), ((int)(((byte)(65)))));
-            this.BtnSalirPrograma.Image = global::Presentacion.Properties.Resources.mbriclose_99502;
-            this.BtnSalirPrograma.Location = new System.Drawing.Point(683, 0);
-            this.BtnSalirPrograma.Name = "BtnSalirPrograma";
-            this.BtnSalirPrograma.Size = new System.Drawing.Size(25, 21);
-            this.BtnSalirPrograma.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BtnSalirPrograma.TabIndex = 0;
-            this.BtnSalirPrograma.TabStop = false;
-            // 
-            // BtnMinimizar
-            // 
-            this.BtnMinimizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(62)))), ((int)(((byte)(65)))));
-            this.BtnMinimizar.Image = global::Presentacion.Properties.Resources.remove_minimize_minus_delete_icon_219231;
-            this.BtnMinimizar.Location = new System.Drawing.Point(605, 0);
-            this.BtnMinimizar.Name = "BtnMinimizar";
-            this.BtnMinimizar.Size = new System.Drawing.Size(25, 24);
-            this.BtnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BtnMinimizar.TabIndex = 1;
-            this.BtnMinimizar.TabStop = false;
-            // 
-            // BtnMaximizar
-            // 
-            this.BtnMaximizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(62)))), ((int)(((byte)(65)))));
-            this.BtnMaximizar.Image = global::Presentacion.Properties.Resources.expand_fullscreen_enlarge_maximize_icon_219215;
-            this.BtnMaximizar.Location = new System.Drawing.Point(645, 0);
-            this.BtnMaximizar.Name = "BtnMaximizar";
-            this.BtnMaximizar.Size = new System.Drawing.Size(25, 24);
-            this.BtnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BtnMaximizar.TabIndex = 2;
-            this.BtnMaximizar.TabStop = false;
-            // 
-            // BtnSalir
-            // 
-            BtnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            BtnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
-            BtnSalir.Dock = System.Windows.Forms.DockStyle.Bottom;
-            BtnSalir.FlatAppearance.BorderSize = 0;
-            BtnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            BtnSalir.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            BtnSalir.ForeColor = System.Drawing.Color.White;
-            BtnSalir.Image = global::Presentacion.Properties.Resources.systemshutdown_103390;
-            BtnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            BtnSalir.Location = new System.Drawing.Point(0, 1014);
-            BtnSalir.Name = "BtnSalir";
-            BtnSalir.Size = new System.Drawing.Size(193, 35);
-            BtnSalir.TabIndex = 5;
-            BtnSalir.Text = "Salir";
-            BtnSalir.UseVisualStyleBackColor = false;
-            BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
-            // 
             // FmrMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1028,7 +1028,11 @@
             this.Name = "FmrMenuPrincipal";
             this.Text = "FmrMenuPrincipalcs";
             this.panelMenus.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.BtnMaximizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnSalirPrograma)).EndInit();
             this.panellogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelSubMenuPollo.ResumeLayout(false);
             this.SubMenuGalpon.ResumeLayout(false);
             this.SubMenuAlimento.ResumeLayout(false);
@@ -1037,10 +1041,6 @@
             this.PanelSubMenuPersonal.ResumeLayout(false);
             this.PanelSubMenuMedicamento.ResumeLayout(false);
             this.panelContenedor.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnSalirPrograma)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnMaximizar)).EndInit();
             this.ResumeLayout(false);
 
         }
