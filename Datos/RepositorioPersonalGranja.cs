@@ -14,11 +14,6 @@ namespace Datos
         PersonalGranja personalGranja;
         public RepositorioPersonalGranja(string RutaArchivo) : base(RutaArchivo) { }
 
-        public void Eliminar()
-        {
-            throw new NotImplementedException();
-        }
-
         public void Guardar(PersonalGranja personal)
         {
             FileStream archivo = new FileStream(RutaDeArchivo, FileMode.Append);
@@ -27,24 +22,54 @@ namespace Datos
             escribir.Close();
             archivo.Close();
         }
-
-        public void Modificar()
+        public void Modificar(PersonalGranja NuevoRegistro, PersonalGranja ViejoRegistro)
         {
-            throw new NotImplementedException();
+            personas = new List<PersonalGranja>();
+            personas = CargarLista();
+            FileStream Archivo = new FileStream(RutaDeArchivo, FileMode.Create);
+            Archivo.Close();
+            foreach (var individuo in personas)
+            {
+                if (!EncontrarPersona(individuo.IdPersonal, ViejoRegistro.IdPersonal))
+                {
+                    Guardar(individuo);
+                }
+                else
+                {
+                    Guardar(NuevoRegistro);
+                }
+            }
+        }
+        public void Eliminar(string identificacion)
+        {
+            personas = new List<PersonalGranja>();
+            personas = CargarLista();
+            FileStream Archivo = new FileStream(RutaDeArchivo, FileMode.Create);
+            Archivo.Close();
+            foreach (var persona in personas)
+            {
+                if (!EncontrarPersona(persona.IdPersonal, identificacion))
+                {
+                    Guardar(persona);
+                }
+            }
         }
         public PersonalGranja BuscarPersona (string ID) 
         {
             personas = CargarLista();
             foreach (var individuo in personas)
             {
-                if (individuo.IdPersonal == ID)
+                if (EncontrarPersona(individuo.IdPersonal,ID))
                 {
                     return individuo;
                 }
             }
             return null;
         }
-
+        private bool EncontrarPersona(string IdRegistrada, string IdBuscada)
+        {
+            return IdRegistrada == IdBuscada;
+        }
         public List<PersonalGranja> CargarLista()
         {
             personas.Clear();
@@ -75,8 +100,14 @@ namespace Datos
             personalGranja.FechaNacimiento = Convert.ToDateTime(MatrizPersona[7]);
             return personalGranja;
         }
-        
-    
+        public List<PersonalGranja> FiltrarPorRol(string rol)
+        {
+            return CargarLista().Where(p => p.Rol.Equals(rol)).ToList();
+        }
+        public List<PersonalGranja> FiltrarPorFechaNacimiento(DateTime fechaNacimiento)
+        {
+            return CargarLista().Where(p =>p.FechaNacimiento.Equals(fechaNacimiento)).ToList();
+        }
     
     }
 }
