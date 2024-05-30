@@ -56,8 +56,8 @@ namespace Pruebas
 
             //----------------------------------------------------------------------------------------------------------------------------------------
             Empresa empresa = new Empresa();
-            List<PersonalGranja> ListaPersonas = new List<PersonalGranja>();
-            PersonalGranja persona = new PersonalGranja(
+            List<Persona> ListaPersonas = new List<Persona>();
+            Persona persona = new PersonalGranja(
                 "12345",
                 "Juan",
                 "Perez",
@@ -66,7 +66,7 @@ namespace Pruebas
                 "Oficios Varios",
                 "Juan@gmail.com",
                 new DateTime(2000, 05, 22));
-            PersonalGranja persona2 = new PersonalGranja(
+            Persona persona2 = new PersonalGranja(
                 "67890",
                 "Camila",
                 "Gutierres",
@@ -75,7 +75,7 @@ namespace Pruebas
                 "Secretaria",
                 "Cami@gmail.com",
                 new DateTime(1995, 02, 12));
-            PersonalGranja persona3 = new PersonalGranja(
+            Persona persona3 = new PersonalGranja(
                 "54321",
                 "María",
                 "Gnecco",

@@ -9,22 +9,19 @@ namespace Entidad
 {
     public class Galpon
     {
-        public Galpon() { }
-        public Galpon(string idGalpon, string estado, DateTime fechaCreacion, int capacidadMaxima, Alimento codigoAlimento)
+        //LISTO
+        public Galpon() 
         {
-            IdGalpon = idGalpon;
-            Estado = estado;
-            FechaCreacion = fechaCreacion;
-            CapacidadMaxima = capacidadMaxima;
-            CodigoAlimento = codigoAlimento;
+            CodigoGalpon = string.Empty;
+            AreaGalpon = string.Empty;
+            EstadoGalpon = string.Empty;
         }
-        public override string ToString() => $"{IdGalpon};{Estado};{FechaCreacion};{CapacidadMaxima};{CodigoAlimento};";
+        public override string ToString() => $"{CodigoGalpon};{AreaGalpon};{EstadoGalpon}";
 
-        public string IdGalpon { get; set; } = string.Empty;
-        public string Estado { get; set; } = string.Empty;
-        public DateTime FechaCreacion { get; set; } = DateTime.Today;
-        public int CapacidadMaxima { get; set; } = 0;
-        public Alimento CodigoAlimento { get; set; } 
-        public List<Pollo> PolloId { get; set; }
+        public string IdGalpon { get; set; }
+        public string CodigoGalpon { get; set; }
+        public string AreaGalpon { get; set; }
+        public string EstadoGalpon { get; set; }       
+
     }
 }

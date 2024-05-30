@@ -17,11 +17,11 @@ namespace Logica
         {
             repositorioPersonal = new RepositorioPersonalGranja(RutaArchivo);
         }
-        public List<PersonalGranja> RefrescarLista()
+        public List<Persona> RefrescarLista()
         {
             return repositorioPersonal.CargarLista();
         }
-        public string Guardar (PersonalGranja persona)
+        public string Guardar (Persona persona)
         {
             try
             {
@@ -64,7 +64,7 @@ namespace Logica
         {
             try
             {
-                PersonalGranja persona = repositorioPersonal.BuscarPersona(identificacion);
+                Persona persona = repositorioPersonal.BuscarPersona(identificacion);
                 if (persona != null)
                 {
                     return new PersonalGranjaRespuesta(persona);
@@ -83,7 +83,7 @@ namespace Logica
         {
             try
             {
-                List<PersonalGranja> personas = repositorioPersonal.CargarLista();
+                List<Persona> personas = repositorioPersonal.CargarLista();
                 if (personas != null)
                 {
                     return new ConsultaPersonalGranjaRespuesta(personas);
@@ -102,7 +102,7 @@ namespace Logica
         {
             try
             {
-                List<PersonalGranja> personas = repositorioPersonal.FiltrarPorRol(rol);
+                List<Persona> personas = repositorioPersonal.FiltrarPorRol(rol);
                 if (personas != null)
                 {
                     return new ConsultaPersonalGranjaRespuesta(personas);
@@ -119,7 +119,7 @@ namespace Logica
         }
         public ConsultaPersonalGranjaRespuesta ConsultaPorFechaNacimiento(DateTime fechaNacimiento)
         {
-            List<PersonalGranja> personas = repositorioPersonal.FiltrarPorFechaNacimiento(fechaNacimiento);
+            List<Persona> personas = repositorioPersonal.FiltrarPorFechaNacimiento(fechaNacimiento);
             try
             {
                 if (personas != null)
@@ -139,13 +139,13 @@ namespace Logica
     }
     public class PersonalGranjaRespuesta
     {
-        public PersonalGranja Persona { get; set; }
+        public Persona Persona { get; set; }
         public string Mensaje { get; set; }
         public bool Encontrado { get; set; }
 
-        public PersonalGranjaRespuesta(PersonalGranja persona)
+        public PersonalGranjaRespuesta(Persona persona)
         {
-            Persona = new PersonalGranja();
+            Persona = new Persona();
             Persona = persona;
             Encontrado = true;
         }
@@ -157,13 +157,13 @@ namespace Logica
     }
     public class ConsultaPersonalGranjaRespuesta
     {
-        public List<PersonalGranja> Personas { get; set; }
+        public List<Persona> Personas { get; set; }
         public string Mensajes { get; set; }
         public bool Encontrado { get; set; }
 
-        public ConsultaPersonalGranjaRespuesta(List<PersonalGranja> personas)
+        public ConsultaPersonalGranjaRespuesta(List<Persona> personas)
         {
-            Personas = new List<PersonalGranja>();
+            Personas = new List<Persona>();
             Personas = personas;
             Encontrado = true;
         }

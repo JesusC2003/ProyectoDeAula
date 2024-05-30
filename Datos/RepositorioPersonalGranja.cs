@@ -10,11 +10,11 @@ namespace Datos
 {
     public class RepositorioPersonalGranja : Archivo
     {
-        private List<PersonalGranja> personas;
-        PersonalGranja personalGranja;
+        private List<Persona> personas;
+        Persona personalGranja;
         public RepositorioPersonalGranja(string RutaArchivo) : base(RutaArchivo) { }
 
-        public void Guardar(PersonalGranja personal)
+        public void Guardar(Persona personal)
         {
             FileStream archivo = new FileStream(RutaDeArchivo, FileMode.Append);
             StreamWriter escribir = new StreamWriter(archivo);
@@ -22,9 +22,9 @@ namespace Datos
             escribir.Close();
             archivo.Close();
         }
-        public void Modificar(PersonalGranja NuevoRegistro, PersonalGranja ViejoRegistro)
+        public void Modificar(Persona NuevoRegistro, Persona ViejoRegistro)
         {
-            personas = new List<PersonalGranja>();
+            personas = new List<Persona>();
             personas = CargarLista();
             FileStream Archivo = new FileStream(RutaDeArchivo, FileMode.Create);
             Archivo.Close();
@@ -42,7 +42,7 @@ namespace Datos
         }
         public void Eliminar(string identificacion)
         {
-            personas = new List<PersonalGranja>();
+            personas = new List<Persona>();
             personas = CargarLista();
             FileStream Archivo = new FileStream(RutaDeArchivo, FileMode.Create);
             Archivo.Close();
@@ -54,7 +54,7 @@ namespace Datos
                 }
             }
         }
-        public PersonalGranja BuscarPersona (string ID) 
+        public Persona BuscarPersona (string ID) 
         {
             personas = CargarLista();
             foreach (var individuo in personas)
@@ -70,10 +70,10 @@ namespace Datos
         {
             return IdRegistrada == IdBuscada;
         }
-        public List<PersonalGranja> CargarLista()
+        public List<Persona> CargarLista()
         {
             personas.Clear();
-            personas = new List<PersonalGranja>();
+            personas = new List<Persona>();
             FileStream archivo = new FileStream(RutaDeArchivo, FileMode.Append);
             StreamReader leer = new StreamReader(archivo);
             string linea = leer.ReadLine();
@@ -86,9 +86,9 @@ namespace Datos
             archivo.Close ();
             return personas;
         }
-        private PersonalGranja MapeoPorLinea(string linea)
+        private Persona MapeoPorLinea(string linea)
         {
-            personalGranja = new PersonalGranja();
+            personalGranja = new Persona();
             string[] MatrizPersona= linea.Split(';');
             personalGranja.IdPersonal = MatrizPersona[0];
             personalGranja.Nombres = MatrizPersona[1];
@@ -100,11 +100,11 @@ namespace Datos
             personalGranja.FechaNacimiento = Convert.ToDateTime(MatrizPersona[7]);
             return personalGranja;
         }
-        public List<PersonalGranja> FiltrarPorRol(string rol)
+        public List<Persona> FiltrarPorRol(string rol)
         {
             return CargarLista().Where(p => p.Rol.Equals(rol)).ToList();
         }
-        public List<PersonalGranja> FiltrarPorFechaNacimiento(DateTime fechaNacimiento)
+        public List<Persona> FiltrarPorFechaNacimiento(DateTime fechaNacimiento)
         {
             return CargarLista().Where(p =>p.FechaNacimiento.Equals(fechaNacimiento)).ToList();
         }
