@@ -18,8 +18,8 @@ namespace Presentacion
             InitializeComponent();
             HoraFecha.Enabled = true;
             OcultarSubMenu();
-           
         }
+
         FmrPersonalGranja granja=new FmrPersonalGranja();
 
         [DllImport("user32.dll", EntryPoint= "ReleaseCapture")]

@@ -8,7 +8,6 @@ C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Entidad\bin\
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Entidad\bin\Debug\Entidad.dll
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Entidad\bin\Debug\Entidad.pdb
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Entidad\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Entidad\bin\Debug\Oracle.ManagedDataAccess.dll
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Entidad\bin\Debug\System.Buffers.dll
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Entidad\bin\Debug\System.Diagnostics.DiagnosticSource.dll
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Entidad\bin\Debug\System.Formats.Asn1.dll

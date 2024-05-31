@@ -11,21 +11,12 @@ C:\Users\ASUS\Documents\UNIVERSIDAD POPULAR DEL CESAR\PROGRAMACIÓN III\Proyecto
 C:\Users\ASUS\Documents\UNIVERSIDAD POPULAR DEL CESAR\PROGRAMACIÓN III\ProyectoDeAula\Logica\obj\Debug\Logica.csproj.Up2Date
 C:\Users\ASUS\Documents\UNIVERSIDAD POPULAR DEL CESAR\PROGRAMACIÓN III\ProyectoDeAula\Logica\obj\Debug\Logica.dll
 C:\Users\ASUS\Documents\UNIVERSIDAD POPULAR DEL CESAR\PROGRAMACIÓN III\ProyectoDeAula\Logica\obj\Debug\Logica.pdb
-C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\obj\Debug\Logica.csproj.AssemblyReference.cache
-C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
-C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\obj\Debug\Logica.dll
-C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\obj\Debug\Logica.pdb
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\bin\Debug\Logica.dll.config
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\bin\Debug\Logica.dll
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\bin\Debug\Logica.pdb
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\bin\Debug\Datos.dll
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\bin\Debug\Entidad.dll
-C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\bin\Debug\Datos.pdb
-C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\bin\Debug\Datos.dll.config
-C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\bin\Debug\Entidad.pdb
-C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\obj\Debug\Logica.csproj.Up2Date
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\bin\Debug\Oracle.ManagedDataAccess.dll
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\bin\Debug\System.Buffers.dll
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\bin\Debug\System.Diagnostics.DiagnosticSource.dll
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\bin\Debug\System.Formats.Asn1.dll
@@ -36,6 +27,9 @@ C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\bin\D
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\bin\Debug\System.Text.Json.dll
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\bin\Debug\System.Threading.Tasks.Extensions.dll
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\bin\Debug\System.ValueTuple.dll
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\bin\Debug\Datos.pdb
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\bin\Debug\Datos.dll.config
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\bin\Debug\Entidad.pdb
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\bin\Debug\Entidad.dll.config
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\bin\Debug\System.Buffers.xml
@@ -48,3 +42,8 @@ C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\bin\D
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\bin\Debug\System.Text.Json.xml
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\bin\Debug\System.ValueTuple.xml
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\obj\Debug\Logica.csproj.AssemblyReference.cache
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\obj\Debug\Logica.csproj.Up2Date
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\obj\Debug\Logica.dll
+C:\Users\hewlett packard\OneDrive\Escritorio\Hensyss\ProyectoDeAula\Logica\obj\Debug\Logica.pdb

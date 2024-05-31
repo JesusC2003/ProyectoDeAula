@@ -46,11 +46,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.BtnSalirPollo = new System.Windows.Forms.PictureBox();
             this.dtpFechaIngreso = new System.Windows.Forms.DateTimePicker();
-            this.ClmID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ClmCodigoPollo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ClmRaza = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ClmEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ClmFechaIngreso = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgPollo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnBuscarPollo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnSalirPollo)).BeginInit();
@@ -181,8 +177,9 @@
             this.dtgPollo.AllowUserToDeleteRows = false;
             this.dtgPollo.AllowUserToResizeColumns = false;
             this.dtgPollo.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Navy;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DimGray;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
             this.dtgPollo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgPollo.BackgroundColor = System.Drawing.Color.DimGray;
@@ -199,14 +196,8 @@
             this.dtgPollo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dtgPollo.ColumnHeadersHeight = 24;
             this.dtgPollo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dtgPollo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ClmID,
-            this.ClmCodigoPollo,
-            this.ClmRaza,
-            this.ClmEstado,
-            this.ClmFechaIngreso});
             this.dtgPollo.EnableHeadersVisualStyles = false;
-            this.dtgPollo.Location = new System.Drawing.Point(59, 314);
+            this.dtgPollo.Location = new System.Drawing.Point(80, 314);
             this.dtgPollo.MultiSelect = false;
             this.dtgPollo.Name = "dtgPollo";
             this.dtgPollo.ReadOnly = true;
@@ -220,7 +211,7 @@
             this.dtgPollo.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dtgPollo.RowHeadersVisible = false;
             this.dtgPollo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgPollo.Size = new System.Drawing.Size(521, 234);
+            this.dtgPollo.Size = new System.Drawing.Size(512, 234);
             this.dtgPollo.TabIndex = 108;
             // 
             // BtnBuscarPollo
@@ -266,49 +257,15 @@
             this.dtpFechaIngreso.Size = new System.Drawing.Size(193, 22);
             this.dtpFechaIngreso.TabIndex = 72;
             // 
-            // ClmID
+            // button1
             // 
-            this.ClmID.FillWeight = 96.8818F;
-            this.ClmID.HeaderText = "ID";
-            this.ClmID.MinimumWidth = 6;
-            this.ClmID.Name = "ClmID";
-            this.ClmID.ReadOnly = true;
-            this.ClmID.Width = 50;
-            // 
-            // ClmCodigoPollo
-            // 
-            this.ClmCodigoPollo.FillWeight = 96.8818F;
-            this.ClmCodigoPollo.HeaderText = "Codigo Pollo";
-            this.ClmCodigoPollo.MinimumWidth = 6;
-            this.ClmCodigoPollo.Name = "ClmCodigoPollo";
-            this.ClmCodigoPollo.ReadOnly = true;
-            this.ClmCodigoPollo.Width = 120;
-            // 
-            // ClmRaza
-            // 
-            this.ClmRaza.FillWeight = 96.8818F;
-            this.ClmRaza.HeaderText = "Raza Pollo";
-            this.ClmRaza.MinimumWidth = 6;
-            this.ClmRaza.Name = "ClmRaza";
-            this.ClmRaza.ReadOnly = true;
-            this.ClmRaza.Width = 125;
-            // 
-            // ClmEstado
-            // 
-            this.ClmEstado.FillWeight = 96.8818F;
-            this.ClmEstado.HeaderText = "Estado Salud";
-            this.ClmEstado.MinimumWidth = 6;
-            this.ClmEstado.Name = "ClmEstado";
-            this.ClmEstado.ReadOnly = true;
-            this.ClmEstado.Width = 125;
-            // 
-            // ClmFechaIngreso
-            // 
-            this.ClmFechaIngreso.FillWeight = 96.8818F;
-            this.ClmFechaIngreso.HeaderText = "Fecha Ingreso";
-            this.ClmFechaIngreso.MinimumWidth = 6;
-            this.ClmFechaIngreso.Name = "ClmFechaIngreso";
-            this.ClmFechaIngreso.ReadOnly = true;
+            this.button1.Location = new System.Drawing.Point(524, 192);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(107, 50);
+            this.button1.TabIndex = 116;
+            this.button1.Text = "Cargar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FmrPollo
             // 
@@ -316,6 +273,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(678, 560);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnSalirPollo);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.BtnBuscarPollo);
@@ -358,10 +316,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox BtnSalirPollo;
         private System.Windows.Forms.DateTimePicker dtpFechaIngreso;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ClmID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ClmCodigoPollo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ClmRaza;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ClmEstado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ClmFechaIngreso;
+        private System.Windows.Forms.Button button1;
     }
 }
