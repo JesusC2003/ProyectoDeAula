@@ -31,174 +31,35 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.BtnEliminarGalpon = new System.Windows.Forms.Button();
-            this.BtnModificarGalpon = new System.Windows.Forms.Button();
-            this.BtnGuardarGalpon = new System.Windows.Forms.Button();
-            this.CboEstadoGalpon = new System.Windows.Forms.ComboBox();
-            this.txtIdGalpon = new System.Windows.Forms.TextBox();
-            this.dtpFechaCreacion = new System.Windows.Forms.DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtCapacidadMaxima = new System.Windows.Forms.TextBox();
-            this.BtnBuscarGalpon = new System.Windows.Forms.PictureBox();
-            this.dtgGalpon = new System.Windows.Forms.DataGridView();
+            this.dgvGalpon = new System.Windows.Forms.DataGridView();
             this.ClmIDGalpon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClmEstadoGalpon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClmfechaCreacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClmCapacidadGalpon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BtnSalirGalpon = new System.Windows.Forms.PictureBox();
-            this.label9 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnBuscarGalpon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgGalpon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnSalirGalpon)).BeginInit();
+            this.CboFiltradoG = new System.Windows.Forms.ComboBox();
+            this.BtnAgregarG = new System.Windows.Forms.Button();
+            this.BtnEliminarG = new System.Windows.Forms.Button();
+            this.BtnVerG = new System.Windows.Forms.Button();
+            this.BtnEditarG = new System.Windows.Forms.Button();
+            this.TxtBusquedaGalpon = new System.Windows.Forms.TextBox();
+            this.Controles = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGalpon)).BeginInit();
             this.SuspendLayout();
             // 
-            // BtnEliminarGalpon
+            // dgvGalpon
             // 
-            this.BtnEliminarGalpon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.BtnEliminarGalpon.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnEliminarGalpon.ForeColor = System.Drawing.Color.White;
-            this.BtnEliminarGalpon.Image = global::Presentacion.Properties.Resources.seo_social_web_network_internet_262_icon_icons_com_61518;
-            this.BtnEliminarGalpon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnEliminarGalpon.Location = new System.Drawing.Point(485, 201);
-            this.BtnEliminarGalpon.Name = "BtnEliminarGalpon";
-            this.BtnEliminarGalpon.Size = new System.Drawing.Size(136, 38);
-            this.BtnEliminarGalpon.TabIndex = 97;
-            this.BtnEliminarGalpon.Text = "Eliminar";
-            this.BtnEliminarGalpon.UseVisualStyleBackColor = false;
-            // 
-            // BtnModificarGalpon
-            // 
-            this.BtnModificarGalpon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.BtnModificarGalpon.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnModificarGalpon.ForeColor = System.Drawing.Color.White;
-            this.BtnModificarGalpon.Image = global::Presentacion.Properties.Resources.edit_modify_icon_149489__1_;
-            this.BtnModificarGalpon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnModificarGalpon.Location = new System.Drawing.Point(251, 201);
-            this.BtnModificarGalpon.Name = "BtnModificarGalpon";
-            this.BtnModificarGalpon.Size = new System.Drawing.Size(146, 38);
-            this.BtnModificarGalpon.TabIndex = 96;
-            this.BtnModificarGalpon.Text = "Modificar";
-            this.BtnModificarGalpon.UseVisualStyleBackColor = false;
-            // 
-            // BtnGuardarGalpon
-            // 
-            this.BtnGuardarGalpon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.BtnGuardarGalpon.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnGuardarGalpon.ForeColor = System.Drawing.Color.White;
-            this.BtnGuardarGalpon.Image = global::Presentacion.Properties.Resources.disk1;
-            this.BtnGuardarGalpon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnGuardarGalpon.Location = new System.Drawing.Point(24, 201);
-            this.BtnGuardarGalpon.Name = "BtnGuardarGalpon";
-            this.BtnGuardarGalpon.Size = new System.Drawing.Size(132, 38);
-            this.BtnGuardarGalpon.TabIndex = 95;
-            this.BtnGuardarGalpon.Text = "Guardar";
-            this.BtnGuardarGalpon.UseVisualStyleBackColor = false;
-            // 
-            // CboEstadoGalpon
-            // 
-            this.CboEstadoGalpon.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CboEstadoGalpon.FormattingEnabled = true;
-            this.CboEstadoGalpon.Items.AddRange(new object[] {
-            "En Uso",
-            "Disponible",
-            "Mantenimiento"});
-            this.CboEstadoGalpon.Location = new System.Drawing.Point(302, 85);
-            this.CboEstadoGalpon.Name = "CboEstadoGalpon";
-            this.CboEstadoGalpon.Size = new System.Drawing.Size(193, 24);
-            this.CboEstadoGalpon.TabIndex = 94;
-            // 
-            // txtIdGalpon
-            // 
-            this.txtIdGalpon.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdGalpon.Location = new System.Drawing.Point(302, 45);
-            this.txtIdGalpon.Name = "txtIdGalpon";
-            this.txtIdGalpon.Size = new System.Drawing.Size(193, 21);
-            this.txtIdGalpon.TabIndex = 92;
-            // 
-            // dtpFechaCreacion
-            // 
-            this.dtpFechaCreacion.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFechaCreacion.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpFechaCreacion.Location = new System.Drawing.Point(302, 123);
-            this.dtpFechaCreacion.Name = "dtpFechaCreacion";
-            this.dtpFechaCreacion.Size = new System.Drawing.Size(193, 22);
-            this.dtpFechaCreacion.TabIndex = 89;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(157, 158);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(139, 19);
-            this.label5.TabIndex = 87;
-            this.label5.Text = "Capacidad Max";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(162, 123);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(134, 19);
-            this.label3.TabIndex = 85;
-            this.label3.Text = "Fecha Creacion";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(195, 85);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 19);
-            this.label2.TabIndex = 84;
-            this.label2.Text = "Estado";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(182, 47);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 19);
-            this.label1.TabIndex = 83;
-            this.label1.Text = "ID Galpon";
-            // 
-            // txtCapacidadMaxima
-            // 
-            this.txtCapacidadMaxima.Location = new System.Drawing.Point(302, 160);
-            this.txtCapacidadMaxima.Name = "txtCapacidadMaxima";
-            this.txtCapacidadMaxima.Size = new System.Drawing.Size(193, 20);
-            this.txtCapacidadMaxima.TabIndex = 100;
-            // 
-            // BtnBuscarGalpon
-            // 
-            this.BtnBuscarGalpon.BackColor = System.Drawing.Color.DimGray;
-            this.BtnBuscarGalpon.Image = global::Presentacion.Properties.Resources.busqueda;
-            this.BtnBuscarGalpon.Location = new System.Drawing.Point(492, 45);
-            this.BtnBuscarGalpon.Name = "BtnBuscarGalpon";
-            this.BtnBuscarGalpon.Size = new System.Drawing.Size(27, 21);
-            this.BtnBuscarGalpon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.BtnBuscarGalpon.TabIndex = 108;
-            this.BtnBuscarGalpon.TabStop = false;
-            // 
-            // dtgGalpon
-            // 
-            this.dtgGalpon.AllowUserToAddRows = false;
-            this.dtgGalpon.AllowUserToDeleteRows = false;
-            this.dtgGalpon.AllowUserToResizeColumns = false;
-            this.dtgGalpon.AllowUserToResizeRows = false;
+            this.dgvGalpon.AllowUserToAddRows = false;
+            this.dgvGalpon.AllowUserToDeleteRows = false;
+            this.dgvGalpon.AllowUserToResizeColumns = false;
+            this.dgvGalpon.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Navy;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            this.dtgGalpon.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgGalpon.BackgroundColor = System.Drawing.Color.DimGray;
-            this.dtgGalpon.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtgGalpon.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dtgGalpon.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgvGalpon.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvGalpon.BackgroundColor = System.Drawing.Color.DimGray;
+            this.dgvGalpon.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvGalpon.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvGalpon.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -206,19 +67,19 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgGalpon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgGalpon.ColumnHeadersHeight = 24;
-            this.dtgGalpon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dtgGalpon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvGalpon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvGalpon.ColumnHeadersHeight = 24;
+            this.dgvGalpon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvGalpon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ClmIDGalpon,
             this.ClmEstadoGalpon,
             this.ClmfechaCreacion,
             this.ClmCapacidadGalpon});
-            this.dtgGalpon.EnableHeadersVisualStyles = false;
-            this.dtgGalpon.Location = new System.Drawing.Point(12, 245);
-            this.dtgGalpon.MultiSelect = false;
-            this.dtgGalpon.Name = "dtgGalpon";
-            this.dtgGalpon.ReadOnly = true;
+            this.dgvGalpon.EnableHeadersVisualStyles = false;
+            this.dgvGalpon.Location = new System.Drawing.Point(15, 94);
+            this.dgvGalpon.MultiSelect = false;
+            this.dgvGalpon.Name = "dgvGalpon";
+            this.dgvGalpon.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -226,11 +87,13 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Silver;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgGalpon.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dtgGalpon.RowHeadersVisible = false;
-            this.dtgGalpon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgGalpon.Size = new System.Drawing.Size(652, 303);
-            this.dtgGalpon.TabIndex = 110;
+            this.dgvGalpon.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvGalpon.RowHeadersVisible = false;
+            this.dgvGalpon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvGalpon.Size = new System.Drawing.Size(812, 485);
+            this.dgvGalpon.TabIndex = 110;
+            this.dgvGalpon.Enter += new System.EventHandler(this.dgvGalpon_Enter);
+            this.dgvGalpon.Leave += new System.EventHandler(this.dgvGalpon_Leave);
             // 
             // ClmIDGalpon
             // 
@@ -267,80 +130,132 @@
             this.ClmCapacidadGalpon.Name = "ClmCapacidadGalpon";
             this.ClmCapacidadGalpon.ReadOnly = true;
             // 
-            // BtnSalirGalpon
+            // CboFiltradoG
             // 
-            this.BtnSalirGalpon.BackColor = System.Drawing.Color.Red;
-            this.BtnSalirGalpon.Image = global::Presentacion.Properties.Resources._4115235_exit_logout_sign_out_114030;
-            this.BtnSalirGalpon.Location = new System.Drawing.Point(653, 0);
-            this.BtnSalirGalpon.Name = "BtnSalirGalpon";
-            this.BtnSalirGalpon.Size = new System.Drawing.Size(24, 29);
-            this.BtnSalirGalpon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BtnSalirGalpon.TabIndex = 121;
-            this.BtnSalirGalpon.TabStop = false;
+            this.CboFiltradoG.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CboFiltradoG.FormattingEnabled = true;
+            this.CboFiltradoG.Location = new System.Drawing.Point(689, 38);
+            this.CboFiltradoG.Name = "CboFiltradoG";
+            this.CboFiltradoG.Size = new System.Drawing.Size(138, 25);
+            this.CboFiltradoG.TabIndex = 122;
             // 
-            // label9
+            // BtnAgregarG
             // 
-            this.label9.BackColor = System.Drawing.Color.DimGray;
-            this.label9.Font = new System.Drawing.Font("Pristina", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(1, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(677, 29);
-            this.label9.TabIndex = 120;
-            this.label9.Text = "Información Galpon";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BtnAgregarG.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnAgregarG.FlatAppearance.BorderSize = 0;
+            this.BtnAgregarG.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.BtnAgregarG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAgregarG.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAgregarG.Image = global::Presentacion.Properties.Resources.icons8_añadir_32;
+            this.BtnAgregarG.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAgregarG.Location = new System.Drawing.Point(15, 65);
+            this.BtnAgregarG.Name = "BtnAgregarG";
+            this.BtnAgregarG.Size = new System.Drawing.Size(85, 28);
+            this.BtnAgregarG.TabIndex = 121;
+            this.BtnAgregarG.Text = "Añadir";
+            this.BtnAgregarG.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnAgregarG.UseVisualStyleBackColor = true;
+            this.BtnAgregarG.Click += new System.EventHandler(this.BtnAgregarG_Click);
+            // 
+            // BtnEliminarG
+            // 
+            this.BtnEliminarG.BackgroundImage = global::Presentacion.Properties.Resources.icons8_eliminar_32__1_;
+            this.BtnEliminarG.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnEliminarG.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnEliminarG.FlatAppearance.BorderSize = 0;
+            this.BtnEliminarG.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.BtnEliminarG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEliminarG.Location = new System.Drawing.Point(798, 68);
+            this.BtnEliminarG.Name = "BtnEliminarG";
+            this.BtnEliminarG.Size = new System.Drawing.Size(29, 25);
+            this.BtnEliminarG.TabIndex = 120;
+            this.BtnEliminarG.UseVisualStyleBackColor = true;
+            // 
+            // BtnVerG
+            // 
+            this.BtnVerG.BackgroundImage = global::Presentacion.Properties.Resources.icons8_ver;
+            this.BtnVerG.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnVerG.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnVerG.FlatAppearance.BorderSize = 0;
+            this.BtnVerG.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.BtnVerG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnVerG.Location = new System.Drawing.Point(768, 68);
+            this.BtnVerG.Name = "BtnVerG";
+            this.BtnVerG.Size = new System.Drawing.Size(29, 25);
+            this.BtnVerG.TabIndex = 119;
+            this.BtnVerG.UseVisualStyleBackColor = true;
+            // 
+            // BtnEditarG
+            // 
+            this.BtnEditarG.BackgroundImage = global::Presentacion.Properties.Resources.documentediting_editdocuments_text_documentedi_2820;
+            this.BtnEditarG.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnEditarG.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnEditarG.FlatAppearance.BorderSize = 0;
+            this.BtnEditarG.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.BtnEditarG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEditarG.Location = new System.Drawing.Point(738, 68);
+            this.BtnEditarG.Name = "BtnEditarG";
+            this.BtnEditarG.Size = new System.Drawing.Size(29, 25);
+            this.BtnEditarG.TabIndex = 118;
+            this.BtnEditarG.UseVisualStyleBackColor = true;
+            // 
+            // TxtBusquedaGalpon
+            // 
+            this.TxtBusquedaGalpon.BackColor = System.Drawing.Color.Gray;
+            this.TxtBusquedaGalpon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxtBusquedaGalpon.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBusquedaGalpon.ForeColor = System.Drawing.Color.White;
+            this.TxtBusquedaGalpon.Location = new System.Drawing.Point(106, 39);
+            this.TxtBusquedaGalpon.Name = "TxtBusquedaGalpon";
+            this.TxtBusquedaGalpon.Size = new System.Drawing.Size(579, 23);
+            this.TxtBusquedaGalpon.TabIndex = 117;
+            this.TxtBusquedaGalpon.Text = "Busqueda";
+            // 
+            // Controles
+            // 
+            this.Controles.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Controles.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Controles.Location = new System.Drawing.Point(16, 39);
+            this.Controles.Name = "Controles";
+            this.Controles.Size = new System.Drawing.Size(100, 23);
+            this.Controles.TabIndex = 116;
+            this.Controles.Text = "Controles";
             // 
             // FmrGalpon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(678, 560);
-            this.Controls.Add(this.BtnSalirGalpon);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.dtgGalpon);
-            this.Controls.Add(this.BtnBuscarGalpon);
-            this.Controls.Add(this.txtCapacidadMaxima);
-            this.Controls.Add(this.BtnEliminarGalpon);
-            this.Controls.Add(this.BtnModificarGalpon);
-            this.Controls.Add(this.BtnGuardarGalpon);
-            this.Controls.Add(this.CboEstadoGalpon);
-            this.Controls.Add(this.txtIdGalpon);
-            this.Controls.Add(this.dtpFechaCreacion);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(850, 591);
+            this.Controls.Add(this.CboFiltradoG);
+            this.Controls.Add(this.BtnAgregarG);
+            this.Controls.Add(this.BtnEliminarG);
+            this.Controls.Add(this.BtnVerG);
+            this.Controls.Add(this.BtnEditarG);
+            this.Controls.Add(this.TxtBusquedaGalpon);
+            this.Controls.Add(this.Controles);
+            this.Controls.Add(this.dgvGalpon);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FmrGalpon";
             this.Text = "FmrGalpon";
-            ((System.ComponentModel.ISupportInitialize)(this.BtnBuscarGalpon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgGalpon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnSalirGalpon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGalpon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button BtnEliminarGalpon;
-        private System.Windows.Forms.Button BtnModificarGalpon;
-        private System.Windows.Forms.Button BtnGuardarGalpon;
-        private System.Windows.Forms.ComboBox CboEstadoGalpon;
-        private System.Windows.Forms.TextBox txtIdGalpon;
-        private System.Windows.Forms.DateTimePicker dtpFechaCreacion;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtCapacidadMaxima;
-        private System.Windows.Forms.PictureBox BtnBuscarGalpon;
-        private System.Windows.Forms.DataGridView dtgGalpon;
+        private System.Windows.Forms.DataGridView dgvGalpon;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClmIDGalpon;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClmEstadoGalpon;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClmfechaCreacion;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClmCapacidadGalpon;
-        private System.Windows.Forms.PictureBox BtnSalirGalpon;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox CboFiltradoG;
+        private System.Windows.Forms.Button BtnAgregarG;
+        private System.Windows.Forms.Button BtnEliminarG;
+        private System.Windows.Forms.Button BtnVerG;
+        private System.Windows.Forms.Button BtnEditarG;
+        private System.Windows.Forms.TextBox TxtBusquedaGalpon;
+        private System.Windows.Forms.Label Controles;
     }
 }

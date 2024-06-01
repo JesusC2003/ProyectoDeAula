@@ -31,161 +31,33 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.CboEstadoPollo = new System.Windows.Forms.ComboBox();
-            this.txtCodigopollo = new System.Windows.Forms.TextBox();
-            this.CboRazapollo = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.BtnEliminarPollo = new System.Windows.Forms.Button();
-            this.BtnModificarPollo = new System.Windows.Forms.Button();
-            this.BtnGuardarPollo = new System.Windows.Forms.Button();
-            this.dtgPollo = new System.Windows.Forms.DataGridView();
-            this.BtnBuscarPollo = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.BtnSalirPollo = new System.Windows.Forms.PictureBox();
-            this.dtpFechaIngreso = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgPollo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnBuscarPollo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnSalirPollo)).BeginInit();
+            this.dgvPollo = new System.Windows.Forms.DataGridView();
+            this.Controles = new System.Windows.Forms.Label();
+            this.TxtBusquedapollo = new System.Windows.Forms.TextBox();
+            this.CboFiltradoP = new System.Windows.Forms.ComboBox();
+            this.BtnAgregarP = new System.Windows.Forms.Button();
+            this.BtnEliminarP = new System.Windows.Forms.Button();
+            this.BtnVerP = new System.Windows.Forms.Button();
+            this.BtnEditarP = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPollo)).BeginInit();
             this.SuspendLayout();
             // 
-            // CboEstadoPollo
+            // dgvPollo
             // 
-            this.CboEstadoPollo.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CboEstadoPollo.FormattingEnabled = true;
-            this.CboEstadoPollo.Items.AddRange(new object[] {
-            "Vivo",
-            "Muerto",
-            "Enfermo"});
-            this.CboEstadoPollo.Location = new System.Drawing.Point(262, 170);
-            this.CboEstadoPollo.Name = "CboEstadoPollo";
-            this.CboEstadoPollo.Size = new System.Drawing.Size(193, 24);
-            this.CboEstadoPollo.TabIndex = 77;
-            // 
-            // txtCodigopollo
-            // 
-            this.txtCodigopollo.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigopollo.Location = new System.Drawing.Point(262, 68);
-            this.txtCodigopollo.Name = "txtCodigopollo";
-            this.txtCodigopollo.Size = new System.Drawing.Size(193, 21);
-            this.txtCodigopollo.TabIndex = 75;
-            // 
-            // CboRazapollo
-            // 
-            this.CboRazapollo.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CboRazapollo.FormattingEnabled = true;
-            this.CboRazapollo.Items.AddRange(new object[] {
-            "Ross",
-            "Hubbard",
-            "Red Ranger",
-            "Cornish Cross",
-            "Broiler",
-            "Cobb 500"});
-            this.CboRazapollo.Location = new System.Drawing.Point(262, 121);
-            this.CboRazapollo.Name = "CboRazapollo";
-            this.CboRazapollo.Size = new System.Drawing.Size(193, 24);
-            this.CboRazapollo.TabIndex = 74;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(138, 126);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 19);
-            this.label5.TabIndex = 70;
-            this.label5.Text = "RazaPollo";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(125, 222);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(114, 19);
-            this.label3.TabIndex = 68;
-            this.label3.Text = "FechaIngreso";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(155, 175);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 19);
-            this.label2.TabIndex = 67;
-            this.label2.Text = "Estado";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(147, 67);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 19);
-            this.label1.TabIndex = 66;
-            this.label1.Text = "Codigo";
-            // 
-            // BtnEliminarPollo
-            // 
-            this.BtnEliminarPollo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.BtnEliminarPollo.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnEliminarPollo.ForeColor = System.Drawing.Color.White;
-            this.BtnEliminarPollo.Image = global::Presentacion.Properties.Resources.seo_social_web_network_internet_262_icon_icons_com_61518;
-            this.BtnEliminarPollo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnEliminarPollo.Location = new System.Drawing.Point(480, 279);
-            this.BtnEliminarPollo.Name = "BtnEliminarPollo";
-            this.BtnEliminarPollo.Size = new System.Drawing.Size(136, 38);
-            this.BtnEliminarPollo.TabIndex = 80;
-            this.BtnEliminarPollo.Text = "Eliminar";
-            this.BtnEliminarPollo.UseVisualStyleBackColor = false;
-            // 
-            // BtnModificarPollo
-            // 
-            this.BtnModificarPollo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.BtnModificarPollo.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnModificarPollo.ForeColor = System.Drawing.Color.White;
-            this.BtnModificarPollo.Image = global::Presentacion.Properties.Resources.edit_modify_icon_149489__1_;
-            this.BtnModificarPollo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnModificarPollo.Location = new System.Drawing.Point(239, 279);
-            this.BtnModificarPollo.Name = "BtnModificarPollo";
-            this.BtnModificarPollo.Size = new System.Drawing.Size(146, 38);
-            this.BtnModificarPollo.TabIndex = 79;
-            this.BtnModificarPollo.Text = "Modificar";
-            this.BtnModificarPollo.UseVisualStyleBackColor = false;
-            // 
-            // BtnGuardarPollo
-            // 
-            this.BtnGuardarPollo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.BtnGuardarPollo.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnGuardarPollo.ForeColor = System.Drawing.Color.White;
-            this.BtnGuardarPollo.Image = global::Presentacion.Properties.Resources.disk1;
-            this.BtnGuardarPollo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnGuardarPollo.Location = new System.Drawing.Point(26, 279);
-            this.BtnGuardarPollo.Name = "BtnGuardarPollo";
-            this.BtnGuardarPollo.Size = new System.Drawing.Size(132, 38);
-            this.BtnGuardarPollo.TabIndex = 78;
-            this.BtnGuardarPollo.Text = "Guardar";
-            this.BtnGuardarPollo.UseVisualStyleBackColor = false;
-            // 
-            // dtgPollo
-            // 
-            this.dtgPollo.AllowUserToAddRows = false;
-            this.dtgPollo.AllowUserToDeleteRows = false;
-            this.dtgPollo.AllowUserToResizeColumns = false;
-            this.dtgPollo.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.dgvPollo.AllowUserToAddRows = false;
+            this.dgvPollo.AllowUserToDeleteRows = false;
+            this.dgvPollo.AllowUserToResizeColumns = false;
+            this.dgvPollo.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Silver;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            this.dtgPollo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgPollo.BackgroundColor = System.Drawing.Color.DimGray;
-            this.dtgPollo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtgPollo.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dtgPollo.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvPollo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvPollo.BackgroundColor = System.Drawing.Color.DimGray;
+            this.dgvPollo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvPollo.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvPollo.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -193,14 +65,14 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgPollo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgPollo.ColumnHeadersHeight = 24;
-            this.dtgPollo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dtgPollo.EnableHeadersVisualStyles = false;
-            this.dtgPollo.Location = new System.Drawing.Point(80, 314);
-            this.dtgPollo.MultiSelect = false;
-            this.dtgPollo.Name = "dtgPollo";
-            this.dtgPollo.ReadOnly = true;
+            this.dgvPollo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvPollo.ColumnHeadersHeight = 24;
+            this.dgvPollo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvPollo.EnableHeadersVisualStyles = false;
+            this.dgvPollo.Location = new System.Drawing.Point(15, 94);
+            this.dgvPollo.MultiSelect = false;
+            this.dgvPollo.Name = "dgvPollo";
+            this.dgvPollo.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -208,114 +80,137 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Silver;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgPollo.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dtgPollo.RowHeadersVisible = false;
-            this.dtgPollo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgPollo.Size = new System.Drawing.Size(512, 234);
-            this.dtgPollo.TabIndex = 108;
+            this.dgvPollo.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvPollo.RowHeadersVisible = false;
+            this.dgvPollo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvPollo.Size = new System.Drawing.Size(812, 485);
+            this.dgvPollo.TabIndex = 108;
             // 
-            // BtnBuscarPollo
+            // Controles
             // 
-            this.BtnBuscarPollo.BackColor = System.Drawing.Color.DimGray;
-            this.BtnBuscarPollo.Image = global::Presentacion.Properties.Resources.busqueda;
-            this.BtnBuscarPollo.Location = new System.Drawing.Point(452, 68);
-            this.BtnBuscarPollo.Name = "BtnBuscarPollo";
-            this.BtnBuscarPollo.Size = new System.Drawing.Size(27, 21);
-            this.BtnBuscarPollo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.BtnBuscarPollo.TabIndex = 112;
-            this.BtnBuscarPollo.TabStop = false;
+            this.Controles.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Controles.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Controles.Location = new System.Drawing.Point(19, 26);
+            this.Controles.Name = "Controles";
+            this.Controles.Size = new System.Drawing.Size(100, 23);
+            this.Controles.TabIndex = 109;
+            this.Controles.Text = "Controles";
             // 
-            // label7
+            // TxtBusquedapollo
             // 
-            this.label7.BackColor = System.Drawing.Color.DimGray;
-            this.label7.Font = new System.Drawing.Font("Pristina", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(0, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(677, 29);
-            this.label7.TabIndex = 114;
-            this.label7.Text = "Información Pollo";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TxtBusquedapollo.BackColor = System.Drawing.Color.Gray;
+            this.TxtBusquedapollo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxtBusquedapollo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBusquedapollo.ForeColor = System.Drawing.Color.White;
+            this.TxtBusquedapollo.Location = new System.Drawing.Point(109, 26);
+            this.TxtBusquedapollo.Name = "TxtBusquedapollo";
+            this.TxtBusquedapollo.Size = new System.Drawing.Size(579, 23);
+            this.TxtBusquedapollo.TabIndex = 110;
+            this.TxtBusquedapollo.Text = "Busqueda";
+            this.TxtBusquedapollo.Enter += new System.EventHandler(this.TxtBusquedapollo_Enter);
+            this.TxtBusquedapollo.Leave += new System.EventHandler(this.TxtBusquedapollo_Leave);
             // 
-            // BtnSalirPollo
+            // CboFiltradoP
             // 
-            this.BtnSalirPollo.BackColor = System.Drawing.Color.Red;
-            this.BtnSalirPollo.Image = global::Presentacion.Properties.Resources._4115235_exit_logout_sign_out_114030;
-            this.BtnSalirPollo.Location = new System.Drawing.Point(653, 0);
-            this.BtnSalirPollo.Name = "BtnSalirPollo";
-            this.BtnSalirPollo.Size = new System.Drawing.Size(24, 29);
-            this.BtnSalirPollo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BtnSalirPollo.TabIndex = 115;
-            this.BtnSalirPollo.TabStop = false;
+            this.CboFiltradoP.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CboFiltradoP.FormattingEnabled = true;
+            this.CboFiltradoP.Location = new System.Drawing.Point(692, 25);
+            this.CboFiltradoP.Name = "CboFiltradoP";
+            this.CboFiltradoP.Size = new System.Drawing.Size(135, 25);
+            this.CboFiltradoP.TabIndex = 115;
             // 
-            // dtpFechaIngreso
+            // BtnAgregarP
             // 
-            this.dtpFechaIngreso.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFechaIngreso.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpFechaIngreso.Location = new System.Drawing.Point(262, 220);
-            this.dtpFechaIngreso.Name = "dtpFechaIngreso";
-            this.dtpFechaIngreso.Size = new System.Drawing.Size(193, 22);
-            this.dtpFechaIngreso.TabIndex = 72;
+            this.BtnAgregarP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnAgregarP.FlatAppearance.BorderSize = 0;
+            this.BtnAgregarP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.BtnAgregarP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAgregarP.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAgregarP.Image = global::Presentacion.Properties.Resources.icons8_añadir_32;
+            this.BtnAgregarP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAgregarP.Location = new System.Drawing.Point(12, 65);
+            this.BtnAgregarP.Name = "BtnAgregarP";
+            this.BtnAgregarP.Size = new System.Drawing.Size(88, 28);
+            this.BtnAgregarP.TabIndex = 114;
+            this.BtnAgregarP.Text = "Añadir";
+            this.BtnAgregarP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnAgregarP.UseVisualStyleBackColor = true;
+            this.BtnAgregarP.Click += new System.EventHandler(this.BtnAgregarP_Click);
             // 
-            // button1
+            // BtnEliminarP
             // 
-            this.button1.Location = new System.Drawing.Point(524, 192);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(107, 50);
-            this.button1.TabIndex = 116;
-            this.button1.Text = "Cargar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BtnEliminarP.BackgroundImage = global::Presentacion.Properties.Resources.icons8_eliminar_32__1_;
+            this.BtnEliminarP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnEliminarP.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnEliminarP.FlatAppearance.BorderSize = 0;
+            this.BtnEliminarP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.BtnEliminarP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEliminarP.Location = new System.Drawing.Point(801, 68);
+            this.BtnEliminarP.Name = "BtnEliminarP";
+            this.BtnEliminarP.Size = new System.Drawing.Size(29, 25);
+            this.BtnEliminarP.TabIndex = 113;
+            this.BtnEliminarP.UseVisualStyleBackColor = true;
+            // 
+            // BtnVerP
+            // 
+            this.BtnVerP.BackgroundImage = global::Presentacion.Properties.Resources.icons8_ver;
+            this.BtnVerP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnVerP.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnVerP.FlatAppearance.BorderSize = 0;
+            this.BtnVerP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.BtnVerP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnVerP.Location = new System.Drawing.Point(771, 68);
+            this.BtnVerP.Name = "BtnVerP";
+            this.BtnVerP.Size = new System.Drawing.Size(29, 25);
+            this.BtnVerP.TabIndex = 112;
+            this.BtnVerP.UseVisualStyleBackColor = true;
+            // 
+            // BtnEditarP
+            // 
+            this.BtnEditarP.BackgroundImage = global::Presentacion.Properties.Resources.documentediting_editdocuments_text_documentedi_2820;
+            this.BtnEditarP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnEditarP.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnEditarP.FlatAppearance.BorderSize = 0;
+            this.BtnEditarP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.BtnEditarP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEditarP.Location = new System.Drawing.Point(741, 68);
+            this.BtnEditarP.Name = "BtnEditarP";
+            this.BtnEditarP.Size = new System.Drawing.Size(29, 25);
+            this.BtnEditarP.TabIndex = 111;
+            this.BtnEditarP.UseVisualStyleBackColor = true;
             // 
             // FmrPollo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(678, 560);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.BtnSalirPollo);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.BtnBuscarPollo);
-            this.Controls.Add(this.dtgPollo);
-            this.Controls.Add(this.BtnEliminarPollo);
-            this.Controls.Add(this.BtnModificarPollo);
-            this.Controls.Add(this.BtnGuardarPollo);
-            this.Controls.Add(this.CboEstadoPollo);
-            this.Controls.Add(this.txtCodigopollo);
-            this.Controls.Add(this.CboRazapollo);
-            this.Controls.Add(this.dtpFechaIngreso);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(850, 591);
+            this.Controls.Add(this.CboFiltradoP);
+            this.Controls.Add(this.BtnAgregarP);
+            this.Controls.Add(this.BtnEliminarP);
+            this.Controls.Add(this.BtnVerP);
+            this.Controls.Add(this.BtnEditarP);
+            this.Controls.Add(this.TxtBusquedapollo);
+            this.Controls.Add(this.Controles);
+            this.Controls.Add(this.dgvPollo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FmrPollo";
             this.Text = "FmrPollo";
-            ((System.ComponentModel.ISupportInitialize)(this.dtgPollo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnBuscarPollo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnSalirPollo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPollo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button BtnEliminarPollo;
-        private System.Windows.Forms.Button BtnModificarPollo;
-        private System.Windows.Forms.Button BtnGuardarPollo;
-        private System.Windows.Forms.ComboBox CboEstadoPollo;
-        private System.Windows.Forms.TextBox txtCodigopollo;
-        private System.Windows.Forms.ComboBox CboRazapollo;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dtgPollo;
-        private System.Windows.Forms.PictureBox BtnBuscarPollo;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox BtnSalirPollo;
-        private System.Windows.Forms.DateTimePicker dtpFechaIngreso;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dgvPollo;
+        private System.Windows.Forms.Label Controles;
+        private System.Windows.Forms.TextBox TxtBusquedapollo;
+        private System.Windows.Forms.Button BtnEditarP;
+        private System.Windows.Forms.Button BtnVerP;
+        private System.Windows.Forms.Button BtnEliminarP;
+        private System.Windows.Forms.Button BtnAgregarP;
+        private System.Windows.Forms.ComboBox CboFiltradoP;
     }
 }

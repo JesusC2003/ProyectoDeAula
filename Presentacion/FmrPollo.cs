@@ -3,6 +3,7 @@ using System;
 using System.Data;
 using Oracle.ManagedDataAccess.Client;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace Presentacion
 {
@@ -34,7 +35,7 @@ namespace Presentacion
                         OracleDataAdapter adapta = new OracleDataAdapter(cmd);
                         DataTable dt = new DataTable();
                         adapta.Fill(dt);
-                        dtgPollo.DataSource = dt;
+                        dgvPollo.DataSource = dt;
                         connection.Close();
                     }
                 }
@@ -43,8 +44,8 @@ namespace Presentacion
                     MessageBox.Show("Error: " + ex.Message);
                 }
         }
-        //private void button1_Click(object sender, EventArgs e)
-        //{
+        private void button1_Click(object sender, EventArgs e)
+        {
         //    using (OracleConnection connection = new OracleConnection(ConnectionString))
         //        try
         //        {
@@ -68,6 +69,30 @@ namespace Presentacion
         //        {
         //            MessageBox.Show("Error: " + ex.Message);
         //        }
-        //}
+        }
+
+        private void TxtBusquedapollo_Enter(object sender, EventArgs e)
+        {
+            if (TxtBusquedapollo.Text == "Busqueda")
+            {
+                TxtBusquedapollo.Text = "";
+                TxtBusquedapollo.ForeColor = Color.White;
+            }
+        }
+
+        private void TxtBusquedapollo_Leave(object sender, EventArgs e)
+        {
+            if (TxtBusquedapollo.Text == "")
+            {
+                TxtBusquedapollo.Text = "Busqueda";
+                TxtBusquedapollo.ForeColor = Color.White;
+            }
+        }
+
+        private void BtnAgregarP_Click(object sender, EventArgs e)
+        {
+            FmrAgregarPollo pollo   = new FmrAgregarPollo();
+            pollo.Show();
+        }
     }
 }

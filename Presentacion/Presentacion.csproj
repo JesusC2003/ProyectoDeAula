@@ -84,6 +84,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FmrAgregarAlimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmrAgregarAlimento.Designer.cs">
+      <DependentUpon>FmrAgregarAlimento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmrAgregarGalpon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmrAgregarGalpon.Designer.cs">
+      <DependentUpon>FmrAgregarGalpon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmrAgregarMedicamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmrAgregarMedicamento.Designer.cs">
+      <DependentUpon>FmrAgregarMedicamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmrAgregarPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmrAgregarPersonal.Designer.cs">
+      <DependentUpon>FmrAgregarPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmrAgregarPollo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmrAgregarPollo.Designer.cs">
+      <DependentUpon>FmrAgregarPollo.cs</DependentUpon>
+    </Compile>
     <Compile Include="FmrAlimento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,17 +150,11 @@
     <Compile Include="FmrMedicamento.Designer.cs">
       <DependentUpon>FmrMedicamento.cs</DependentUpon>
     </Compile>
-    <Compile Include="FmrMenuPrincipal.cs">
+    <Compile Include="FmrPersonal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FmrMenuPrincipal.Designer.cs">
-      <DependentUpon>FmrMenuPrincipal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FmrPersonalGranja.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FmrPersonalGranja.Designer.cs">
-      <DependentUpon>FmrPersonalGranja.cs</DependentUpon>
+    <Compile Include="FmrPersonal.Designer.cs">
+      <DependentUpon>FmrPersonal.cs</DependentUpon>
     </Compile>
     <Compile Include="FmrPollo.cs">
       <SubType>Form</SubType>
@@ -144,8 +168,29 @@
     <Compile Include="FmrIniciarSeccion.Designer.cs">
       <DependentUpon>FmrIniciarSeccion.cs</DependentUpon>
     </Compile>
+    <Compile Include="FmrPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmrPrincipal.Designer.cs">
+      <DependentUpon>FmrPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FmrAgregarAlimento.resx">
+      <DependentUpon>FmrAgregarAlimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmrAgregarGalpon.resx">
+      <DependentUpon>FmrAgregarGalpon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmrAgregarMedicamento.resx">
+      <DependentUpon>FmrAgregarMedicamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmrAgregarPersonal.resx">
+      <DependentUpon>FmrAgregarPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmrAgregarPollo.resx">
+      <DependentUpon>FmrAgregarPollo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FmrAlimento.resx">
       <DependentUpon>FmrAlimento.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,14 +212,14 @@
     <EmbeddedResource Include="FmrMedicamento.resx">
       <DependentUpon>FmrMedicamento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FmrMenuPrincipal.resx">
-      <DependentUpon>FmrMenuPrincipal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FmrPersonalGranja.resx">
-      <DependentUpon>FmrPersonalGranja.cs</DependentUpon>
+    <EmbeddedResource Include="FmrPersonal.resx">
+      <DependentUpon>FmrPersonal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FmrPollo.resx">
       <DependentUpon>FmrPollo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmrPrincipal.resx">
+      <DependentUpon>FmrPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -278,6 +323,93 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\iconfinder-lock-4341303_120563.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-menú-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-botón-de-apagado.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pollo-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shed-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-empresa-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ventas-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pollo-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shed-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shed-32 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shed-32 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-empresa-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ventas-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cerrar-ventana-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-maximizar-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expand_fullscreen_enlarge_maximize_icon_219215 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window_minimize_icon_181229.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-restaurar-abajo-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-restaurar-abajo-32 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window_restore_icon_181231.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window_maximize_icon_181228.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shed-32 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-añadir-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\documentediting_editdocuments_text_documentedi_2820.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ver.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-eliminar-32 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\floppy_disc_save_storage_disk_computer_icon_175922.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-file_40454.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-agregar-página-web-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-empleado-30.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
