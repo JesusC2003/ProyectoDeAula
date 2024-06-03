@@ -54,7 +54,7 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Silver;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvPollo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvPollo.BackgroundColor = System.Drawing.Color.DimGray;
+            this.dgvPollo.BackgroundColor = System.Drawing.Color.White;
             this.dgvPollo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvPollo.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvPollo.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -112,6 +112,7 @@
             // 
             // CboFiltradoP
             // 
+            this.CboFiltradoP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CboFiltradoP.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CboFiltradoP.FormattingEnabled = true;
             this.CboFiltradoP.Location = new System.Drawing.Point(692, 25);
@@ -122,13 +123,14 @@
             // BtnAgregarP
             // 
             this.BtnAgregarP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnAgregarP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnAgregarP.FlatAppearance.BorderSize = 0;
             this.BtnAgregarP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.BtnAgregarP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAgregarP.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAgregarP.Image = global::Presentacion.Properties.Resources.icons8_añadir_32;
             this.BtnAgregarP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAgregarP.Location = new System.Drawing.Point(12, 65);
+            this.BtnAgregarP.Location = new System.Drawing.Point(12, 62);
             this.BtnAgregarP.Name = "BtnAgregarP";
             this.BtnAgregarP.Size = new System.Drawing.Size(88, 28);
             this.BtnAgregarP.TabIndex = 114;
@@ -184,7 +186,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(850, 591);
             this.Controls.Add(this.CboFiltradoP);
             this.Controls.Add(this.BtnAgregarP);

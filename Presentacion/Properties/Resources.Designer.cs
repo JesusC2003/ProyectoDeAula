@@ -63,6 +63,16 @@ namespace Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1ce68545_2e84_432f_bbce_8465484abaf7 {
+            get {
+                object obj = ResourceManager.GetObject("_1ce68545-2e84-432f-bbce-8465484abaf7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _22266chicken_98785__1_ {
             get {
                 object obj = ResourceManager.GetObject("22266chicken_98785 (1)", resourceCulture);
@@ -96,6 +106,26 @@ namespace Presentacion.Properties {
         internal static System.Drawing.Bitmap _4115235_exit_logout_sign_out_114030 {
             get {
                 object obj = ResourceManager.GetObject("4115235-exit-logout-sign-out_114030", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _ac673a6a_7623_40ca_9b32_aadc5d86ef13 {
+            get {
+                object obj = ResourceManager.GetObject("_ac673a6a-7623-40ca-9b32-aadc5d86ef13", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _b806f5bf_4b81_4e80_8df0_92b0d27f5814 {
+            get {
+                object obj = ResourceManager.GetObject("_b806f5bf-4b81-4e80-8df0-92b0d27f5814", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -313,6 +343,16 @@ namespace Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_factura_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-factura-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_maximizar_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-maximizar-32", resourceCulture);
@@ -453,6 +493,16 @@ namespace Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap invoice_document_bill_delivery_note_icon_225179 {
+            get {
+                object obj = ResourceManager.GetObject("invoice_document_bill_delivery_note_icon_225179", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mbriclose_99502 {
             get {
                 object obj = ResourceManager.GetObject("mbriclose_99502", resourceCulture);
@@ -466,6 +516,36 @@ namespace Presentacion.Properties {
         internal static System.Drawing.Bitmap new_file_40454 {
             get {
                 object obj = ResourceManager.GetObject("new-file_40454", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap office_building_company_icon_231040 {
+            get {
+                object obj = ResourceManager.GetObject("office_building_company_icon_231040", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OIG3 {
+            get {
+                object obj = ResourceManager.GetObject("OIG3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OIG3_0NBeUeslY2k6TCHu {
+            get {
+                object obj = ResourceManager.GetObject("OIG3.0NBeUeslY2k6TCHu", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

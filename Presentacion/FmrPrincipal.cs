@@ -133,6 +133,17 @@ namespace Presentacion
             fmrIniciarSeccion.Show();
         }
 
+        private void BtnVentas_Click(object sender, EventArgs e)
+        {
+            AbrirFmr(new FmrVentas());
+        }
+
+        private void BtnEmpresa_Click(object sender, EventArgs e)
+        {
+            AbrirFmr(new FmrEmpresa());
+        }
+
+ 
 
 
 

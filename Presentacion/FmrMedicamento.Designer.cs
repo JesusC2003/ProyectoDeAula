@@ -54,7 +54,7 @@
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
             this.dgvMedicamenti.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvMedicamenti.BackgroundColor = System.Drawing.Color.DimGray;
+            this.dgvMedicamenti.BackgroundColor = System.Drawing.Color.White;
             this.dgvMedicamenti.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvMedicamenti.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvMedicamenti.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -109,9 +109,10 @@
             // 
             // CboFiltradoM
             // 
+            this.CboFiltradoM.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CboFiltradoM.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CboFiltradoM.FormattingEnabled = true;
-            this.CboFiltradoM.Location = new System.Drawing.Point(689, 38);
+            this.CboFiltradoM.Location = new System.Drawing.Point(689, 21);
             this.CboFiltradoM.Name = "CboFiltradoM";
             this.CboFiltradoM.Size = new System.Drawing.Size(138, 25);
             this.CboFiltradoM.TabIndex = 130;
@@ -122,7 +123,7 @@
             this.TxtBusquedaMedicamento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtBusquedaMedicamento.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBusquedaMedicamento.ForeColor = System.Drawing.Color.White;
-            this.TxtBusquedaMedicamento.Location = new System.Drawing.Point(106, 39);
+            this.TxtBusquedaMedicamento.Location = new System.Drawing.Point(106, 22);
             this.TxtBusquedaMedicamento.Name = "TxtBusquedaMedicamento";
             this.TxtBusquedaMedicamento.Size = new System.Drawing.Size(579, 23);
             this.TxtBusquedaMedicamento.TabIndex = 125;
@@ -132,7 +133,7 @@
             // 
             this.Controles.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Controles.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Controles.Location = new System.Drawing.Point(16, 39);
+            this.Controles.Location = new System.Drawing.Point(16, 22);
             this.Controles.Name = "Controles";
             this.Controles.Size = new System.Drawing.Size(100, 23);
             this.Controles.TabIndex = 124;
@@ -141,13 +142,14 @@
             // BtnAgregarM
             // 
             this.BtnAgregarM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnAgregarM.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnAgregarM.FlatAppearance.BorderSize = 0;
             this.BtnAgregarM.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.BtnAgregarM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAgregarM.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAgregarM.Image = global::Presentacion.Properties.Resources.icons8_añadir_32;
             this.BtnAgregarM.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAgregarM.Location = new System.Drawing.Point(12, 65);
+            this.BtnAgregarM.Location = new System.Drawing.Point(12, 62);
             this.BtnAgregarM.Name = "BtnAgregarM";
             this.BtnAgregarM.Size = new System.Drawing.Size(86, 28);
             this.BtnAgregarM.TabIndex = 129;
@@ -202,7 +204,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(850, 591);
             this.Controls.Add(this.CboFiltradoM);
             this.Controls.Add(this.BtnAgregarM);

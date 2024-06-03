@@ -42,7 +42,7 @@
             this.BtnPersonal = new System.Windows.Forms.Button();
             this.BtnDeslizar = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.BtnInforme = new System.Windows.Forms.Button();
+            this.BtnFactura = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.BtnVentas = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -175,6 +175,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+
             // 
             // panelMenuVertical
             // 
@@ -184,7 +185,7 @@
             this.panelMenuVertical.Controls.Add(this.BtnPersonal);
             this.panelMenuVertical.Controls.Add(this.BtnDeslizar);
             this.panelMenuVertical.Controls.Add(this.panel8);
-            this.panelMenuVertical.Controls.Add(this.BtnInforme);
+            this.panelMenuVertical.Controls.Add(this.BtnFactura);
             this.panelMenuVertical.Controls.Add(this.panel7);
             this.panelMenuVertical.Controls.Add(this.BtnVentas);
             this.panelMenuVertical.Controls.Add(this.panel6);
@@ -254,6 +255,7 @@
             // 
             this.BtnDeslizar.BackgroundImage = global::Presentacion.Properties.Resources.icons8_menú_16;
             this.BtnDeslizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnDeslizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnDeslizar.FlatAppearance.BorderSize = 0;
             this.BtnDeslizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnDeslizar.Font = new System.Drawing.Font("Pristina", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -275,23 +277,23 @@
             this.panel8.Size = new System.Drawing.Size(5, 31);
             this.panel8.TabIndex = 13;
             // 
-            // BtnInforme
+            // BtnFactura
             // 
-            this.BtnInforme.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnInforme.FlatAppearance.BorderSize = 0;
-            this.BtnInforme.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(62)))), ((int)(((byte)(88)))));
-            this.BtnInforme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnInforme.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnInforme.ForeColor = System.Drawing.Color.White;
-            this.BtnInforme.Image = global::Presentacion.Properties.Resources.clipboard_note_document_report_paper_icon_192535;
-            this.BtnInforme.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnInforme.Location = new System.Drawing.Point(5, 388);
-            this.BtnInforme.Name = "BtnInforme";
-            this.BtnInforme.Size = new System.Drawing.Size(173, 31);
-            this.BtnInforme.TabIndex = 12;
-            this.BtnInforme.Text = "Informe";
-            this.BtnInforme.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnInforme.UseVisualStyleBackColor = true;
+            this.BtnFactura.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnFactura.FlatAppearance.BorderSize = 0;
+            this.BtnFactura.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(62)))), ((int)(((byte)(88)))));
+            this.BtnFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnFactura.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnFactura.ForeColor = System.Drawing.Color.White;
+            this.BtnFactura.Image = global::Presentacion.Properties.Resources.invoice_document_bill_delivery_note_icon_225179;
+            this.BtnFactura.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnFactura.Location = new System.Drawing.Point(5, 388);
+            this.BtnFactura.Name = "BtnFactura";
+            this.BtnFactura.Size = new System.Drawing.Size(173, 31);
+            this.BtnFactura.TabIndex = 12;
+            this.BtnFactura.Text = "Factura";
+            this.BtnFactura.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BtnFactura.UseVisualStyleBackColor = true;
             // 
             // panel7
             // 
@@ -318,6 +320,7 @@
             this.BtnVentas.Text = "Ventas";
             this.BtnVentas.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnVentas.UseVisualStyleBackColor = true;
+            this.BtnVentas.Click += new System.EventHandler(this.BtnVentas_Click);
             // 
             // panel6
             // 
@@ -344,6 +347,7 @@
             this.BtnEmpresa.Text = "Empresa";
             this.BtnEmpresa.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnEmpresa.UseVisualStyleBackColor = true;
+            this.BtnEmpresa.Click += new System.EventHandler(this.BtnEmpresa_Click);
             // 
             // panel5
             // 
@@ -526,7 +530,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button BtnMedicamento;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Button BtnInforme;
+        private System.Windows.Forms.Button BtnFactura;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button BtnVentas;
         private System.Windows.Forms.Button BtnSalir;

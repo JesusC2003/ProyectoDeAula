@@ -120,6 +120,12 @@
     <Compile Include="FmrAlimento.Designer.cs">
       <DependentUpon>FmrAlimento.cs</DependentUpon>
     </Compile>
+    <Compile Include="FmrEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmrEmpresa.Designer.cs">
+      <DependentUpon>FmrEmpresa.cs</DependentUpon>
+    </Compile>
     <Compile Include="FmrGalpon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +180,12 @@
     <Compile Include="FmrPrincipal.Designer.cs">
       <DependentUpon>FmrPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="FmrVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmrVentas.Designer.cs">
+      <DependentUpon>FmrVentas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FmrAgregarAlimento.resx">
@@ -193,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FmrAlimento.resx">
       <DependentUpon>FmrAlimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmrEmpresa.resx">
+      <DependentUpon>FmrEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FmrGalpon.resx">
       <DependentUpon>FmrGalpon.cs</DependentUpon>
@@ -220,6 +235,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FmrPrincipal.resx">
       <DependentUpon>FmrPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmrVentas.resx">
+      <DependentUpon>FmrVentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -410,6 +428,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-empleado-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-factura-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice_document_bill_delivery_note_icon_225179.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\office_building_company_icon_231040.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIG3.0NBeUeslY2k6TCHu.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIG3.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_1ce68545-2e84-432f-bbce-8465484abaf7.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_b806f5bf-4b81-4e80-8df0-92b0d27f5814.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_ac673a6a-7623-40ca-9b32-aadc5d86ef13.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
