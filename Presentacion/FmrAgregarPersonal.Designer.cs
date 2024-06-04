@@ -51,8 +51,9 @@
             // BtnSalirPersonal
             // 
             this.BtnSalirPersonal.BackColor = System.Drawing.Color.Red;
+            this.BtnSalirPersonal.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnSalirPersonal.Image = global::Presentacion.Properties.Resources._4115235_exit_logout_sign_out_114030;
-            this.BtnSalirPersonal.Location = new System.Drawing.Point(439, 281);
+            this.BtnSalirPersonal.Location = new System.Drawing.Point(439, 328);
             this.BtnSalirPersonal.Name = "BtnSalirPersonal";
             this.BtnSalirPersonal.Size = new System.Drawing.Size(24, 29);
             this.BtnSalirPersonal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -64,12 +65,13 @@
             // 
             this.BtnAgregarPersonal.BackColor = System.Drawing.Color.Green;
             this.BtnAgregarPersonal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnAgregarPersonal.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnAgregarPersonal.FlatAppearance.BorderSize = 0;
             this.BtnAgregarPersonal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAgregarPersonal.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAgregarPersonal.Image = global::Presentacion.Properties.Resources.disk1;
             this.BtnAgregarPersonal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAgregarPersonal.Location = new System.Drawing.Point(162, 285);
+            this.BtnAgregarPersonal.Location = new System.Drawing.Point(162, 330);
             this.BtnAgregarPersonal.Name = "BtnAgregarPersonal";
             this.BtnAgregarPersonal.Size = new System.Drawing.Size(147, 23);
             this.BtnAgregarPersonal.TabIndex = 120;
@@ -218,7 +220,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(463, 309);
+            this.ClientSize = new System.Drawing.Size(463, 358);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtEmail);

@@ -107,6 +107,7 @@
             // BtnSalirAlimento
             // 
             this.BtnSalirAlimento.BackColor = System.Drawing.Color.Red;
+            this.BtnSalirAlimento.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnSalirAlimento.Image = global::Presentacion.Properties.Resources._4115235_exit_logout_sign_out_114030;
             this.BtnSalirAlimento.Location = new System.Drawing.Point(439, 280);
             this.BtnSalirAlimento.Name = "BtnSalirAlimento";
@@ -120,6 +121,7 @@
             // 
             this.BtnAgregarAlimento.BackColor = System.Drawing.Color.Green;
             this.BtnAgregarAlimento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnAgregarAlimento.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnAgregarAlimento.FlatAppearance.BorderSize = 0;
             this.BtnAgregarAlimento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAgregarAlimento.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

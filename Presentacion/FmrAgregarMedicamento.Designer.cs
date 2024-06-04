@@ -121,6 +121,7 @@
             // BtnSalirM
             // 
             this.BtnSalirM.BackColor = System.Drawing.Color.Red;
+            this.BtnSalirM.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnSalirM.Image = global::Presentacion.Properties.Resources._4115235_exit_logout_sign_out_114030;
             this.BtnSalirM.Location = new System.Drawing.Point(440, 280);
             this.BtnSalirM.Name = "BtnSalirM";
@@ -134,6 +135,7 @@
             // 
             this.BtnAgregarM.BackColor = System.Drawing.Color.Green;
             this.BtnAgregarM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnAgregarM.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnAgregarM.FlatAppearance.BorderSize = 0;
             this.BtnAgregarM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAgregarM.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

@@ -54,6 +54,7 @@
             // BtnSalirGalpon
             // 
             this.BtnSalirGalpon.BackColor = System.Drawing.Color.Red;
+            this.BtnSalirGalpon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnSalirGalpon.Image = global::Presentacion.Properties.Resources._4115235_exit_logout_sign_out_114030;
             this.BtnSalirGalpon.Location = new System.Drawing.Point(441, 281);
             this.BtnSalirGalpon.Name = "BtnSalirGalpon";
@@ -67,6 +68,7 @@
             // 
             this.BtnAgregarGalpon.BackColor = System.Drawing.Color.Green;
             this.BtnAgregarGalpon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnAgregarGalpon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnAgregarGalpon.FlatAppearance.BorderSize = 0;
             this.BtnAgregarGalpon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAgregarGalpon.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

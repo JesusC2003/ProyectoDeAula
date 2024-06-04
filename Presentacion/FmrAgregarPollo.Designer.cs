@@ -129,6 +129,7 @@
             // 
             this.BtnAgregarPollo.BackColor = System.Drawing.Color.Green;
             this.BtnAgregarPollo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnAgregarPollo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnAgregarPollo.FlatAppearance.BorderSize = 0;
             this.BtnAgregarPollo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAgregarPollo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -144,6 +145,7 @@
             // BtnSalirpollo
             // 
             this.BtnSalirpollo.BackColor = System.Drawing.Color.Red;
+            this.BtnSalirpollo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnSalirpollo.Image = global::Presentacion.Properties.Resources._4115235_exit_logout_sign_out_114030;
             this.BtnSalirpollo.Location = new System.Drawing.Point(440, 280);
             this.BtnSalirpollo.Name = "BtnSalirpollo";
