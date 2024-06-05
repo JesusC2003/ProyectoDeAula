@@ -97,9 +97,7 @@
       <Name>Entidad</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ArchivosTxt\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Oracle.DataAccess.Common.Configuration.Section.xsd">
