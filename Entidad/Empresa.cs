@@ -8,18 +8,20 @@ namespace Entidad
 {
     public class Empresa
     {
-        public Empresa() { }
-
-        public override string ToString()
+        //LISTO
+        public Empresa() 
         {
-            return $"{NIT};{Nombre};{Telefono};{Direccion};{Email};";
+            NIT = string.Empty;
+            Nombre = string.Empty;
+            Telefono = string.Empty;
+            Direccion = string.Empty;
+            Email = string.Empty;
         }
-
-        public const string NIT  = "12345678-9";
-        public const string Nombre = "Pollo Feliz";
-        public const string Telefono = "3214567809";
-        public const string Direccion = "Kilometro 4 vía La Paz";
-        public const string Email = "pollofeliz@coorporation.co";
-        public List<PersonalGranja> ListaPersonal{ get; set; }
+        public override string ToString() => $"{NIT};{Nombre};{Telefono};{Direccion};{Email};";
+        public string NIT {  get; set; }
+        public string Nombre {  get; set; }
+        public string Telefono {  get; set; }
+        public string Direccion {  get; set; }
+        public string Email {  get; set; }
     }
 }

@@ -9,7 +9,7 @@ namespace Entidad
     public class Encargado
     {
         public Encargado() { }
-        public Encargado(string numeroSerie, string ocupacion, PersonalGranja personalId, Galpon galponId)
+        public Encargado(string numeroSerie, string ocupacion, Persona personalId, Galpon galponId)
         {
             NumeroSerie = numeroSerie;
             Ocupacion = ocupacion;
@@ -21,7 +21,7 @@ namespace Entidad
 
         public string NumeroSerie { get; set; }
         public string Ocupacion { get; set; }
-        public PersonalGranja PersonalId { get; set; }
+        public Persona PersonalId { get; set; }
         public Galpon GalponId { get; set; }
     }
 }

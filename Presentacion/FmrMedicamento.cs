@@ -17,10 +17,30 @@ namespace Presentacion
             InitializeComponent();
         }
 
-        private void BtnEliminarMedicamento_Click(object sender, EventArgs e)
-        {
 
+
+        private void BtnAgregarM_Click(object sender, EventArgs e)
+        {
+            FmrAgregarMedicamento fmrAgregarMedicamento = new FmrAgregarMedicamento();
+            fmrAgregarMedicamento.Show();
         }
 
+        private void FmrMedicamento_Leave(object sender, EventArgs e)
+        {
+            if (TxtBusquedaMedicamento.Text == "")
+            {
+                TxtBusquedaMedicamento.Text = "Busqueda";
+                TxtBusquedaMedicamento.ForeColor = Color.White;
+            }
+        }
+
+        private void FmrMedicamento_Enter(object sender, EventArgs e)
+        {
+            if (TxtBusquedaMedicamento.Text == "Busqueda")
+            {
+                TxtBusquedaMedicamento.Text = "";
+                TxtBusquedaMedicamento.ForeColor = Color.White;
+            }
+        }
     }
 }

@@ -33,8 +33,46 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.23.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.23.4.0\lib\net472\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=6.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.6.0.1\lib\net461\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Formats.Asn1, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Formats.Asn1.8.0.0\lib\net462\System.Formats.Asn1.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.8.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=8.0.0.3, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.8.0.3\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,11 +84,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FmrAgregarAlimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmrAgregarAlimento.Designer.cs">
+      <DependentUpon>FmrAgregarAlimento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmrAgregarGalpon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmrAgregarGalpon.Designer.cs">
+      <DependentUpon>FmrAgregarGalpon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmrAgregarMedicamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmrAgregarMedicamento.Designer.cs">
+      <DependentUpon>FmrAgregarMedicamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmrAgregarPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmrAgregarPersonal.Designer.cs">
+      <DependentUpon>FmrAgregarPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmrAgregarPollo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmrAgregarPollo.Designer.cs">
+      <DependentUpon>FmrAgregarPollo.cs</DependentUpon>
+    </Compile>
     <Compile Include="FmrAlimento.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FmrAlimento.Designer.cs">
       <DependentUpon>FmrAlimento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmrEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmrEmpresa.Designer.cs">
+      <DependentUpon>FmrEmpresa.cs</DependentUpon>
     </Compile>
     <Compile Include="FmrGalpon.cs">
       <SubType>Form</SubType>
@@ -82,17 +156,11 @@
     <Compile Include="FmrMedicamento.Designer.cs">
       <DependentUpon>FmrMedicamento.cs</DependentUpon>
     </Compile>
-    <Compile Include="FmrMenuPrincipal.cs">
+    <Compile Include="FmrPersonal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FmrMenuPrincipal.Designer.cs">
-      <DependentUpon>FmrMenuPrincipal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FmrPersonalGranja.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FmrPersonalGranja.Designer.cs">
-      <DependentUpon>FmrPersonalGranja.cs</DependentUpon>
+    <Compile Include="FmrPersonal.Designer.cs">
+      <DependentUpon>FmrPersonal.cs</DependentUpon>
     </Compile>
     <Compile Include="FmrPollo.cs">
       <SubType>Form</SubType>
@@ -106,10 +174,40 @@
     <Compile Include="FmrIniciarSeccion.Designer.cs">
       <DependentUpon>FmrIniciarSeccion.cs</DependentUpon>
     </Compile>
+    <Compile Include="FmrPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmrPrincipal.Designer.cs">
+      <DependentUpon>FmrPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmrVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmrVentas.Designer.cs">
+      <DependentUpon>FmrVentas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FmrAgregarAlimento.resx">
+      <DependentUpon>FmrAgregarAlimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmrAgregarGalpon.resx">
+      <DependentUpon>FmrAgregarGalpon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmrAgregarMedicamento.resx">
+      <DependentUpon>FmrAgregarMedicamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmrAgregarPersonal.resx">
+      <DependentUpon>FmrAgregarPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmrAgregarPollo.resx">
+      <DependentUpon>FmrAgregarPollo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FmrAlimento.resx">
       <DependentUpon>FmrAlimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmrEmpresa.resx">
+      <DependentUpon>FmrEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FmrGalpon.resx">
       <DependentUpon>FmrGalpon.cs</DependentUpon>
@@ -129,14 +227,17 @@
     <EmbeddedResource Include="FmrMedicamento.resx">
       <DependentUpon>FmrMedicamento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FmrMenuPrincipal.resx">
-      <DependentUpon>FmrMenuPrincipal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FmrPersonalGranja.resx">
-      <DependentUpon>FmrPersonalGranja.cs</DependentUpon>
+    <EmbeddedResource Include="FmrPersonal.resx">
+      <DependentUpon>FmrPersonal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FmrPollo.resx">
       <DependentUpon>FmrPollo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmrPrincipal.resx">
+      <DependentUpon>FmrPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmrVentas.resx">
+      <DependentUpon>FmrVentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -148,6 +249,13 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Oracle.DataAccess.Common.Configuration.Section.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Oracle.ManagedDataAccess.Client.Configuration.Section.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -233,6 +341,117 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\iconfinder-lock-4341303_120563.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-menú-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-botón-de-apagado.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pollo-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shed-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-empresa-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ventas-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pollo-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shed-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shed-32 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shed-32 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-empresa-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ventas-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cerrar-ventana-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-maximizar-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expand_fullscreen_enlarge_maximize_icon_219215 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window_minimize_icon_181229.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-restaurar-abajo-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-restaurar-abajo-32 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window_restore_icon_181231.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window_maximize_icon_181228.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shed-32 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-añadir-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\documentediting_editdocuments_text_documentedi_2820.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ver.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-eliminar-32 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\floppy_disc_save_storage_disk_computer_icon_175922.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-file_40454.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-agregar-página-web-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-empleado-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-factura-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice_document_bill_delivery_note_icon_225179.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\office_building_company_icon_231040.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIG3.0NBeUeslY2k6TCHu.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIG3.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_1ce68545-2e84-432f-bbce-8465484abaf7.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_b806f5bf-4b81-4e80-8df0-92b0d27f5814.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_ac673a6a-7623-40ca-9b32-aadc5d86ef13.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

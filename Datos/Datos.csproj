@@ -79,6 +79,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Archivo.cs" />
+    <Compile Include="ConexionBaseOracle.cs" />
     <Compile Include="RepositorioAlimento.cs" />
     <Compile Include="RepositorioAplicado.cs" />
     <Compile Include="RepositorioEmpresa.cs" />

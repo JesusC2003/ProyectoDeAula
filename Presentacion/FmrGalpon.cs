@@ -16,5 +16,29 @@ namespace Presentacion
         {
             InitializeComponent();
         }
+
+        private void BtnAgregarG_Click(object sender, EventArgs e)
+        {
+            FmrAgregarGalpon Agregargalpon= new FmrAgregarGalpon();
+            Agregargalpon.Show();
+        }
+
+        private void dgvGalpon_Enter(object sender, EventArgs e)
+        {
+            if (TxtBusquedaGalpon.Text == "Busqueda")
+            {
+                TxtBusquedaGalpon.Text = "";
+                TxtBusquedaGalpon.ForeColor = Color.White;
+            }
+        }
+
+        private void dgvGalpon_Leave(object sender, EventArgs e)
+        {
+            if (TxtBusquedaGalpon.Text == "")
+            {
+                TxtBusquedaGalpon.Text = "Busqueda";
+                TxtBusquedaGalpon.ForeColor = Color.White;
+            }
+        }
     }
 }

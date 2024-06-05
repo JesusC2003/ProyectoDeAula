@@ -17,6 +17,28 @@ namespace Presentacion
             InitializeComponent();
         }
 
-       
+        private void BtnAgregarA_Click(object sender, EventArgs e)
+        {
+            FmrAgregarAlimento fmrAgregarAlimento = new FmrAgregarAlimento();   
+            fmrAgregarAlimento.Show();  
+        }
+
+        private void dgvAlimento_Enter(object sender, EventArgs e)
+        {
+            if (TxtBusquedaAlimento.Text == "Busqueda")
+            {
+                TxtBusquedaAlimento.Text = "";
+                TxtBusquedaAlimento.ForeColor = Color.White;
+            }
+        }
+
+        private void dgvAlimento_Leave(object sender, EventArgs e)
+        {
+            if (TxtBusquedaAlimento.Text == "")
+            {
+                TxtBusquedaAlimento.Text = "Busqueda";
+                TxtBusquedaAlimento.ForeColor = Color.White;
+            }
+        }
     }
 }
