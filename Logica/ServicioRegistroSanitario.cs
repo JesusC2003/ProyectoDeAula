@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entidad
+namespace Logica
 {
-    public class Proveedor : Persona
+    public class ServicioRegistroSanitario
     {
-
     }
 }

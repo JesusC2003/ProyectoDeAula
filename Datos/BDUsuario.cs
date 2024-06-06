@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Datos
 {
-    public class RepositorioPersonalGranja 
+    public class BDUsuario 
     {
     //    private List<Persona> personas;
     //    Persona personalGranja;

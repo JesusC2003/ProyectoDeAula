@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Datos
 {
-    public class RepositorioEncargado : Archivo
+    public class BDFactura 
     {
-        public RepositorioEncargado(string RutaArchivo) : base(RutaArchivo) { }
+        public BDFactura(string RutaArchivo) : base(RutaArchivo) { }
 
         public void Eliminar()
         {

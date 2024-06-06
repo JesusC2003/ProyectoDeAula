@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Datos
 {
-    public class RepositorioGalpon : Archivo
+    public class BDAsignado : Archivo
     {
-        public RepositorioGalpon(string RutaArchivo) : base(RutaArchivo) { }        
-
+        public BDAsignado(string RutaArchivo) : base(RutaArchivo) { }
+     
         public void Eliminar()
         {
             throw new NotImplementedException();

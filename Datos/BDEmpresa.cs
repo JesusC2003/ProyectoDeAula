@@ -8,9 +8,9 @@ using Entidad;
 
 namespace Datos
 {
-    public class RepositorioEmpresa : Archivo
+    public class BDEmpresa : Archivo
     {
-        public RepositorioEmpresa(string RutaArchivo) : base(RutaArchivo) { }
+        public BDEmpresa(string RutaArchivo) : base(RutaArchivo) { }
         public void Guardar(string empresa) 
         {
             FileStream Archivo = new FileStream(RutaDeArchivo, FileMode.Create);

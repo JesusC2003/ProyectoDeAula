@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Logica
+namespace Entidad
 {
-    public class GalponServicio
+    internal class Factura
     {
     }
 }
