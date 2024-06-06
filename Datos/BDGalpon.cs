@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Datos
 {
-    public class RepositorioAlimento : Archivo
+    public class BDGalpon 
     {
-        public RepositorioAlimento(string RutaArchivo) : base(RutaArchivo) { }
+        public BDGalpon(string RutaArchivo) : base(RutaArchivo) { }        
 
         public void Eliminar()
         {

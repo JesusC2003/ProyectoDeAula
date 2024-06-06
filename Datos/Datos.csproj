@@ -78,18 +78,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Archivo.cs" />
-    <Compile Include="ConexionBaseOracle.cs" />
-    <Compile Include="RepositorioAlimento.cs" />
-    <Compile Include="RepositorioAplicado.cs" />
-    <Compile Include="RepositorioEmpresa.cs" />
+    <Compile Include="BaseDatosConexion.cs" />
+    <Compile Include="BDAlimento.cs" />
+    <Compile Include="BDAsignado.cs" />
+    <Compile Include="BDCliente.cs" />
+    <Compile Include="BDControlPeso.cs" />
+    <Compile Include="BDDetalleFactura.cs" />
+    <Compile Include="BDEmpleado.cs" />
+    <Compile Include="BDEmpresa.cs" />
+    <Compile Include="BDRegistroAlimentacion.cs" />
+    <Compile Include="BDRegistroSanitario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RepositorioEncargado.cs" />
-    <Compile Include="RepositorioGalpon.cs" />
-    <Compile Include="RepositorioInventario.cs" />
-    <Compile Include="RepositorioMedicamento.cs" />
-    <Compile Include="RepositorioPersonalGranja.cs" />
-    <Compile Include="RepositorioPollo.cs" />
+    <Compile Include="BDFactura.cs" />
+    <Compile Include="BDGalpon.cs" />
+    <Compile Include="BDInventario.cs" />
+    <Compile Include="BDMedicamento.cs" />
+    <Compile Include="BDUsuario.cs" />
+    <Compile Include="BDPollo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entidad\Entidad.csproj">

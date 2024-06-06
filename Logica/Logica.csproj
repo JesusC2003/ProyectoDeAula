@@ -75,16 +75,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AlimentoServicio.cs" />
-    <Compile Include="AplicadoServicio.cs" />
-    <Compile Include="EmpresaServicio.cs" />
-    <Compile Include="EncargadoServicio.cs" />
-    <Compile Include="GalponServicio.cs" />
-    <Compile Include="InventarioServicio.cs" />
-    <Compile Include="MedicamentoServicio.cs" />
-    <Compile Include="PersonalGranjaServicio.cs" />
-    <Compile Include="PolloServicio.cs" />
+    <Compile Include="ServicioAlimento.cs" />
+    <Compile Include="ServicioCliente.cs" />
+    <Compile Include="ServicioControlPeso.cs" />
+    <Compile Include="ServicioDetalleFactura.cs" />
+    <Compile Include="ServicioFactura.cs" />
+    <Compile Include="ServicioRegistroAlimentacion.cs" />
+    <Compile Include="ServicioRegistroSanitario.cs" />
+    <Compile Include="ServicioEmpresa.cs" />
+    <Compile Include="ServicioAsignado.cs" />
+    <Compile Include="ServicioGalpon.cs" />
+    <Compile Include="ServicioInventario.cs" />
+    <Compile Include="ServicioMedicamento.cs" />
+    <Compile Include="ServicioEmpleado.cs" />
+    <Compile Include="ServicioPollo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServicioUsuario.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Datos\Datos.csproj">

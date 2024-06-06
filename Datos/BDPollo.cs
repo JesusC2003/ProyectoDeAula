@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Datos
 {
-    public class RepositorioPollo 
+    public class BDPollo 
     {
         //public RepositorioPollo(string RutaArchivo) : base(RutaArchivo) { }
 

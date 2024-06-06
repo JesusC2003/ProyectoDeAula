@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Entidad
 {
-    public class Encargado
+    public class Asignado
     {
-        public Encargado() { }
-        public Encargado(string numeroSerie, string ocupacion, Persona personalId, Galpon galponId)
+        public Asignado() { }
+        public Asignado(string numeroSerie, string ocupacion, Persona personalId, Galpon galponId)
         {
             NumeroSerie = numeroSerie;
             Ocupacion = ocupacion;

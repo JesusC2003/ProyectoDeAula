@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Logica
 {
-    public class PolloServicio
+    public class ServicioPollo
     {
     //    private readonly RepositorioPollo repositorioPollo;
     //    private string RutaArchivo = "C:\\Users\\ASUS\\Documents\\UNIVERSIDAD POPULAR DEL CESAR\\PROGRAMACIÓN III\\ProyectoDeAula\\Datos\\ArchivosTxt\\POLLO.txt";

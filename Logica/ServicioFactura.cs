@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Logica
 {
-    public class InventarioServicio
+    public class ServicioFactura
     {
     }
 }
