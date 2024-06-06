@@ -1,23 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Entidad
 {
     public class RegistroAlimentacion
     {
-        //LISTO
-        public RegistroAlimentacion() { }
 
-        public override string ToString() => $"{CantidadAlimento};{CantidadAgua};{FechaAplicacion};{CodigoGalpon};{CodigoAlimento}";
+        public RegistroAlimentacion() 
+        {
+            CodigoRegistroAlimentacion=string.Empty;
+            CantidadAgua = 0;
+            CantidadAlimento = 0;
+        }
 
-        public string id { get; set; }
+        public string CodigoRegistroAlimentacion { get; set; }
         public int CantidadAlimento { get; set; }
         public int CantidadAgua { get; set; }
         public DateTime FechaAplicacion { get; set; }
-        public Galpon CodigoGalpon { get; set; }
-        public Alimento CodigoAlimento { get; set; }
+        public Galpon IdGalpon { get; set; }
+        public Alimento IdAlimento { get; set; }
     }
 }

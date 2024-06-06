@@ -1,27 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Remoting.Messaging;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace Entidad
 {
     public class Galpon
     {
-        //LISTO
-        public Galpon() 
+        public Galpon()
         {
+            IdGalpon = 0;
             CodigoGalpon = string.Empty;
-            AreaGalpon = string.Empty;
+            AreaGalpon = 0;
             EstadoGalpon = string.Empty;
         }
-        public override string ToString() => $"{CodigoGalpon};{AreaGalpon};{EstadoGalpon}";
 
-        public string IdGalpon { get; set; }
+        public int CalcularCapacidad(int AreaGalpon)
+        {
+            int Capacidad = 0 ;
+            Capacidad = AreaGalpon * 12;
+            return Capacidad; 
+        } 
+
+        public int IdGalpon { get; set; }
         public string CodigoGalpon { get; set; }
-        public string AreaGalpon { get; set; }
+        public double AreaGalpon { get; set; }
         public string EstadoGalpon { get; set; }       
 
     }
 }
+    
