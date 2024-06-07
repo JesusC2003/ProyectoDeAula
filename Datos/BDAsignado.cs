@@ -6,23 +6,8 @@ using System.Threading.Tasks;
 
 namespace Datos
 {
-    public class BDAsignado : Archivo
+    public class BDAsignado
     {
-        public BDAsignado(string RutaArchivo) : base(RutaArchivo) { }
-     
-        public void Eliminar()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Guardar()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Modificar()
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }

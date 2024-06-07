@@ -6,8 +6,8 @@ namespace Datos
     public class BaseDatosConexion
     {
         private string cadenaConexion = @"Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521))) 
-                                         (CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=xepdb1)));User Id=Master;Password=123456;";
-        OracleConnection conexion = null;
+                                         (CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=XEPDB1)));User Id=God;Password=God;";
+        OracleConnection conexion;
         public BaseDatosConexion()
         {
             conexion = new OracleConnection(cadenaConexion);
@@ -20,14 +20,17 @@ namespace Datos
                     conexion.Open();
                     return $"Conectado a Oracle: {conexion.ServerVersion}";
                 }
-                return "Ya se encuentra conectado a Oracle";
+                return "Ya está conectado a Oracle";
             }
-            catch (Exception e) { return ($"|ERROR DE CONEXION| - {e.Message}"); }            
+            catch (OracleException xe) { return ($"|ERROR DE CONEXION| - {xe.Message}"); }            
         }
-        public string CerrarConexion()
+
+        public void CerrarConexion()
         {
-            conexion.Close();
-            return $"Desconectado de Oracle: {conexion.ServerVersion}";
+            if (conexion.State != System.Data.ConnectionState.Closed)
+            {
+                conexion.Close();
+            }
         }
         public OracleConnection ObtenerConexion()
         {

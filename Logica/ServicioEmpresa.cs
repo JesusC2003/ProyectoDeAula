@@ -10,6 +10,19 @@ namespace Logica
 {
     public class ServicioEmpresa
     {
-      
+        private readonly BDEmpresa bDEmpresa;
+        public ServicioEmpresa()
+        {
+            bDEmpresa = new BDEmpresa();
+        }
+
+        public string Guardar(Empresa empresa)
+        {
+            return bDEmpresa.InsertarEmpresa(empresa);
+        }
+
+
+
+
     }
 }
