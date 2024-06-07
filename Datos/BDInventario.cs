@@ -6,23 +6,8 @@ using System.Threading.Tasks;
 
 namespace Datos
 {
-    public class BDInventario : Archivo
+    public class BDInventario
     {
-        public BDInventario(string RutaArchivo) : base(RutaArchivo) { }
-        
-        public void Eliminar()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Guardar()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Modificar()
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }
