@@ -283,6 +283,16 @@ namespace Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_añadir_usuario_masculino_20 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-añadir-usuario-masculino-20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_botón_de_apagado {
             get {
                 object obj = ResourceManager.GetObject("icons8-botón-de-apagado", resourceCulture);
@@ -293,9 +303,49 @@ namespace Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_cerrar_ventana_16 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-cerrar-ventana-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_cerrar_ventana_161 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-cerrar-ventana-161", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_cerrar_ventana_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-cerrar-ventana-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_configuración_de_datos_20 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-configuración-de-datos-20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_documento_20 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-documento-20", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -346,6 +396,26 @@ namespace Presentacion.Properties {
         internal static System.Drawing.Bitmap icons8_factura_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-factura-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_logout_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-logout-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_logout_321 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-logout-321", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -406,6 +476,26 @@ namespace Presentacion.Properties {
         internal static System.Drawing.Bitmap icons8_restaurar_abajo_32__1_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-restaurar-abajo-32 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_salida_20 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-salida-20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_salida_201 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-salida-201", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -486,6 +576,16 @@ namespace Presentacion.Properties {
         internal static System.Drawing.Bitmap icons8_ver {
             get {
                 object obj = ResourceManager.GetObject("icons8-ver", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_ver_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-ver-24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

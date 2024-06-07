@@ -45,5 +45,42 @@ namespace Presentacion
             FmrAgregarPersonal fmrAgregarPersonal   = new FmrAgregarPersonal();
             fmrAgregarPersonal.Show();
         }
+
+        private void FmrPersonal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+        private void TxtBusquedaPersonal_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CboFiltradoPersonal_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnEditarPersonal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnVerPersonal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnEliminarPersonal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvPersonal_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

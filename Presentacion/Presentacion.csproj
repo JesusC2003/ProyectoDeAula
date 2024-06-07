@@ -453,5 +453,35 @@
   <ItemGroup>
     <None Include="Resources\_ac673a6a-7623-40ca-9b32-aadc5d86ef13.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cerrar-ventana-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-configuración-de-datos-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-logout-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cerrar-ventana-161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-logout-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-salida-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-añadir-usuario-masculino-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-documento-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-salida-201.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ver-24.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

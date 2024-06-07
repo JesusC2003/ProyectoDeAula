@@ -57,24 +57,9 @@ namespace Presentacion
             Application.Exit();
         }
 
-        private void BtnMaximizar_Click(object sender, EventArgs e)
-        {
-            this.WindowState=FormWindowState.Maximized;
-            BtnMaximizar.Visible = false;
-            BtnRestaurar.Visible = true;
-
-        }
-
         private void BtnMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void BtnRestaurar_Click(object sender, EventArgs e)
-        {
-            this.WindowState=FormWindowState.Normal;
-            BtnRestaurar.Visible= false;
-            BtnMaximizar.Visible= true;
         }
 
         private void panelBarra_MouseDown(object sender, MouseEventArgs e)
@@ -126,24 +111,40 @@ namespace Presentacion
             AbrirFmr(new FmrPersonal());
         }
 
-        private void BtnSalir_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            FmrIniciarSeccion fmrIniciarSeccion = new FmrIniciarSeccion();
-            fmrIniciarSeccion.Show();
-        }
+
 
         private void BtnVentas_Click(object sender, EventArgs e)
         {
             AbrirFmr(new FmrVentas());
         }
 
-        private void BtnEmpresa_Click(object sender, EventArgs e)
+        private void BtnConfiguracion_Click(object sender, EventArgs e)
         {
-            AbrirFmr(new FmrEmpresa());
+            if (panelsubconfiguracion.Visible==false)
+            {
+                panelsubconfiguracion.Visible = true;
+            }
+            else
+            {
+                panelsubconfiguracion.Visible=false;
+            }
+
         }
 
- 
+        private void BtnDatosEmpresa_Click(object sender, EventArgs e)
+        {
+            AbrirFmr(new FmrEmpresa());
+            panelsubconfiguracion.Visible = false;
+        }
+
+        private void BtnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            FmrIniciarSeccion fmrIniciarSeccion= new FmrIniciarSeccion();
+            fmrIniciarSeccion.Show();
+        }
+
+
 
 
 

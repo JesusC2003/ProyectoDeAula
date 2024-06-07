@@ -33,5 +33,11 @@ namespace Presentacion
             MessageBox.Show(servicioEmpresa.Guardar(empresa));
 
         }
+
+        private void BtnFmrEmpresa_Click(object sender, EventArgs e)
+        {
+            this.Close();
+          
+        }
     }
 }

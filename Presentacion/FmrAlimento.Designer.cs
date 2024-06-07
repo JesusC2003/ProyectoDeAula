@@ -28,16 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvAlimento = new System.Windows.Forms.DataGridView();
-            this.ClmCodigoAlimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ClmMarca = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ClmPrecioAlimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ClmTipoAlimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ClmCantidadAlimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ClmFrecuenciaAlimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CboFiltradoA = new System.Windows.Forms.ComboBox();
             this.TxtBusquedaAlimento = new System.Windows.Forms.TextBox();
             this.Controles = new System.Windows.Forms.Label();
@@ -45,6 +39,7 @@
             this.BtnEliminarA = new System.Windows.Forms.Button();
             this.BtnVerA = new System.Windows.Forms.Button();
             this.BtnEditarA = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlimento)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,111 +49,50 @@
             this.dgvAlimento.AllowUserToDeleteRows = false;
             this.dgvAlimento.AllowUserToResizeColumns = false;
             this.dgvAlimento.AllowUserToResizeRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Navy;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvAlimento.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvAlimento.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Navy;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvAlimento.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.dgvAlimento.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dgvAlimento.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvAlimento.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvAlimento.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvAlimento.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvAlimento.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvAlimento.ColumnHeadersHeight = 24;
             this.dgvAlimento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvAlimento.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ClmCodigoAlimento,
-            this.ClmMarca,
-            this.ClmPrecioAlimento,
-            this.ClmTipoAlimento,
-            this.ClmCantidadAlimento,
-            this.ClmFrecuenciaAlimento});
             this.dgvAlimento.EnableHeadersVisualStyles = false;
-            this.dgvAlimento.Location = new System.Drawing.Point(15, 96);
+            this.dgvAlimento.Location = new System.Drawing.Point(48, 127);
             this.dgvAlimento.MultiSelect = false;
             this.dgvAlimento.Name = "dgvAlimento";
             this.dgvAlimento.ReadOnly = true;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvAlimento.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvAlimento.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvAlimento.RowHeadersVisible = false;
             this.dgvAlimento.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAlimento.Size = new System.Drawing.Size(812, 485);
+            this.dgvAlimento.Size = new System.Drawing.Size(812, 425);
             this.dgvAlimento.TabIndex = 106;
             this.dgvAlimento.Enter += new System.EventHandler(this.dgvAlimento_Enter);
             this.dgvAlimento.Leave += new System.EventHandler(this.dgvAlimento_Leave);
-            // 
-            // ClmCodigoAlimento
-            // 
-            this.ClmCodigoAlimento.FillWeight = 96.8818F;
-            this.ClmCodigoAlimento.HeaderText = "Codigo Alimento";
-            this.ClmCodigoAlimento.MinimumWidth = 6;
-            this.ClmCodigoAlimento.Name = "ClmCodigoAlimento";
-            this.ClmCodigoAlimento.ReadOnly = true;
-            this.ClmCodigoAlimento.Width = 142;
-            // 
-            // ClmMarca
-            // 
-            this.ClmMarca.FillWeight = 96.8818F;
-            this.ClmMarca.HeaderText = "Marca";
-            this.ClmMarca.MinimumWidth = 6;
-            this.ClmMarca.Name = "ClmMarca";
-            this.ClmMarca.ReadOnly = true;
-            this.ClmMarca.Width = 120;
-            // 
-            // ClmPrecioAlimento
-            // 
-            this.ClmPrecioAlimento.FillWeight = 96.8818F;
-            this.ClmPrecioAlimento.HeaderText = "Precio";
-            this.ClmPrecioAlimento.MinimumWidth = 6;
-            this.ClmPrecioAlimento.Name = "ClmPrecioAlimento";
-            this.ClmPrecioAlimento.ReadOnly = true;
-            this.ClmPrecioAlimento.Width = 80;
-            // 
-            // ClmTipoAlimento
-            // 
-            this.ClmTipoAlimento.FillWeight = 96.8818F;
-            this.ClmTipoAlimento.HeaderText = "Tipo ";
-            this.ClmTipoAlimento.MinimumWidth = 6;
-            this.ClmTipoAlimento.Name = "ClmTipoAlimento";
-            this.ClmTipoAlimento.ReadOnly = true;
-            this.ClmTipoAlimento.Width = 150;
-            // 
-            // ClmCantidadAlimento
-            // 
-            this.ClmCantidadAlimento.FillWeight = 96.8818F;
-            this.ClmCantidadAlimento.HeaderText = "Cantidad";
-            this.ClmCantidadAlimento.MinimumWidth = 6;
-            this.ClmCantidadAlimento.Name = "ClmCantidadAlimento";
-            this.ClmCantidadAlimento.ReadOnly = true;
-            this.ClmCantidadAlimento.Width = 80;
-            // 
-            // ClmFrecuenciaAlimento
-            // 
-            this.ClmFrecuenciaAlimento.FillWeight = 96.8818F;
-            this.ClmFrecuenciaAlimento.HeaderText = "Frecuencia";
-            this.ClmFrecuenciaAlimento.MinimumWidth = 6;
-            this.ClmFrecuenciaAlimento.Name = "ClmFrecuenciaAlimento";
-            this.ClmFrecuenciaAlimento.ReadOnly = true;
-            this.ClmFrecuenciaAlimento.Width = 80;
             // 
             // CboFiltradoA
             // 
             this.CboFiltradoA.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CboFiltradoA.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CboFiltradoA.FormattingEnabled = true;
-            this.CboFiltradoA.Location = new System.Drawing.Point(690, 23);
+            this.CboFiltradoA.Location = new System.Drawing.Point(721, 50);
             this.CboFiltradoA.Name = "CboFiltradoA";
             this.CboFiltradoA.Size = new System.Drawing.Size(138, 25);
             this.CboFiltradoA.TabIndex = 129;
@@ -169,7 +103,7 @@
             this.TxtBusquedaAlimento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtBusquedaAlimento.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBusquedaAlimento.ForeColor = System.Drawing.Color.White;
-            this.TxtBusquedaAlimento.Location = new System.Drawing.Point(107, 24);
+            this.TxtBusquedaAlimento.Location = new System.Drawing.Point(138, 51);
             this.TxtBusquedaAlimento.Name = "TxtBusquedaAlimento";
             this.TxtBusquedaAlimento.Size = new System.Drawing.Size(579, 23);
             this.TxtBusquedaAlimento.TabIndex = 124;
@@ -179,9 +113,9 @@
             // 
             this.Controles.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Controles.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Controles.Location = new System.Drawing.Point(17, 24);
+            this.Controles.Location = new System.Drawing.Point(24, 51);
             this.Controles.Name = "Controles";
-            this.Controles.Size = new System.Drawing.Size(100, 23);
+            this.Controles.Size = new System.Drawing.Size(103, 23);
             this.Controles.TabIndex = 123;
             this.Controles.Text = "Controles";
             // 
@@ -195,9 +129,9 @@
             this.BtnAgregarA.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAgregarA.Image = global::Presentacion.Properties.Resources.icons8_añadir_32;
             this.BtnAgregarA.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAgregarA.Location = new System.Drawing.Point(15, 62);
+            this.BtnAgregarA.Location = new System.Drawing.Point(48, 92);
             this.BtnAgregarA.Name = "BtnAgregarA";
-            this.BtnAgregarA.Size = new System.Drawing.Size(85, 28);
+            this.BtnAgregarA.Size = new System.Drawing.Size(101, 34);
             this.BtnAgregarA.TabIndex = 128;
             this.BtnAgregarA.Text = "Añadir";
             this.BtnAgregarA.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -212,7 +146,7 @@
             this.BtnEliminarA.FlatAppearance.BorderSize = 0;
             this.BtnEliminarA.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.BtnEliminarA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnEliminarA.Location = new System.Drawing.Point(799, 71);
+            this.BtnEliminarA.Location = new System.Drawing.Point(831, 101);
             this.BtnEliminarA.Name = "BtnEliminarA";
             this.BtnEliminarA.Size = new System.Drawing.Size(29, 25);
             this.BtnEliminarA.TabIndex = 127;
@@ -220,13 +154,13 @@
             // 
             // BtnVerA
             // 
-            this.BtnVerA.BackgroundImage = global::Presentacion.Properties.Resources.icons8_ver;
+            this.BtnVerA.BackgroundImage = global::Presentacion.Properties.Resources.icons8_ver_24;
             this.BtnVerA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.BtnVerA.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnVerA.FlatAppearance.BorderSize = 0;
             this.BtnVerA.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.BtnVerA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnVerA.Location = new System.Drawing.Point(769, 71);
+            this.BtnVerA.Location = new System.Drawing.Point(799, 101);
             this.BtnVerA.Name = "BtnVerA";
             this.BtnVerA.Size = new System.Drawing.Size(29, 25);
             this.BtnVerA.TabIndex = 126;
@@ -240,11 +174,23 @@
             this.BtnEditarA.FlatAppearance.BorderSize = 0;
             this.BtnEditarA.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.BtnEditarA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnEditarA.Location = new System.Drawing.Point(739, 71);
+            this.BtnEditarA.Location = new System.Drawing.Point(763, 101);
             this.BtnEditarA.Name = "BtnEditarA";
             this.BtnEditarA.Size = new System.Drawing.Size(29, 25);
             this.BtnEditarA.TabIndex = 125;
             this.BtnEditarA.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Silver;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(913, 22);
+            this.label1.TabIndex = 130;
+            this.label1.Text = "Formulario para Alimento";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FmrAlimento
             // 
@@ -252,7 +198,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(850, 591);
+            this.ClientSize = new System.Drawing.Size(913, 591);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.CboFiltradoA);
             this.Controls.Add(this.BtnAgregarA);
             this.Controls.Add(this.BtnEliminarA);
@@ -263,6 +210,7 @@
             this.Controls.Add(this.dgvAlimento);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FmrAlimento";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FmrAlimento";
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlimento)).EndInit();
             this.ResumeLayout(false);
@@ -272,12 +220,6 @@
 
         #endregion
         private System.Windows.Forms.DataGridView dgvAlimento;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ClmCodigoAlimento;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ClmMarca;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ClmPrecioAlimento;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ClmTipoAlimento;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ClmCantidadAlimento;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ClmFrecuenciaAlimento;
         private System.Windows.Forms.ComboBox CboFiltradoA;
         private System.Windows.Forms.Button BtnAgregarA;
         private System.Windows.Forms.Button BtnEliminarA;
@@ -285,5 +227,6 @@
         private System.Windows.Forms.Button BtnEditarA;
         private System.Windows.Forms.TextBox TxtBusquedaAlimento;
         private System.Windows.Forms.Label Controles;
+        private System.Windows.Forms.Label label1;
     }
 }
