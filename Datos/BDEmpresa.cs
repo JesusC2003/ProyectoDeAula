@@ -15,16 +15,12 @@ namespace Datos
 {
     public class BDEmpresa : BaseDatosConexion
     {
-    
-
-        public BDEmpresa()
-        {
-        }
+        public BDEmpresa() { }
 
         public string InsertarEmpresa(Empresa empresa)
         {
             string query = "INSERT INTO EMPRESA (NIT, NOMBRE, TELEFONO, DIRECCION, CORREO) " +
-                            "VALUES (:nit, :nombre, :telefono, :direccion, :correo);";
+                            "VALUES (:nit, :nombre, :telefono, :direccion, :correo)";
 
             string mensajeConexion = AbrirConexion();
             if (mensajeConexion.StartsWith("|ERROR DE CONEXION|"))
@@ -56,8 +52,7 @@ namespace Datos
             catch (OracleException ex)
             {
                 return $"|ERROR DE INSERCION| - El proceso no fue completado debido a: {ex.Message}";
-            }
-            
+            }            
         }
         public string ConfirmarInsercion(int ColumnasAfectadas)
         {
@@ -70,11 +65,5 @@ namespace Datos
                 return "|ADVERTENCIA| - La información no fue guardada";
             }           
         }
-
-
-
-
-
-
     }
 }
