@@ -33,6 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xmlworker, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itextsharp.xmlworker.5.5.13.3\lib\itextsharp.xmlworker.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
@@ -126,6 +135,12 @@
     <Compile Include="FmrEmpresa.Designer.cs">
       <DependentUpon>FmrEmpresa.cs</DependentUpon>
     </Compile>
+    <Compile Include="FmrFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmrFactura.Designer.cs">
+      <DependentUpon>FmrFactura.cs</DependentUpon>
+    </Compile>
     <Compile Include="FmrGalpon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -208,6 +223,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FmrEmpresa.resx">
       <DependentUpon>FmrEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmrFactura.resx">
+      <DependentUpon>FmrFactura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FmrGalpon.resx">
       <DependentUpon>FmrGalpon.cs</DependentUpon>
@@ -482,6 +500,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-ver-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\receipt_add_icon_177414.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file-delete_114438.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-file256_25240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-eliminar-archivo-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-eliminar-archivo-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-factura-28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlantillaFactura.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

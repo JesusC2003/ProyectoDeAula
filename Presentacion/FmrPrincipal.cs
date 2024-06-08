@@ -144,6 +144,11 @@ namespace Presentacion
             fmrIniciarSeccion.Show();
         }
 
+        private void BtnFactura_Click(object sender, EventArgs e)
+        {
+            AbrirFmr(new FmrFactura());
+        }
+
 
 
 

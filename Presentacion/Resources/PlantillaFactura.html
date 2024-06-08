@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Title of the document</title>
+    <style>
+        table.border {
+            border-collapse: collapse;
+        }
+
+            table.border th {
+                padding: 5px;
+                border: 1px solid black;
+            }
+
+            table.border td {
+                padding: 5px;
+                border: 1px solid black;
+            }
+    </style>
+</head>
+<body>
+    <table style="width:100%">
+        <tr>
+            <td style="width:20%"></td>
+            <td style="width:60%" align="center" valign="top">
+                <table>
+                    <tr><td align="center"><h4 style="margin:0px">Hensys Innovation</h4></td></tr>
+                    <tr><td align="center">NIT: 123123</td></tr>
+                    <tr><td align="center">Dirección: Dg 19A. Mareigua, Ciudad: Valledupar</td></tr>
+                    <tr><td align="center">Departamento: Cesar</td></tr>
+                    <tr><td align="center">Teléfono: +57 3023776050</td></tr>
+                    <tr><td align="center">Hensysavicola@gmail.com</td></tr>
+                </table>
+            </td>
+            <td style="width:20%">
+                <table class="border" style="width:100%">
+                    <tr><td align="center">Factura de venta de pollo</td></tr>
+                    <tr><td align="center" style="background-color:#D8D8D8">BOLETA</td></tr>
+                    <tr><td align="center">Nro: 00000111</td></tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr><td colspan="3" height="20"></td></tr>
+
+        <tr>
+            <td colspan="2">
+                <table style="width:100%">
+                    <tr>
+                        <td colspan="1" style="width:0%">Cliente:</td>
+                        <td colspan="3" style="width:60%;border-bottom:1px solid black">@Cliente</td>
+                    </tr>
+                </table>
+                <table style="width:100%">
+                    <tr>
+                        <td style="width:20%">Documento:</td>
+                        <td style="width:35%;border-bottom:1px solid black">@Documento</td>
+                        <td style="width:15%">Teléfono:</td>
+                        <td style="width:40%;border-bottom:1px solid black">@Telefono</td>
+                    </tr>
+                </table>
+                <table style="width:100%">
+                    <tr>
+                        <td colspan="1" style="width:10%">Correo:</td>
+                        <td colspan="3" style="width:40%;border-bottom:1px solid black">@Correo</td>
+                        <td style="width:10%">Fecha:</td>
+                        <td style="width:30%;border-bottom:1px solid black">@Fecha</td>
+                    </tr>
+                </table>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr><td colspan="3" height="30"></td></tr>
+
+        <tr>
+            <td colspan="3">
+                <table class="border" style="width:100%;">
+                    <thead>
+                        <tr style="background-color:#D8D8D8">
+                            <th>Cant.</th>
+                            <th>Descripción</th>
+                            <th>P. Unitario</th>
+                            <th>Importe</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--<tr>
+                            <td>1</td>
+                            <td>sdafsda</td>
+                            <td>2.4</td>
+                            <td>2.4</td>
+                        </tr>-->
+                        <tr>
+                            <td style="border: 0px !important"></td>
+                            <td style="border: 0px !important"></td>
+                            <td align="right">Total:</td>
+                            <td>@TOTAL</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -53,6 +53,7 @@
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
             this.dgvGalpon.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvGalpon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvGalpon.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dgvGalpon.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvGalpon.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;

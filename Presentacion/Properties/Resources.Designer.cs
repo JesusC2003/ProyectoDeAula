@@ -163,6 +163,16 @@ namespace Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap delete_file256_25240 {
+            get {
+                object obj = ResourceManager.GetObject("delete-file256_25240", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap disk1 {
             get {
                 object obj = ResourceManager.GetObject("disk1", resourceCulture);
@@ -206,6 +216,16 @@ namespace Presentacion.Properties {
         internal static System.Drawing.Bitmap expand_fullscreen_enlarge_maximize_icon_219215__1_ {
             get {
                 object obj = ResourceManager.GetObject("expand_fullscreen_enlarge_maximize_icon_219215 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap file_delete_114438 {
+            get {
+                object obj = ResourceManager.GetObject("file-delete_114438", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -363,6 +383,26 @@ namespace Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_eliminar_archivo_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-eliminar-archivo-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_eliminar_archivo_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-eliminar-archivo-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_empleado_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-empleado-30", resourceCulture);
@@ -386,6 +426,16 @@ namespace Presentacion.Properties {
         internal static System.Drawing.Bitmap icons8_empresa_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-empresa-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_factura_28 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-factura-28", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -646,6 +696,32 @@ namespace Presentacion.Properties {
         internal static System.Drawing.Bitmap OIG3_0NBeUeslY2k6TCHu {
             get {
                 object obj = ResourceManager.GetObject("OIG3.0NBeUeslY2k6TCHu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a &lt;!DOCTYPE html&gt;
+        ///&lt;html&gt;
+        ///&lt;head&gt;
+        ///    &lt;title&gt;Web Page Design&lt;/title&gt;
+        ///&lt;/head&gt;
+        ///&lt;body&gt;
+        ///&lt;/body&gt;
+        ///&lt;/html&gt;.
+        /// </summary>
+        internal static string PlantillaFactura {
+            get {
+                return ResourceManager.GetString("PlantillaFactura", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap receipt_add_icon_177414 {
+            get {
+                object obj = ResourceManager.GetObject("receipt_add_icon_177414", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -253,6 +253,7 @@
             this.BtnFactura.Text = "Factura";
             this.BtnFactura.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnFactura.UseVisualStyleBackColor = true;
+            this.BtnFactura.Click += new System.EventHandler(this.BtnFactura_Click);
             // 
             // panel7
             // 
