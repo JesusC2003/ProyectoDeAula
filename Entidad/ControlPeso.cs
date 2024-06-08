@@ -7,11 +7,12 @@ namespace Entidad
     {
         public ControlPeso() 
         {
-            Codigo = string.Empty;
+            IdControlPeso = 0;
             Peso = 0;
+            IdPollo = new Pollo();
         }        
 
-        public string Codigo { get; set; }
+        public int IdControlPeso { get; set; }
         public int Peso { get; set; }
         public DateTime FechaControl { get; set; }
         public Pollo IdPollo { get; set; }

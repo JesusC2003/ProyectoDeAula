@@ -5,14 +5,12 @@ namespace Entidad
     {
         public Usuario()
         {
-            Id = 0;
-            Codigo=string.Empty;
+            IdUsuario = 0;
             NombreUsuario=string.Empty;
             Contraseña=string.Empty;
         }
 
-        public int Id {  get; set; }
-        public string Codigo { get; set; }
+        public int IdUsuario {  get; set; }
         public string NombreUsuario { get; set; }
         public string Contraseña { get; set; }
     }

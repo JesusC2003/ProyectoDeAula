@@ -11,6 +11,8 @@ namespace Entidad
             CodigoRegistroAlimentacion=string.Empty;
             CantidadAgua = 0;
             CantidadAlimento = 0;
+            IdGalpon = new Galpon();
+            IdAlimento = new Alimento();
         }
 
         public string CodigoRegistroAlimentacion { get; set; }

@@ -9,6 +9,8 @@ namespace Entidad
         {
             CodigoRegistro = string.Empty;
             Observaciones = string.Empty;
+            IdPollo = new Pollo();
+            IdMedicamento = new Medicamento();
         }       
 
         public string CodigoRegistro { get; set; }

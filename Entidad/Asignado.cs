@@ -6,10 +6,13 @@ namespace Entidad
     {
         public Asignado() 
         {
-            Codigo = string.Empty;
+            IdAsignado = 0;
+            IdEmpleado =new Empleado();
+            IdGalpon = new Galpon();
+
         }
         
-        public string Codigo { get; set; } 
+        public int IdAsignado { get; set; } 
         public Empleado IdEmpleado { get; set; }
         public Galpon IdGalpon { get; set; }
     }

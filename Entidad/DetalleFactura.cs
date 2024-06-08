@@ -6,14 +6,13 @@ namespace Entidad
     {
         public DetalleFactura() 
         {
-            Id = 0;
-            Codigo=string.Empty;
-            Cantidad = 0;
+            IdDetalleFactura = 0;
+            CantidadVenta = 0;
             PrecioUnitario = 0;
+            IdFactura = new Factura();
         }
-        public int Id { get; set; }
-        public string Codigo { get; set; }
-        public int Cantidad { get; set; }
+        public int IdDetalleFactura { get; set; }
+        public int CantidadVenta { get; set; }
         public double PrecioUnitario { get; set; }
         public Factura IdFactura { get; set; }
     }

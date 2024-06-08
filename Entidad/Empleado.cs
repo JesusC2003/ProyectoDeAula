@@ -13,13 +13,12 @@ namespace Entidad
             Apellidos = string.Empty;
             Telefono = string.Empty;
             Correo = string.Empty;
-            CodigoEmpleado = string.Empty;
             Cargo = string.Empty;
             Salario = 0;
             Departamento=string.Empty;
+            NitEmpresa = new Empresa();
+            IdUsuario = new Usuario();
         }
-        
-        public string CodigoEmpleado { get; set; }
         public string Cargo { get; set; } 
         public double Salario { get; set; }
         public string Departamento { get; set; } 

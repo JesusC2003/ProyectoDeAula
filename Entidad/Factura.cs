@@ -5,12 +5,12 @@ namespace Entidad
     public class Factura
     {
         public Factura() {
-            Id = 0;
-            Codigo = string.Empty;
+            IdFactura = 0;
             MontoTotal = 0;
+            IdCliente = new Cliente();
+            NitEmpresa = new Empresa();
         }
-        public int Id {  get; set; }
-        public string Codigo { get; set; }
+        public int IdFactura {  get; set; }
         public DateTime FechaFactura { get; set; }
         public double MontoTotal { get; set; }
         public Cliente IdCliente { get; set; }

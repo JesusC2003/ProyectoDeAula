@@ -37,7 +37,6 @@ namespace Presentacion
             }
             else
             {
-
                 panelMenuVertical.Width = 185;
             }
         }
@@ -46,8 +45,8 @@ namespace Presentacion
 
         private void Horayfecha_Tick(object sender, EventArgs e)
         {
-            laHora.Text =  DateTime.Now.ToString("hh:mm:ss tt");
-            Fecha.Text = DateTime.Now.ToString("dd/MM/yy");
+            //laHora.Text =  DateTime.Now.ToString("hh:mm:ss tt");
+            //Fecha.Text = DateTime.Now.ToString("dd/MM/yy");
 
         }
 
@@ -81,8 +80,8 @@ namespace Presentacion
                 this.PanelContenedor.Controls.Add(fm);
                 this.PanelContenedor.Tag = fm;
                 fm.Show();
-                laHora.Visible = false;
-                Fecha.Visible= false;
+                //laHora.Visible = false;
+                //Fecha.Visible= false;
             }
         }
 
@@ -133,7 +132,11 @@ namespace Presentacion
 
         private void BtnDatosEmpresa_Click(object sender, EventArgs e)
         {
-            AbrirFmr(new FmrEmpresa());
+            //AbrirFmr(new FmrEmpresa());
+            FmrEmpresa form = new FmrEmpresa();
+            this.Hide();
+            form.Show();
+            this.Show();
             panelsubconfiguracion.Visible = false;
         }
 
@@ -148,6 +151,7 @@ namespace Presentacion
         {
             AbrirFmr(new FmrFactura());
         }
+
 
 
 
