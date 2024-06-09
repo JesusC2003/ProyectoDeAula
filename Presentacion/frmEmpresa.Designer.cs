@@ -40,6 +40,9 @@
             this.txtNombreEmpresa = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtNITEmpresa = new Guna.UI2.WinForms.Guna2TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnGuardar = new Guna.UI2.WinForms.Guna2Button();
+            this.btnVolver = new Guna.UI2.WinForms.Guna2Button();
+            this.btnBorrar = new Guna.UI2.WinForms.Guna2Button();
             this.btnModificar = new Guna.UI2.WinForms.Guna2Button();
             this.btnGuardar = new Guna.UI2.WinForms.Guna2Button();
             this.btnVolver = new Guna.UI2.WinForms.Guna2Button();
@@ -275,6 +278,73 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Controles";
             // 
+            // btnGuardar
+            // 
+            this.btnGuardar.BackColor = System.Drawing.Color.Transparent;
+            this.btnGuardar.BorderRadius = 12;
+            this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGuardar.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.btnGuardar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnGuardar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnGuardar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnGuardar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnGuardar.FillColor = System.Drawing.Color.LightBlue;
+            this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
+            this.btnGuardar.Image = global::Presentacion.Properties.Resources.floppy_disc_save_storage_disk_computer_icon_175922;
+            this.btnGuardar.Location = new System.Drawing.Point(127, 28);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(86, 37);
+            this.btnGuardar.TabIndex = 139;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.TextFormatNoPrefix = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // btnVolver
+            // 
+            this.btnVolver.BackColor = System.Drawing.Color.Transparent;
+            this.btnVolver.BorderRadius = 12;
+            this.btnVolver.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVolver.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.btnVolver.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnVolver.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnVolver.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnVolver.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnVolver.FillColor = System.Drawing.Color.LightBlue;
+            this.btnVolver.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVolver.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
+            this.btnVolver.Location = new System.Drawing.Point(327, 28);
+            this.btnVolver.Margin = new System.Windows.Forms.Padding(2);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(86, 37);
+            this.btnVolver.TabIndex = 138;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.TextFormatNoPrefix = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
+            // 
+            // btnBorrar
+            // 
+            this.btnBorrar.BackColor = System.Drawing.Color.Transparent;
+            this.btnBorrar.BorderRadius = 12;
+            this.btnBorrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBorrar.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.btnBorrar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBorrar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBorrar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBorrar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBorrar.FillColor = System.Drawing.Color.LightBlue;
+            this.btnBorrar.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBorrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
+            this.btnBorrar.Image = global::Presentacion.Properties.Resources.file_delete_114438;
+            this.btnBorrar.Location = new System.Drawing.Point(227, 28);
+            this.btnBorrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(86, 37);
+            this.btnBorrar.TabIndex = 137;
+            this.btnBorrar.Text = "Borrar";
+            this.btnBorrar.TextFormatNoPrefix = true;
+            // 
             // btnModificar
             // 
             this.btnModificar.BackColor = System.Drawing.Color.Transparent;
@@ -407,7 +477,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmEmpresa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "v";
             this.Load += new System.EventHandler(this.FmrEmpresa_Load);
             this.panInfo.ResumeLayout(false);
             this.panInfo.PerformLayout();

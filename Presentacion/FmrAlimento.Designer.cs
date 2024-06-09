@@ -69,7 +69,7 @@
             this.dgvAlimento.ColumnHeadersHeight = 24;
             this.dgvAlimento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvAlimento.EnableHeadersVisualStyles = false;
-            this.dgvAlimento.Location = new System.Drawing.Point(48, 127);
+            this.dgvAlimento.Location = new System.Drawing.Point(20, 130);
             this.dgvAlimento.MultiSelect = false;
             this.dgvAlimento.Name = "dgvAlimento";
             this.dgvAlimento.ReadOnly = true;
@@ -83,17 +83,15 @@
             this.dgvAlimento.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvAlimento.RowHeadersVisible = false;
             this.dgvAlimento.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAlimento.Size = new System.Drawing.Size(812, 425);
+            this.dgvAlimento.Size = new System.Drawing.Size(732, 389);
             this.dgvAlimento.TabIndex = 106;
-            this.dgvAlimento.Enter += new System.EventHandler(this.dgvAlimento_Enter);
-            this.dgvAlimento.Leave += new System.EventHandler(this.dgvAlimento_Leave);
             // 
             // CboFiltradoA
             // 
             this.CboFiltradoA.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CboFiltradoA.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CboFiltradoA.FormattingEnabled = true;
-            this.CboFiltradoA.Location = new System.Drawing.Point(721, 50);
+            this.CboFiltradoA.Location = new System.Drawing.Point(612, 48);
             this.CboFiltradoA.Name = "CboFiltradoA";
             this.CboFiltradoA.Size = new System.Drawing.Size(138, 25);
             this.CboFiltradoA.TabIndex = 129;
@@ -104,17 +102,19 @@
             this.TxtBusquedaAlimento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtBusquedaAlimento.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBusquedaAlimento.ForeColor = System.Drawing.Color.White;
-            this.TxtBusquedaAlimento.Location = new System.Drawing.Point(138, 51);
+            this.TxtBusquedaAlimento.Location = new System.Drawing.Point(126, 49);
             this.TxtBusquedaAlimento.Name = "TxtBusquedaAlimento";
-            this.TxtBusquedaAlimento.Size = new System.Drawing.Size(579, 23);
+            this.TxtBusquedaAlimento.Size = new System.Drawing.Size(483, 23);
             this.TxtBusquedaAlimento.TabIndex = 124;
             this.TxtBusquedaAlimento.Text = "Busqueda";
+            this.TxtBusquedaAlimento.Enter += new System.EventHandler(this.TxtBusquedaAlimento_Enter);
+            this.TxtBusquedaAlimento.Leave += new System.EventHandler(this.TxtBusquedaAlimento_Leave);
             // 
             // Controles
             // 
             this.Controles.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Controles.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Controles.Location = new System.Drawing.Point(24, 51);
+            this.Controles.Location = new System.Drawing.Point(17, 50);
             this.Controles.Name = "Controles";
             this.Controles.Size = new System.Drawing.Size(103, 23);
             this.Controles.TabIndex = 123;
@@ -130,7 +130,7 @@
             this.BtnAgregarA.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAgregarA.Image = global::Presentacion.Properties.Resources.icons8_añadir_32;
             this.BtnAgregarA.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAgregarA.Location = new System.Drawing.Point(48, 92);
+            this.BtnAgregarA.Location = new System.Drawing.Point(21, 92);
             this.BtnAgregarA.Name = "BtnAgregarA";
             this.BtnAgregarA.Size = new System.Drawing.Size(101, 34);
             this.BtnAgregarA.TabIndex = 128;
@@ -147,7 +147,7 @@
             this.BtnEliminarA.FlatAppearance.BorderSize = 0;
             this.BtnEliminarA.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.BtnEliminarA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnEliminarA.Location = new System.Drawing.Point(831, 101);
+            this.BtnEliminarA.Location = new System.Drawing.Point(724, 101);
             this.BtnEliminarA.Name = "BtnEliminarA";
             this.BtnEliminarA.Size = new System.Drawing.Size(29, 25);
             this.BtnEliminarA.TabIndex = 127;
@@ -161,7 +161,7 @@
             this.BtnVerA.FlatAppearance.BorderSize = 0;
             this.BtnVerA.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.BtnVerA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnVerA.Location = new System.Drawing.Point(799, 101);
+            this.BtnVerA.Location = new System.Drawing.Point(689, 101);
             this.BtnVerA.Name = "BtnVerA";
             this.BtnVerA.Size = new System.Drawing.Size(29, 25);
             this.BtnVerA.TabIndex = 126;
@@ -175,7 +175,7 @@
             this.BtnEditarA.FlatAppearance.BorderSize = 0;
             this.BtnEditarA.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.BtnEditarA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnEditarA.Location = new System.Drawing.Point(763, 101);
+            this.BtnEditarA.Location = new System.Drawing.Point(654, 101);
             this.BtnEditarA.Name = "BtnEditarA";
             this.BtnEditarA.Size = new System.Drawing.Size(29, 25);
             this.BtnEditarA.TabIndex = 125;
@@ -183,12 +183,12 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.Silver;
+            this.label1.BackColor = System.Drawing.Color.DarkGray;
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(913, 22);
+            this.label1.Size = new System.Drawing.Size(762, 22);
             this.label1.TabIndex = 130;
             this.label1.Text = "Formulario para Alimento";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -197,9 +197,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(913, 591);
+            this.ClientSize = new System.Drawing.Size(762, 531);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.CboFiltradoA);
             this.Controls.Add(this.BtnAgregarA);

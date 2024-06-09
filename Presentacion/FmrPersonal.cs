@@ -21,8 +21,7 @@ namespace Presentacion
         {
 
         }
-
-        private void dgvPersonal_Leave(object sender, EventArgs e)
+        private void TxtBusquedaPersonal_Leave(object sender, EventArgs e)
         {
             if (TxtBusquedaPersonal.Text == "")
             {
@@ -31,7 +30,7 @@ namespace Presentacion
             }
         }
 
-        private void dgvPersonal_Enter(object sender, EventArgs e)
+        private void TxtBusquedaPersonal_Enter(object sender, EventArgs e)
         {
             if (TxtBusquedaPersonal.Text == "Busqueda")
             {
@@ -82,5 +81,7 @@ namespace Presentacion
         {
 
         }
+
+
     }
 }
