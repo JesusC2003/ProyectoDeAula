@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -11,9 +12,15 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
+<<<<<<< HEAD:Presentacion/frmPrincipal.cs
     public partial class frmPrincipal : Form
     {
         public frmPrincipal()
+=======
+    public partial class FmrPrincipal : Form
+    { 
+        public FmrPrincipal()
+>>>>>>> 8a344e28ff44c97dcdbe88d2d920f3722073664d:Presentacion/FmrPrincipal.cs
         {
             InitializeComponent();
             Horayfecha.Enabled = true;
@@ -117,9 +124,9 @@ namespace Presentacion
 
         private void BtnDatosEmpresa_Click(object sender, EventArgs e)
         {
-            //AbrirFmr(new FmrEmpresa());
-            FmrEmpresa form = new FmrEmpresa();
-            form.Show();
+            frmEmpresa frmempresa = frmEmpresa.GetInstance();
+            frmempresa.Show();
+            frmempresa.BringToFront();
             panelsubconfiguracion.Visible = false;
         }
 
@@ -145,6 +152,8 @@ namespace Presentacion
         {
 
         }
+
+
 
 
 

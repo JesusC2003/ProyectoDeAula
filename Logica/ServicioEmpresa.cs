@@ -16,24 +16,35 @@ namespace Logica
             repositorioEmpresa = new RepositorioEmpresa();
         }
 
-        //METODO PARA GUARDAR O ACTUALIZAR EMPRESA
+        //METODO PARA GUARDAR EMPRESA
         public string Guardar(Empresa empresa)
         {
-            return repositorioEmpresa.InsertEmpresa(empresa);
+            return $"{ repositorioEmpresa.InsertEmpresa(empresa)} guardada con exito";
         }
+
+        //METODO PARA ACTUALIZAR EMPRESA
         public string Actualizar(Empresa empresa)
         {
-            return repositorioEmpresa.UpdateEmpresa(empresa);
+            return $"{repositorioEmpresa.UpdateEmpresa(empresa)} actulizada con exito";
         }
 
         //METODO PARA CARGAR INFORMACION EMPRESA
         public Empresa GetEmpresa() 
         {
             Empresa empresa = new Empresa();
-            empresa = repositorioEmpresa.SelectEmpresa();
+            if (RespuestaExisteEmpresa())
+            {
+                empresa = repositorioEmpresa.SelectEmpresa();
+                return empresa;
+            }
             return empresa;
         } 
         
+        //METODO PARA ELIMINAR EMPRESA
+        public string EliminarEmpresa()
+        {
+            return repositorioEmpresa.DeleteEmpresa();
+        }
         //METODO PARA SABER SI EXISTE EMPRESA
         public bool RespuestaExisteEmpresa()
         {

@@ -135,11 +135,11 @@
     <Compile Include="FmrAlimento.Designer.cs">
       <DependentUpon>FmrAlimento.cs</DependentUpon>
     </Compile>
-    <Compile Include="FmrEmpresa.cs">
+    <Compile Include="frmEmpresa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FmrEmpresa.Designer.cs">
-      <DependentUpon>FmrEmpresa.cs</DependentUpon>
+    <Compile Include="frmEmpresa.Designer.cs">
+      <DependentUpon>frmEmpresa.cs</DependentUpon>
     </Compile>
     <Compile Include="FmrFactura.cs">
       <SubType>Form</SubType>
@@ -227,8 +227,8 @@
     <EmbeddedResource Include="FmrAlimento.resx">
       <DependentUpon>FmrAlimento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FmrEmpresa.resx">
-      <DependentUpon>FmrEmpresa.cs</DependentUpon>
+    <EmbeddedResource Include="frmEmpresa.resx">
+      <DependentUpon>frmEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FmrFactura.resx">
       <DependentUpon>FmrFactura.cs</DependentUpon>
