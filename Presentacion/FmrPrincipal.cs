@@ -134,9 +134,7 @@ namespace Presentacion
         {
             //AbrirFmr(new FmrEmpresa());
             FmrEmpresa form = new FmrEmpresa();
-            this.Hide();
             form.Show();
-            this.Show();
             panelsubconfiguracion.Visible = false;
         }
 

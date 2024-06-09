@@ -15,8 +15,7 @@ namespace Datos
 {
     public class RepositorioEmpresa : BaseDatosConexion
     {
-        Empresa empresa;
-        public RepositorioEmpresa() { empresa = new Empresa(); }
+        public RepositorioEmpresa() {  }
 
         //METODO PARA INSERTAR EMPRESA A LA BASE DE DATOS
         public string InsertEmpresa(Empresa empresa)
@@ -41,7 +40,7 @@ namespace Datos
         } 
         
         //METODO INSERTAR INFORMACION AL COMANDO
-        public string EjecutarInsercion(OracleCommand COMANDO, Empresa empresa ) 
+        private string EjecutarInsercion(OracleCommand COMANDO, Empresa empresa ) 
         {
             try
             {
@@ -60,7 +59,7 @@ namespace Datos
         }
         
         //METODO PARA CONFIRMAR LA INSERCION DE LA INFORMACION DE EMPRESA
-        public string ConfirmarInsercion(int ColumnasAfectadas)
+        private string ConfirmarInsercion(int ColumnasAfectadas)
         {
             if (ColumnasAfectadas > 0)
             {
@@ -76,6 +75,7 @@ namespace Datos
         public Empresa SelectEmpresa() 
         {
             OracleDataReader Leer;
+            Empresa empresa = new Empresa();
             string query = "SELECT * FROM EMPRESA";
             try 
             {
@@ -94,6 +94,7 @@ namespace Datos
         //METODO PARA CONVERTIR EL TIPO DE LA INFORMACION TRAIDA DE LA BASE DE DATOS A EMPRESA
         public Empresa Map(OracleDataReader leer) 
         {
+            Empresa empresa = new Empresa();
             if (leer.Read())
             {
                 empresa.NIT = Convert.ToString(leer["NIT"]);
@@ -105,7 +106,82 @@ namespace Datos
             return empresa;
         }
 
+        //METODO PARA ACTUALIZAR INFORMACION EN LA BASE DE DATOS
 
-    
+        public string UpdateEmpresa(Empresa empresa)
+        {
+            string query = "UPDATE EMPRESA " +
+                           "SET NOMBRE = :nombre, " +
+                           "TELEFONO = :telefono, " +
+                           "DIRECCION = :direccion, " +
+                           "CORREO = :correo " +
+                           "WHERE NIT = :nit";
+
+            string mensajeConexion = AbrirConexion();
+            if (mensajeConexion.StartsWith("|ERROR DE CONEXION|"))
+            {
+                return mensajeConexion;
+            }
+
+            try
+            {
+                using (OracleCommand comando = new OracleCommand(query, ObtenerConexion()))
+                {
+                    // Parámetros
+                    comando.Parameters.Add("nombre", OracleDbType.Varchar2).Value = empresa.Nombre;
+                    comando.Parameters.Add("telefono", OracleDbType.Varchar2).Value = empresa.Telefono;
+                    comando.Parameters.Add("direccion", OracleDbType.Varchar2).Value = empresa.Direccion;
+                    comando.Parameters.Add("correo", OracleDbType.Varchar2).Value = empresa.Correo;
+                    comando.Parameters.Add("nit", OracleDbType.Varchar2).Value = empresa.NIT;
+
+                    // Ejecutar el comando
+                    int filasAfectadas = comando.ExecuteNonQuery();
+                    if (filasAfectadas > 0)
+                    {
+                        return "|MENSAJE DE CONFIRMACIÓN| - La información fue actualizada correctamente.";
+                    }
+                    else
+                    {
+                        return "|ADVERTENCIA| - La información no fue actualizada.";
+                    }
+                }
+            }
+            catch (OracleException ex)
+            {
+                return $"|ERROR|: {ex.Message}";
+            }
+            finally
+            {
+                CerrarConexion();
+            }
+        }
+
+        public bool ExisteEmpresa()
+        {
+            string query = "SELECT COUNT(*) FROM EMPRESA";
+            try
+            {
+                using (OracleCommand comando = new OracleCommand(query, ObtenerConexion()))
+                {
+                    string mensajeConexion = AbrirConexion();
+                    if (mensajeConexion.StartsWith("|ERROR DE CONEXION|"))
+                    {
+                        throw new InvalidOperationException(mensajeConexion);
+                    }
+
+                    int count = Convert.ToInt32(comando.ExecuteScalar());
+                    return count > 0;
+                }
+            }
+            catch (OracleException ex)
+            {
+                throw new Exception($"Error al verificar la existencia de empresas: {ex.Message}", ex);
+            }
+            finally
+            {
+                CerrarConexion();
+            }
+        }
+
     }
 }

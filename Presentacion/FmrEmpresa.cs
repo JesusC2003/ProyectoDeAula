@@ -16,23 +16,22 @@ namespace Presentacion
 {
     public partial class FmrEmpresa : Form
     {
-        Empresa empresa;
         ServicioEmpresa servicioEmpresa;
         public FmrEmpresa()
         {
             InitializeComponent();
-            empresa = new Empresa();
             servicioEmpresa = new ServicioEmpresa();
         }
         private void FmrEmpresa_Load(object sender, EventArgs e)
         {
+            Limpiar();
             CargarInfo();
+            DesbloquearControles();
             BloquearControles();
         }
-
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            DesbloquearControles(this);
+            DesbloquearControles();
             btnModificar.Enabled = false;
             btnVolver.Enabled = false;
 
@@ -45,30 +44,32 @@ namespace Presentacion
             }
             else
             {
-                empresa.NIT = txtNITEmpresa.Text;
-                empresa.Nombre = txtNombreEmpresa.Text;
-                empresa.Telefono = txtTelefonoEmpresa.Text;
-                empresa.Direccion = txtDireccionEmpresa.Text;
-                empresa.Correo = txtCorreoEmpresa.Text;
-                MessageBox.Show(servicioEmpresa.Guardar(empresa));
+                if (!servicioEmpresa.RespuestaExisteEmpresa())
+                {
+                    MessageBox.Show(servicioEmpresa.Guardar(MapeoAEntidad()));
+                }
+                else
+                {
+                    MessageBox.Show(servicioEmpresa.Actualizar(MapeoAEntidad()));
+                }
                 this.Close();
             }
         }
         private void btnVolver_Click(object sender, EventArgs e)
         {
+            //FmrPrincipal fmrPrincipal = new FmrPrincipal();
+            //fmrPrincipal.Show();
             this.Close();
         }
 
         //METODO PARA DESBLOQUEAR TODOS LOS CONTROLES
-        private void DesbloquearControles(Control contenedor)
+        private void DesbloquearControles()
         {
-            foreach (Control control in contenedor.Controls)
+            foreach (Control control in panInfo.Controls)
             {
-                control.Enabled = true;
-
-                if (control.HasChildren)
+                if (control.Name != "txt.NitEmpresa")
                 {
-                    DesbloquearControles(control);
+                    control.Enabled = true;
                 }
             }
         }
@@ -80,8 +81,8 @@ namespace Presentacion
             btnBorrar.Enabled = false;
             btnGuardar.Enabled = false;
         }
- 
-        //METODO PARA VALIDAR QUE EL NO HALLAN CAMPOS VACIOS
+
+        //METODO PARA VALIDAR QUE NO HALLAN CAMPOS VACIOS
         private bool ValidarTextBoxNoVaciosEnPanel(Panel panel)
         {
             foreach (Control control in panel.Controls)
@@ -94,17 +95,14 @@ namespace Presentacion
                         return false;
                     }
                 }
-                if (control.HasChildren)
-                {
-                    return ValidarTextBoxNoVaciosEnPanel((Panel)control);
-                }
             }
-            return true; 
+            return true;
         }
 
-        //METODO PARA CARGAR LA INFORMCAION EN LOS CAMPOS
+        //METODO PARA MAPEAR LA INFORMCAION A LOS TEXTBOX
         private void CargarInfo()
         {
+            Empresa empresa = new Empresa();
             empresa = servicioEmpresa.GetEmpresa();
             txtNITEmpresa.Text = empresa.NIT;
             txtNombreEmpresa.Text = empresa.Nombre;
@@ -112,7 +110,25 @@ namespace Presentacion
             txtDireccionEmpresa.Text = empresa.Direccion;
             txtCorreoEmpresa.Text = empresa.Correo;
         }
-
-
-    }
+        private Empresa MapeoAEntidad()
+        {
+            Empresa empresa = new Empresa();
+            empresa.NIT = txtNITEmpresa.Text;
+            empresa.Nombre = txtNombreEmpresa.Text;
+            empresa.Telefono = txtTelefonoEmpresa.Text;
+            empresa.Direccion = txtDireccionEmpresa.Text;
+            empresa.Correo = txtCorreoEmpresa.Text;
+            return empresa;
+        }
+        private void Limpiar()
+        {
+            foreach (Control control in panInfo.Controls)
+            {
+                if (control is TextBox)
+                {
+                    control.Text= string.Empty;
+                }
+            }
+        }
+    } 
 }

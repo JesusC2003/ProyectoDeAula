@@ -10,26 +10,34 @@ namespace Logica
 {
     public class ServicioEmpresa
     {
-        private readonly RepositorioEmpresa bDEmpresa;
+        private readonly RepositorioEmpresa repositorioEmpresa;
         public ServicioEmpresa()
         {
-            bDEmpresa = new RepositorioEmpresa();
+            repositorioEmpresa = new RepositorioEmpresa();
         }
 
-        //METODO PARA GUARDAR EMPRESA
+        //METODO PARA GUARDAR O ACTUALIZAR EMPRESA
         public string Guardar(Empresa empresa)
         {
-            return bDEmpresa.InsertEmpresa(empresa);
+            return repositorioEmpresa.InsertEmpresa(empresa);
+        }
+        public string Actualizar(Empresa empresa)
+        {
+            return repositorioEmpresa.UpdateEmpresa(empresa);
         }
 
         //METODO PARA CARGAR INFORMACION EMPRESA
         public Empresa GetEmpresa() 
         {
             Empresa empresa = new Empresa();
-            empresa = bDEmpresa.SelectEmpresa();
+            empresa = repositorioEmpresa.SelectEmpresa();
             return empresa;
+        } 
+        
+        //METODO PARA SABER SI EXISTE EMPRESA
+        public bool RespuestaExisteEmpresa()
+        {
+            return repositorioEmpresa.ExisteEmpresa();
         }
-
-
     }
 }
