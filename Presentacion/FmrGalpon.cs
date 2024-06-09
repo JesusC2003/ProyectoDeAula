@@ -23,20 +23,20 @@ namespace Presentacion
             Agregargalpon.Show();
         }
 
-        private void dgvGalpon_Enter(object sender, EventArgs e)
-        {
-            if (TxtBusquedaGalpon.Text == "Busqueda")
-            {
-                TxtBusquedaGalpon.Text = "";
-                TxtBusquedaGalpon.ForeColor = Color.White;
-            }
-        }
-
-        private void dgvGalpon_Leave(object sender, EventArgs e)
+        private void TxtBusquedaGalpon_Leave(object sender, EventArgs e)
         {
             if (TxtBusquedaGalpon.Text == "")
             {
                 TxtBusquedaGalpon.Text = "Busqueda";
+                TxtBusquedaGalpon.ForeColor = Color.White;
+            }
+        }
+
+        private void TxtBusquedaGalpon_Enter(object sender, EventArgs e)
+        {
+            if (TxtBusquedaGalpon.Text == "Busqueda")
+            {
+                TxtBusquedaGalpon.Text = "";
                 TxtBusquedaGalpon.ForeColor = Color.White;
             }
         }

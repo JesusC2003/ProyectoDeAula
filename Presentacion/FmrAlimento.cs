@@ -23,7 +23,7 @@ namespace Presentacion
             fmrAgregarAlimento.Show();  
         }
 
-        private void dgvAlimento_Enter(object sender, EventArgs e)
+        private void TxtBusquedaAlimento_Enter(object sender, EventArgs e)
         {
             if (TxtBusquedaAlimento.Text == "Busqueda")
             {
@@ -32,7 +32,7 @@ namespace Presentacion
             }
         }
 
-        private void dgvAlimento_Leave(object sender, EventArgs e)
+        private void TxtBusquedaAlimento_Leave(object sender, EventArgs e)
         {
             if (TxtBusquedaAlimento.Text == "")
             {

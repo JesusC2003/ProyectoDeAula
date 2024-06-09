@@ -17,9 +17,23 @@ namespace Presentacion
             InitializeComponent();
         }
 
-        private void BtnAgregarV_Click(object sender, EventArgs e)
+        private void TxtBusquedaVentas_Leave(object sender, EventArgs e)
         {
-  
+            if (TxtBusquedaVentas.Text == "")
+            {
+                TxtBusquedaVentas.Text = "Busqueda";
+                TxtBusquedaVentas.ForeColor = Color.White;
+            }
+        }
+
+        private void TxtBusquedaVentas_Enter(object sender, EventArgs e)
+        {
+            if (TxtBusquedaVentas.Text == "Busqueda")
+            {
+                TxtBusquedaVentas.Text = "";
+                TxtBusquedaVentas.ForeColor = Color.White;
+            }
         }
     }
-}
+ }
+

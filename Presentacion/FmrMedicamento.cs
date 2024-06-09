@@ -25,7 +25,7 @@ namespace Presentacion
             fmrAgregarMedicamento.Show();
         }
 
-        private void FmrMedicamento_Leave(object sender, EventArgs e)
+        private void TxtBusquedaMedicamento_Leave(object sender, EventArgs e)
         {
             if (TxtBusquedaMedicamento.Text == "")
             {
@@ -34,7 +34,7 @@ namespace Presentacion
             }
         }
 
-        private void FmrMedicamento_Enter(object sender, EventArgs e)
+        private void TxtBusquedaMedicamento_Enter(object sender, EventArgs e)
         {
             if (TxtBusquedaMedicamento.Text == "Busqueda")
             {

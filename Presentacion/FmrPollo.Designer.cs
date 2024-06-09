@@ -71,7 +71,7 @@
             this.dgvPollo.ColumnHeadersHeight = 24;
             this.dgvPollo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvPollo.EnableHeadersVisualStyles = false;
-            this.dgvPollo.Location = new System.Drawing.Point(48, 127);
+            this.dgvPollo.Location = new System.Drawing.Point(20, 130);
             this.dgvPollo.MultiSelect = false;
             this.dgvPollo.Name = "dgvPollo";
             this.dgvPollo.ReadOnly = true;
@@ -85,14 +85,14 @@
             this.dgvPollo.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvPollo.RowHeadersVisible = false;
             this.dgvPollo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPollo.Size = new System.Drawing.Size(812, 425);
+            this.dgvPollo.Size = new System.Drawing.Size(732, 389);
             this.dgvPollo.TabIndex = 108;
             // 
             // Controles
             // 
             this.Controles.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Controles.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Controles.Location = new System.Drawing.Point(24, 51);
+            this.Controles.Location = new System.Drawing.Point(17, 50);
             this.Controles.Name = "Controles";
             this.Controles.Size = new System.Drawing.Size(103, 23);
             this.Controles.TabIndex = 109;
@@ -104,9 +104,9 @@
             this.TxtBusquedapollo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtBusquedapollo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBusquedapollo.ForeColor = System.Drawing.Color.White;
-            this.TxtBusquedapollo.Location = new System.Drawing.Point(138, 51);
+            this.TxtBusquedapollo.Location = new System.Drawing.Point(126, 49);
             this.TxtBusquedapollo.Name = "TxtBusquedapollo";
-            this.TxtBusquedapollo.Size = new System.Drawing.Size(579, 23);
+            this.TxtBusquedapollo.Size = new System.Drawing.Size(483, 23);
             this.TxtBusquedapollo.TabIndex = 110;
             this.TxtBusquedapollo.Text = "Busqueda";
             this.TxtBusquedapollo.Enter += new System.EventHandler(this.TxtBusquedapollo_Enter);
@@ -117,7 +117,7 @@
             this.CboFiltradoP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CboFiltradoP.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CboFiltradoP.FormattingEnabled = true;
-            this.CboFiltradoP.Location = new System.Drawing.Point(723, 50);
+            this.CboFiltradoP.Location = new System.Drawing.Point(612, 48);
             this.CboFiltradoP.Name = "CboFiltradoP";
             this.CboFiltradoP.Size = new System.Drawing.Size(135, 25);
             this.CboFiltradoP.TabIndex = 115;
@@ -129,7 +129,7 @@
             this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(913, 22);
+            this.label1.Size = new System.Drawing.Size(762, 22);
             this.label1.TabIndex = 124;
             this.label1.Text = "Formulario para  Pollo";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -144,7 +144,7 @@
             this.BtnAgregarP.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAgregarP.Image = global::Presentacion.Properties.Resources.icons8_añadir_32;
             this.BtnAgregarP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAgregarP.Location = new System.Drawing.Point(48, 92);
+            this.BtnAgregarP.Location = new System.Drawing.Point(20, 92);
             this.BtnAgregarP.Name = "BtnAgregarP";
             this.BtnAgregarP.Size = new System.Drawing.Size(101, 34);
             this.BtnAgregarP.TabIndex = 114;
@@ -161,7 +161,7 @@
             this.BtnEliminarP.FlatAppearance.BorderSize = 0;
             this.BtnEliminarP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.BtnEliminarP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnEliminarP.Location = new System.Drawing.Point(831, 101);
+            this.BtnEliminarP.Location = new System.Drawing.Point(723, 101);
             this.BtnEliminarP.Name = "BtnEliminarP";
             this.BtnEliminarP.Size = new System.Drawing.Size(29, 25);
             this.BtnEliminarP.TabIndex = 113;
@@ -175,7 +175,7 @@
             this.BtnVerP.FlatAppearance.BorderSize = 0;
             this.BtnVerP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.BtnVerP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnVerP.Location = new System.Drawing.Point(799, 101);
+            this.BtnVerP.Location = new System.Drawing.Point(689, 101);
             this.BtnVerP.Name = "BtnVerP";
             this.BtnVerP.Size = new System.Drawing.Size(29, 25);
             this.BtnVerP.TabIndex = 112;
@@ -189,7 +189,7 @@
             this.BtnEditarP.FlatAppearance.BorderSize = 0;
             this.BtnEditarP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.BtnEditarP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnEditarP.Location = new System.Drawing.Point(763, 101);
+            this.BtnEditarP.Location = new System.Drawing.Point(654, 101);
             this.BtnEditarP.Name = "BtnEditarP";
             this.BtnEditarP.Size = new System.Drawing.Size(29, 25);
             this.BtnEditarP.TabIndex = 111;
@@ -201,7 +201,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(913, 591);
+            this.ClientSize = new System.Drawing.Size(762, 531);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.CboFiltradoP);
             this.Controls.Add(this.BtnAgregarP);
