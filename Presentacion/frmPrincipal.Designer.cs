@@ -500,7 +500,7 @@
             // 
             this.Horayfecha.Tick += new System.EventHandler(this.Horayfecha_Tick);
             // 
-            // FmrPrincipal
+            // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -509,9 +509,10 @@
             this.Controls.Add(this.panelMenuVertical);
             this.Controls.Add(this.panelBarra);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FmrPrincipal";
+            this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FmrPrincipal";
+            this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.panelBarra.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelMenuVertical.ResumeLayout(false);

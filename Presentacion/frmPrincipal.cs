@@ -72,7 +72,7 @@ namespace Presentacion
 
         private void BtnPollo_Click(object sender, EventArgs e)
         {
-            AbrirFmr(new frmPollo());   
+            AbrirFmr(new FmrPollo());   
         }
 
         private void BtnGalpon_Click(object sender, EventArgs e)
@@ -99,7 +99,7 @@ namespace Presentacion
 
         private void BtnVentas_Click(object sender, EventArgs e)
         {
-            AbrirFmr(new frmVentas());
+            AbrirFmr(new FmrVentas());
         }
 
         private void BtnConfiguracion_Click(object sender, EventArgs e)
@@ -139,6 +139,11 @@ namespace Presentacion
         {
             PanelContenedor.Visible=true;
             Horayfecha.Enabled=true;
+        }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+
         }
 
 
