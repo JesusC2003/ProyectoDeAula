@@ -1,6 +1,6 @@
 ﻿namespace Presentacion
 {
-    partial class FmrMedicamento
+    partial class frmMedicamento
     {
         /// <summary>
         /// Required designer variable.

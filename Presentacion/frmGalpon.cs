@@ -19,7 +19,7 @@ namespace Presentacion
 
         private void BtnAgregarG_Click(object sender, EventArgs e)
         {
-            FmrAgregarGalpon Agregargalpon= new FmrAgregarGalpon();
+            frmAgregarGalpon Agregargalpon= new frmAgregarGalpon();
             Agregargalpon.Show();
         }
 

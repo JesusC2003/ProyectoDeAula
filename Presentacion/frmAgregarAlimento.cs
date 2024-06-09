@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
-    public partial class FmrAgregarAlimento : Form
+    public partial class frmAgregarAlimento : Form
     {
-        public FmrAgregarAlimento()
+        public frmAgregarAlimento()
         {
             InitializeComponent();
         }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
-    public partial class FmrPersonal : Form
+    public partial class frmPersonal : Form
     {
-        public FmrPersonal()
+        public frmPersonal()
         {
             InitializeComponent();
         }
@@ -41,7 +41,7 @@ namespace Presentacion
 
         private void BtnAgregarPersonal_Click(object sender, EventArgs e)
         {
-            FmrAgregarPersonal fmrAgregarPersonal   = new FmrAgregarPersonal();
+            frmAgregarPersonal fmrAgregarPersonal   = new frmAgregarPersonal();
             fmrAgregarPersonal.Show();
         }
 

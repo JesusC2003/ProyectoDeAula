@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
-    public partial class FmrInventarioGalpon : Form
+    public partial class frmAgregarMedicamento : Form
     {
-        public FmrInventarioGalpon()
+        public frmAgregarMedicamento()
         {
             InitializeComponent();
+        }
+
+        private void BtnSalirM_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

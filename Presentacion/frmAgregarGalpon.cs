@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
-    public partial class FmrAgregarPersonal : Form
+    public partial class frmAgregarGalpon : Form
     {
-        public FmrAgregarPersonal()
+        public frmAgregarGalpon()
         {
             InitializeComponent();
         }
 
-        private void FmrAgregarPersonal_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BtnSalirPersonal_Click(object sender, EventArgs e)
+        private void BtnSalirGalpon_Click(object sender, EventArgs e)
         {
             this.Close();
         }

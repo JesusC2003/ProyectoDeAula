@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
-    public partial class FmrMedicamento : Form
+    public partial class frmMedicamento : Form
     {
-        public FmrMedicamento()
+        public frmMedicamento()
         {
             InitializeComponent();
         }
@@ -21,7 +21,7 @@ namespace Presentacion
 
         private void BtnAgregarM_Click(object sender, EventArgs e)
         {
-            FmrAgregarMedicamento fmrAgregarMedicamento = new FmrAgregarMedicamento();
+            frmAgregarMedicamento fmrAgregarMedicamento = new frmAgregarMedicamento();
             fmrAgregarMedicamento.Show();
         }
 

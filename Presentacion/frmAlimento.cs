@@ -19,7 +19,7 @@ namespace Presentacion
 
         private void BtnAgregarA_Click(object sender, EventArgs e)
         {
-            FmrAgregarAlimento fmrAgregarAlimento = new FmrAgregarAlimento();   
+            frmAgregarAlimento fmrAgregarAlimento = new frmAgregarAlimento();   
             fmrAgregarAlimento.Show();  
         }
 

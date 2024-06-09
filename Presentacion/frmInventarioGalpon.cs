@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
-    public partial class FmrAgregarGalpon : Form
+    public partial class frmInventarioGalpon : Form
     {
-        public FmrAgregarGalpon()
+        public frmInventarioGalpon()
         {
             InitializeComponent();
-        }
-
-        private void BtnSalirGalpon_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

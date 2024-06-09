@@ -1,6 +1,6 @@
 ﻿namespace Presentacion
 {
-    partial class FmrInventarioGalpon
+    partial class frmInventarioGalpon
     {
         /// <summary>
         /// Required designer variable.

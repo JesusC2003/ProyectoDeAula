@@ -17,9 +17,9 @@ using System.Text.Json.Serialization;
 
 namespace Presentacion
 {
-    public partial class FmrFactura : Form
+    public partial class frmFactura : Form
     {
-        public FmrFactura()
+        public frmFactura()
         {
             InitializeComponent();
         }

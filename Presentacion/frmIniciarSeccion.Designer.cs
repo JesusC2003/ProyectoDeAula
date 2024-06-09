@@ -1,6 +1,6 @@
 ﻿namespace Presentacion
 {
-    partial class FmrIniciarSeccion
+    partial class frmIniciarSeccion
     {
         /// <summary>
         /// Variable del diseñador necesaria.

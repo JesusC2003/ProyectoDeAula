@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
-    public partial class FmrIniciarSeccion : Form
+    public partial class frmIniciarSeccion : Form
     {
-        public FmrIniciarSeccion()
+        public frmIniciarSeccion()
         {
             InitializeComponent();
         }

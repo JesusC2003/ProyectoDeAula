@@ -1,6 +1,6 @@
 ﻿namespace Presentacion
 {
-    partial class FmrAgregarGalpon
+    partial class frmAgregarGalpon
     {
         /// <summary>
         /// Required designer variable.

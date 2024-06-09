@@ -1,6 +1,6 @@
 ﻿namespace Presentacion
 {
-    partial class FmrAgregarPersonal
+    partial class frmAgregarPersonal
     {
         /// <summary>
         /// Required designer variable.

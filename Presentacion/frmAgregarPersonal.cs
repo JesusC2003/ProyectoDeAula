@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
-    public partial class FmrInventarioPollo : Form
+    public partial class frmAgregarPersonal : Form
     {
-        public FmrInventarioPollo()
+        public frmAgregarPersonal()
         {
             InitializeComponent();
+        }
+
+        private void FmrAgregarPersonal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnSalirPersonal_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
