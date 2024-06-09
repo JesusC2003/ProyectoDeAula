@@ -31,7 +31,7 @@ namespace Presentacion
         [DllImport("user32.dll", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
 
-        FmrPersonal granja = new FmrPersonal();
+        frmPersonal granja = new frmPersonal();
 
 
 
@@ -84,22 +84,22 @@ namespace Presentacion
 
         private void BtnGalpon_Click(object sender, EventArgs e)
         {
-            AbrirFmr(new FmrGalpon());
+            AbrirFmr(new frmGalpon());
         }
 
         private void BtnMedicamento_Click(object sender, EventArgs e)
         {
-            AbrirFmr(new FmrMedicamento()); 
+            AbrirFmr(new frmMedicamento()); 
         }
 
         private void BtnAlimento_Click(object sender, EventArgs e)
         {
-            AbrirFmr(new FmrAlimento());
+            AbrirFmr(new frmAlimento());
         }
 
         private void BtnPersonal_Click(object sender, EventArgs e)
         {
-            AbrirFmr(new FmrPersonal());
+            AbrirFmr(new frmPersonal());
         }
 
 
@@ -133,13 +133,13 @@ namespace Presentacion
         private void BtnCerrarSesion_Click(object sender, EventArgs e)
         {
             this.Close();
-            FmrIniciarSeccion fmrIniciarSeccion= new FmrIniciarSeccion();
+            frmIniciarSeccion fmrIniciarSeccion= new frmIniciarSeccion();
             fmrIniciarSeccion.Show();
         }
 
         private void BtnFactura_Click(object sender, EventArgs e)
         {
-            AbrirFmr(new FmrFactura());
+            AbrirFmr(new frmFactura());
         }
 
         private void BtnMenu_Click(object sender, EventArgs e)
