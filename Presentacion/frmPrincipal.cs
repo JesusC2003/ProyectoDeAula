@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
-    public partial class FmrPrincipal : Form
+    public partial class frmPrincipal : Form
     {
-        public FmrPrincipal()
+        public frmPrincipal()
         {
             InitializeComponent();
             Horayfecha.Enabled = true;
@@ -72,7 +72,7 @@ namespace Presentacion
 
         private void BtnPollo_Click(object sender, EventArgs e)
         {
-            AbrirFmr(new FmrPollo());   
+            AbrirFmr(new frmPollo());   
         }
 
         private void BtnGalpon_Click(object sender, EventArgs e)
@@ -99,7 +99,7 @@ namespace Presentacion
 
         private void BtnVentas_Click(object sender, EventArgs e)
         {
-            AbrirFmr(new FmrVentas());
+            AbrirFmr(new frmVentas());
         }
 
         private void BtnConfiguracion_Click(object sender, EventArgs e)

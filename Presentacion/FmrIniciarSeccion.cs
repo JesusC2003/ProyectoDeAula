@@ -29,7 +29,7 @@ namespace Presentacion
 
             if (Usuario == "UNICESAR" && Contraseña == "12345")
             {
-                FmrPrincipal fmrMenu = new FmrPrincipal();
+                frmPrincipal fmrMenu = new frmPrincipal();
                 fmrMenu.Show();
                 this.Hide();
                 Vaciartodo();
