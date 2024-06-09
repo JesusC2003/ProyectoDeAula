@@ -49,8 +49,8 @@ namespace Datos
                 COMANDO.Parameters.Add("telefono", OracleDbType.Varchar2).Value = empresa.Telefono;
                 COMANDO.Parameters.Add("direccion", OracleDbType.Varchar2).Value = empresa.Direccion;
                 COMANDO.Parameters.Add("correo", OracleDbType.Varchar2).Value = empresa.Correo;
-                int ColumnasAfectadas = COMANDO.ExecuteNonQuery();
-                return ConfirmarInsercion(ColumnasAfectadas);
+                int FilasAfectadas = COMANDO.ExecuteNonQuery();
+                return ConfirmarInsercion(FilasAfectadas);
             }
             catch (OracleException ex)
             {
@@ -59,15 +59,15 @@ namespace Datos
         }
         
         //METODO PARA CONFIRMAR LA INSERCION DE LA INFORMACION DE EMPRESA
-        private string ConfirmarInsercion(int ColumnasAfectadas)
+        private string ConfirmarInsercion(int FilasAfectadas)
         {
-            if (ColumnasAfectadas > 0)
+            if (FilasAfectadas > 0)
             {
-                return "|MENSAJE DE CONFORMACION| - La información fue guardada.";
+                return "La información fue";
             }
             else
             {
-                return "|ADVERTENCIA| - La información no fue guardada";
+                return "La información no fue guardada";
             }           
         }
         
@@ -107,43 +107,23 @@ namespace Datos
         }
 
         //METODO PARA ACTUALIZAR INFORMACION EN LA BASE DE DATOS
-
         public string UpdateEmpresa(Empresa empresa)
         {
-            string query = "UPDATE EMPRESA " +
-                           "SET NOMBRE = :nombre, " +
-                           "TELEFONO = :telefono, " +
-                           "DIRECCION = :direccion, " +
-                           "CORREO = :correo " +
+            string query = "UPDATE EMPRESA SET NOMBRE = :nombre, TELEFONO = :telefono, DIRECCION = :direccion, CORREO = :correo " +
                            "WHERE NIT = :nit";
-
-            string mensajeConexion = AbrirConexion();
-            if (mensajeConexion.StartsWith("|ERROR DE CONEXION|"))
-            {
-                return mensajeConexion;
-            }
-
+            AbrirConexion();
             try
             {
                 using (OracleCommand comando = new OracleCommand(query, ObtenerConexion()))
                 {
-                    // Parámetros
                     comando.Parameters.Add("nombre", OracleDbType.Varchar2).Value = empresa.Nombre;
                     comando.Parameters.Add("telefono", OracleDbType.Varchar2).Value = empresa.Telefono;
                     comando.Parameters.Add("direccion", OracleDbType.Varchar2).Value = empresa.Direccion;
                     comando.Parameters.Add("correo", OracleDbType.Varchar2).Value = empresa.Correo;
                     comando.Parameters.Add("nit", OracleDbType.Varchar2).Value = empresa.NIT;
 
-                    // Ejecutar el comando
                     int filasAfectadas = comando.ExecuteNonQuery();
-                    if (filasAfectadas > 0)
-                    {
-                        return "|MENSAJE DE CONFIRMACIÓN| - La información fue actualizada correctamente.";
-                    }
-                    else
-                    {
-                        return "|ADVERTENCIA| - La información no fue actualizada.";
-                    }
+                    return ConfirmarInsercion(filasAfectadas);
                 }
             }
             catch (OracleException ex)
@@ -156,6 +136,7 @@ namespace Datos
             }
         }
 
+        //METODO PARA CONFIRMAR SI EXISTE UN EMPRESA
         public bool ExisteEmpresa()
         {
             string query = "SELECT COUNT(*) FROM EMPRESA";
@@ -183,5 +164,28 @@ namespace Datos
             }
         }
 
+        //METODO PARA ELIMINAR LA INFORMCAION DE LA EMPRESA DE LA BASE DE DATOS
+        public string DeleteEmpresa()
+        {
+            string query = "DELETE FROM EMPRESA";
+            try
+            {
+                using (OracleCommand comando = new OracleCommand(query, ObtenerConexion()))
+                {
+                    AbrirConexion();
+                    int filasAfectadas = comando.ExecuteNonQuery();
+                    if (filasAfectadas > 0)
+                    {
+                        return "|MENSAJE DE CONFIRMACIÓN| - La información fue eliminada correctamente.";
+                    }
+                    else
+                    {
+                        return "|ADVERTENCIA| - No se encontró informacion en la base de datos.";
+                    }
+                }
+            }
+            catch (OracleException ex) { return $"|ERROR|: {ex.Message}"; }
+            finally { CerrarConexion(); }
+        }
     }
 }

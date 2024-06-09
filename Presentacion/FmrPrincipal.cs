@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -12,7 +13,7 @@ using System.Windows.Forms;
 namespace Presentacion
 {
     public partial class FmrPrincipal : Form
-    {
+    { 
         public FmrPrincipal()
         {
             InitializeComponent();
@@ -132,9 +133,9 @@ namespace Presentacion
 
         private void BtnDatosEmpresa_Click(object sender, EventArgs e)
         {
-            //AbrirFmr(new FmrEmpresa());
-            FmrEmpresa form = new FmrEmpresa();
-            form.Show();
+            frmEmpresa frmempresa = frmEmpresa.GetInstance();
+            frmempresa.Show();
+            frmempresa.BringToFront();
             panelsubconfiguracion.Visible = false;
         }
 
@@ -149,6 +150,8 @@ namespace Presentacion
         {
             AbrirFmr(new FmrFactura());
         }
+
+
 
 
 
