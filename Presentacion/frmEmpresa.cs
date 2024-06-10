@@ -162,7 +162,7 @@ namespace Presentacion
         //METODO PARA CARGAR TODOS LOS DATOS DE LA BASE AL FORMULARIO
         private void CargarInfo()
         {
-            Empresa empresa = new Empresa();
+            EntidadEmpresa empresa = new EntidadEmpresa();
             empresa = servicioEmpresa.GetEmpresa();
             txtNITEmpresa.Text = empresa.NIT;
             txtNombreEmpresa.Text = empresa.Nombre;
@@ -172,9 +172,9 @@ namespace Presentacion
         }
         
         //METODO PARA PASAR LA INFORMACION DE TEXTBOX A ENTIDAD
-        private Empresa MapeoAEntidad()
+        private EntidadEmpresa MapeoAEntidad()
         {
-            Empresa empresa = new Empresa();
+            EntidadEmpresa empresa = new EntidadEmpresa();
             empresa.NIT = txtNITEmpresa.Text;
             empresa.Nombre = txtNombreEmpresa.Text;
             empresa.Telefono = txtTelefonoEmpresa.Text;
