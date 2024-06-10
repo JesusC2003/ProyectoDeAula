@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.pnlBarra = new System.Windows.Forms.Panel();
             this.btnConfiguracion = new System.Windows.Forms.Button();
             this.btnCerrarPrograma = new System.Windows.Forms.Button();
@@ -52,13 +51,10 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnPollo = new System.Windows.Forms.Button();
             this.PnlContenedor = new System.Windows.Forms.Panel();
-            this.lblHora = new System.Windows.Forms.Label();
-            this.lblFecha = new System.Windows.Forms.Label();
             this.pnlsubconfiguracion = new System.Windows.Forms.Panel();
             this.btnDatosEmpresa = new System.Windows.Forms.Button();
             this.btnNuevoUsuario = new System.Windows.Forms.Button();
             this.btnCerrarSesion = new System.Windows.Forms.Button();
-            this.Horayfecha = new System.Windows.Forms.Timer(this.components);
             this.pnlBarra.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlMenuVertical.SuspendLayout();
@@ -399,8 +395,6 @@
             // PnlContenedor
             // 
             this.PnlContenedor.BackColor = System.Drawing.Color.White;
-            this.PnlContenedor.Controls.Add(this.lblHora);
-            this.PnlContenedor.Controls.Add(this.lblFecha);
             this.PnlContenedor.Controls.Add(this.pnlsubconfiguracion);
             this.PnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlContenedor.Font = new System.Drawing.Font("Century Gothic", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -408,26 +402,6 @@
             this.PnlContenedor.Name = "PnlContenedor";
             this.PnlContenedor.Size = new System.Drawing.Size(644, 488);
             this.PnlContenedor.TabIndex = 2;
-            // 
-            // lblHora
-            // 
-            this.lblHora.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lblHora.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHora.Location = new System.Drawing.Point(0, 442);
-            this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(644, 23);
-            this.lblHora.TabIndex = 4;
-            this.lblHora.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblFecha
-            // 
-            this.lblFecha.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lblFecha.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.Location = new System.Drawing.Point(0, 465);
-            this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(644, 23);
-            this.lblFecha.TabIndex = 3;
-            this.lblFecha.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // pnlsubconfiguracion
             // 
@@ -496,10 +470,6 @@
             this.btnCerrarSesion.UseVisualStyleBackColor = true;
             this.btnCerrarSesion.Click += new System.EventHandler(this.BtnCerrarSesion_Click);
             // 
-            // Horayfecha
-            // 
-            this.Horayfecha.Tick += new System.EventHandler(this.Horayfecha_Tick);
-            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -541,7 +511,6 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button btnVentas;
         private System.Windows.Forms.Button btnMenu;
-        private System.Windows.Forms.Timer Horayfecha;
         private System.Windows.Forms.Button btnCerrarPrograma;
         private System.Windows.Forms.Button btnMinimizar;
         private System.Windows.Forms.Panel PnlContenedor;
@@ -552,7 +521,5 @@
         private System.Windows.Forms.Button btnCerrarSesion;
         private System.Windows.Forms.Button btnNuevoUsuario;
         private System.Windows.Forms.Button btnDatosEmpresa;
-        private System.Windows.Forms.Label lblHora;
-        private System.Windows.Forms.Label lblFecha;
     }
 }

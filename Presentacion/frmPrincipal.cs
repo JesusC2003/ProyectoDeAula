@@ -19,7 +19,7 @@ namespace Presentacion
             public frmPrincipal()
             {
                 InitializeComponent();
-                Horayfecha.Enabled = true;
+                
             }
 
         [DllImport("user32.dll", EntryPoint = "ReleaseCapture")]
@@ -28,15 +28,6 @@ namespace Presentacion
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
 
         frmPersonal granja = new frmPersonal();
-
-
-
-        private void Horayfecha_Tick(object sender, EventArgs e)
-        {
-            lblHora.Text =  DateTime.Now.ToString("hh:mm:ss tt");
-            lblFecha.Text = DateTime.Now.ToString("dd/MM/yy");
-
-        }
 
 
         private void BtnCerrarPrograma_Click_1(object sender, EventArgs e)
@@ -68,8 +59,6 @@ namespace Presentacion
                 this.PnlContenedor.Controls.Add(fm);
                 this.PnlContenedor.Tag = fm;
                 fm.Show();
-                lblHora.Visible = false;
-                lblFecha.Visible= false;
             }
         }
 
@@ -140,8 +129,6 @@ namespace Presentacion
 
         private void BtnMenu_Click(object sender, EventArgs e)
         {
-            lblFecha.Visible = true;
-            lblHora.Visible = true;
         }
 
         private void frmPrincipal_Load(object sender, EventArgs e)
