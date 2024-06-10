@@ -69,7 +69,7 @@ namespace Presentacion
 
         private void BtnAgregarP_Click(object sender, EventArgs e)
         {
-            frmAgregarPollo pollo   = new frmAgregarPollo();
+            FmrAgregarPollo pollo   = new FmrAgregarPollo();
             pollo.Show();
         }
     }

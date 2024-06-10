@@ -99,41 +99,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmAgregarAlimento.cs">
+    <Compile Include="FmrAgregarAlimento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAgregarAlimento.Designer.cs">
-      <DependentUpon>frmAgregarAlimento.cs</DependentUpon>
+    <Compile Include="FmrAgregarAlimento.Designer.cs">
+      <DependentUpon>FmrAgregarAlimento.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAgregarGalpon.cs">
+    <Compile Include="FmrAgregarGalpon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAgregarGalpon.Designer.cs">
-      <DependentUpon>frmAgregarGalpon.cs</DependentUpon>
+    <Compile Include="FmrAgregarGalpon.Designer.cs">
+      <DependentUpon>FmrAgregarGalpon.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAgregarMedicamento.cs">
+    <Compile Include="FmrAgregarMedicamento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAgregarMedicamento.Designer.cs">
-      <DependentUpon>frmAgregarMedicamento.cs</DependentUpon>
+    <Compile Include="FmrAgregarMedicamento.Designer.cs">
+      <DependentUpon>FmrAgregarMedicamento.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAgregarPersonal.cs">
+    <Compile Include="FmrAgregarPersonal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAgregarPersonal.Designer.cs">
-      <DependentUpon>frmAgregarPersonal.cs</DependentUpon>
+    <Compile Include="FmrAgregarPersonal.Designer.cs">
+      <DependentUpon>FmrAgregarPersonal.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAgregarPollo.cs">
+    <Compile Include="FmrAgregarPollo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FmrAgregarPollo.Designer.cs">
-      <DependentUpon>frmAgregarPollo.cs</DependentUpon>
+      <DependentUpon>FmrAgregarPollo.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAlimento.cs">
+    <Compile Include="FmrAlimento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAlimento.Designer.cs">
-      <DependentUpon>frmAlimento.cs</DependentUpon>
+    <Compile Include="FmrAlimento.Designer.cs">
+      <DependentUpon>FmrAlimento.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEmpresa.cs">
       <SubType>Form</SubType>
@@ -141,47 +141,47 @@
     <Compile Include="frmEmpresa.Designer.cs">
       <DependentUpon>frmEmpresa.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmFactura.cs">
+    <Compile Include="FmrFactura.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmFactura.Designer.cs">
-      <DependentUpon>frmFactura.cs</DependentUpon>
+    <Compile Include="FmrFactura.Designer.cs">
+      <DependentUpon>FmrFactura.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmGalpon.cs">
+    <Compile Include="FmrGalpon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmGalpon.Designer.cs">
-      <DependentUpon>frmGalpon.cs</DependentUpon>
+    <Compile Include="FmrGalpon.Designer.cs">
+      <DependentUpon>FmrGalpon.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmInventarioGalpon.cs">
+    <Compile Include="FmrInventarioGalpon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmInventarioGalpon.Designer.cs">
-      <DependentUpon>frmInventarioGalpon.cs</DependentUpon>
+    <Compile Include="FmrInventarioGalpon.Designer.cs">
+      <DependentUpon>FmrInventarioGalpon.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmInventarioMedicamento.cs">
+    <Compile Include="FmrInventarioMedicamento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmInventarioMedicamento.Designer.cs">
-      <DependentUpon>frmInventarioMedicamento.cs</DependentUpon>
+    <Compile Include="FmrInventarioMedicamento.Designer.cs">
+      <DependentUpon>FmrInventarioMedicamento.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmInventarioPollo.cs">
+    <Compile Include="FmrInventarioPollo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmInventarioPollo.Designer.cs">
-      <DependentUpon>frmInventarioPollo.cs</DependentUpon>
+    <Compile Include="FmrInventarioPollo.Designer.cs">
+      <DependentUpon>FmrInventarioPollo.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMedicamento.cs">
+    <Compile Include="FmrMedicamento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMedicamento.Designer.cs">
-      <DependentUpon>frmMedicamento.cs</DependentUpon>
+    <Compile Include="FmrMedicamento.Designer.cs">
+      <DependentUpon>FmrMedicamento.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPersonal.cs">
+    <Compile Include="FmrPersonal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmPersonal.Designer.cs">
-      <DependentUpon>frmPersonal.cs</DependentUpon>
+    <Compile Include="FmrPersonal.Designer.cs">
+      <DependentUpon>FmrPersonal.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPollo.cs">
       <SubType>Form</SubType>
@@ -189,11 +189,11 @@
     <Compile Include="frmPollo.Designer.cs">
       <DependentUpon>frmPollo.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmIniciarSeccion.cs">
+    <Compile Include="FmrIniciarSeccion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmIniciarSeccion.Designer.cs">
-      <DependentUpon>frmIniciarSeccion.cs</DependentUpon>
+    <Compile Include="FmrIniciarSeccion.Designer.cs">
+      <DependentUpon>FmrIniciarSeccion.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
@@ -209,50 +209,50 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmAgregarAlimento.resx">
-      <DependentUpon>frmAgregarAlimento.cs</DependentUpon>
+    <EmbeddedResource Include="FmrAgregarAlimento.resx">
+      <DependentUpon>FmrAgregarAlimento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAgregarGalpon.resx">
-      <DependentUpon>frmAgregarGalpon.cs</DependentUpon>
+    <EmbeddedResource Include="FmrAgregarGalpon.resx">
+      <DependentUpon>FmrAgregarGalpon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAgregarMedicamento.resx">
-      <DependentUpon>frmAgregarMedicamento.cs</DependentUpon>
+    <EmbeddedResource Include="FmrAgregarMedicamento.resx">
+      <DependentUpon>FmrAgregarMedicamento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAgregarPersonal.resx">
-      <DependentUpon>frmAgregarPersonal.cs</DependentUpon>
+    <EmbeddedResource Include="FmrAgregarPersonal.resx">
+      <DependentUpon>FmrAgregarPersonal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FmrAgregarPollo.resx">
-      <DependentUpon>frmAgregarPollo.cs</DependentUpon>
+      <DependentUpon>FmrAgregarPollo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAlimento.resx">
-      <DependentUpon>frmAlimento.cs</DependentUpon>
+    <EmbeddedResource Include="FmrAlimento.resx">
+      <DependentUpon>FmrAlimento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEmpresa.resx">
       <DependentUpon>frmEmpresa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmFactura.resx">
-      <DependentUpon>frmFactura.cs</DependentUpon>
+    <EmbeddedResource Include="FmrFactura.resx">
+      <DependentUpon>FmrFactura.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmGalpon.resx">
-      <DependentUpon>frmGalpon.cs</DependentUpon>
+    <EmbeddedResource Include="FmrGalpon.resx">
+      <DependentUpon>FmrGalpon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmIniciarSeccion.resx">
-      <DependentUpon>frmIniciarSeccion.cs</DependentUpon>
+    <EmbeddedResource Include="FmrIniciarSeccion.resx">
+      <DependentUpon>FmrIniciarSeccion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmInventarioGalpon.resx">
-      <DependentUpon>frmInventarioGalpon.cs</DependentUpon>
+    <EmbeddedResource Include="FmrInventarioGalpon.resx">
+      <DependentUpon>FmrInventarioGalpon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmInventarioMedicamento.resx">
-      <DependentUpon>frmInventarioMedicamento.cs</DependentUpon>
+    <EmbeddedResource Include="FmrInventarioMedicamento.resx">
+      <DependentUpon>FmrInventarioMedicamento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmInventarioPollo.resx">
-      <DependentUpon>frmInventarioPollo.cs</DependentUpon>
+    <EmbeddedResource Include="FmrInventarioPollo.resx">
+      <DependentUpon>FmrInventarioPollo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMedicamento.resx">
-      <DependentUpon>frmMedicamento.cs</DependentUpon>
+    <EmbeddedResource Include="FmrMedicamento.resx">
+      <DependentUpon>FmrMedicamento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmPersonal.resx">
-      <DependentUpon>frmPersonal.cs</DependentUpon>
+    <EmbeddedResource Include="FmrPersonal.resx">
+      <DependentUpon>FmrPersonal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPollo.resx">
       <DependentUpon>frmPollo.cs</DependentUpon>
