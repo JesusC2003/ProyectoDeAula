@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
-    public partial class FmrAgregarPollo : Form
+    public partial class frmAgregarPollo : Form
     {
-        public FmrAgregarPollo()
+        public frmAgregarPollo()
         {
             InitializeComponent();
         }
