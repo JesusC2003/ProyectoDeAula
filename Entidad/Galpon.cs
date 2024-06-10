@@ -19,6 +19,7 @@ namespace Entidad
         } 
 
         public int IdGalpon { get; set; }
+        public string CodigoGalpon { get; set; }
         public double AreaGalpon { get; set; }
         public string EstadoGalpon { get; set; }       
 

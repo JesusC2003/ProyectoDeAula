@@ -8,14 +8,14 @@ namespace Entidad
 
         public RegistroAlimentacion() 
         {
-            CodigoRegistroAlimentacion=string.Empty;
+            IdRegistroAlimentacion=0;
             CantidadAgua = 0;
             CantidadAlimento = 0;
             IdGalpon = new Galpon();
             IdAlimento = new Alimento();
         }
 
-        public string CodigoRegistroAlimentacion { get; set; }
+        public int IdRegistroAlimentacion { get; set; }
         public int CantidadAlimento { get; set; }
         public int CantidadAgua { get; set; }
         public DateTime FechaAplicacion { get; set; }

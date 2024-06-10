@@ -85,7 +85,7 @@
     <Compile Include="Empresa.cs" />
     <Compile Include="Asignado.cs" />
     <Compile Include="Galpon.cs" />
-    <Compile Include="Inventario.cs" />
+    <Compile Include="Lote.cs" />
     <Compile Include="Medicamento.cs" />
     <Compile Include="Persona.cs" />
     <Compile Include="Pollo.cs" />

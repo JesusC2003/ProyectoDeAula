@@ -7,13 +7,13 @@ namespace Entidad
     {
         public RegistroSanitario()
         {
-            CodigoRegistro = string.Empty;
+            IdRegistro = 0;
             Observaciones = string.Empty;
             IdPollo = new Pollo();
             IdMedicamento = new Medicamento();
         }       
 
-        public string CodigoRegistro { get; set; }
+        public int IdRegistro { get; set; }
         public DateTime FechaAplicacion { get; set; }
         public string Observaciones { get; set; }
         public Pollo IdPollo { get; set; }

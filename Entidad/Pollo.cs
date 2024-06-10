@@ -10,20 +10,19 @@ namespace Entidad
         public Pollo() 
         {
             IdPollo = 0;
-            LotePollo = string.Empty;
+            CodigoPollo = string.Empty;
             RazaPollo = string.Empty;
             EstadoPollo = string.Empty;
             IdGalpon = new Galpon(); 
-            IdInventario = new Inventario();
+            LotePollo = new Lote();
             IdDetalleFactura = new DetalleFactura();
         }
         public int IdPollo { get; set; }
-        public string LotePollo { get; set; }
+        public string CodigoPollo { get; set; }
         public string RazaPollo { get; set; }
         public string EstadoPollo { get; set; } 
-        public DateTime FechaIngreso { get; set; }
         public Galpon IdGalpon { get; set; }
-        public Inventario IdInventario { get; set; } 
+        public Lote LotePollo { get; set; } 
         public DetalleFactura IdDetalleFactura { get; set; }        
     }
 }
