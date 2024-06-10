@@ -12,19 +12,14 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
-<<<<<<< HEAD:Presentacion/frmPrincipal.cs
+
     public partial class frmPrincipal : Form
     {
-        public frmPrincipal()
-=======
-    public partial class FmrPrincipal : Form
-    { 
-        public FmrPrincipal()
->>>>>>> 8a344e28ff44c97dcdbe88d2d920f3722073664d:Presentacion/FmrPrincipal.cs
-        {
-            InitializeComponent();
-            Horayfecha.Enabled = true;
-        }
+            public frmPrincipal()
+            {
+                InitializeComponent();
+                Horayfecha.Enabled = true;
+            }
 
         [DllImport("user32.dll", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
