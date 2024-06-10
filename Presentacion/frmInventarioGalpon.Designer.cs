@@ -31,14 +31,14 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
-            this.dtgInventarioMedicamento = new System.Windows.Forms.DataGridView();
+            this.dgvInventarioMedicamento = new System.Windows.Forms.DataGridView();
             this.ClmIDGalpon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClmEstadoGalpon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClmFechaCreacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClmCapacidadMaxima = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClmCodigoAlimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BtnSalirInventarioGalpon = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgInventarioMedicamento)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInventarioMedicamento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnSalirInventarioGalpon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,21 +52,21 @@
             this.label1.Text = "Inventario Galpon";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dtgInventarioMedicamento
+            // dgvInventarioMedicamento
             // 
-            this.dtgInventarioMedicamento.AllowUserToAddRows = false;
-            this.dtgInventarioMedicamento.AllowUserToDeleteRows = false;
+            this.dgvInventarioMedicamento.AllowUserToAddRows = false;
+            this.dgvInventarioMedicamento.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Navy;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            this.dtgInventarioMedicamento.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgInventarioMedicamento.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvInventarioMedicamento.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvInventarioMedicamento.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtgInventarioMedicamento.BackgroundColor = System.Drawing.Color.White;
-            this.dtgInventarioMedicamento.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtgInventarioMedicamento.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dtgInventarioMedicamento.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgvInventarioMedicamento.BackgroundColor = System.Drawing.Color.White;
+            this.dgvInventarioMedicamento.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvInventarioMedicamento.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvInventarioMedicamento.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -74,23 +74,23 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgInventarioMedicamento.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgInventarioMedicamento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgInventarioMedicamento.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvInventarioMedicamento.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvInventarioMedicamento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvInventarioMedicamento.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ClmIDGalpon,
             this.ClmEstadoGalpon,
             this.ClmFechaCreacion,
             this.ClmCapacidadMaxima,
             this.ClmCodigoAlimento});
-            this.dtgInventarioMedicamento.EnableHeadersVisualStyles = false;
-            this.dtgInventarioMedicamento.Location = new System.Drawing.Point(36, 53);
-            this.dtgInventarioMedicamento.MultiSelect = false;
-            this.dtgInventarioMedicamento.Name = "dtgInventarioMedicamento";
-            this.dtgInventarioMedicamento.ReadOnly = true;
-            this.dtgInventarioMedicamento.RowHeadersVisible = false;
-            this.dtgInventarioMedicamento.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgInventarioMedicamento.Size = new System.Drawing.Size(608, 495);
-            this.dtgInventarioMedicamento.TabIndex = 4;
+            this.dgvInventarioMedicamento.EnableHeadersVisualStyles = false;
+            this.dgvInventarioMedicamento.Location = new System.Drawing.Point(36, 53);
+            this.dgvInventarioMedicamento.MultiSelect = false;
+            this.dgvInventarioMedicamento.Name = "dgvInventarioMedicamento";
+            this.dgvInventarioMedicamento.ReadOnly = true;
+            this.dgvInventarioMedicamento.RowHeadersVisible = false;
+            this.dgvInventarioMedicamento.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvInventarioMedicamento.Size = new System.Drawing.Size(608, 495);
+            this.dgvInventarioMedicamento.TabIndex = 4;
             // 
             // ClmIDGalpon
             // 
@@ -147,19 +147,19 @@
             this.BtnSalirInventarioGalpon.TabIndex = 124;
             this.BtnSalirInventarioGalpon.TabStop = false;
             // 
-            // FmrInventarioGalpon
+            // frmInventarioGalpon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(678, 560);
             this.Controls.Add(this.BtnSalirInventarioGalpon);
-            this.Controls.Add(this.dtgInventarioMedicamento);
+            this.Controls.Add(this.dgvInventarioMedicamento);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FmrInventarioGalpon";
+            this.Name = "frmInventarioGalpon";
             this.Text = "FmrInventarioGalpon";
-            ((System.ComponentModel.ISupportInitialize)(this.dtgInventarioMedicamento)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInventarioMedicamento)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnSalirInventarioGalpon)).EndInit();
             this.ResumeLayout(false);
 
@@ -168,7 +168,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dtgInventarioMedicamento;
+        private System.Windows.Forms.DataGridView dgvInventarioMedicamento;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClmIDGalpon;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClmEstadoGalpon;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClmFechaCreacion;

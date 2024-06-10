@@ -31,40 +31,39 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
-            this.dtgInventarioMedicamento = new System.Windows.Forms.DataGridView();
-            this.BtnSalirInventarioMedicamento = new System.Windows.Forms.PictureBox();
+            this.dgvInventarioMedicamento = new System.Windows.Forms.DataGridView();
             this.ClmCodigoMedicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClmNombreMedicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClmPolloMedicado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgInventarioMedicamento)).BeginInit();
+            this.BtnSalirInventarioMedicamento = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInventarioMedicamento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnSalirInventarioMedicamento)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Pristina", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(243, 11);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(182, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(456, 50);
+            this.label1.Size = new System.Drawing.Size(342, 41);
             this.label1.TabIndex = 2;
             this.label1.Text = "Inventario Medicamento";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dtgInventarioMedicamento
+            // dgvInventarioMedicamento
             // 
-            this.dtgInventarioMedicamento.AllowUserToAddRows = false;
-            this.dtgInventarioMedicamento.AllowUserToDeleteRows = false;
-            this.dtgInventarioMedicamento.AllowUserToResizeColumns = false;
-            this.dtgInventarioMedicamento.AllowUserToResizeRows = false;
+            this.dgvInventarioMedicamento.AllowUserToAddRows = false;
+            this.dgvInventarioMedicamento.AllowUserToDeleteRows = false;
+            this.dgvInventarioMedicamento.AllowUserToResizeColumns = false;
+            this.dgvInventarioMedicamento.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Navy;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            this.dtgInventarioMedicamento.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgInventarioMedicamento.BackgroundColor = System.Drawing.Color.White;
-            this.dtgInventarioMedicamento.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtgInventarioMedicamento.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dtgInventarioMedicamento.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgvInventarioMedicamento.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvInventarioMedicamento.BackgroundColor = System.Drawing.Color.White;
+            this.dgvInventarioMedicamento.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvInventarioMedicamento.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvInventarioMedicamento.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -72,36 +71,23 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgInventarioMedicamento.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgInventarioMedicamento.ColumnHeadersHeight = 29;
-            this.dtgInventarioMedicamento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dtgInventarioMedicamento.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvInventarioMedicamento.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvInventarioMedicamento.ColumnHeadersHeight = 29;
+            this.dgvInventarioMedicamento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvInventarioMedicamento.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ClmCodigoMedicamento,
             this.ClmNombreMedicamento,
             this.ClmPolloMedicado});
-            this.dtgInventarioMedicamento.EnableHeadersVisualStyles = false;
-            this.dtgInventarioMedicamento.Location = new System.Drawing.Point(43, 65);
-            this.dtgInventarioMedicamento.Margin = new System.Windows.Forms.Padding(4);
-            this.dtgInventarioMedicamento.MultiSelect = false;
-            this.dtgInventarioMedicamento.Name = "dtgInventarioMedicamento";
-            this.dtgInventarioMedicamento.ReadOnly = true;
-            this.dtgInventarioMedicamento.RowHeadersVisible = false;
-            this.dtgInventarioMedicamento.RowHeadersWidth = 51;
-            this.dtgInventarioMedicamento.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgInventarioMedicamento.Size = new System.Drawing.Size(809, 590);
-            this.dtgInventarioMedicamento.TabIndex = 3;
-            // 
-            // BtnSalirInventarioMedicamento
-            // 
-            this.BtnSalirInventarioMedicamento.BackColor = System.Drawing.Color.Red;
-            this.BtnSalirInventarioMedicamento.Image = global::Presentacion.Properties.Resources._4115235_exit_logout_sign_out_114030;
-            this.BtnSalirInventarioMedicamento.Location = new System.Drawing.Point(873, 0);
-            this.BtnSalirInventarioMedicamento.Margin = new System.Windows.Forms.Padding(4);
-            this.BtnSalirInventarioMedicamento.Name = "BtnSalirInventarioMedicamento";
-            this.BtnSalirInventarioMedicamento.Size = new System.Drawing.Size(32, 27);
-            this.BtnSalirInventarioMedicamento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BtnSalirInventarioMedicamento.TabIndex = 124;
-            this.BtnSalirInventarioMedicamento.TabStop = false;
+            this.dgvInventarioMedicamento.EnableHeadersVisualStyles = false;
+            this.dgvInventarioMedicamento.Location = new System.Drawing.Point(32, 53);
+            this.dgvInventarioMedicamento.MultiSelect = false;
+            this.dgvInventarioMedicamento.Name = "dgvInventarioMedicamento";
+            this.dgvInventarioMedicamento.ReadOnly = true;
+            this.dgvInventarioMedicamento.RowHeadersVisible = false;
+            this.dgvInventarioMedicamento.RowHeadersWidth = 51;
+            this.dgvInventarioMedicamento.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvInventarioMedicamento.Size = new System.Drawing.Size(607, 479);
+            this.dgvInventarioMedicamento.TabIndex = 3;
             // 
             // ClmCodigoMedicamento
             // 
@@ -130,20 +116,30 @@
             this.ClmPolloMedicado.ReadOnly = true;
             this.ClmPolloMedicado.Width = 195;
             // 
-            // FmrInventarioMedicamento
+            // BtnSalirInventarioMedicamento
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.BtnSalirInventarioMedicamento.BackColor = System.Drawing.Color.Red;
+            this.BtnSalirInventarioMedicamento.Image = global::Presentacion.Properties.Resources._4115235_exit_logout_sign_out_114030;
+            this.BtnSalirInventarioMedicamento.Location = new System.Drawing.Point(655, 0);
+            this.BtnSalirInventarioMedicamento.Name = "BtnSalirInventarioMedicamento";
+            this.BtnSalirInventarioMedicamento.Size = new System.Drawing.Size(24, 22);
+            this.BtnSalirInventarioMedicamento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnSalirInventarioMedicamento.TabIndex = 124;
+            this.BtnSalirInventarioMedicamento.TabStop = false;
+            // 
+            // frmInventarioMedicamento
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(904, 689);
+            this.ClientSize = new System.Drawing.Size(678, 560);
             this.Controls.Add(this.BtnSalirInventarioMedicamento);
-            this.Controls.Add(this.dtgInventarioMedicamento);
+            this.Controls.Add(this.dgvInventarioMedicamento);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "FmrInventarioMedicamento";
+            this.Name = "frmInventarioMedicamento";
             this.Text = "FmrInventarioMedicamento";
-            ((System.ComponentModel.ISupportInitialize)(this.dtgInventarioMedicamento)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInventarioMedicamento)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnSalirInventarioMedicamento)).EndInit();
             this.ResumeLayout(false);
 
@@ -152,7 +148,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dtgInventarioMedicamento;
+        private System.Windows.Forms.DataGridView dgvInventarioMedicamento;
         private System.Windows.Forms.PictureBox BtnSalirInventarioMedicamento;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClmCodigoMedicamento;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClmNombreMedicamento;

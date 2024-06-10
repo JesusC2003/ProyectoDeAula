@@ -33,10 +33,10 @@ namespace Presentacion
             };
 
             string paginahtml = Properties.Resources.PlantillaFactura.ToString();
-            paginahtml = paginahtml.Replace("@Cliente", TxtNombreCliente.Text); // Remplazando datos del PDF
-            paginahtml = paginahtml.Replace("@Documento", TxtCodigoCliente.Text);
-            paginahtml = paginahtml.Replace("@Telefono", TxtTelefonoCliente.Text);
-            paginahtml = paginahtml.Replace("@Correo", TxtCorreoCliente.Text);
+            paginahtml = paginahtml.Replace("@Cliente", txtNombreCliente.Text); // Remplazando datos del PDF
+            paginahtml = paginahtml.Replace("@Documento", txtCodigoCliente.Text);
+            paginahtml = paginahtml.Replace("@Telefono", txtTelefonoCliente.Text);
+            paginahtml = paginahtml.Replace("@Correo", txtCorreoCliente.Text);
             paginahtml = paginahtml.Replace("@Fecha", DateTime.Now.ToString("dd/MM/yyyy"));
 
             if (guardar.ShowDialog() == DialogResult.OK)

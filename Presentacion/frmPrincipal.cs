@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
-<<<<<<< HEAD
+
 
     public partial class frmPrincipal : Form
     {
@@ -21,15 +21,8 @@ namespace Presentacion
                 InitializeComponent();
                 Horayfecha.Enabled = true;
             }
-=======
-    public partial class frmPrincipal : Form
-    { 
-        public frmPrincipal()
-        {
-            InitializeComponent();
-            Horayfecha.Enabled = true;
-        }
->>>>>>> baff70a11df0122eccddfce6b3644d007049d1e9
+
+
 
         [DllImport("user32.dll", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -42,8 +35,8 @@ namespace Presentacion
 
         private void Horayfecha_Tick(object sender, EventArgs e)
         {
-            Hora.Text =  DateTime.Now.ToString("hh:mm:ss tt");
-            Fecha.Text = DateTime.Now.ToString("dd/MM/yy");
+            lblHora.Text =  DateTime.Now.ToString("hh:mm:ss tt");
+            lblFecha.Text = DateTime.Now.ToString("dd/MM/yy");
 
         }
 
@@ -67,18 +60,18 @@ namespace Presentacion
 
         public void AbrirFmr(object Fmr)
         {
-            if (this.PanelContenedor.Controls.Count > 0)
+            if (this.PnlContenedor.Controls.Count > 0)
             {
-                this.PanelContenedor.Controls.RemoveAt(0);
+                this.PnlContenedor.Controls.RemoveAt(0);
 
                 Form fm = Fmr as Form;
                 fm.TopLevel = false;
                 fm.Dock = DockStyle.Fill;
-                this.PanelContenedor.Controls.Add(fm);
-                this.PanelContenedor.Tag = fm;
+                this.PnlContenedor.Controls.Add(fm);
+                this.PnlContenedor.Tag = fm;
                 fm.Show();
-                Hora.Visible = false;
-                Fecha.Visible= false;
+                lblHora.Visible = false;
+                lblFecha.Visible= false;
             }
         }
 
@@ -116,13 +109,13 @@ namespace Presentacion
 
         private void BtnConfiguracion_Click(object sender, EventArgs e)
         {
-            if (panelsubconfiguracion.Visible==false)
+            if (pnlsubconfiguracion.Visible==false)
             {
-                panelsubconfiguracion.Visible = true;
+                pnlsubconfiguracion.Visible = true;
             }
             else
             {
-                panelsubconfiguracion.Visible=false;
+                pnlsubconfiguracion.Visible=false;
             }
 
         }
@@ -132,7 +125,7 @@ namespace Presentacion
             frmEmpresa frmempresa = frmEmpresa.GetInstance();
             frmempresa.Show();
             frmempresa.BringToFront();
-            panelsubconfiguracion.Visible = false;
+            pnlsubconfiguracion.Visible = false;
         }
 
         private void BtnCerrarSesion_Click(object sender, EventArgs e)
@@ -149,7 +142,7 @@ namespace Presentacion
 
         private void BtnMenu_Click(object sender, EventArgs e)
         {
-            PanelContenedor.Visible=true;
+            PnlContenedor.Visible=true;
             Horayfecha.Enabled=true;
         }
 

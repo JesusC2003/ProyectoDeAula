@@ -25,19 +25,19 @@ namespace Presentacion
 
         private void TxtBusquedaAlimento_Enter(object sender, EventArgs e)
         {
-            if (TxtBusquedaAlimento.Text == "Busqueda")
+            if (txtBusquedaAlimento.Text == "Busqueda")
             {
-                TxtBusquedaAlimento.Text = "";
-                TxtBusquedaAlimento.ForeColor = Color.White;
+                txtBusquedaAlimento.Text = "";
+                txtBusquedaAlimento.ForeColor = Color.White;
             }
         }
 
         private void TxtBusquedaAlimento_Leave(object sender, EventArgs e)
         {
-            if (TxtBusquedaAlimento.Text == "")
+            if (txtBusquedaAlimento.Text == "")
             {
-                TxtBusquedaAlimento.Text = "Busqueda";
-                TxtBusquedaAlimento.ForeColor = Color.White;
+                txtBusquedaAlimento.Text = "Busqueda";
+                txtBusquedaAlimento.ForeColor = Color.White;
             }
         }
     }

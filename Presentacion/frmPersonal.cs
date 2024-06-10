@@ -23,19 +23,19 @@ namespace Presentacion
         }
         private void TxtBusquedaPersonal_Leave(object sender, EventArgs e)
         {
-            if (TxtBusquedaPersonal.Text == "")
+            if (txtBusquedaPersonal.Text == "")
             {
-                TxtBusquedaPersonal.Text = "Busqueda";
-                TxtBusquedaPersonal.ForeColor = Color.White;
+                txtBusquedaPersonal.Text = "Busqueda";
+                txtBusquedaPersonal.ForeColor = Color.White;
             }
         }
 
         private void TxtBusquedaPersonal_Enter(object sender, EventArgs e)
         {
-            if (TxtBusquedaPersonal.Text == "Busqueda")
+            if (txtBusquedaPersonal.Text == "Busqueda")
             {
-                TxtBusquedaPersonal.Text = "";
-                TxtBusquedaPersonal.ForeColor = Color.White;
+                txtBusquedaPersonal.Text = "";
+                txtBusquedaPersonal.ForeColor = Color.White;
             }
         }
 

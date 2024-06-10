@@ -33,13 +33,16 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvPollo = new System.Windows.Forms.DataGridView();
             this.Controles = new System.Windows.Forms.Label();
-            this.TxtBusquedapollo = new System.Windows.Forms.TextBox();
-            this.CboFiltradoP = new System.Windows.Forms.ComboBox();
+            this.txtBusquedapollo = new System.Windows.Forms.TextBox();
+            this.cmbFiltradoP = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.BtnAgregarP = new System.Windows.Forms.Button();
             this.BtnEliminarP = new System.Windows.Forms.Button();
             this.BtnVerP = new System.Windows.Forms.Button();
             this.BtnEditarP = new System.Windows.Forms.Button();
+            this.btnAgregarpollo = new System.Windows.Forms.Button();
+            this.btnEliminarPollo = new System.Windows.Forms.Button();
+            this.btnVerpollo = new System.Windows.Forms.Button();
+            this.btnEditarpollo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPollo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,29 +101,29 @@
             this.Controles.TabIndex = 109;
             this.Controles.Text = "Controles";
             // 
-            // TxtBusquedapollo
+            // txtBusquedapollo
             // 
-            this.TxtBusquedapollo.BackColor = System.Drawing.Color.Gray;
-            this.TxtBusquedapollo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtBusquedapollo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBusquedapollo.ForeColor = System.Drawing.Color.White;
-            this.TxtBusquedapollo.Location = new System.Drawing.Point(126, 49);
-            this.TxtBusquedapollo.Name = "TxtBusquedapollo";
-            this.TxtBusquedapollo.Size = new System.Drawing.Size(483, 23);
-            this.TxtBusquedapollo.TabIndex = 110;
-            this.TxtBusquedapollo.Text = "Busqueda";
-            this.TxtBusquedapollo.Enter += new System.EventHandler(this.TxtBusquedapollo_Enter);
-            this.TxtBusquedapollo.Leave += new System.EventHandler(this.TxtBusquedapollo_Leave);
+            this.txtBusquedapollo.BackColor = System.Drawing.Color.Gray;
+            this.txtBusquedapollo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBusquedapollo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBusquedapollo.ForeColor = System.Drawing.Color.White;
+            this.txtBusquedapollo.Location = new System.Drawing.Point(126, 49);
+            this.txtBusquedapollo.Name = "txtBusquedapollo";
+            this.txtBusquedapollo.Size = new System.Drawing.Size(483, 23);
+            this.txtBusquedapollo.TabIndex = 110;
+            this.txtBusquedapollo.Text = "Busqueda";
+            this.txtBusquedapollo.Enter += new System.EventHandler(this.TxtBusquedapollo_Enter);
+            this.txtBusquedapollo.Leave += new System.EventHandler(this.TxtBusquedapollo_Leave);
             // 
-            // CboFiltradoP
+            // cmbFiltradoP
             // 
-            this.CboFiltradoP.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CboFiltradoP.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CboFiltradoP.FormattingEnabled = true;
-            this.CboFiltradoP.Location = new System.Drawing.Point(612, 48);
-            this.CboFiltradoP.Name = "CboFiltradoP";
-            this.CboFiltradoP.Size = new System.Drawing.Size(135, 25);
-            this.CboFiltradoP.TabIndex = 115;
+            this.cmbFiltradoP.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbFiltradoP.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbFiltradoP.FormattingEnabled = true;
+            this.cmbFiltradoP.Location = new System.Drawing.Point(612, 48);
+            this.cmbFiltradoP.Name = "cmbFiltradoP";
+            this.cmbFiltradoP.Size = new System.Drawing.Size(135, 25);
+            this.cmbFiltradoP.TabIndex = 115;
             // 
             // label1
             // 
@@ -134,28 +137,8 @@
             this.label1.Text = "Formulario para  Pollo";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // BtnAgregarP
-            // 
-            this.BtnAgregarP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BtnAgregarP.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnAgregarP.FlatAppearance.BorderSize = 0;
-            this.BtnAgregarP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.BtnAgregarP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAgregarP.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAgregarP.Image = global::Presentacion.Properties.Resources.icons8_añadir_32;
-            this.BtnAgregarP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAgregarP.Location = new System.Drawing.Point(20, 92);
-            this.BtnAgregarP.Name = "BtnAgregarP";
-            this.BtnAgregarP.Size = new System.Drawing.Size(101, 34);
-            this.BtnAgregarP.TabIndex = 114;
-            this.BtnAgregarP.Text = "Añadir";
-            this.BtnAgregarP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnAgregarP.UseVisualStyleBackColor = true;
-            this.BtnAgregarP.Click += new System.EventHandler(this.BtnAgregarP_Click);
-            // 
             // BtnEliminarP
             // 
-            this.BtnEliminarP.BackgroundImage = global::Presentacion.Properties.Resources.icons8_eliminar_32__1_;
             this.BtnEliminarP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.BtnEliminarP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnEliminarP.FlatAppearance.BorderSize = 0;
@@ -169,7 +152,6 @@
             // 
             // BtnVerP
             // 
-            this.BtnVerP.BackgroundImage = global::Presentacion.Properties.Resources.icons8_ver_24;
             this.BtnVerP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.BtnVerP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnVerP.FlatAppearance.BorderSize = 0;
@@ -183,7 +165,6 @@
             // 
             // BtnEditarP
             // 
-            this.BtnEditarP.BackgroundImage = global::Presentacion.Properties.Resources.documentediting_editdocuments_text_documentedi_2820;
             this.BtnEditarP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.BtnEditarP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnEditarP.FlatAppearance.BorderSize = 0;
@@ -195,24 +176,87 @@
             this.BtnEditarP.TabIndex = 111;
             this.BtnEditarP.UseVisualStyleBackColor = true;
             // 
-            // FmrPollo
+            // btnAgregarpollo
+            // 
+            this.btnAgregarpollo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAgregarpollo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregarpollo.FlatAppearance.BorderSize = 0;
+            this.btnAgregarpollo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnAgregarpollo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarpollo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarpollo.Image = global::Presentacion.Properties.Resources.icons8_añadir_32;
+            this.btnAgregarpollo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarpollo.Location = new System.Drawing.Point(21, 92);
+            this.btnAgregarpollo.Name = "btnAgregarpollo";
+            this.btnAgregarpollo.Size = new System.Drawing.Size(101, 34);
+            this.btnAgregarpollo.TabIndex = 128;
+            this.btnAgregarpollo.Text = "Añadir";
+            this.btnAgregarpollo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgregarpollo.UseVisualStyleBackColor = true;
+            // 
+            // btnEliminarPollo
+            // 
+            this.btnEliminarPollo.BackgroundImage = global::Presentacion.Properties.Resources.icons8_eliminar_32__1_;
+            this.btnEliminarPollo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnEliminarPollo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminarPollo.FlatAppearance.BorderSize = 0;
+            this.btnEliminarPollo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnEliminarPollo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarPollo.Location = new System.Drawing.Point(724, 101);
+            this.btnEliminarPollo.Name = "btnEliminarPollo";
+            this.btnEliminarPollo.Size = new System.Drawing.Size(29, 25);
+            this.btnEliminarPollo.TabIndex = 127;
+            this.btnEliminarPollo.UseVisualStyleBackColor = true;
+            // 
+            // btnVerpollo
+            // 
+            this.btnVerpollo.BackgroundImage = global::Presentacion.Properties.Resources.icons8_ver_24;
+            this.btnVerpollo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnVerpollo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVerpollo.FlatAppearance.BorderSize = 0;
+            this.btnVerpollo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnVerpollo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVerpollo.Location = new System.Drawing.Point(689, 101);
+            this.btnVerpollo.Name = "btnVerpollo";
+            this.btnVerpollo.Size = new System.Drawing.Size(29, 25);
+            this.btnVerpollo.TabIndex = 126;
+            this.btnVerpollo.UseVisualStyleBackColor = true;
+            // 
+            // btnEditarpollo
+            // 
+            this.btnEditarpollo.BackgroundImage = global::Presentacion.Properties.Resources.documentediting_editdocuments_text_documentedi_2820;
+            this.btnEditarpollo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnEditarpollo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditarpollo.FlatAppearance.BorderSize = 0;
+            this.btnEditarpollo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnEditarpollo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditarpollo.Location = new System.Drawing.Point(654, 101);
+            this.btnEditarpollo.Name = "btnEditarpollo";
+            this.btnEditarpollo.Size = new System.Drawing.Size(29, 25);
+            this.btnEditarpollo.TabIndex = 125;
+            this.btnEditarpollo.UseVisualStyleBackColor = true;
+            // 
+            // frmPollo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(762, 531);
+            this.Controls.Add(this.btnAgregarpollo);
+            this.Controls.Add(this.btnEliminarPollo);
+            this.Controls.Add(this.btnVerpollo);
+            this.Controls.Add(this.btnEditarpollo);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.CboFiltradoP);
-            this.Controls.Add(this.BtnAgregarP);
+            this.Controls.Add(this.cmbFiltradoP);
             this.Controls.Add(this.BtnEliminarP);
             this.Controls.Add(this.BtnVerP);
             this.Controls.Add(this.BtnEditarP);
-            this.Controls.Add(this.TxtBusquedapollo);
+            this.Controls.Add(this.txtBusquedapollo);
             this.Controls.Add(this.Controles);
             this.Controls.Add(this.dgvPollo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FmrPollo";
+            this.Name = "frmPollo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FmrPollo";
             ((System.ComponentModel.ISupportInitialize)(this.dgvPollo)).EndInit();
@@ -224,12 +268,15 @@
         #endregion
         private System.Windows.Forms.DataGridView dgvPollo;
         private System.Windows.Forms.Label Controles;
-        private System.Windows.Forms.TextBox TxtBusquedapollo;
+        private System.Windows.Forms.TextBox txtBusquedapollo;
         private System.Windows.Forms.Button BtnEditarP;
         private System.Windows.Forms.Button BtnVerP;
         private System.Windows.Forms.Button BtnEliminarP;
-        private System.Windows.Forms.Button BtnAgregarP;
-        private System.Windows.Forms.ComboBox CboFiltradoP;
+        private System.Windows.Forms.ComboBox cmbFiltradoP;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnAgregarpollo;
+        private System.Windows.Forms.Button btnEliminarPollo;
+        private System.Windows.Forms.Button btnVerpollo;
+        private System.Windows.Forms.Button btnEditarpollo;
     }
 }

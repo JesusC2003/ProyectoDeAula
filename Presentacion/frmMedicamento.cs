@@ -27,19 +27,19 @@ namespace Presentacion
 
         private void TxtBusquedaMedicamento_Leave(object sender, EventArgs e)
         {
-            if (TxtBusquedaMedicamento.Text == "")
+            if (txtBusquedaMedicamento.Text == "")
             {
-                TxtBusquedaMedicamento.Text = "Busqueda";
-                TxtBusquedaMedicamento.ForeColor = Color.White;
+                txtBusquedaMedicamento.Text = "Busqueda";
+                txtBusquedaMedicamento.ForeColor = Color.White;
             }
         }
 
         private void TxtBusquedaMedicamento_Enter(object sender, EventArgs e)
         {
-            if (TxtBusquedaMedicamento.Text == "Busqueda")
+            if (txtBusquedaMedicamento.Text == "Busqueda")
             {
-                TxtBusquedaMedicamento.Text = "";
-                TxtBusquedaMedicamento.ForeColor = Color.White;
+                txtBusquedaMedicamento.Text = "";
+                txtBusquedaMedicamento.ForeColor = Color.White;
             }
         }
     }

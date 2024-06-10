@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.label4 = new System.Windows.Forms.Label();
-            this.BtnSalirGalpon = new System.Windows.Forms.PictureBox();
-            this.BtnAgregarGalpon = new System.Windows.Forms.Button();
-            this.CboEstadoGalpon = new System.Windows.Forms.ComboBox();
-            this.TxtCodigoGalpon = new System.Windows.Forms.TextBox();
+            this.btnSalirGalpon = new System.Windows.Forms.PictureBox();
+            this.btnAgregarGalpon = new System.Windows.Forms.Button();
+            this.cmbEstadoGalpon = new System.Windows.Forms.ComboBox();
+            this.txtCodigoGalpon = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.TxtArea = new System.Windows.Forms.TextBox();
+            this.txtArea = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnSalirGalpon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSalirGalpon)).BeginInit();
             this.SuspendLayout();
             // 
             // label4
@@ -51,58 +51,58 @@
             this.label4.Text = "Datos de Galpon";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // BtnSalirGalpon
+            // btnSalirGalpon
             // 
-            this.BtnSalirGalpon.BackColor = System.Drawing.Color.Red;
-            this.BtnSalirGalpon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnSalirGalpon.Image = global::Presentacion.Properties.Resources._4115235_exit_logout_sign_out_114030;
-            this.BtnSalirGalpon.Location = new System.Drawing.Point(441, 281);
-            this.BtnSalirGalpon.Name = "BtnSalirGalpon";
-            this.BtnSalirGalpon.Size = new System.Drawing.Size(24, 29);
-            this.BtnSalirGalpon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BtnSalirGalpon.TabIndex = 126;
-            this.BtnSalirGalpon.TabStop = false;
-            this.BtnSalirGalpon.Click += new System.EventHandler(this.BtnSalirGalpon_Click);
+            this.btnSalirGalpon.BackColor = System.Drawing.Color.Red;
+            this.btnSalirGalpon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSalirGalpon.Image = global::Presentacion.Properties.Resources._4115235_exit_logout_sign_out_114030;
+            this.btnSalirGalpon.Location = new System.Drawing.Point(441, 281);
+            this.btnSalirGalpon.Name = "btnSalirGalpon";
+            this.btnSalirGalpon.Size = new System.Drawing.Size(24, 29);
+            this.btnSalirGalpon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnSalirGalpon.TabIndex = 126;
+            this.btnSalirGalpon.TabStop = false;
+            this.btnSalirGalpon.Click += new System.EventHandler(this.BtnSalirGalpon_Click);
             // 
-            // BtnAgregarGalpon
+            // btnAgregarGalpon
             // 
-            this.BtnAgregarGalpon.BackColor = System.Drawing.Color.Green;
-            this.BtnAgregarGalpon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BtnAgregarGalpon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnAgregarGalpon.FlatAppearance.BorderSize = 0;
-            this.BtnAgregarGalpon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAgregarGalpon.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAgregarGalpon.Image = global::Presentacion.Properties.Resources.disk1;
-            this.BtnAgregarGalpon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAgregarGalpon.Location = new System.Drawing.Point(163, 285);
-            this.BtnAgregarGalpon.Name = "BtnAgregarGalpon";
-            this.BtnAgregarGalpon.Size = new System.Drawing.Size(147, 23);
-            this.BtnAgregarGalpon.TabIndex = 125;
-            this.BtnAgregarGalpon.Text = "Agregar";
-            this.BtnAgregarGalpon.UseVisualStyleBackColor = false;
+            this.btnAgregarGalpon.BackColor = System.Drawing.Color.Green;
+            this.btnAgregarGalpon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAgregarGalpon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregarGalpon.FlatAppearance.BorderSize = 0;
+            this.btnAgregarGalpon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarGalpon.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarGalpon.Image = global::Presentacion.Properties.Resources.disk1;
+            this.btnAgregarGalpon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarGalpon.Location = new System.Drawing.Point(164, 282);
+            this.btnAgregarGalpon.Name = "btnAgregarGalpon";
+            this.btnAgregarGalpon.Size = new System.Drawing.Size(147, 23);
+            this.btnAgregarGalpon.TabIndex = 125;
+            this.btnAgregarGalpon.Text = "Agregar";
+            this.btnAgregarGalpon.UseVisualStyleBackColor = false;
             // 
-            // CboEstadoGalpon
+            // cmbEstadoGalpon
             // 
-            this.CboEstadoGalpon.AutoCompleteCustomSource.AddRange(new string[] {
+            this.cmbEstadoGalpon.AutoCompleteCustomSource.AddRange(new string[] {
             "Vivo",
             "Muerto",
             "Enfermo"});
-            this.CboEstadoGalpon.FormattingEnabled = true;
-            this.CboEstadoGalpon.Items.AddRange(new object[] {
+            this.cmbEstadoGalpon.FormattingEnabled = true;
+            this.cmbEstadoGalpon.Items.AddRange(new object[] {
             "Mantenimiento",
             "Disponible"});
-            this.CboEstadoGalpon.Location = new System.Drawing.Point(185, 203);
-            this.CboEstadoGalpon.Name = "CboEstadoGalpon";
-            this.CboEstadoGalpon.Size = new System.Drawing.Size(172, 21);
-            this.CboEstadoGalpon.TabIndex = 130;
+            this.cmbEstadoGalpon.Location = new System.Drawing.Point(185, 203);
+            this.cmbEstadoGalpon.Name = "cmbEstadoGalpon";
+            this.cmbEstadoGalpon.Size = new System.Drawing.Size(172, 21);
+            this.cmbEstadoGalpon.TabIndex = 130;
             // 
-            // TxtCodigoGalpon
+            // txtCodigoGalpon
             // 
-            this.TxtCodigoGalpon.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCodigoGalpon.Location = new System.Drawing.Point(185, 84);
-            this.TxtCodigoGalpon.Name = "TxtCodigoGalpon";
-            this.TxtCodigoGalpon.Size = new System.Drawing.Size(172, 22);
-            this.TxtCodigoGalpon.TabIndex = 129;
+            this.txtCodigoGalpon.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodigoGalpon.Location = new System.Drawing.Point(185, 84);
+            this.txtCodigoGalpon.Name = "txtCodigoGalpon";
+            this.txtCodigoGalpon.Size = new System.Drawing.Size(172, 22);
+            this.txtCodigoGalpon.TabIndex = 129;
             // 
             // label2
             // 
@@ -124,13 +124,13 @@
             this.label1.TabIndex = 127;
             this.label1.Text = "Codigo";
             // 
-            // TxtArea
+            // txtArea
             // 
-            this.TxtArea.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtArea.Location = new System.Drawing.Point(185, 143);
-            this.TxtArea.Name = "TxtArea";
-            this.TxtArea.Size = new System.Drawing.Size(172, 22);
-            this.TxtArea.TabIndex = 132;
+            this.txtArea.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtArea.Location = new System.Drawing.Point(185, 143);
+            this.txtArea.Name = "txtArea";
+            this.txtArea.Size = new System.Drawing.Size(172, 22);
+            this.txtArea.TabIndex = 132;
             // 
             // label3
             // 
@@ -142,25 +142,25 @@
             this.label3.TabIndex = 131;
             this.label3.Text = "Area";
             // 
-            // FmrAgregarGalpon
+            // frmAgregarGalpon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(463, 309);
-            this.Controls.Add(this.TxtArea);
+            this.Controls.Add(this.txtArea);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.CboEstadoGalpon);
-            this.Controls.Add(this.TxtCodigoGalpon);
+            this.Controls.Add(this.cmbEstadoGalpon);
+            this.Controls.Add(this.txtCodigoGalpon);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.BtnSalirGalpon);
-            this.Controls.Add(this.BtnAgregarGalpon);
+            this.Controls.Add(this.btnSalirGalpon);
+            this.Controls.Add(this.btnAgregarGalpon);
             this.Controls.Add(this.label4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FmrAgregarGalpon";
+            this.Name = "frmAgregarGalpon";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FmrAgregarGalpon";
-            ((System.ComponentModel.ISupportInitialize)(this.BtnSalirGalpon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSalirGalpon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,13 +169,13 @@
         #endregion
 
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox BtnSalirGalpon;
-        private System.Windows.Forms.Button BtnAgregarGalpon;
-        private System.Windows.Forms.ComboBox CboEstadoGalpon;
-        private System.Windows.Forms.TextBox TxtCodigoGalpon;
+        private System.Windows.Forms.PictureBox btnSalirGalpon;
+        private System.Windows.Forms.Button btnAgregarGalpon;
+        private System.Windows.Forms.ComboBox cmbEstadoGalpon;
+        private System.Windows.Forms.TextBox txtCodigoGalpon;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox TxtArea;
+        private System.Windows.Forms.TextBox txtArea;
         private System.Windows.Forms.Label label3;
     }
 }

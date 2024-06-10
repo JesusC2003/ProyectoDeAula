@@ -28,43 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.CboMarcaAlimento = new System.Windows.Forms.ComboBox();
-            this.CboTipoAlimento = new System.Windows.Forms.ComboBox();
+            this.cmbMarcaAlimento = new System.Windows.Forms.ComboBox();
+            this.cmbTipoAlimento = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCodigoAlimento = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.BtnSalirAlimento = new System.Windows.Forms.PictureBox();
-            this.BtnAgregarAlimento = new System.Windows.Forms.Button();
+            this.btnSalirAlimento = new System.Windows.Forms.PictureBox();
+            this.btnAgregarAlimento = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnSalirAlimento)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSalirAlimento)).BeginInit();
             this.SuspendLayout();
             // 
-            // CboMarcaAlimento
+            // cmbMarcaAlimento
             // 
-            this.CboMarcaAlimento.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CboMarcaAlimento.FormattingEnabled = true;
-            this.CboMarcaAlimento.Items.AddRange(new object[] {
+            this.cmbMarcaAlimento.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbMarcaAlimento.FormattingEnabled = true;
+            this.cmbMarcaAlimento.Items.AddRange(new object[] {
             "Purina",
             "Avifasa",
             "Italcol"});
-            this.CboMarcaAlimento.Location = new System.Drawing.Point(163, 139);
-            this.CboMarcaAlimento.Name = "CboMarcaAlimento";
-            this.CboMarcaAlimento.Size = new System.Drawing.Size(193, 24);
-            this.CboMarcaAlimento.TabIndex = 110;
+            this.cmbMarcaAlimento.Location = new System.Drawing.Point(163, 139);
+            this.cmbMarcaAlimento.Name = "cmbMarcaAlimento";
+            this.cmbMarcaAlimento.Size = new System.Drawing.Size(193, 24);
+            this.cmbMarcaAlimento.TabIndex = 110;
             // 
-            // CboTipoAlimento
+            // cmbTipoAlimento
             // 
-            this.CboTipoAlimento.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CboTipoAlimento.FormattingEnabled = true;
-            this.CboTipoAlimento.Items.AddRange(new object[] {
+            this.cmbTipoAlimento.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbTipoAlimento.FormattingEnabled = true;
+            this.cmbTipoAlimento.Items.AddRange(new object[] {
             "Iniciación ",
             "Crecimiento",
             "Engorde"});
-            this.CboTipoAlimento.Location = new System.Drawing.Point(163, 187);
-            this.CboTipoAlimento.Name = "CboTipoAlimento";
-            this.CboTipoAlimento.Size = new System.Drawing.Size(193, 24);
-            this.CboTipoAlimento.TabIndex = 109;
+            this.cmbTipoAlimento.Location = new System.Drawing.Point(163, 187);
+            this.cmbTipoAlimento.Name = "cmbTipoAlimento";
+            this.cmbTipoAlimento.Size = new System.Drawing.Size(193, 24);
+            this.cmbTipoAlimento.TabIndex = 109;
             // 
             // label6
             // 
@@ -104,35 +104,35 @@
             this.label1.TabIndex = 105;
             this.label1.Text = "Codigo";
             // 
-            // BtnSalirAlimento
+            // btnSalirAlimento
             // 
-            this.BtnSalirAlimento.BackColor = System.Drawing.Color.Red;
-            this.BtnSalirAlimento.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnSalirAlimento.Image = global::Presentacion.Properties.Resources._4115235_exit_logout_sign_out_114030;
-            this.BtnSalirAlimento.Location = new System.Drawing.Point(439, 280);
-            this.BtnSalirAlimento.Name = "BtnSalirAlimento";
-            this.BtnSalirAlimento.Size = new System.Drawing.Size(24, 29);
-            this.BtnSalirAlimento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BtnSalirAlimento.TabIndex = 124;
-            this.BtnSalirAlimento.TabStop = false;
-            this.BtnSalirAlimento.Click += new System.EventHandler(this.BtnSalirAlimento_Click);
+            this.btnSalirAlimento.BackColor = System.Drawing.Color.Red;
+            this.btnSalirAlimento.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSalirAlimento.Image = global::Presentacion.Properties.Resources._4115235_exit_logout_sign_out_114030;
+            this.btnSalirAlimento.Location = new System.Drawing.Point(439, 280);
+            this.btnSalirAlimento.Name = "btnSalirAlimento";
+            this.btnSalirAlimento.Size = new System.Drawing.Size(24, 29);
+            this.btnSalirAlimento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnSalirAlimento.TabIndex = 124;
+            this.btnSalirAlimento.TabStop = false;
+            this.btnSalirAlimento.Click += new System.EventHandler(this.BtnSalirAlimento_Click);
             // 
-            // BtnAgregarAlimento
+            // btnAgregarAlimento
             // 
-            this.BtnAgregarAlimento.BackColor = System.Drawing.Color.Green;
-            this.BtnAgregarAlimento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BtnAgregarAlimento.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnAgregarAlimento.FlatAppearance.BorderSize = 0;
-            this.BtnAgregarAlimento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAgregarAlimento.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAgregarAlimento.Image = global::Presentacion.Properties.Resources.disk1;
-            this.BtnAgregarAlimento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAgregarAlimento.Location = new System.Drawing.Point(163, 285);
-            this.BtnAgregarAlimento.Name = "BtnAgregarAlimento";
-            this.BtnAgregarAlimento.Size = new System.Drawing.Size(147, 23);
-            this.BtnAgregarAlimento.TabIndex = 127;
-            this.BtnAgregarAlimento.Text = "Agregar";
-            this.BtnAgregarAlimento.UseVisualStyleBackColor = false;
+            this.btnAgregarAlimento.BackColor = System.Drawing.Color.Green;
+            this.btnAgregarAlimento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAgregarAlimento.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregarAlimento.FlatAppearance.BorderSize = 0;
+            this.btnAgregarAlimento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarAlimento.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarAlimento.Image = global::Presentacion.Properties.Resources.disk1;
+            this.btnAgregarAlimento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarAlimento.Location = new System.Drawing.Point(165, 282);
+            this.btnAgregarAlimento.Name = "btnAgregarAlimento";
+            this.btnAgregarAlimento.Size = new System.Drawing.Size(147, 23);
+            this.btnAgregarAlimento.TabIndex = 127;
+            this.btnAgregarAlimento.Text = "Agregar";
+            this.btnAgregarAlimento.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
@@ -145,25 +145,25 @@
             this.label4.Text = "Datos de Alimento";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // FmrAgregarAlimento
+            // frmAgregarAlimento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(463, 309);
-            this.Controls.Add(this.BtnAgregarAlimento);
+            this.Controls.Add(this.btnAgregarAlimento);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.BtnSalirAlimento);
-            this.Controls.Add(this.CboMarcaAlimento);
-            this.Controls.Add(this.CboTipoAlimento);
+            this.Controls.Add(this.btnSalirAlimento);
+            this.Controls.Add(this.cmbMarcaAlimento);
+            this.Controls.Add(this.cmbTipoAlimento);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtCodigoAlimento);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FmrAgregarAlimento";
+            this.Name = "frmAgregarAlimento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FmrAgregarAlimento";
-            ((System.ComponentModel.ISupportInitialize)(this.BtnSalirAlimento)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSalirAlimento)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,14 +171,14 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox CboMarcaAlimento;
-        private System.Windows.Forms.ComboBox CboTipoAlimento;
+        private System.Windows.Forms.ComboBox cmbMarcaAlimento;
+        private System.Windows.Forms.ComboBox cmbTipoAlimento;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtCodigoAlimento;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox BtnSalirAlimento;
-        private System.Windows.Forms.Button BtnAgregarAlimento;
+        private System.Windows.Forms.PictureBox btnSalirAlimento;
+        private System.Windows.Forms.Button btnAgregarAlimento;
         private System.Windows.Forms.Label label4;
     }
 }

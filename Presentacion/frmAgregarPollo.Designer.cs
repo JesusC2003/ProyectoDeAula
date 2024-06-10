@@ -32,12 +32,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.TxtCodigoPollo = new System.Windows.Forms.TextBox();
-            this.CboRazaPollo = new System.Windows.Forms.ComboBox();
-            this.CboEstadopollo = new System.Windows.Forms.ComboBox();
-            this.BtnAgregarPollo = new System.Windows.Forms.Button();
-            this.BtnSalirpollo = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnSalirpollo)).BeginInit();
+            this.txtCodigoPollo = new System.Windows.Forms.TextBox();
+            this.cmbRazaPollo = new System.Windows.Forms.ComboBox();
+            this.cmbEstadopollo = new System.Windows.Forms.ComboBox();
+            this.btnAgregarPollo = new System.Windows.Forms.Button();
+            this.btnSalirpollo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSalirpollo)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -81,99 +81,99 @@
             this.label4.Text = "Datos de Pollo";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TxtCodigoPollo
+            // txtCodigoPollo
             // 
-            this.TxtCodigoPollo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCodigoPollo.Location = new System.Drawing.Point(179, 81);
-            this.TxtCodigoPollo.Name = "TxtCodigoPollo";
-            this.TxtCodigoPollo.Size = new System.Drawing.Size(172, 22);
-            this.TxtCodigoPollo.TabIndex = 4;
+            this.txtCodigoPollo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodigoPollo.Location = new System.Drawing.Point(179, 81);
+            this.txtCodigoPollo.Name = "txtCodigoPollo";
+            this.txtCodigoPollo.Size = new System.Drawing.Size(172, 22);
+            this.txtCodigoPollo.TabIndex = 4;
             // 
-            // CboRazaPollo
+            // cmbRazaPollo
             // 
-            this.CboRazaPollo.AutoCompleteCustomSource.AddRange(new string[] {
+            this.cmbRazaPollo.AutoCompleteCustomSource.AddRange(new string[] {
             "Avian",
             "Arbor Acres",
             "Cobb 500",
             "Ross 308",
             "Hubbard"});
-            this.CboRazaPollo.FormattingEnabled = true;
-            this.CboRazaPollo.Items.AddRange(new object[] {
+            this.cmbRazaPollo.FormattingEnabled = true;
+            this.cmbRazaPollo.Items.AddRange(new object[] {
             "Hubbard",
             "Ross 308",
             "Cobb 500",
             "Arbor Acres",
             "Avian"});
-            this.CboRazaPollo.Location = new System.Drawing.Point(179, 142);
-            this.CboRazaPollo.Name = "CboRazaPollo";
-            this.CboRazaPollo.Size = new System.Drawing.Size(172, 21);
-            this.CboRazaPollo.TabIndex = 5;
+            this.cmbRazaPollo.Location = new System.Drawing.Point(179, 142);
+            this.cmbRazaPollo.Name = "cmbRazaPollo";
+            this.cmbRazaPollo.Size = new System.Drawing.Size(172, 21);
+            this.cmbRazaPollo.TabIndex = 5;
             // 
-            // CboEstadopollo
+            // cmbEstadopollo
             // 
-            this.CboEstadopollo.AutoCompleteCustomSource.AddRange(new string[] {
+            this.cmbEstadopollo.AutoCompleteCustomSource.AddRange(new string[] {
             "Vivo",
             "Muerto",
             "Enfermo"});
-            this.CboEstadopollo.FormattingEnabled = true;
-            this.CboEstadopollo.Items.AddRange(new object[] {
+            this.cmbEstadopollo.FormattingEnabled = true;
+            this.cmbEstadopollo.Items.AddRange(new object[] {
             "Vivo",
             "Muerto",
             "Enfermo"});
-            this.CboEstadopollo.Location = new System.Drawing.Point(179, 200);
-            this.CboEstadopollo.Name = "CboEstadopollo";
-            this.CboEstadopollo.Size = new System.Drawing.Size(172, 21);
-            this.CboEstadopollo.TabIndex = 6;
+            this.cmbEstadopollo.Location = new System.Drawing.Point(179, 200);
+            this.cmbEstadopollo.Name = "cmbEstadopollo";
+            this.cmbEstadopollo.Size = new System.Drawing.Size(172, 21);
+            this.cmbEstadopollo.TabIndex = 6;
             // 
-            // BtnAgregarPollo
+            // btnAgregarPollo
             // 
-            this.BtnAgregarPollo.BackColor = System.Drawing.Color.Green;
-            this.BtnAgregarPollo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BtnAgregarPollo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnAgregarPollo.FlatAppearance.BorderSize = 0;
-            this.BtnAgregarPollo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAgregarPollo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAgregarPollo.Image = global::Presentacion.Properties.Resources.disk1;
-            this.BtnAgregarPollo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAgregarPollo.Location = new System.Drawing.Point(162, 284);
-            this.BtnAgregarPollo.Name = "BtnAgregarPollo";
-            this.BtnAgregarPollo.Size = new System.Drawing.Size(147, 23);
-            this.BtnAgregarPollo.TabIndex = 7;
-            this.BtnAgregarPollo.Text = "Agregar";
-            this.BtnAgregarPollo.UseVisualStyleBackColor = false;
+            this.btnAgregarPollo.BackColor = System.Drawing.Color.Green;
+            this.btnAgregarPollo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAgregarPollo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregarPollo.FlatAppearance.BorderSize = 0;
+            this.btnAgregarPollo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarPollo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarPollo.Image = global::Presentacion.Properties.Resources.disk1;
+            this.btnAgregarPollo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarPollo.Location = new System.Drawing.Point(162, 283);
+            this.btnAgregarPollo.Name = "btnAgregarPollo";
+            this.btnAgregarPollo.Size = new System.Drawing.Size(147, 23);
+            this.btnAgregarPollo.TabIndex = 7;
+            this.btnAgregarPollo.Text = "Agregar";
+            this.btnAgregarPollo.UseVisualStyleBackColor = false;
             // 
-            // BtnSalirpollo
+            // btnSalirpollo
             // 
-            this.BtnSalirpollo.BackColor = System.Drawing.Color.Red;
-            this.BtnSalirpollo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnSalirpollo.Image = global::Presentacion.Properties.Resources._4115235_exit_logout_sign_out_114030;
-            this.BtnSalirpollo.Location = new System.Drawing.Point(440, 280);
-            this.BtnSalirpollo.Name = "BtnSalirpollo";
-            this.BtnSalirpollo.Size = new System.Drawing.Size(24, 29);
-            this.BtnSalirpollo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BtnSalirpollo.TabIndex = 124;
-            this.BtnSalirpollo.TabStop = false;
-            this.BtnSalirpollo.Click += new System.EventHandler(this.BtnSalirPollo_Click);
+            this.btnSalirpollo.BackColor = System.Drawing.Color.Red;
+            this.btnSalirpollo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSalirpollo.Image = global::Presentacion.Properties.Resources._4115235_exit_logout_sign_out_114030;
+            this.btnSalirpollo.Location = new System.Drawing.Point(440, 280);
+            this.btnSalirpollo.Name = "btnSalirpollo";
+            this.btnSalirpollo.Size = new System.Drawing.Size(24, 29);
+            this.btnSalirpollo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnSalirpollo.TabIndex = 124;
+            this.btnSalirpollo.TabStop = false;
+            this.btnSalirpollo.Click += new System.EventHandler(this.BtnSalirPollo_Click);
             // 
-            // FmrAgregarPollo
+            // frmAgregarPollo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(463, 309);
-            this.Controls.Add(this.BtnSalirpollo);
-            this.Controls.Add(this.BtnAgregarPollo);
-            this.Controls.Add(this.CboEstadopollo);
-            this.Controls.Add(this.CboRazaPollo);
-            this.Controls.Add(this.TxtCodigoPollo);
+            this.Controls.Add(this.btnSalirpollo);
+            this.Controls.Add(this.btnAgregarPollo);
+            this.Controls.Add(this.cmbEstadopollo);
+            this.Controls.Add(this.cmbRazaPollo);
+            this.Controls.Add(this.txtCodigoPollo);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FmrAgregarPollo";
+            this.Name = "frmAgregarPollo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FmrAgregarPollo";
-            ((System.ComponentModel.ISupportInitialize)(this.BtnSalirpollo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSalirpollo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -185,10 +185,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox TxtCodigoPollo;
-        private System.Windows.Forms.ComboBox CboRazaPollo;
-        private System.Windows.Forms.ComboBox CboEstadopollo;
-        private System.Windows.Forms.Button BtnAgregarPollo;
-        private System.Windows.Forms.PictureBox BtnSalirpollo;
+        private System.Windows.Forms.TextBox txtCodigoPollo;
+        private System.Windows.Forms.ComboBox cmbRazaPollo;
+        private System.Windows.Forms.ComboBox cmbEstadopollo;
+        private System.Windows.Forms.Button btnAgregarPollo;
+        private System.Windows.Forms.PictureBox btnSalirpollo;
     }
 }

@@ -31,17 +31,17 @@
             this.label4 = new System.Windows.Forms.Label();
             this.BtnSalirMedicamento = new System.Windows.Forms.PictureBox();
             this.BtnAgregarMedicamento = new System.Windows.Forms.Button();
-            this.TxtNombreMedicamento = new System.Windows.Forms.TextBox();
+            this.txtNombreMedicamento = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.TxtCodigoMedicamento = new System.Windows.Forms.TextBox();
+            this.txtCodigoMedicamento = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.BtnSalirM = new System.Windows.Forms.PictureBox();
-            this.BtnAgregarM = new System.Windows.Forms.Button();
+            this.btnSalirM = new System.Windows.Forms.PictureBox();
+            this.btnAgregarM = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.TxtDescripcionMedicamento = new System.Windows.Forms.TextBox();
+            this.txtDescripcionMedicamento = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.BtnSalirMedicamento)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnSalirM)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSalirM)).BeginInit();
             this.SuspendLayout();
             // 
             // label4
@@ -82,13 +82,13 @@
             this.BtnAgregarMedicamento.Text = "Agregar";
             this.BtnAgregarMedicamento.UseVisualStyleBackColor = false;
             // 
-            // TxtNombreMedicamento
+            // txtNombreMedicamento
             // 
-            this.TxtNombreMedicamento.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNombreMedicamento.Location = new System.Drawing.Point(198, 142);
-            this.TxtNombreMedicamento.Name = "TxtNombreMedicamento";
-            this.TxtNombreMedicamento.Size = new System.Drawing.Size(172, 22);
-            this.TxtNombreMedicamento.TabIndex = 139;
+            this.txtNombreMedicamento.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreMedicamento.Location = new System.Drawing.Point(198, 142);
+            this.txtNombreMedicamento.Name = "txtNombreMedicamento";
+            this.txtNombreMedicamento.Size = new System.Drawing.Size(172, 22);
+            this.txtNombreMedicamento.TabIndex = 139;
             // 
             // label3
             // 
@@ -100,13 +100,13 @@
             this.label3.TabIndex = 138;
             this.label3.Text = "Nombre";
             // 
-            // TxtCodigoMedicamento
+            // txtCodigoMedicamento
             // 
-            this.TxtCodigoMedicamento.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCodigoMedicamento.Location = new System.Drawing.Point(198, 83);
-            this.TxtCodigoMedicamento.Name = "TxtCodigoMedicamento";
-            this.TxtCodigoMedicamento.Size = new System.Drawing.Size(172, 22);
-            this.TxtCodigoMedicamento.TabIndex = 137;
+            this.txtCodigoMedicamento.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodigoMedicamento.Location = new System.Drawing.Point(198, 83);
+            this.txtCodigoMedicamento.Name = "txtCodigoMedicamento";
+            this.txtCodigoMedicamento.Size = new System.Drawing.Size(172, 22);
+            this.txtCodigoMedicamento.TabIndex = 137;
             // 
             // label1
             // 
@@ -118,35 +118,35 @@
             this.label1.TabIndex = 136;
             this.label1.Text = "Codigo";
             // 
-            // BtnSalirM
+            // btnSalirM
             // 
-            this.BtnSalirM.BackColor = System.Drawing.Color.Red;
-            this.BtnSalirM.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnSalirM.Image = global::Presentacion.Properties.Resources._4115235_exit_logout_sign_out_114030;
-            this.BtnSalirM.Location = new System.Drawing.Point(440, 280);
-            this.BtnSalirM.Name = "BtnSalirM";
-            this.BtnSalirM.Size = new System.Drawing.Size(24, 29);
-            this.BtnSalirM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BtnSalirM.TabIndex = 135;
-            this.BtnSalirM.TabStop = false;
-            this.BtnSalirM.Click += new System.EventHandler(this.BtnSalirM_Click);
+            this.btnSalirM.BackColor = System.Drawing.Color.Red;
+            this.btnSalirM.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSalirM.Image = global::Presentacion.Properties.Resources._4115235_exit_logout_sign_out_114030;
+            this.btnSalirM.Location = new System.Drawing.Point(440, 280);
+            this.btnSalirM.Name = "btnSalirM";
+            this.btnSalirM.Size = new System.Drawing.Size(24, 29);
+            this.btnSalirM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnSalirM.TabIndex = 135;
+            this.btnSalirM.TabStop = false;
+            this.btnSalirM.Click += new System.EventHandler(this.BtnSalirM_Click);
             // 
-            // BtnAgregarM
+            // btnAgregarM
             // 
-            this.BtnAgregarM.BackColor = System.Drawing.Color.Green;
-            this.BtnAgregarM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BtnAgregarM.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnAgregarM.FlatAppearance.BorderSize = 0;
-            this.BtnAgregarM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAgregarM.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAgregarM.Image = global::Presentacion.Properties.Resources.disk1;
-            this.BtnAgregarM.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAgregarM.Location = new System.Drawing.Point(162, 284);
-            this.BtnAgregarM.Name = "BtnAgregarM";
-            this.BtnAgregarM.Size = new System.Drawing.Size(147, 23);
-            this.BtnAgregarM.TabIndex = 134;
-            this.BtnAgregarM.Text = "Agregar";
-            this.BtnAgregarM.UseVisualStyleBackColor = false;
+            this.btnAgregarM.BackColor = System.Drawing.Color.Green;
+            this.btnAgregarM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAgregarM.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregarM.FlatAppearance.BorderSize = 0;
+            this.btnAgregarM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarM.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarM.Image = global::Presentacion.Properties.Resources.disk1;
+            this.btnAgregarM.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarM.Location = new System.Drawing.Point(162, 282);
+            this.btnAgregarM.Name = "btnAgregarM";
+            this.btnAgregarM.Size = new System.Drawing.Size(147, 23);
+            this.btnAgregarM.TabIndex = 134;
+            this.btnAgregarM.Text = "Agregar";
+            this.btnAgregarM.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -159,13 +159,13 @@
             this.label2.Text = "Datos de Medicamento";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TxtDescripcionMedicamento
+            // txtDescripcionMedicamento
             // 
-            this.TxtDescripcionMedicamento.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDescripcionMedicamento.Location = new System.Drawing.Point(198, 198);
-            this.TxtDescripcionMedicamento.Name = "TxtDescripcionMedicamento";
-            this.TxtDescripcionMedicamento.Size = new System.Drawing.Size(172, 22);
-            this.TxtDescripcionMedicamento.TabIndex = 141;
+            this.txtDescripcionMedicamento.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescripcionMedicamento.Location = new System.Drawing.Point(198, 198);
+            this.txtDescripcionMedicamento.Name = "txtDescripcionMedicamento";
+            this.txtDescripcionMedicamento.Size = new System.Drawing.Size(172, 22);
+            this.txtDescripcionMedicamento.TabIndex = 141;
             // 
             // label5
             // 
@@ -177,29 +177,29 @@
             this.label5.TabIndex = 140;
             this.label5.Text = "Descripcion";
             // 
-            // FmrAgregarMedicamento
+            // frmAgregarMedicamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(463, 309);
-            this.Controls.Add(this.TxtDescripcionMedicamento);
+            this.Controls.Add(this.txtDescripcionMedicamento);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.TxtNombreMedicamento);
+            this.Controls.Add(this.txtNombreMedicamento);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.TxtCodigoMedicamento);
+            this.Controls.Add(this.txtCodigoMedicamento);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.BtnSalirM);
-            this.Controls.Add(this.BtnAgregarM);
+            this.Controls.Add(this.btnSalirM);
+            this.Controls.Add(this.btnAgregarM);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BtnSalirMedicamento);
             this.Controls.Add(this.BtnAgregarMedicamento);
             this.Controls.Add(this.label4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FmrAgregarMedicamento";
+            this.Name = "frmAgregarMedicamento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FmrAgregarMedicamento";
             ((System.ComponentModel.ISupportInitialize)(this.BtnSalirMedicamento)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnSalirM)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSalirM)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -210,14 +210,14 @@
         private System.Windows.Forms.PictureBox BtnSalirMedicamento;
         private System.Windows.Forms.Button BtnAgregarMedicamento;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox TxtNombreMedicamento;
+        private System.Windows.Forms.TextBox txtNombreMedicamento;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox TxtCodigoMedicamento;
+        private System.Windows.Forms.TextBox txtCodigoMedicamento;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox BtnSalirM;
-        private System.Windows.Forms.Button BtnAgregarM;
+        private System.Windows.Forms.PictureBox btnSalirM;
+        private System.Windows.Forms.Button btnAgregarM;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox TxtDescripcionMedicamento;
+        private System.Windows.Forms.TextBox txtDescripcionMedicamento;
         private System.Windows.Forms.Label label5;
     }
 }

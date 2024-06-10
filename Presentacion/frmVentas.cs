@@ -19,19 +19,19 @@ namespace Presentacion
 
         private void TxtBusquedaVentas_Leave(object sender, EventArgs e)
         {
-            if (TxtBusquedaVentas.Text == "")
+            if (txtBusquedaVentas.Text == "")
             {
-                TxtBusquedaVentas.Text = "Busqueda";
-                TxtBusquedaVentas.ForeColor = Color.White;
+                txtBusquedaVentas.Text = "Busqueda";
+                txtBusquedaVentas.ForeColor = Color.White;
             }
         }
 
         private void TxtBusquedaVentas_Enter(object sender, EventArgs e)
         {
-            if (TxtBusquedaVentas.Text == "Busqueda")
+            if (txtBusquedaVentas.Text == "Busqueda")
             {
-                TxtBusquedaVentas.Text = "";
-                TxtBusquedaVentas.ForeColor = Color.White;
+                txtBusquedaVentas.Text = "";
+                txtBusquedaVentas.ForeColor = Color.White;
             }
         }
     }

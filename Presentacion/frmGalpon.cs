@@ -25,19 +25,19 @@ namespace Presentacion
 
         private void TxtBusquedaGalpon_Leave(object sender, EventArgs e)
         {
-            if (TxtBusquedaGalpon.Text == "")
+            if (txtBusquedaGalpon.Text == "")
             {
-                TxtBusquedaGalpon.Text = "Busqueda";
-                TxtBusquedaGalpon.ForeColor = Color.White;
+                txtBusquedaGalpon.Text = "Busqueda";
+                txtBusquedaGalpon.ForeColor = Color.White;
             }
         }
 
         private void TxtBusquedaGalpon_Enter(object sender, EventArgs e)
         {
-            if (TxtBusquedaGalpon.Text == "Busqueda")
+            if (txtBusquedaGalpon.Text == "Busqueda")
             {
-                TxtBusquedaGalpon.Text = "";
-                TxtBusquedaGalpon.ForeColor = Color.White;
+                txtBusquedaGalpon.Text = "";
+                txtBusquedaGalpon.ForeColor = Color.White;
             }
         }
     }

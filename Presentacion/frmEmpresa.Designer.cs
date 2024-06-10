@@ -39,7 +39,7 @@
             this.txtTelefonoEmpresa = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtNombreEmpresa = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtNITEmpresa = new Guna.UI2.WinForms.Guna2TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.grpControlesEmpresa = new System.Windows.Forms.GroupBox();
             this.btnModificar = new Guna.UI2.WinForms.Guna2Button();
             this.btnGuardar = new Guna.UI2.WinForms.Guna2Button();
             this.btnVolver = new Guna.UI2.WinForms.Guna2Button();
@@ -47,7 +47,7 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panInfo.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.grpControlesEmpresa.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -132,7 +132,7 @@
             this.panInfo.Controls.Add(this.label3);
             this.panInfo.Controls.Add(this.label4);
             this.panInfo.Location = new System.Drawing.Point(10, 52);
-            this.panInfo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panInfo.Margin = new System.Windows.Forms.Padding(2);
             this.panInfo.Name = "panInfo";
             this.panInfo.Size = new System.Drawing.Size(435, 195);
             this.panInfo.TabIndex = 135;
@@ -153,7 +153,7 @@
             this.txtDireccionEmpresa.ForeColor = System.Drawing.Color.Black;
             this.txtDireccionEmpresa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDireccionEmpresa.Location = new System.Drawing.Point(110, 122);
-            this.txtDireccionEmpresa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDireccionEmpresa.Margin = new System.Windows.Forms.Padding(4);
             this.txtDireccionEmpresa.Name = "txtDireccionEmpresa";
             this.txtDireccionEmpresa.PasswordChar = '\0';
             this.txtDireccionEmpresa.PlaceholderText = "";
@@ -177,7 +177,7 @@
             this.txtCorreoEmpresa.ForeColor = System.Drawing.Color.Black;
             this.txtCorreoEmpresa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCorreoEmpresa.Location = new System.Drawing.Point(110, 158);
-            this.txtCorreoEmpresa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCorreoEmpresa.Margin = new System.Windows.Forms.Padding(4);
             this.txtCorreoEmpresa.Name = "txtCorreoEmpresa";
             this.txtCorreoEmpresa.PasswordChar = '\0';
             this.txtCorreoEmpresa.PlaceholderText = "";
@@ -201,7 +201,7 @@
             this.txtTelefonoEmpresa.ForeColor = System.Drawing.Color.Black;
             this.txtTelefonoEmpresa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTelefonoEmpresa.Location = new System.Drawing.Point(110, 85);
-            this.txtTelefonoEmpresa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTelefonoEmpresa.Margin = new System.Windows.Forms.Padding(4);
             this.txtTelefonoEmpresa.Name = "txtTelefonoEmpresa";
             this.txtTelefonoEmpresa.PasswordChar = '\0';
             this.txtTelefonoEmpresa.PlaceholderText = "";
@@ -225,7 +225,7 @@
             this.txtNombreEmpresa.ForeColor = System.Drawing.Color.Black;
             this.txtNombreEmpresa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNombreEmpresa.Location = new System.Drawing.Point(110, 49);
-            this.txtNombreEmpresa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombreEmpresa.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombreEmpresa.Name = "txtNombreEmpresa";
             this.txtNombreEmpresa.PasswordChar = '\0';
             this.txtNombreEmpresa.PlaceholderText = "";
@@ -249,7 +249,7 @@
             this.txtNITEmpresa.ForeColor = System.Drawing.Color.Black;
             this.txtNITEmpresa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNITEmpresa.Location = new System.Drawing.Point(110, 12);
-            this.txtNITEmpresa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNITEmpresa.Margin = new System.Windows.Forms.Padding(4);
             this.txtNITEmpresa.Name = "txtNITEmpresa";
             this.txtNITEmpresa.PasswordChar = '\0';
             this.txtNITEmpresa.PlaceholderText = "";
@@ -257,68 +257,23 @@
             this.txtNITEmpresa.Size = new System.Drawing.Size(315, 28);
             this.txtNITEmpresa.TabIndex = 133;
             // 
-            // groupBox1
+            // grpControlesEmpresa
             // 
-            this.groupBox1.Controls.Add(this.btnModificar);
-            this.groupBox1.Controls.Add(this.btnGuardar);
-            this.groupBox1.Controls.Add(this.btnVolver);
-            this.groupBox1.Controls.Add(this.btnEliminar);
-            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox1.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(10, 260);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(435, 88);
-            this.groupBox1.TabIndex = 136;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Controles";
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.BackColor = System.Drawing.Color.Transparent;
-            this.btnGuardar.BorderRadius = 12;
-            this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGuardar.CustomBorderColor = System.Drawing.Color.Transparent;
-            this.btnGuardar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnGuardar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnGuardar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnGuardar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnGuardar.FillColor = System.Drawing.Color.LightBlue;
-            this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
-            this.btnGuardar.Image = global::Presentacion.Properties.Resources.floppy_disc_save_storage_disk_computer_icon_175922;
-            this.btnGuardar.Location = new System.Drawing.Point(127, 28);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(86, 37);
-            this.btnGuardar.TabIndex = 139;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.TextFormatNoPrefix = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // btnVolver
-            // 
-            this.btnVolver.BackColor = System.Drawing.Color.Transparent;
-            this.btnVolver.BorderRadius = 12;
-            this.btnVolver.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnVolver.CustomBorderColor = System.Drawing.Color.Transparent;
-            this.btnVolver.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnVolver.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnVolver.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnVolver.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnVolver.FillColor = System.Drawing.Color.LightBlue;
-            this.btnVolver.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
-            this.btnVolver.Location = new System.Drawing.Point(327, 28);
-            this.btnVolver.Margin = new System.Windows.Forms.Padding(2);
-            this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(86, 37);
-            this.btnVolver.TabIndex = 138;
-            this.btnVolver.Text = "Volver";
-            this.btnVolver.TextFormatNoPrefix = true;
-            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
+            this.grpControlesEmpresa.Controls.Add(this.btnModificar);
+            this.grpControlesEmpresa.Controls.Add(this.btnGuardar);
+            this.grpControlesEmpresa.Controls.Add(this.btnVolver);
+            this.grpControlesEmpresa.Controls.Add(this.btnEliminar);
+            this.grpControlesEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.grpControlesEmpresa.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpControlesEmpresa.ForeColor = System.Drawing.Color.White;
+            this.grpControlesEmpresa.Location = new System.Drawing.Point(10, 260);
+            this.grpControlesEmpresa.Margin = new System.Windows.Forms.Padding(2);
+            this.grpControlesEmpresa.Name = "grpControlesEmpresa";
+            this.grpControlesEmpresa.Padding = new System.Windows.Forms.Padding(2);
+            this.grpControlesEmpresa.Size = new System.Drawing.Size(435, 88);
+            this.grpControlesEmpresa.TabIndex = 136;
+            this.grpControlesEmpresa.TabStop = false;
+            this.grpControlesEmpresa.Text = "Controles";
             // 
             // btnModificar
             // 
@@ -334,7 +289,7 @@
             this.btnModificar.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnModificar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
             this.btnModificar.Location = new System.Drawing.Point(13, 28);
-            this.btnModificar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(2);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(100, 40);
             this.btnModificar.TabIndex = 140;
@@ -357,7 +312,7 @@
             this.btnGuardar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
             this.btnGuardar.Image = global::Presentacion.Properties.Resources.floppy_disc_save_storage_disk_computer_icon_175922;
             this.btnGuardar.Location = new System.Drawing.Point(122, 28);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(100, 40);
             this.btnGuardar.TabIndex = 139;
@@ -379,7 +334,7 @@
             this.btnVolver.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolver.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
             this.btnVolver.Location = new System.Drawing.Point(330, 28);
-            this.btnVolver.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVolver.Margin = new System.Windows.Forms.Padding(2);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(100, 40);
             this.btnVolver.TabIndex = 138;
@@ -402,7 +357,7 @@
             this.btnEliminar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
             this.btnEliminar.Image = global::Presentacion.Properties.Resources.file_delete_114438;
             this.btnEliminar.Location = new System.Drawing.Point(226, 28);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(100, 40);
             this.btnEliminar.TabIndex = 137;
@@ -417,7 +372,7 @@
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
             this.guna2Panel1.FillColor = System.Drawing.Color.LightBlue;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(455, 30);
             this.guna2Panel1.TabIndex = 137;
@@ -429,7 +384,7 @@
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(100, 0);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(255, 30);
             this.guna2HtmlLabel1.TabIndex = 0;
@@ -445,7 +400,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(455, 364);
             this.Controls.Add(this.guna2Panel1);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.grpControlesEmpresa);
             this.Controls.Add(this.panInfo);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -455,7 +410,7 @@
             this.Load += new System.EventHandler(this.FmrEmpresa_Load);
             this.panInfo.ResumeLayout(false);
             this.panInfo.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
+            this.grpControlesEmpresa.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -468,7 +423,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panInfo;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox grpControlesEmpresa;
         private Guna.UI2.WinForms.Guna2Button btnEliminar;
         private Guna.UI2.WinForms.Guna2TextBox txtNITEmpresa;
         private Guna.UI2.WinForms.Guna2TextBox txtTelefonoEmpresa;

@@ -29,86 +29,86 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.GpbDetalleProducto = new System.Windows.Forms.GroupBox();
-            this.CboRazaPollo = new System.Windows.Forms.ComboBox();
+            this.grpDetalleProducto = new System.Windows.Forms.GroupBox();
+            this.cmbRazaPollo = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.TxtPrecioUnitarioF = new System.Windows.Forms.TextBox();
+            this.txtPrecioUnitarioF = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.TxtCantidadPollo = new System.Windows.Forms.TextBox();
+            this.txtCantidadPollo = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.TxtCodigoPollo = new System.Windows.Forms.TextBox();
+            this.txtCodigoPollo = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.GpbDatosCliente = new System.Windows.Forms.GroupBox();
-            this.TxtApellidosClientes = new System.Windows.Forms.TextBox();
+            this.grpDatosCliente = new System.Windows.Forms.GroupBox();
+            this.txtApellidosClientes = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.TxtCorreoCliente = new System.Windows.Forms.TextBox();
-            this.TxtNombreCliente = new System.Windows.Forms.TextBox();
-            this.TxtTelefonoCliente = new System.Windows.Forms.TextBox();
-            this.CboTipoCliente = new System.Windows.Forms.ComboBox();
-            this.TxtCodigoCliente = new System.Windows.Forms.TextBox();
+            this.txtCorreoCliente = new System.Windows.Forms.TextBox();
+            this.txtNombreCliente = new System.Windows.Forms.TextBox();
+            this.txtTelefonoCliente = new System.Windows.Forms.TextBox();
+            this.cmbTipoCliente = new System.Windows.Forms.ComboBox();
+            this.txtCodigoCliente = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.BtnEliminarFactura = new System.Windows.Forms.Button();
-            this.BtnAgregarFactura = new System.Windows.Forms.Button();
+            this.btnEliminarFactura = new System.Windows.Forms.Button();
+            this.btnAgregarFactura = new System.Windows.Forms.Button();
             this.dgvFactura = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.BtnFacturar = new System.Windows.Forms.Button();
+            this.btnFacturar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.GpbDetalleProducto.SuspendLayout();
-            this.GpbDatosCliente.SuspendLayout();
+            this.grpDetalleProducto.SuspendLayout();
+            this.grpDatosCliente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFactura)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel1.Controls.Add(this.GpbDetalleProducto);
-            this.panel1.Controls.Add(this.GpbDatosCliente);
+            this.panel1.Controls.Add(this.grpDetalleProducto);
+            this.panel1.Controls.Add(this.grpDatosCliente);
             this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Controls.Add(this.BtnEliminarFactura);
-            this.panel1.Controls.Add(this.BtnAgregarFactura);
+            this.panel1.Controls.Add(this.btnEliminarFactura);
+            this.panel1.Controls.Add(this.btnAgregarFactura);
             this.panel1.Controls.Add(this.dgvFactura);
             this.panel1.Location = new System.Drawing.Point(65, 32);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(654, 461);
             this.panel1.TabIndex = 0;
             // 
-            // GpbDetalleProducto
+            // grpDetalleProducto
             // 
-            this.GpbDetalleProducto.BackColor = System.Drawing.Color.White;
-            this.GpbDetalleProducto.Controls.Add(this.CboRazaPollo);
-            this.GpbDetalleProducto.Controls.Add(this.label10);
-            this.GpbDetalleProducto.Controls.Add(this.TxtPrecioUnitarioF);
-            this.GpbDetalleProducto.Controls.Add(this.label9);
-            this.GpbDetalleProducto.Controls.Add(this.TxtCantidadPollo);
-            this.GpbDetalleProducto.Controls.Add(this.label8);
-            this.GpbDetalleProducto.Controls.Add(this.TxtCodigoPollo);
-            this.GpbDetalleProducto.Controls.Add(this.label7);
-            this.GpbDetalleProducto.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GpbDetalleProducto.Location = new System.Drawing.Point(3, 137);
-            this.GpbDetalleProducto.Name = "GpbDetalleProducto";
-            this.GpbDetalleProducto.Size = new System.Drawing.Size(648, 123);
-            this.GpbDetalleProducto.TabIndex = 24;
-            this.GpbDetalleProducto.TabStop = false;
-            this.GpbDetalleProducto.Text = "Detalle Producto";
+            this.grpDetalleProducto.BackColor = System.Drawing.Color.White;
+            this.grpDetalleProducto.Controls.Add(this.cmbRazaPollo);
+            this.grpDetalleProducto.Controls.Add(this.label10);
+            this.grpDetalleProducto.Controls.Add(this.txtPrecioUnitarioF);
+            this.grpDetalleProducto.Controls.Add(this.label9);
+            this.grpDetalleProducto.Controls.Add(this.txtCantidadPollo);
+            this.grpDetalleProducto.Controls.Add(this.label8);
+            this.grpDetalleProducto.Controls.Add(this.txtCodigoPollo);
+            this.grpDetalleProducto.Controls.Add(this.label7);
+            this.grpDetalleProducto.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpDetalleProducto.Location = new System.Drawing.Point(3, 137);
+            this.grpDetalleProducto.Name = "grpDetalleProducto";
+            this.grpDetalleProducto.Size = new System.Drawing.Size(648, 123);
+            this.grpDetalleProducto.TabIndex = 24;
+            this.grpDetalleProducto.TabStop = false;
+            this.grpDetalleProducto.Text = "Detalle Producto";
             // 
-            // CboRazaPollo
+            // cmbRazaPollo
             // 
-            this.CboRazaPollo.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CboRazaPollo.FormattingEnabled = true;
-            this.CboRazaPollo.Items.AddRange(new object[] {
+            this.cmbRazaPollo.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbRazaPollo.FormattingEnabled = true;
+            this.cmbRazaPollo.Items.AddRange(new object[] {
             "Cobb 500",
             "Ross 308",
             "Hubbard",
             "Arbor Acres"});
-            this.CboRazaPollo.Location = new System.Drawing.Point(504, 27);
-            this.CboRazaPollo.Name = "CboRazaPollo";
-            this.CboRazaPollo.Size = new System.Drawing.Size(119, 21);
-            this.CboRazaPollo.TabIndex = 31;
+            this.cmbRazaPollo.Location = new System.Drawing.Point(504, 27);
+            this.cmbRazaPollo.Name = "cmbRazaPollo";
+            this.cmbRazaPollo.Size = new System.Drawing.Size(119, 21);
+            this.cmbRazaPollo.TabIndex = 31;
             // 
             // label10
             // 
@@ -121,13 +121,13 @@
             this.label10.Text = "Raza";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TxtPrecioUnitarioF
+            // txtPrecioUnitarioF
             // 
-            this.TxtPrecioUnitarioF.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPrecioUnitarioF.Location = new System.Drawing.Point(118, 72);
-            this.TxtPrecioUnitarioF.Name = "TxtPrecioUnitarioF";
-            this.TxtPrecioUnitarioF.Size = new System.Drawing.Size(71, 19);
-            this.TxtPrecioUnitarioF.TabIndex = 29;
+            this.txtPrecioUnitarioF.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrecioUnitarioF.Location = new System.Drawing.Point(118, 72);
+            this.txtPrecioUnitarioF.Name = "txtPrecioUnitarioF";
+            this.txtPrecioUnitarioF.Size = new System.Drawing.Size(71, 19);
+            this.txtPrecioUnitarioF.TabIndex = 29;
             // 
             // label9
             // 
@@ -140,13 +140,13 @@
             this.label9.Text = "Precio Unitario";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TxtCantidadPollo
+            // txtCantidadPollo
             // 
-            this.TxtCantidadPollo.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCantidadPollo.Location = new System.Drawing.Point(375, 27);
-            this.TxtCantidadPollo.Name = "TxtCantidadPollo";
-            this.TxtCantidadPollo.Size = new System.Drawing.Size(34, 19);
-            this.TxtCantidadPollo.TabIndex = 27;
+            this.txtCantidadPollo.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCantidadPollo.Location = new System.Drawing.Point(375, 27);
+            this.txtCantidadPollo.Name = "txtCantidadPollo";
+            this.txtCantidadPollo.Size = new System.Drawing.Size(34, 19);
+            this.txtCantidadPollo.TabIndex = 27;
             // 
             // label8
             // 
@@ -159,13 +159,13 @@
             this.label8.Text = "Cantidad";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TxtCodigoPollo
+            // txtCodigoPollo
             // 
-            this.TxtCodigoPollo.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCodigoPollo.Location = new System.Drawing.Point(93, 30);
-            this.TxtCodigoPollo.Name = "TxtCodigoPollo";
-            this.TxtCodigoPollo.Size = new System.Drawing.Size(182, 19);
-            this.TxtCodigoPollo.TabIndex = 25;
+            this.txtCodigoPollo.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodigoPollo.Location = new System.Drawing.Point(93, 30);
+            this.txtCodigoPollo.Name = "txtCodigoPollo";
+            this.txtCodigoPollo.Size = new System.Drawing.Size(182, 19);
+            this.txtCodigoPollo.TabIndex = 25;
             // 
             // label7
             // 
@@ -178,36 +178,36 @@
             this.label7.Text = "Codigo";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // GpbDatosCliente
+            // grpDatosCliente
             // 
-            this.GpbDatosCliente.BackColor = System.Drawing.Color.White;
-            this.GpbDatosCliente.Controls.Add(this.TxtApellidosClientes);
-            this.GpbDatosCliente.Controls.Add(this.label6);
-            this.GpbDatosCliente.Controls.Add(this.TxtCorreoCliente);
-            this.GpbDatosCliente.Controls.Add(this.TxtNombreCliente);
-            this.GpbDatosCliente.Controls.Add(this.TxtTelefonoCliente);
-            this.GpbDatosCliente.Controls.Add(this.CboTipoCliente);
-            this.GpbDatosCliente.Controls.Add(this.TxtCodigoCliente);
-            this.GpbDatosCliente.Controls.Add(this.label4);
-            this.GpbDatosCliente.Controls.Add(this.label5);
-            this.GpbDatosCliente.Controls.Add(this.label2);
-            this.GpbDatosCliente.Controls.Add(this.label13);
-            this.GpbDatosCliente.Controls.Add(this.label3);
-            this.GpbDatosCliente.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GpbDatosCliente.Location = new System.Drawing.Point(3, 3);
-            this.GpbDatosCliente.Name = "GpbDatosCliente";
-            this.GpbDatosCliente.Size = new System.Drawing.Size(648, 131);
-            this.GpbDatosCliente.TabIndex = 23;
-            this.GpbDatosCliente.TabStop = false;
-            this.GpbDatosCliente.Text = "Datos Cliente";
+            this.grpDatosCliente.BackColor = System.Drawing.Color.White;
+            this.grpDatosCliente.Controls.Add(this.txtApellidosClientes);
+            this.grpDatosCliente.Controls.Add(this.label6);
+            this.grpDatosCliente.Controls.Add(this.txtCorreoCliente);
+            this.grpDatosCliente.Controls.Add(this.txtNombreCliente);
+            this.grpDatosCliente.Controls.Add(this.txtTelefonoCliente);
+            this.grpDatosCliente.Controls.Add(this.cmbTipoCliente);
+            this.grpDatosCliente.Controls.Add(this.txtCodigoCliente);
+            this.grpDatosCliente.Controls.Add(this.label4);
+            this.grpDatosCliente.Controls.Add(this.label5);
+            this.grpDatosCliente.Controls.Add(this.label2);
+            this.grpDatosCliente.Controls.Add(this.label13);
+            this.grpDatosCliente.Controls.Add(this.label3);
+            this.grpDatosCliente.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpDatosCliente.Location = new System.Drawing.Point(3, 3);
+            this.grpDatosCliente.Name = "grpDatosCliente";
+            this.grpDatosCliente.Size = new System.Drawing.Size(648, 131);
+            this.grpDatosCliente.TabIndex = 23;
+            this.grpDatosCliente.TabStop = false;
+            this.grpDatosCliente.Text = "Datos Cliente";
             // 
-            // TxtApellidosClientes
+            // txtApellidosClientes
             // 
-            this.TxtApellidosClientes.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtApellidosClientes.Location = new System.Drawing.Point(445, 53);
-            this.TxtApellidosClientes.Name = "TxtApellidosClientes";
-            this.TxtApellidosClientes.Size = new System.Drawing.Size(171, 19);
-            this.TxtApellidosClientes.TabIndex = 28;
+            this.txtApellidosClientes.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApellidosClientes.Location = new System.Drawing.Point(445, 53);
+            this.txtApellidosClientes.Name = "txtApellidosClientes";
+            this.txtApellidosClientes.Size = new System.Drawing.Size(171, 19);
+            this.txtApellidosClientes.TabIndex = 28;
             // 
             // label6
             // 
@@ -220,49 +220,49 @@
             this.label6.Text = "Telefono";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TxtCorreoCliente
+            // txtCorreoCliente
             // 
-            this.TxtCorreoCliente.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCorreoCliente.Location = new System.Drawing.Point(445, 86);
-            this.TxtCorreoCliente.Name = "TxtCorreoCliente";
-            this.TxtCorreoCliente.Size = new System.Drawing.Size(171, 19);
-            this.TxtCorreoCliente.TabIndex = 26;
+            this.txtCorreoCliente.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCorreoCliente.Location = new System.Drawing.Point(445, 86);
+            this.txtCorreoCliente.Name = "txtCorreoCliente";
+            this.txtCorreoCliente.Size = new System.Drawing.Size(171, 19);
+            this.txtCorreoCliente.TabIndex = 26;
             // 
-            // TxtNombreCliente
+            // txtNombreCliente
             // 
-            this.TxtNombreCliente.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNombreCliente.Location = new System.Drawing.Point(111, 53);
-            this.TxtNombreCliente.Name = "TxtNombreCliente";
-            this.TxtNombreCliente.Size = new System.Drawing.Size(182, 19);
-            this.TxtNombreCliente.TabIndex = 25;
+            this.txtNombreCliente.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreCliente.Location = new System.Drawing.Point(111, 53);
+            this.txtNombreCliente.Name = "txtNombreCliente";
+            this.txtNombreCliente.Size = new System.Drawing.Size(182, 19);
+            this.txtNombreCliente.TabIndex = 25;
             // 
-            // TxtTelefonoCliente
+            // txtTelefonoCliente
             // 
-            this.TxtTelefonoCliente.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtTelefonoCliente.Location = new System.Drawing.Point(111, 86);
-            this.TxtTelefonoCliente.Name = "TxtTelefonoCliente";
-            this.TxtTelefonoCliente.Size = new System.Drawing.Size(182, 19);
-            this.TxtTelefonoCliente.TabIndex = 24;
+            this.txtTelefonoCliente.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefonoCliente.Location = new System.Drawing.Point(111, 86);
+            this.txtTelefonoCliente.Name = "txtTelefonoCliente";
+            this.txtTelefonoCliente.Size = new System.Drawing.Size(182, 19);
+            this.txtTelefonoCliente.TabIndex = 24;
             // 
-            // CboTipoCliente
+            // cmbTipoCliente
             // 
-            this.CboTipoCliente.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CboTipoCliente.FormattingEnabled = true;
-            this.CboTipoCliente.Items.AddRange(new object[] {
+            this.cmbTipoCliente.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbTipoCliente.FormattingEnabled = true;
+            this.cmbTipoCliente.Items.AddRange(new object[] {
             "Persona Juridica",
             "Persona Natural"});
-            this.CboTipoCliente.Location = new System.Drawing.Point(445, 17);
-            this.CboTipoCliente.Name = "CboTipoCliente";
-            this.CboTipoCliente.Size = new System.Drawing.Size(171, 21);
-            this.CboTipoCliente.TabIndex = 23;
+            this.cmbTipoCliente.Location = new System.Drawing.Point(445, 17);
+            this.cmbTipoCliente.Name = "cmbTipoCliente";
+            this.cmbTipoCliente.Size = new System.Drawing.Size(171, 21);
+            this.cmbTipoCliente.TabIndex = 23;
             // 
-            // TxtCodigoCliente
+            // txtCodigoCliente
             // 
-            this.TxtCodigoCliente.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCodigoCliente.Location = new System.Drawing.Point(111, 22);
-            this.TxtCodigoCliente.Name = "TxtCodigoCliente";
-            this.TxtCodigoCliente.Size = new System.Drawing.Size(182, 19);
-            this.TxtCodigoCliente.TabIndex = 22;
+            this.txtCodigoCliente.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodigoCliente.Location = new System.Drawing.Point(111, 22);
+            this.txtCodigoCliente.Name = "txtCodigoCliente";
+            this.txtCodigoCliente.Size = new System.Drawing.Size(182, 19);
+            this.txtCodigoCliente.TabIndex = 22;
             // 
             // label4
             // 
@@ -328,39 +328,39 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
-            // BtnEliminarFactura
+            // btnEliminarFactura
             // 
-            this.BtnEliminarFactura.BackColor = System.Drawing.Color.Silver;
-            this.BtnEliminarFactura.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnEliminarFactura.FlatAppearance.BorderSize = 0;
-            this.BtnEliminarFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnEliminarFactura.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnEliminarFactura.Image = global::Presentacion.Properties.Resources.icons8_eliminar_archivo_24;
-            this.BtnEliminarFactura.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnEliminarFactura.Location = new System.Drawing.Point(519, 265);
-            this.BtnEliminarFactura.Name = "BtnEliminarFactura";
-            this.BtnEliminarFactura.Size = new System.Drawing.Size(125, 28);
-            this.BtnEliminarFactura.TabIndex = 13;
-            this.BtnEliminarFactura.Text = "Eliminar";
-            this.BtnEliminarFactura.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnEliminarFactura.UseVisualStyleBackColor = false;
+            this.btnEliminarFactura.BackColor = System.Drawing.Color.Silver;
+            this.btnEliminarFactura.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminarFactura.FlatAppearance.BorderSize = 0;
+            this.btnEliminarFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarFactura.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarFactura.Image = global::Presentacion.Properties.Resources.icons8_eliminar_archivo_24;
+            this.btnEliminarFactura.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEliminarFactura.Location = new System.Drawing.Point(519, 265);
+            this.btnEliminarFactura.Name = "btnEliminarFactura";
+            this.btnEliminarFactura.Size = new System.Drawing.Size(125, 28);
+            this.btnEliminarFactura.TabIndex = 13;
+            this.btnEliminarFactura.Text = "Eliminar";
+            this.btnEliminarFactura.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEliminarFactura.UseVisualStyleBackColor = false;
             // 
-            // BtnAgregarFactura
+            // btnAgregarFactura
             // 
-            this.BtnAgregarFactura.BackColor = System.Drawing.Color.Silver;
-            this.BtnAgregarFactura.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnAgregarFactura.FlatAppearance.BorderSize = 0;
-            this.BtnAgregarFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAgregarFactura.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAgregarFactura.Image = global::Presentacion.Properties.Resources.receipt_add_icon_177414;
-            this.BtnAgregarFactura.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAgregarFactura.Location = new System.Drawing.Point(3, 265);
-            this.BtnAgregarFactura.Name = "BtnAgregarFactura";
-            this.BtnAgregarFactura.Size = new System.Drawing.Size(127, 28);
-            this.BtnAgregarFactura.TabIndex = 12;
-            this.BtnAgregarFactura.Text = "Agregar";
-            this.BtnAgregarFactura.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnAgregarFactura.UseVisualStyleBackColor = false;
+            this.btnAgregarFactura.BackColor = System.Drawing.Color.Silver;
+            this.btnAgregarFactura.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregarFactura.FlatAppearance.BorderSize = 0;
+            this.btnAgregarFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarFactura.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarFactura.Image = global::Presentacion.Properties.Resources.receipt_add_icon_177414;
+            this.btnAgregarFactura.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarFactura.Location = new System.Drawing.Point(3, 265);
+            this.btnAgregarFactura.Name = "btnAgregarFactura";
+            this.btnAgregarFactura.Size = new System.Drawing.Size(127, 28);
+            this.btnAgregarFactura.TabIndex = 12;
+            this.btnAgregarFactura.Text = "Agregar";
+            this.btnAgregarFactura.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgregarFactura.UseVisualStyleBackColor = false;
             // 
             // dgvFactura
             // 
@@ -388,41 +388,41 @@
             this.label1.Text = "Factura de Ventas";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // BtnFacturar
+            // btnFacturar
             // 
-            this.BtnFacturar.BackColor = System.Drawing.Color.Silver;
-            this.BtnFacturar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnFacturar.FlatAppearance.BorderSize = 0;
-            this.BtnFacturar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnFacturar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnFacturar.Image = global::Presentacion.Properties.Resources.icons8_factura_28;
-            this.BtnFacturar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnFacturar.Location = new System.Drawing.Point(324, 497);
-            this.BtnFacturar.Name = "BtnFacturar";
-            this.BtnFacturar.Size = new System.Drawing.Size(125, 30);
-            this.BtnFacturar.TabIndex = 13;
-            this.BtnFacturar.Text = "Facturar";
-            this.BtnFacturar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnFacturar.UseVisualStyleBackColor = false;
-            this.BtnFacturar.Click += new System.EventHandler(this.BtnFacturar_Click);
+            this.btnFacturar.BackColor = System.Drawing.Color.Silver;
+            this.btnFacturar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFacturar.FlatAppearance.BorderSize = 0;
+            this.btnFacturar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFacturar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFacturar.Image = global::Presentacion.Properties.Resources.icons8_factura_28;
+            this.btnFacturar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFacturar.Location = new System.Drawing.Point(323, 496);
+            this.btnFacturar.Name = "btnFacturar";
+            this.btnFacturar.Size = new System.Drawing.Size(125, 30);
+            this.btnFacturar.TabIndex = 13;
+            this.btnFacturar.Text = "Facturar";
+            this.btnFacturar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnFacturar.UseVisualStyleBackColor = false;
+            this.btnFacturar.Click += new System.EventHandler(this.BtnFacturar_Click);
             // 
-            // FmrFactura
+            // frmFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(762, 531);
-            this.Controls.Add(this.BtnFacturar);
+            this.Controls.Add(this.btnFacturar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FmrFactura";
+            this.Name = "frmFactura";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FmrFactura";
             this.panel1.ResumeLayout(false);
-            this.GpbDetalleProducto.ResumeLayout(false);
-            this.GpbDetalleProducto.PerformLayout();
-            this.GpbDatosCliente.ResumeLayout(false);
-            this.GpbDatosCliente.PerformLayout();
+            this.grpDetalleProducto.ResumeLayout(false);
+            this.grpDetalleProducto.PerformLayout();
+            this.grpDatosCliente.ResumeLayout(false);
+            this.grpDatosCliente.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFactura)).EndInit();
             this.ResumeLayout(false);
 
@@ -436,28 +436,28 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button BtnAgregarFactura;
-        private System.Windows.Forms.Button BtnEliminarFactura;
+        private System.Windows.Forms.Button btnAgregarFactura;
+        private System.Windows.Forms.Button btnEliminarFactura;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Button BtnFacturar;
-        private System.Windows.Forms.GroupBox GpbDatosCliente;
+        private System.Windows.Forms.Button btnFacturar;
+        private System.Windows.Forms.GroupBox grpDatosCliente;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox GpbDetalleProducto;
+        private System.Windows.Forms.GroupBox grpDetalleProducto;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox TxtCorreoCliente;
-        private System.Windows.Forms.TextBox TxtNombreCliente;
-        private System.Windows.Forms.TextBox TxtTelefonoCliente;
-        private System.Windows.Forms.ComboBox CboTipoCliente;
-        private System.Windows.Forms.TextBox TxtCodigoCliente;
+        private System.Windows.Forms.TextBox txtCorreoCliente;
+        private System.Windows.Forms.TextBox txtNombreCliente;
+        private System.Windows.Forms.TextBox txtTelefonoCliente;
+        private System.Windows.Forms.ComboBox cmbTipoCliente;
+        private System.Windows.Forms.TextBox txtCodigoCliente;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox TxtCantidadPollo;
+        private System.Windows.Forms.TextBox txtCantidadPollo;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox TxtCodigoPollo;
+        private System.Windows.Forms.TextBox txtCodigoPollo;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox TxtApellidosClientes;
-        private System.Windows.Forms.TextBox TxtPrecioUnitarioF;
+        private System.Windows.Forms.TextBox txtApellidosClientes;
+        private System.Windows.Forms.TextBox txtPrecioUnitarioF;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox CboRazaPollo;
+        private System.Windows.Forms.ComboBox cmbRazaPollo;
         private System.Windows.Forms.Label label10;
     }
 }

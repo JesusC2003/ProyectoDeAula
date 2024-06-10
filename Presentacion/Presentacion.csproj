@@ -211,18 +211,23 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmAgregarAlimento.resx">
       <DependentUpon>frmAgregarAlimento.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAgregarGalpon.resx">
       <DependentUpon>frmAgregarGalpon.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAgregarMedicamento.resx">
       <DependentUpon>frmAgregarMedicamento.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAgregarPersonal.resx">
       <DependentUpon>frmAgregarPersonal.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAgregarPollo.resx">
       <DependentUpon>frmAgregarPollo.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAlimento.resx">
       <DependentUpon>frmAlimento.cs</DependentUpon>
@@ -232,6 +237,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FmrFactura.resx">
       <DependentUpon>frmFactura.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="frmGalpon.resx">
       <DependentUpon>frmGalpon.cs</DependentUpon>
@@ -265,14 +271,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Oracle.DataAccess.Common.Configuration.Section.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -284,6 +285,11 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -304,229 +310,229 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\fondo4.jpg" />
+    <None Include="Resources\fondo4.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\22266chicken_98785 %281%29.png" />
+    <None Include="Resources\22266chicken_98785 %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\house_home_icon_143301.png" />
+    <None Include="Resources\house_home_icon_143301.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\food_gardening_grading_sack_grain_wheat_icon_255203.png" />
+    <None Include="Resources\food_gardening_grading_sack_grain_wheat_icon_255203.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\clipboard_note_document_report_paper_icon_192535.png" />
+    <None Include="Resources\clipboard_note_document_report_paper_icon_192535.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\4115235-exit-logout-sign-out_114030.png" />
+    <None Include="Resources\4115235-exit-logout-sign-out_114030.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\disk1.png" />
+    <None Include="Resources\disk1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\edit_modify_icon_149489 %281%29.png" />
+    <None Include="Resources\edit_modify_icon_149489 %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\seo-social-web-network-internet_262_icon-icons.com_61518.png" />
+    <None Include="Resources\seo-social-web-network-internet_262_icon-icons.com_61518.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\busqueda.png" />
+    <None Include="Resources\busqueda.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\mbriclose_99502.png" />
+    <None Include="Resources\mbriclose_99502.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\delete_102866.png" />
+    <None Include="Resources\delete_102866.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\remove_minimize_minus_delete_icon_219231.png" />
+    <None Include="Resources\remove_minimize_minus_delete_icon_219231.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\expand_fullscreen_enlarge_maximize_icon_219215.png" />
+    <None Include="Resources\expand_fullscreen_enlarge_maximize_icon_219215.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\systemshutdown_103390.png" />
+    <None Include="Resources\systemshutdown_103390.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\treatment_drug_medication_capsules_drugs_medicine_pill_capsule_pills_icon_210667.png" />
+    <None Include="Resources\treatment_drug_medication_capsules_drugs_medicine_pill_capsule_pills_icon_210667.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\systemshutdown_1033901.png" />
+    <None Include="Resources\systemshutdown_1033901.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\3592856-general-group-office-personal-relation-team-team-structure_107770.png" />
+    <None Include="Resources\3592856-general-group-office-personal-relation-team-team-structure_107770.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\3844437-hamburger-list-menu-more-navigation_110311.png" />
+    <None Include="Resources\3844437-hamburger-list-menu-more-navigation_110311.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\user_icon-icons.com_66546.png" />
+    <None Include="Resources\user_icon-icons.com_66546.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\iconfinder-lock-4341303_120563.png" />
+    <None Include="Resources\iconfinder-lock-4341303_120563.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-menú-16.png" />
+    <None Include="Resources\icons8-menú-16.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-botón-de-apagado.gif" />
+    <None Include="Resources\icons8-botón-de-apagado.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-pollo-48.png" />
+    <None Include="Resources\icons8-pollo-48.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-shed-60.png" />
+    <None Include="Resources\icons8-shed-60.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-empresa-48.png" />
+    <None Include="Resources\icons8-empresa-48.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-ventas-48.png" />
+    <None Include="Resources\icons8-ventas-48.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-pollo-32.png" />
+    <None Include="Resources\icons8-pollo-32.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-shed-32.png" />
+    <None Include="Resources\icons8-shed-32.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-shed-32 %281%29.png" />
+    <None Include="Resources\icons8-shed-32 %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-shed-32 %282%29.png" />
+    <None Include="Resources\icons8-shed-32 %282%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-empresa-32.png" />
+    <None Include="Resources\icons8-empresa-32.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-ventas-32.png" />
+    <None Include="Resources\icons8-ventas-32.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-cerrar-ventana-32.png" />
+    <None Include="Resources\icons8-cerrar-ventana-32.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-maximizar-32.png" />
+    <None Include="Resources\icons8-maximizar-32.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\expand_fullscreen_enlarge_maximize_icon_219215 %281%29.png" />
+    <None Include="Resources\expand_fullscreen_enlarge_maximize_icon_219215 %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\window_minimize_icon_181229.png" />
+    <None Include="Resources\window_minimize_icon_181229.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-restaurar-abajo-32.png" />
+    <None Include="Resources\icons8-restaurar-abajo-32.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-restaurar-abajo-32 %281%29.png" />
+    <None Include="Resources\icons8-restaurar-abajo-32 %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\window_restore_icon_181231.png" />
+    <None Include="Resources\window_restore_icon_181231.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\window_maximize_icon_181228.png" />
+    <None Include="Resources\window_maximize_icon_181228.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-shed-32 %283%29.png" />
+    <None Include="Resources\icons8-shed-32 %283%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-añadir-32.png" />
+    <None Include="Resources\icons8-añadir-32.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\documentediting_editdocuments_text_documentedi_2820.png" />
+    <None Include="Resources\documentediting_editdocuments_text_documentedi_2820.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-ver.gif" />
+    <None Include="Resources\icons8-ver.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-eliminar-32 %281%29.png" />
+    <None Include="Resources\icons8-eliminar-32 %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\floppy_disc_save_storage_disk_computer_icon_175922.png" />
+    <None Include="Resources\floppy_disc_save_storage_disk_computer_icon_175922.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\new-file_40454.png" />
+    <None Include="Resources\new-file_40454.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-agregar-página-web-20.png" />
+    <None Include="Resources\icons8-agregar-página-web-20.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-empleado-30.png" />
+    <None Include="Resources\icons8-empleado-30.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-factura-32.png" />
+    <None Include="Resources\icons8-factura-32.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\invoice_document_bill_delivery_note_icon_225179.png" />
+    <None Include="Resources\invoice_document_bill_delivery_note_icon_225179.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\office_building_company_icon_231040.png" />
+    <None Include="Resources\office_building_company_icon_231040.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\OIG3.0NBeUeslY2k6TCHu.jpeg" />
+    <None Include="Resources\OIG3.0NBeUeslY2k6TCHu.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\OIG3.jpeg" />
+    <None Include="Resources\OIG3.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\_1ce68545-2e84-432f-bbce-8465484abaf7.jpeg" />
+    <None Include="Resources\_1ce68545-2e84-432f-bbce-8465484abaf7.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\_b806f5bf-4b81-4e80-8df0-92b0d27f5814.jpeg" />
+    <None Include="Resources\_b806f5bf-4b81-4e80-8df0-92b0d27f5814.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\_ac673a6a-7623-40ca-9b32-aadc5d86ef13.jpeg" />
+    <None Include="Resources\_ac673a6a-7623-40ca-9b32-aadc5d86ef13.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-cerrar-ventana-16.png" />
+    <None Include="Resources\icons8-cerrar-ventana-16.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-configuración-de-datos-20.png" />
+    <None Include="Resources\icons8-configuración-de-datos-20.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-logout-32.png" />
+    <None Include="Resources\icons8-logout-32.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-cerrar-ventana-161.png" />
+    <None Include="Resources\icons8-cerrar-ventana-161.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-logout-321.png" />
+    <None Include="Resources\icons8-logout-321.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-salida-20.png" />
+    <None Include="Resources\icons8-salida-20.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-añadir-usuario-masculino-20.png" />
+    <None Include="Resources\icons8-añadir-usuario-masculino-20.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-documento-20.png" />
+    <None Include="Resources\icons8-documento-20.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-salida-201.png" />
+    <None Include="Resources\icons8-salida-201.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-ver-24.png" />
+    <None Include="Resources\icons8-ver-24.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\receipt_add_icon_177414.png" />
+    <None Include="Resources\receipt_add_icon_177414.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\file-delete_114438.png" />
+    <None Include="Resources\file-delete_114438.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\delete-file256_25240.png" />
+    <None Include="Resources\delete-file256_25240.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-eliminar-archivo-30.png" />
+    <None Include="Resources\icons8-eliminar-archivo-30.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-eliminar-archivo-24.png" />
+    <None Include="Resources\icons8-eliminar-archivo-24.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\icons8-factura-28.png" />
+    <None Include="Resources\icons8-factura-28.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\PlantillaFactura.html" />
+    <None Include="Resources\PlantillaFactura.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

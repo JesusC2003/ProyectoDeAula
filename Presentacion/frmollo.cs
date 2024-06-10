@@ -51,19 +51,19 @@ namespace Presentacion
 
         private void TxtBusquedapollo_Enter(object sender, EventArgs e)
         {
-            if (TxtBusquedapollo.Text == "Busqueda")
+            if (txtBusquedapollo.Text == "Busqueda")
             {
-                TxtBusquedapollo.Text = "";
-                TxtBusquedapollo.ForeColor = Color.White;
+                txtBusquedapollo.Text = "";
+                txtBusquedapollo.ForeColor = Color.White;
             }
         }
 
         private void TxtBusquedapollo_Leave(object sender, EventArgs e)
         {
-            if (TxtBusquedapollo.Text == "")
+            if (txtBusquedapollo.Text == "")
             {
-                TxtBusquedapollo.Text = "Busqueda";
-                TxtBusquedapollo.ForeColor = Color.White;
+                txtBusquedapollo.Text = "Busqueda";
+                txtBusquedapollo.ForeColor = Color.White;
             }
         }
 
