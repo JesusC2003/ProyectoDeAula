@@ -177,6 +177,12 @@
     <Compile Include="frmMedicamento.Designer.cs">
       <DependentUpon>frmMedicamento.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmmenuiniciar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmenuiniciar.Designer.cs">
+      <DependentUpon>frmmenuiniciar.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPersonal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -256,6 +262,9 @@
     <EmbeddedResource Include="frmMedicamento.resx">
       <DependentUpon>frmMedicamento.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmmenuiniciar.resx">
+      <DependentUpon>frmmenuiniciar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPersonal.resx">
       <DependentUpon>frmPersonal.cs</DependentUpon>
     </EmbeddedResource>
@@ -271,7 +280,6 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Oracle.DataAccess.Common.Configuration.Section.xsd">
       <SubType>Designer</SubType>
@@ -284,11 +292,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -532,6 +535,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\PlantillaFactura.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_Hensys.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

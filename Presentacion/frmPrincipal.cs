@@ -22,8 +22,6 @@ namespace Presentacion
                 Horayfecha.Enabled = true;
             }
 
-
-
         [DllImport("user32.dll", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.dll", EntryPoint = "SendMessage")]
@@ -142,8 +140,8 @@ namespace Presentacion
 
         private void BtnMenu_Click(object sender, EventArgs e)
         {
-            PnlContenedor.Visible=true;
-            Horayfecha.Enabled=true;
+            lblFecha.Visible = true;
+            lblHora.Visible = true;
         }
 
         private void frmPrincipal_Load(object sender, EventArgs e)
