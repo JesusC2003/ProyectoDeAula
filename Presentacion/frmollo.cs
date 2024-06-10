@@ -7,11 +7,11 @@ using System.Drawing;
 
 namespace Presentacion
 {
-    public partial class frmPollo : Form
+    public partial class frmollo : Form
     {
         private string ConnectionString = @"Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521)))
                                          (CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=xepdb1)));User Id=God;Password=God;";
-        public frmPollo()
+        public frmollo()
         {
             InitializeComponent();
             cargar();
