@@ -16,16 +16,16 @@ namespace Pruebas
     {
         static void Main(string[] args)
         {
-            //BaseDatosConexion baseDatosConexion = new BaseDatosConexion();
+            BaseDatosConexion baseDatosConexion = new BaseDatosConexion();
 
-            //string mensaje = baseDatosConexion.AbrirConexion();
-            //Console.WriteLine(mensaje);
-            //Console.ReadLine();
+            string mensaje = baseDatosConexion.AbrirConexion();
+            Console.WriteLine(mensaje);
+            Console.ReadLine();
 
-            //baseDatosConexion.CerrarConexion();
-            //Console.WriteLine("Conexion cerrada");
-            //Console.ReadLine();
-            
+            baseDatosConexion.CerrarConexion();
+            Console.WriteLine("Conexion cerrada");
+            Console.ReadLine();
+
 
 
         }
