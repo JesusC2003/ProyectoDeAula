@@ -18,7 +18,7 @@ namespace Datos
         public RepositorioEmpresa() {  }
 
         //METODO PARA INSERTAR EMPRESA A LA BASE DE DATOS
-        public string InsertEmpresa(Empresa empresa)
+        public string InsertEmpresa(EntidadEmpresa empresa)
         {
             string query = "INSERT INTO EMPRESA (NIT, NOMBRE, TELEFONO, DIRECCION, CORREO) " +
                             "VALUES (:nit, :nombre, :telefono, :direccion, :correo)";
@@ -40,7 +40,7 @@ namespace Datos
         } 
         
         //METODO INSERTAR INFORMACION AL COMANDO
-        private string EjecutarInsercion(OracleCommand COMANDO, Empresa empresa ) 
+        private string EjecutarInsercion(OracleCommand COMANDO, EntidadEmpresa empresa ) 
         {
             try
             {
@@ -72,10 +72,10 @@ namespace Datos
         }
         
         //METODO PARA CONSULTAR INFORMACION DE EMPRESA EN LA BASE DE DATOS
-        public Empresa SelectEmpresa() 
+        public EntidadEmpresa SelectEmpresa() 
         {
             OracleDataReader Leer;
-            Empresa empresa = new Empresa();
+            EntidadEmpresa empresa = new EntidadEmpresa();
             string query = "SELECT * FROM EMPRESA";
             try 
             {
@@ -92,9 +92,9 @@ namespace Datos
         }
 
         //METODO PARA CONVERTIR EL TIPO DE LA INFORMACION TRAIDA DE LA BASE DE DATOS A EMPRESA
-        public Empresa Map(OracleDataReader leer) 
+        public EntidadEmpresa Map(OracleDataReader leer) 
         {
-            Empresa empresa = new Empresa();
+            EntidadEmpresa empresa = new EntidadEmpresa();
             if (leer.Read())
             {
                 empresa.NIT = Convert.ToString(leer["NIT"]);
@@ -107,7 +107,7 @@ namespace Datos
         }
 
         //METODO PARA ACTUALIZAR INFORMACION EN LA BASE DE DATOS
-        public string UpdateEmpresa(Empresa empresa)
+        public string UpdateEmpresa(EntidadEmpresa empresa)
         {
             string query = "UPDATE EMPRESA SET NOMBRE = :nombre, TELEFONO = :telefono, DIRECCION = :direccion, CORREO = :correo " +
                            "WHERE NIT = :nit";

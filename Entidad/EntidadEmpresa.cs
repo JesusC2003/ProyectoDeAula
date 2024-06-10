@@ -2,9 +2,9 @@
 
 namespace Entidad
 {
-    public class Empresa
+    public class EntidadEmpresa
     {        
-        public Empresa() 
+        public EntidadEmpresa() 
         {
             NIT = string.Empty;
             Nombre = string.Empty;

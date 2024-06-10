@@ -3,20 +3,20 @@
 
 namespace Entidad
 {
-    public class Medicamento
+    public class EntidadMedicamento
     {
-        public Medicamento() 
+        public EntidadMedicamento() 
         {
             IdMedicamento = 0;
+            CodigoMedicamento=string.Empty;
             NombreMedicamento = string.Empty;
             DescripcionMedicamento = string.Empty;
-            IdInventario = new Inventario();
         }
 
         public int IdMedicamento { get; set; }
+        public string CodigoMedicamento { get; set; }
         public string NombreMedicamento { get; set; }
         public string DescripcionMedicamento { get; set; }
         public DateTime FechaCaducidad { get; set; }
-        public Inventario IdInventario { get; set; }
     }
 }

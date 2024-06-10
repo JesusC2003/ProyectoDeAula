@@ -2,9 +2,9 @@
 
 namespace Entidad
 {
-    public class Cliente :Persona
+    public class EntidadCliente :EntidadPersona
     {
-        public Cliente() 
+        public EntidadCliente() 
         {
             Id = 0;
             Identificacion=string.Empty;

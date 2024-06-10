@@ -2,9 +2,9 @@
 
 namespace Entidad
 {
-    public class Empleado : Persona
+    public class EntidadEmpleado : EntidadPersona
     {
-        public Empleado() 
+        public EntidadEmpleado() 
         {
             Id = 0;
             Identificacion=string.Empty;
@@ -16,13 +16,13 @@ namespace Entidad
             Cargo = string.Empty;
             Salario = 0;
             Departamento=string.Empty;
-            NitEmpresa = new Empresa();
-            IdUsuario = new Usuario();
+            NitEmpresa = new EntidadEmpresa();
+            IdUsuario = new EntidadUsuario();
         }
         public string Cargo { get; set; } 
         public double Salario { get; set; }
         public string Departamento { get; set; } 
-        public Empresa NitEmpresa { get; set; }
-        public Usuario IdUsuario { get; set; }
+        public EntidadEmpresa NitEmpresa { get; set; }
+        public EntidadUsuario IdUsuario { get; set; }
     }
 }

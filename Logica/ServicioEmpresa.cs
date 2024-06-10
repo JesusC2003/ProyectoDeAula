@@ -17,21 +17,21 @@ namespace Logica
         }
 
         //METODO PARA GUARDAR EMPRESA
-        public string Guardar(Empresa empresa)
+        public string Guardar(EntidadEmpresa empresa)
         {
             return $"{ repositorioEmpresa.InsertEmpresa(empresa)} guardada con exito";
         }
 
         //METODO PARA ACTUALIZAR EMPRESA
-        public string Actualizar(Empresa empresa)
+        public string Actualizar(EntidadEmpresa empresa)
         {
             return $"{repositorioEmpresa.UpdateEmpresa(empresa)} actulizada con exito";
         }
 
         //METODO PARA CARGAR INFORMACION EMPRESA
-        public Empresa GetEmpresa() 
+        public EntidadEmpresa GetEmpresa() 
         {
-            Empresa empresa = new Empresa();
+            EntidadEmpresa empresa = new EntidadEmpresa();
             if (RespuestaExisteEmpresa())
             {
                 empresa = repositorioEmpresa.SelectEmpresa();

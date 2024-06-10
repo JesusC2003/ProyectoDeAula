@@ -2,9 +2,9 @@
 
 namespace Entidad
 {
-    public class Galpon
+    public class EntidadGalpon
     {
-        public Galpon()
+        public EntidadGalpon()
         {
             IdGalpon = 0;
             AreaGalpon = 0;
@@ -19,6 +19,7 @@ namespace Entidad
         } 
 
         public int IdGalpon { get; set; }
+        public string CodigoGalpon { get; set; }
         public double AreaGalpon { get; set; }
         public string EstadoGalpon { get; set; }       
 

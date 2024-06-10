@@ -12,6 +12,7 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
+<<<<<<< HEAD
 
     public partial class frmPrincipal : Form
     {
@@ -20,6 +21,15 @@ namespace Presentacion
                 InitializeComponent();
                 Horayfecha.Enabled = true;
             }
+=======
+    public partial class frmPrincipal : Form
+    { 
+        public frmPrincipal()
+        {
+            InitializeComponent();
+            Horayfecha.Enabled = true;
+        }
+>>>>>>> baff70a11df0122eccddfce6b3644d007049d1e9
 
         [DllImport("user32.dll", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -74,7 +84,7 @@ namespace Presentacion
 
         private void BtnPollo_Click(object sender, EventArgs e)
         {
-            AbrirFmr(new FmrPollo());   
+            AbrirFmr(new frmollo());   
         }
 
         private void BtnGalpon_Click(object sender, EventArgs e)
@@ -101,7 +111,7 @@ namespace Presentacion
 
         private void BtnVentas_Click(object sender, EventArgs e)
         {
-            AbrirFmr(new FmrVentas());
+            AbrirFmr(new frmVentas());
         }
 
         private void BtnConfiguracion_Click(object sender, EventArgs e)
