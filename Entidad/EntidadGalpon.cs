@@ -7,6 +7,8 @@ namespace Entidad
         public EntidadGalpon()
         {
             IdGalpon = 0;
+            CodigoGalpon=string.Empty;
+            NombreGalpon=string.Empty;
             AreaGalpon = 0;
             EstadoGalpon = string.Empty;
         }
@@ -20,6 +22,7 @@ namespace Entidad
 
         public int IdGalpon { get; set; }
         public string CodigoGalpon { get; set; }
+        public string NombreGalpon { get; set; }
         public double AreaGalpon { get; set; }
         public string EstadoGalpon { get; set; }       
 

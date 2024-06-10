@@ -6,7 +6,7 @@ namespace Datos
     public class BaseDatosConexion
     {
         private string cadenaConexion = @"Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521))) 
-                                         (CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=XEPDB1)));User Id=God;Password=God;";
+                                         (CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=XEPDB1)));User Id=AdminHensys;Password=2024;";
         OracleConnection conexion;
         public BaseDatosConexion()
         {
