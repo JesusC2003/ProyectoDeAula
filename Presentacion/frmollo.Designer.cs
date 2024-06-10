@@ -193,6 +193,7 @@
             this.btnAgregarpollo.Text = "Añadir";
             this.btnAgregarpollo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAgregarpollo.UseVisualStyleBackColor = true;
+            this.btnAgregarpollo.Click += new System.EventHandler(this.btnAgregarpollo_Click);
             // 
             // btnEliminarPollo
             // 

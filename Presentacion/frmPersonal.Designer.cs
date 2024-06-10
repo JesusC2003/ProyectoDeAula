@@ -86,7 +86,7 @@
             this.dgvPersonal.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvPersonal.Size = new System.Drawing.Size(732, 389);
             this.dgvPersonal.TabIndex = 109;
-            this.dgvPersonal.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPersonal_CellContentClick);
+           
             // 
             // cmbFiltradoPersonal
             // 
@@ -97,7 +97,7 @@
             this.cmbFiltradoPersonal.Name = "cmbFiltradoPersonal";
             this.cmbFiltradoPersonal.Size = new System.Drawing.Size(138, 25);
             this.cmbFiltradoPersonal.TabIndex = 122;
-            this.cmbFiltradoPersonal.SelectedIndexChanged += new System.EventHandler(this.CboFiltradoPersonal_SelectedIndexChanged);
+            
             // 
             // btnAgregarPersonal
             // 
@@ -131,7 +131,7 @@
             this.btnEliminarPersonal.Size = new System.Drawing.Size(29, 25);
             this.btnEliminarPersonal.TabIndex = 120;
             this.btnEliminarPersonal.UseVisualStyleBackColor = true;
-            this.btnEliminarPersonal.Click += new System.EventHandler(this.BtnEliminarPersonal_Click);
+
             // 
             // btnVerPersonal
             // 
@@ -147,7 +147,7 @@
             this.btnVerPersonal.Size = new System.Drawing.Size(29, 25);
             this.btnVerPersonal.TabIndex = 119;
             this.btnVerPersonal.UseVisualStyleBackColor = false;
-            this.btnVerPersonal.Click += new System.EventHandler(this.BtnVerPersonal_Click);
+
             // 
             // btnEditarPersonal
             // 
@@ -162,7 +162,7 @@
             this.btnEditarPersonal.Size = new System.Drawing.Size(29, 25);
             this.btnEditarPersonal.TabIndex = 118;
             this.btnEditarPersonal.UseVisualStyleBackColor = true;
-            this.btnEditarPersonal.Click += new System.EventHandler(this.BtnEditarPersonal_Click);
+            
             // 
             // txtBusquedaPersonal
             // 
@@ -175,7 +175,7 @@
             this.txtBusquedaPersonal.Size = new System.Drawing.Size(483, 23);
             this.txtBusquedaPersonal.TabIndex = 117;
             this.txtBusquedaPersonal.Text = "Busqueda";
-            this.txtBusquedaPersonal.TextChanged += new System.EventHandler(this.TxtBusquedaPersonal_TextChanged);
+           
             this.txtBusquedaPersonal.Enter += new System.EventHandler(this.TxtBusquedaPersonal_Enter);
             this.txtBusquedaPersonal.Leave += new System.EventHandler(this.TxtBusquedaPersonal_Leave);
             // 
@@ -220,7 +220,7 @@
             this.Name = "frmPersonal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FmrPersonal";
-            this.Load += new System.EventHandler(this.FmrPersonal_Load);
+
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonal)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
