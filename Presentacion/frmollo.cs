@@ -14,7 +14,7 @@ namespace Presentacion
         public frmPollo()
         {
             InitializeComponent();
-            cargar();
+            //cargar();
         }
 
         
