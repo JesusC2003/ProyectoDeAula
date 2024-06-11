@@ -138,7 +138,7 @@ namespace Presentacion
 
         private void BtnCerrarSesion_Click(object sender, EventArgs e)
         {
-            DialogResult resultado = MessageBox.Show("¿Está seguro de cerrar sesión, " + nombreUsuario + "?", "Cerrar Sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult resultado = MessageBox.Show("¿Está seguro de cerrar sesión, " + nombreUsuario + "?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (resultado == DialogResult.Yes) { 
                 this.Close();
                 frmIniciarSession fmrIniciarSeccion = new frmIniciarSession();
