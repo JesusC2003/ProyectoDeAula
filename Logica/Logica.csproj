@@ -85,7 +85,7 @@
     <Compile Include="ServicioEmpresa.cs" />
     <Compile Include="ServicioAsignado.cs" />
     <Compile Include="ServicioGalpon.cs" />
-    <Compile Include="ServicioInventario.cs" />
+    <Compile Include="ServicioLote.cs" />
     <Compile Include="ServicioMedicamento.cs" />
     <Compile Include="ServicioEmpleado.cs" />
     <Compile Include="ServicioPollo.cs" />

@@ -1,39 +1,26 @@
-﻿
-using Entidad;
+﻿using Entidad;
 using Oracle.ManagedDataAccess.Client;
 using System;
 using System.Collections.Generic;
 
 namespace Datos
 {
-    public class RepositorioPollo : BaseDatosConexion
+    public class RepositorioLote : BaseDatosConexion
     {
-        RepositorioGalpon RepositorioGalpon;
-        RepositorioDetalleFactura RepositorioDetalleFactura;
-        RepositorioLote RepositorioLote;
-        public RepositorioPollo() {
-            RepositorioLote = new RepositorioLote();
-            RepositorioGalpon = new RepositorioGalpon();
-            RepositorioDetalleFactura = new RepositorioDetalleFactura();
-        }
+        public RepositorioLote() { }
 
-        // Método para insertar una fila en la tabla POLLO
-        public int InsertarPollo(EntidadPollo pollo)
+        public int InsertarLote(EntidadLote lote)
         {
             if (AbrirConexion())
             {
                 try
                 {
-                    using (OracleCommand comando = new OracleCommand("P_InsertarPollo", ObtenerConexion()))
+                    using (OracleCommand comando = new OracleCommand("P_InsertarLote", ObtenerConexion()))
                     {
                         comando.CommandType = System.Data.CommandType.StoredProcedure;
 
-                        comando.Parameters.Add("p_codigo_pollo", OracleDbType.Varchar2).Value = pollo.CodigoPollo;
-                        comando.Parameters.Add("p_raza_pollo", OracleDbType.Varchar2).Value = pollo.RazaPollo;
-                        comando.Parameters.Add("p_estado_pollo", OracleDbType.Varchar2).Value = pollo.EstadoPollo;
-                        comando.Parameters.Add("p_fk_galpon", OracleDbType.Int32).Value = pollo.IdGalpon.IdGalpon;
-                        comando.Parameters.Add("p_fk_lote", OracleDbType.Int32).Value = pollo.LotePollo.IdLote;
-                        comando.Parameters.Add("p_fk_detallefactura", OracleDbType.Int32).Value = pollo.IdDetalleFactura.IdDetalleFactura;
+                        comando.Parameters.Add("p_numero_lote", OracleDbType.Int32).Value = lote.NumeroLote;
+                        comando.Parameters.Add("p_fecha_ingreso", OracleDbType.Date).Value = lote.FechaIngreso;
 
                         return comando.ExecuteNonQuery();
                     }
@@ -53,24 +40,19 @@ namespace Datos
             }
         }
 
-        // Método para actualizar una fila en la tabla POLLO
-        public int ActualizarPollo(EntidadPollo pollo)
+        public int ActualizarLote(EntidadLote lote)
         {
             if (AbrirConexion())
             {
                 try
                 {
-                    using (OracleCommand comando = new OracleCommand("P_ActualizarPollo", ObtenerConexion()))
+                    using (OracleCommand comando = new OracleCommand("P_ActualizarLote", ObtenerConexion()))
                     {
                         comando.CommandType = System.Data.CommandType.StoredProcedure;
 
-                        comando.Parameters.Add("p_id_pollo", OracleDbType.Int32).Value = pollo.IdPollo;
-                        comando.Parameters.Add("p_codigo_pollo", OracleDbType.Varchar2).Value = pollo.CodigoPollo;
-                        comando.Parameters.Add("p_raza_pollo", OracleDbType.Varchar2).Value = pollo.RazaPollo;
-                        comando.Parameters.Add("p_estado_pollo", OracleDbType.Varchar2).Value = pollo.EstadoPollo;
-                        comando.Parameters.Add("p_fk_galpon", OracleDbType.Int32).Value = pollo.IdGalpon.IdGalpon;
-                        comando.Parameters.Add("p_fk_lote", OracleDbType.Int32).Value = pollo.LotePollo.IdLote;
-                        comando.Parameters.Add("p_fk_detallefactura", OracleDbType.Int32).Value = pollo.IdDetalleFactura.IdDetalleFactura;
+                        comando.Parameters.Add("p_id_lote", OracleDbType.Int32).Value = lote.IdLote;
+                        comando.Parameters.Add("p_numero_lote", OracleDbType.Int32).Value = lote.NumeroLote;
+                        comando.Parameters.Add("p_fecha_ingreso", OracleDbType.Date).Value = lote.FechaIngreso;
 
                         return comando.ExecuteNonQuery();
                     }
@@ -90,17 +72,16 @@ namespace Datos
             }
         }
 
-        // Método para borrar una fila de la tabla POLLO
-        public int EliminarPollo(int idPollo)
+        public int BorrarLote(int idLote)
         {
             if (AbrirConexion())
             {
                 try
                 {
-                    using (OracleCommand comando = new OracleCommand("P_BorrarPollo", ObtenerConexion()))
+                    using (OracleCommand comando = new OracleCommand("P_BorrarLote", ObtenerConexion()))
                     {
                         comando.CommandType = System.Data.CommandType.StoredProcedure;
-                        comando.Parameters.Add("p_id_pollo", OracleDbType.Int32).Value = idPollo;
+                        comando.Parameters.Add("p_id_lote", OracleDbType.Int32).Value = idLote;
                         return comando.ExecuteNonQuery();
                     }
                 }
@@ -119,17 +100,16 @@ namespace Datos
             }
         }
 
-        // Método para consultar una fila de la tabla POLLO
-        public EntidadPollo ConsultarPollo(int idPollo)
+        public EntidadLote ConsultarLote(int idLote)
         {
             if (AbrirConexion())
             {
                 try
                 {
-                    using (OracleCommand comando = new OracleCommand("F_ConsultarPollo", ObtenerConexion()))
+                    using (OracleCommand comando = new OracleCommand("F_ConsultarLote", ObtenerConexion()))
                     {
                         comando.CommandType = System.Data.CommandType.StoredProcedure;
-                        comando.Parameters.Add("p_id_pollo", OracleDbType.Int32).Value = idPollo;
+                        comando.Parameters.Add("p_id_lote", OracleDbType.Int32).Value = idLote;
                         comando.Parameters.Add("resultado", OracleDbType.RefCursor).Direction = System.Data.ParameterDirection.ReturnValue;
 
                         using (OracleDataReader lector = comando.ExecuteReader())
@@ -160,15 +140,14 @@ namespace Datos
             }
         }
 
-        // Método para consultar todas las filas de la tabla POLLO
-        public List<EntidadPollo> ConsultarTodosLosPollos()
+        public List<EntidadLote> ConsultarTodosLosLotes()
         {
-            List<EntidadPollo> listaPollos = new List<EntidadPollo>();
+            List<EntidadLote> listaLotes = new List<EntidadLote>();
             if (AbrirConexion())
             {
                 try
                 {
-                    using (OracleCommand comando = new OracleCommand("F_ConsultarTodosLosPollos", ObtenerConexion()))
+                    using (OracleCommand comando = new OracleCommand("F_ConsultarTodosLosLotes", ObtenerConexion()))
                     {
                         comando.CommandType = System.Data.CommandType.StoredProcedure;
                         comando.Parameters.Add("resultado", OracleDbType.RefCursor).Direction = System.Data.ParameterDirection.ReturnValue;
@@ -177,9 +156,9 @@ namespace Datos
                         {
                             while (lector.Read())
                             {
-                                listaPollos.Add(Mapeo(lector));
+                                listaLotes.Add(Mapeo(lector));
                             }
-                            return listaPollos;
+                            return listaLotes;
                         }
                     }
                 }
@@ -198,19 +177,15 @@ namespace Datos
             }
         }
 
-        // Método para mapear de una fila de la tabla a la entidad POLLO
-        private EntidadPollo Mapeo(OracleDataReader leer)
+        private EntidadLote Mapeo(OracleDataReader leer)
         {
-            EntidadPollo pollo = new EntidadPollo();
-            pollo.IdPollo = leer.GetInt32(0);
-            pollo.CodigoPollo = leer.GetString(1);
-            pollo.RazaPollo = leer.GetString(2);
-            pollo.EstadoPollo = leer.GetString(3);
-            pollo.IdGalpon = RepositorioGalpon.ConsultarGalpon(leer.GetInt32(4));
-            pollo.LotePollo = RepositorioLote.ConsultarLote(leer.GetInt32(5));
-            pollo.IdDetalleFactura = RepositorioDetalleFactura.ConsultarDetalleFactura(leer.GetInt32(6));
+            EntidadLote lote = new EntidadLote();
+            lote.IdLote = leer.GetInt32(0);
+            lote.NumeroLote = leer.GetInt32(1);
+            lote.FechaIngreso = leer.GetDateTime(2);
 
-            return pollo;
+            return lote;
         }
     }
 }
+

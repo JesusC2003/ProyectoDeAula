@@ -3,38 +3,40 @@ using System;
 
 namespace Datos
 {
-    public class BaseDatosConexion
+    public abstract class BaseDatosConexion
     {
-        private string cadenaConexion = @"Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521))) 
-                                         (CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=XEPDB1)));User Id=AdminHensys;Password=2024;";
+        private string cadenaConexion = @"Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521)))" +
+                                         "(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=XEPDB1)));User Id=AdminHensys;Password=2024;";
         OracleConnection conexion;
         public BaseDatosConexion()
         {
             conexion = new OracleConnection(cadenaConexion);
         }
-        public string AbrirConexion()
+        protected bool AbrirConexion()
         {
-            try {
+            try
+            {
                 if (conexion.State != System.Data.ConnectionState.Open)
                 {
                     conexion.Open();
-                    return $"Conectado a Oracle: {conexion.ServerVersion}";
+                    return true;
                 }
-                return "Ya está conectado a Oracle";
+                return false; // Ya está conectado a Oracle
             }
-            catch (OracleException xe) { return ($"|ERROR DE CONEXION| - {xe.Message}"); }            
+            catch (OracleException ex){ throw new Exception($"|ERROR DE CONEXION| - {ex.Message}"); }
         }
-
-        public void CerrarConexion()
+        protected void CerrarConexion()
         {
             if (conexion.State != System.Data.ConnectionState.Closed)
             {
                 conexion.Close();
             }
         }
-        public OracleConnection ObtenerConexion()
+        protected OracleConnection ObtenerConexion()
         {
             return conexion;
         }
+        
+
     }
 }

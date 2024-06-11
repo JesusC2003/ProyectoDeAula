@@ -18,6 +18,6 @@ namespace Entidad
         public string CodigoAlimento { get; set; }
         public string MarcaAlimento { get; set; } 
         public string TipoAlimento {  get; set; } 
-        public DateTime FechaCadudcidad { get; set; } 
+        public DateTime FechaCaducidad { get; set; } 
     }
 }
