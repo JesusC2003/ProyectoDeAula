@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.grpDetalleProducto = new System.Windows.Forms.GroupBox();
+            this.txtMontoTotal = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtCantidadFactura = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtPrecioUnitarioProducto = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtCodigoProducto = new Guna.UI2.WinForms.Guna2TextBox();
             this.cmbRazaPollofactura = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.grpDatosCliente = new System.Windows.Forms.GroupBox();
@@ -62,6 +62,8 @@
             this.btnAgregarFactura = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnFacturar = new Guna.UI2.WinForms.Guna2Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.grpDetalleProducto.SuspendLayout();
             this.grpDatosCliente.SuspendLayout();
@@ -72,6 +74,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(16)))), ((int)(((byte)(20)))));
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.txtMontoTotal);
             this.panel1.Controls.Add(this.grpDetalleProducto);
             this.panel1.Controls.Add(this.grpDatosCliente);
             this.panel1.Controls.Add(this.groupBox1);
@@ -100,6 +104,30 @@
             this.grpDetalleProducto.TabIndex = 24;
             this.grpDetalleProducto.TabStop = false;
             this.grpDetalleProducto.Text = "Detalle Producto";
+            // 
+            // txtMontoTotal
+            // 
+            this.txtMontoTotal.AutoSize = true;
+            this.txtMontoTotal.BorderColor = System.Drawing.Color.Silver;
+            this.txtMontoTotal.BorderRadius = 5;
+            this.txtMontoTotal.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMontoTotal.DefaultText = "";
+            this.txtMontoTotal.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMontoTotal.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMontoTotal.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMontoTotal.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMontoTotal.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMontoTotal.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMontoTotal.ForeColor = System.Drawing.Color.Black;
+            this.txtMontoTotal.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMontoTotal.Location = new System.Drawing.Point(544, 428);
+            this.txtMontoTotal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMontoTotal.Name = "txtMontoTotal";
+            this.txtMontoTotal.PasswordChar = '\0';
+            this.txtMontoTotal.PlaceholderText = "";
+            this.txtMontoTotal.SelectedText = "";
+            this.txtMontoTotal.Size = new System.Drawing.Size(105, 25);
+            this.txtMontoTotal.TabIndex = 170;
             // 
             // txtCantidadFactura
             // 
@@ -197,17 +225,6 @@
             this.label10.TabIndex = 30;
             this.label10.Text = "Raza";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label9
-            // 
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(15, 80);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(155, 19);
-            this.label9.TabIndex = 28;
-            this.label9.Text = "Precio Unitario";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label8
             // 
@@ -515,20 +532,20 @@
             this.dgvFactura.AllowUserToDeleteRows = false;
             this.dgvFactura.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvFactura.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Century Gothic", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFactura.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFactura.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvFactura.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvFactura.Location = new System.Drawing.Point(2, 300);
             this.dgvFactura.Name = "dgvFactura";
             this.dgvFactura.ReadOnly = true;
             this.dgvFactura.RowHeadersVisible = false;
-            this.dgvFactura.Size = new System.Drawing.Size(648, 157);
+            this.dgvFactura.Size = new System.Drawing.Size(648, 125);
             this.dgvFactura.TabIndex = 0;
             // 
             // btnEliminarFactura
@@ -545,10 +562,10 @@
             this.btnEliminarFactura.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnEliminarFactura.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
             this.btnEliminarFactura.Image = global::Presentacion.Properties.Resources.icons8_eliminar_archivo_24;
-            this.btnEliminarFactura.Location = new System.Drawing.Point(339, 492);
+            this.btnEliminarFactura.Location = new System.Drawing.Point(339, 494);
             this.btnEliminarFactura.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminarFactura.Name = "btnEliminarFactura";
-            this.btnEliminarFactura.Size = new System.Drawing.Size(109, 35);
+            this.btnEliminarFactura.Size = new System.Drawing.Size(109, 33);
             this.btnEliminarFactura.TabIndex = 159;
             this.btnEliminarFactura.Text = "Eliminar";
             this.btnEliminarFactura.TextFormatNoPrefix = true;
@@ -567,10 +584,10 @@
             this.btnAgregarFactura.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnAgregarFactura.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
             this.btnAgregarFactura.Image = global::Presentacion.Properties.Resources.receipt_add_icon_177414;
-            this.btnAgregarFactura.Location = new System.Drawing.Point(67, 492);
+            this.btnAgregarFactura.Location = new System.Drawing.Point(67, 494);
             this.btnAgregarFactura.Margin = new System.Windows.Forms.Padding(2);
             this.btnAgregarFactura.Name = "btnAgregarFactura";
-            this.btnAgregarFactura.Size = new System.Drawing.Size(109, 35);
+            this.btnAgregarFactura.Size = new System.Drawing.Size(109, 33);
             this.btnAgregarFactura.TabIndex = 157;
             this.btnAgregarFactura.Text = "Agregar";
             this.btnAgregarFactura.TextFormatNoPrefix = true;
@@ -601,14 +618,37 @@
             this.btnFacturar.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnFacturar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
             this.btnFacturar.Image = global::Presentacion.Properties.Resources.icons8_factura_28;
-            this.btnFacturar.Location = new System.Drawing.Point(596, 492);
+            this.btnFacturar.Location = new System.Drawing.Point(600, 494);
             this.btnFacturar.Margin = new System.Windows.Forms.Padding(2);
             this.btnFacturar.Name = "btnFacturar";
-            this.btnFacturar.Size = new System.Drawing.Size(123, 35);
+            this.btnFacturar.Size = new System.Drawing.Size(123, 33);
             this.btnFacturar.TabIndex = 158;
             this.btnFacturar.Text = "Facturar";
             this.btnFacturar.TextFormatNoPrefix = true;
             this.btnFacturar.Click += new System.EventHandler(this.btnFacturar_Click_1);
+            // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(15, 80);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(155, 19);
+            this.label9.TabIndex = 28;
+            this.label9.Text = "Precio Unitario";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label12
+            // 
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(432, 432);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(106, 19);
+            this.label12.TabIndex = 171;
+            this.label12.Text = "Total";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // frmFactura
             // 
@@ -626,6 +666,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FmrFactura";
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.grpDetalleProducto.ResumeLayout(false);
             this.grpDetalleProducto.PerformLayout();
             this.grpDatosCliente.ResumeLayout(false);
@@ -646,7 +687,6 @@
         private System.Windows.Forms.GroupBox grpDetalleProducto;
         private System.Windows.Forms.ComboBox cmbRazaPollofactura;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox grpDatosCliente;
@@ -661,7 +701,6 @@
         private Guna.UI2.WinForms.Guna2Button btnAgregarFactura;
         private Guna.UI2.WinForms.Guna2TextBox txtCantidadFactura;
         private Guna.UI2.WinForms.Guna2TextBox txtPrecioUnitarioProducto;
-        private Guna.UI2.WinForms.Guna2TextBox txtCodigoProducto;
         private Guna.UI2.WinForms.Guna2TextBox txtNombresCliente;
         private Guna.UI2.WinForms.Guna2TextBox txtidentificacionCliente;
         private Guna.UI2.WinForms.Guna2TextBox txtCorreoCliente;
@@ -672,5 +711,9 @@
         private System.Windows.Forms.Panel panelTipoCliente;
         private System.Windows.Forms.RadioButton rdonatural;
         private System.Windows.Forms.RadioButton rdojuridica;
+        private Guna.UI2.WinForms.Guna2TextBox txtMontoTotal;
+        private Guna.UI2.WinForms.Guna2TextBox txtCodigoProducto;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label9;
     }
 }
