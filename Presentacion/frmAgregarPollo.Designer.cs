@@ -92,6 +92,7 @@
             "Cobb 500",
             "Ross 308",
             "Hubbard"});
+            this.cmbRazaPollo.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbRazaPollo.FormattingEnabled = true;
             this.cmbRazaPollo.Items.AddRange(new object[] {
             "Hubbard",
@@ -101,7 +102,7 @@
             "Avian"});
             this.cmbRazaPollo.Location = new System.Drawing.Point(179, 142);
             this.cmbRazaPollo.Name = "cmbRazaPollo";
-            this.cmbRazaPollo.Size = new System.Drawing.Size(193, 21);
+            this.cmbRazaPollo.Size = new System.Drawing.Size(193, 24);
             this.cmbRazaPollo.TabIndex = 5;
             // 
             // btnSalirPollo
@@ -182,7 +183,7 @@
             this.txtEstadoPollo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEstadoPollo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEstadoPollo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEstadoPollo.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEstadoPollo.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEstadoPollo.ForeColor = System.Drawing.Color.Black;
             this.txtEstadoPollo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEstadoPollo.Location = new System.Drawing.Point(179, 196);
@@ -206,7 +207,7 @@
             this.txtCodigoPollo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtCodigoPollo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtCodigoPollo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCodigoPollo.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodigoPollo.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigoPollo.ForeColor = System.Drawing.Color.Black;
             this.txtCodigoPollo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCodigoPollo.Location = new System.Drawing.Point(179, 80);

@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.txtMontoTotal = new Guna.UI2.WinForms.Guna2TextBox();
             this.grpDetalleProducto = new System.Windows.Forms.GroupBox();
+            this.cmbPesoPollo = new System.Windows.Forms.ComboBox();
             this.txtCantidadFactura = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtPrecioUnitarioProducto = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtCodigoProducto = new Guna.UI2.WinForms.Guna2TextBox();
@@ -64,7 +65,6 @@
             this.btnAgregarFactura = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnFacturar = new Guna.UI2.WinForms.Guna2Button();
-            this.cmbPesoPollo = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.grpDetalleProducto.SuspendLayout();
             this.grpDatosCliente.SuspendLayout();
@@ -143,6 +143,18 @@
             this.grpDetalleProducto.TabStop = false;
             this.grpDetalleProducto.Text = "Detalle Producto";
             // 
+            // cmbPesoPollo
+            // 
+            this.cmbPesoPollo.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbPesoPollo.FormattingEnabled = true;
+            this.cmbPesoPollo.Items.AddRange(new object[] {
+            "Kg",
+            "Lb"});
+            this.cmbPesoPollo.Location = new System.Drawing.Point(322, 37);
+            this.cmbPesoPollo.Name = "cmbPesoPollo";
+            this.cmbPesoPollo.Size = new System.Drawing.Size(46, 24);
+            this.cmbPesoPollo.TabIndex = 170;
+            // 
             // txtCantidadFactura
             // 
             this.txtCantidadFactura.AutoSize = true;
@@ -155,7 +167,7 @@
             this.txtCantidadFactura.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtCantidadFactura.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtCantidadFactura.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCantidadFactura.Font = new System.Drawing.Font("Century Gothic", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCantidadFactura.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCantidadFactura.ForeColor = System.Drawing.Color.Black;
             this.txtCantidadFactura.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCantidadFactura.Location = new System.Drawing.Point(266, 37);
@@ -179,7 +191,7 @@
             this.txtPrecioUnitarioProducto.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPrecioUnitarioProducto.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPrecioUnitarioProducto.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPrecioUnitarioProducto.Font = new System.Drawing.Font("Century Gothic", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrecioUnitarioProducto.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrecioUnitarioProducto.ForeColor = System.Drawing.Color.Black;
             this.txtPrecioUnitarioProducto.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPrecioUnitarioProducto.Location = new System.Drawing.Point(175, 76);
@@ -188,7 +200,7 @@
             this.txtPrecioUnitarioProducto.PasswordChar = '\0';
             this.txtPrecioUnitarioProducto.PlaceholderText = "";
             this.txtPrecioUnitarioProducto.SelectedText = "";
-            this.txtPrecioUnitarioProducto.Size = new System.Drawing.Size(228, 25);
+            this.txtPrecioUnitarioProducto.Size = new System.Drawing.Size(158, 25);
             this.txtPrecioUnitarioProducto.TabIndex = 168;
             // 
             // txtCodigoProducto
@@ -203,7 +215,7 @@
             this.txtCodigoProducto.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtCodigoProducto.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtCodigoProducto.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCodigoProducto.Font = new System.Drawing.Font("Century Gothic", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodigoProducto.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigoProducto.ForeColor = System.Drawing.Color.Black;
             this.txtCodigoProducto.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCodigoProducto.Location = new System.Drawing.Point(434, 37);
@@ -212,12 +224,12 @@
             this.txtCodigoProducto.PasswordChar = '\0';
             this.txtCodigoProducto.PlaceholderText = "";
             this.txtCodigoProducto.SelectedText = "";
-            this.txtCodigoProducto.Size = new System.Drawing.Size(191, 25);
+            this.txtCodigoProducto.Size = new System.Drawing.Size(208, 25);
             this.txtCodigoProducto.TabIndex = 169;
             // 
             // cmbRazaPollofactura
             // 
-            this.cmbRazaPollofactura.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbRazaPollofactura.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbRazaPollofactura.FormattingEnabled = true;
             this.cmbRazaPollofactura.Items.AddRange(new object[] {
             "Cobb 500",
@@ -226,7 +238,7 @@
             "Arbor Acres"});
             this.cmbRazaPollofactura.Location = new System.Drawing.Point(6, 41);
             this.cmbRazaPollofactura.Name = "cmbRazaPollofactura";
-            this.cmbRazaPollofactura.Size = new System.Drawing.Size(164, 21);
+            this.cmbRazaPollofactura.Size = new System.Drawing.Size(164, 24);
             this.cmbRazaPollofactura.TabIndex = 31;
             // 
             // label10
@@ -355,7 +367,7 @@
             this.txtNombresCliente.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtNombresCliente.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtNombresCliente.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNombresCliente.Font = new System.Drawing.Font("Century Gothic", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombresCliente.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombresCliente.ForeColor = System.Drawing.Color.Black;
             this.txtNombresCliente.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNombresCliente.Location = new System.Drawing.Point(11, 100);
@@ -364,7 +376,7 @@
             this.txtNombresCliente.PasswordChar = '\0';
             this.txtNombresCliente.PlaceholderText = "";
             this.txtNombresCliente.SelectedText = "";
-            this.txtNombresCliente.Size = new System.Drawing.Size(184, 23);
+            this.txtNombresCliente.Size = new System.Drawing.Size(169, 23);
             this.txtNombresCliente.TabIndex = 166;
             // 
             // txtidentificacionCliente
@@ -379,7 +391,7 @@
             this.txtidentificacionCliente.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtidentificacionCliente.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtidentificacionCliente.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtidentificacionCliente.Font = new System.Drawing.Font("Century Gothic", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtidentificacionCliente.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtidentificacionCliente.ForeColor = System.Drawing.Color.Black;
             this.txtidentificacionCliente.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtidentificacionCliente.Location = new System.Drawing.Point(11, 42);
@@ -403,7 +415,7 @@
             this.txtCorreoCliente.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtCorreoCliente.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtCorreoCliente.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCorreoCliente.Font = new System.Drawing.Font("Century Gothic", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCorreoCliente.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCorreoCliente.ForeColor = System.Drawing.Color.Black;
             this.txtCorreoCliente.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCorreoCliente.Location = new System.Drawing.Point(93, 138);
@@ -412,7 +424,7 @@
             this.txtCorreoCliente.PasswordChar = '\0';
             this.txtCorreoCliente.PlaceholderText = "";
             this.txtCorreoCliente.SelectedText = "";
-            this.txtCorreoCliente.Size = new System.Drawing.Size(187, 21);
+            this.txtCorreoCliente.Size = new System.Drawing.Size(222, 22);
             this.txtCorreoCliente.TabIndex = 163;
             // 
             // txtApellidosCliente
@@ -427,7 +439,7 @@
             this.txtApellidosCliente.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtApellidosCliente.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtApellidosCliente.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtApellidosCliente.Font = new System.Drawing.Font("Century Gothic", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApellidosCliente.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellidosCliente.ForeColor = System.Drawing.Color.Black;
             this.txtApellidosCliente.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtApellidosCliente.Location = new System.Drawing.Point(218, 99);
@@ -451,7 +463,7 @@
             this.txtTelefonoCliente.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTelefonoCliente.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTelefonoCliente.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTelefonoCliente.Font = new System.Drawing.Font("Century Gothic", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefonoCliente.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefonoCliente.ForeColor = System.Drawing.Color.Black;
             this.txtTelefonoCliente.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTelefonoCliente.Location = new System.Drawing.Point(437, 99);
@@ -460,7 +472,7 @@
             this.txtTelefonoCliente.PasswordChar = '\0';
             this.txtTelefonoCliente.PlaceholderText = "";
             this.txtTelefonoCliente.SelectedText = "";
-            this.txtTelefonoCliente.Size = new System.Drawing.Size(170, 23);
+            this.txtTelefonoCliente.Size = new System.Drawing.Size(175, 23);
             this.txtTelefonoCliente.TabIndex = 161;
             // 
             // label6
@@ -476,7 +488,7 @@
             // 
             // cmbTipoCliente
             // 
-            this.cmbTipoCliente.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbTipoCliente.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbTipoCliente.FormattingEnabled = true;
             this.cmbTipoCliente.Items.AddRange(new object[] {
             "Cedula de Extranjeria",
@@ -484,7 +496,7 @@
             "Nit"});
             this.cmbTipoCliente.Location = new System.Drawing.Point(218, 43);
             this.cmbTipoCliente.Name = "cmbTipoCliente";
-            this.cmbTipoCliente.Size = new System.Drawing.Size(173, 21);
+            this.cmbTipoCliente.Size = new System.Drawing.Size(173, 24);
             this.cmbTipoCliente.TabIndex = 23;
             // 
             // label4
@@ -557,14 +569,14 @@
             this.dgvFactura.AllowUserToDeleteRows = false;
             this.dgvFactura.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvFactura.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFactura.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFactura.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvFactura.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvFactura.Location = new System.Drawing.Point(2, 300);
             this.dgvFactura.Name = "dgvFactura";
@@ -651,18 +663,6 @@
             this.btnFacturar.Text = "Facturar";
             this.btnFacturar.TextFormatNoPrefix = true;
             this.btnFacturar.Click += new System.EventHandler(this.btnFacturar_Click_1);
-            // 
-            // cmbPesoPollo
-            // 
-            this.cmbPesoPollo.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbPesoPollo.FormattingEnabled = true;
-            this.cmbPesoPollo.Items.AddRange(new object[] {
-            "Kg",
-            "Lb"});
-            this.cmbPesoPollo.Location = new System.Drawing.Point(322, 37);
-            this.cmbPesoPollo.Name = "cmbPesoPollo";
-            this.cmbPesoPollo.Size = new System.Drawing.Size(46, 24);
-            this.cmbPesoPollo.TabIndex = 170;
             // 
             // frmFactura
             // 
