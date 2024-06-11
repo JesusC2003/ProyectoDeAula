@@ -177,17 +177,23 @@
     <Compile Include="frmPollo.Designer.cs">
       <DependentUpon>frmPollo.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmIniciarSession.cs">
+    <Compile Include="frmIniciarSesion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmIniciarSession.Designer.cs">
-      <DependentUpon>frmIniciarSession.cs</DependentUpon>
+    <Compile Include="frmIniciarSesion.Designer.cs">
+      <DependentUpon>frmIniciarSesion.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistrarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrarUsuario.Designer.cs">
+      <DependentUpon>frmRegistrarUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="frmVentas.cs">
       <SubType>Form</SubType>
@@ -229,8 +235,8 @@
     <EmbeddedResource Include="frmGalpon.resx">
       <DependentUpon>frmGalpon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmIniciarSession.resx">
-      <DependentUpon>frmIniciarSession.cs</DependentUpon>
+    <EmbeddedResource Include="frmIniciarSesion.resx">
+      <DependentUpon>frmIniciarSesion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMedicamento.resx">
       <DependentUpon>frmMedicamento.cs</DependentUpon>
@@ -246,6 +252,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrarUsuario.resx">
+      <DependentUpon>frmRegistrarUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVentas.resx">
       <DependentUpon>frmVentas.cs</DependentUpon>
@@ -520,6 +529,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Menuprincipal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logohens.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ocultar-24.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

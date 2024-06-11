@@ -493,6 +493,16 @@ namespace Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_ocultar_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-ocultar-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_pollo_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-pollo-32", resourceCulture);
@@ -646,6 +656,16 @@ namespace Presentacion.Properties {
         internal static System.Drawing.Bitmap invoice_document_bill_delivery_note_icon_225179 {
             get {
                 object obj = ResourceManager.GetObject("invoice_document_bill_delivery_note_icon_225179", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logohens {
+            get {
+                object obj = ResourceManager.GetObject("logohens", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

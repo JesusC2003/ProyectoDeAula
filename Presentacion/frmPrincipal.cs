@@ -59,7 +59,7 @@ namespace Presentacion
         private void panelBarra_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
-            SendMessage(this.Handle,0x112,0xf012,0);
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
 
@@ -141,7 +141,7 @@ namespace Presentacion
             DialogResult resultado = MessageBox.Show("¿Está seguro de cerrar sesión, " + nombreUsuario + "?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (resultado == DialogResult.Yes) { 
                 this.Close();
-                frmIniciarSession fmrIniciarSeccion = new frmIniciarSession();
+                frmIniciarSesion fmrIniciarSeccion = new frmIniciarSesion();
                 fmrIniciarSeccion.Show();
              }
         }
@@ -153,7 +153,7 @@ namespace Presentacion
 
         private void BtnMenu_Click(object sender, EventArgs e)
         {
-            ShowFormInPanel(new frmmenuiniciar()); // Cambiar al formulario menuiniciar
+            ShowFormInPanel(new frmmenuiniciar()); 
         }
 
         private void frmPrincipal_Load(object sender, EventArgs e)
