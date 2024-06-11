@@ -29,34 +29,34 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnEliminarFactura = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAgregarFactura = new Guna.UI2.WinForms.Guna2Button();
             this.grpDetalleProducto = new System.Windows.Forms.GroupBox();
-            this.cmbRazaPollo = new System.Windows.Forms.ComboBox();
+            this.txtCantidadFactura = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtPrecioUnitarioProducto = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtCodigoProducto = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cmbRazaPollofactura = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtPrecioUnitarioF = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.txtCantidadPollo = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtCodigoPollo = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.grpDatosCliente = new System.Windows.Forms.GroupBox();
-            this.txtApellidosClientes = new System.Windows.Forms.TextBox();
+            this.txtNombresCliente = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtCodigoCliente = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtCorreoCliente = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtApellidosCliente = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtTelefonoCliente = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtCorreoCliente = new System.Windows.Forms.TextBox();
-            this.txtNombreCliente = new System.Windows.Forms.TextBox();
-            this.txtTelefonoCliente = new System.Windows.Forms.TextBox();
             this.cmbTipoCliente = new System.Windows.Forms.ComboBox();
-            this.txtCodigoCliente = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnEliminarFactura = new System.Windows.Forms.Button();
-            this.btnAgregarFactura = new System.Windows.Forms.Button();
             this.dgvFactura = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnFacturar = new System.Windows.Forms.Button();
+            this.btnFacturar = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.grpDetalleProducto.SuspendLayout();
             this.grpDatosCliente.SuspendLayout();
@@ -65,30 +65,75 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(16)))), ((int)(((byte)(20)))));
+            this.panel1.Controls.Add(this.btnEliminarFactura);
+            this.panel1.Controls.Add(this.btnAgregarFactura);
             this.panel1.Controls.Add(this.grpDetalleProducto);
             this.panel1.Controls.Add(this.grpDatosCliente);
             this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Controls.Add(this.btnEliminarFactura);
-            this.panel1.Controls.Add(this.btnAgregarFactura);
             this.panel1.Controls.Add(this.dgvFactura);
             this.panel1.Location = new System.Drawing.Point(65, 32);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(654, 461);
+            this.panel1.Size = new System.Drawing.Size(654, 457);
             this.panel1.TabIndex = 0;
+            // 
+            // btnEliminarFactura
+            // 
+            this.btnEliminarFactura.BackColor = System.Drawing.Color.Transparent;
+            this.btnEliminarFactura.BorderRadius = 12;
+            this.btnEliminarFactura.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminarFactura.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.btnEliminarFactura.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnEliminarFactura.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnEliminarFactura.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEliminarFactura.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnEliminarFactura.FillColor = System.Drawing.Color.LightBlue;
+            this.btnEliminarFactura.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnEliminarFactura.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
+            this.btnEliminarFactura.Image = global::Presentacion.Properties.Resources.icons8_eliminar_archivo_24;
+            this.btnEliminarFactura.Location = new System.Drawing.Point(541, 262);
+            this.btnEliminarFactura.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEliminarFactura.Name = "btnEliminarFactura";
+            this.btnEliminarFactura.Size = new System.Drawing.Size(109, 35);
+            this.btnEliminarFactura.TabIndex = 159;
+            this.btnEliminarFactura.Text = "Eliminar";
+            this.btnEliminarFactura.TextFormatNoPrefix = true;
+            // 
+            // btnAgregarFactura
+            // 
+            this.btnAgregarFactura.BackColor = System.Drawing.Color.Transparent;
+            this.btnAgregarFactura.BorderRadius = 12;
+            this.btnAgregarFactura.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregarFactura.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.btnAgregarFactura.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAgregarFactura.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAgregarFactura.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAgregarFactura.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAgregarFactura.FillColor = System.Drawing.Color.LightBlue;
+            this.btnAgregarFactura.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnAgregarFactura.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
+            this.btnAgregarFactura.Image = global::Presentacion.Properties.Resources.receipt_add_icon_177414;
+            this.btnAgregarFactura.Location = new System.Drawing.Point(6, 262);
+            this.btnAgregarFactura.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAgregarFactura.Name = "btnAgregarFactura";
+            this.btnAgregarFactura.Size = new System.Drawing.Size(109, 35);
+            this.btnAgregarFactura.TabIndex = 157;
+            this.btnAgregarFactura.Text = "Agregar";
+            this.btnAgregarFactura.TextFormatNoPrefix = true;
             // 
             // grpDetalleProducto
             // 
-            this.grpDetalleProducto.BackColor = System.Drawing.Color.White;
-            this.grpDetalleProducto.Controls.Add(this.cmbRazaPollo);
+            this.grpDetalleProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(16)))), ((int)(((byte)(20)))));
+            this.grpDetalleProducto.Controls.Add(this.txtCantidadFactura);
+            this.grpDetalleProducto.Controls.Add(this.txtPrecioUnitarioProducto);
+            this.grpDetalleProducto.Controls.Add(this.txtCodigoProducto);
+            this.grpDetalleProducto.Controls.Add(this.cmbRazaPollofactura);
             this.grpDetalleProducto.Controls.Add(this.label10);
-            this.grpDetalleProducto.Controls.Add(this.txtPrecioUnitarioF);
             this.grpDetalleProducto.Controls.Add(this.label9);
-            this.grpDetalleProducto.Controls.Add(this.txtCantidadPollo);
             this.grpDetalleProducto.Controls.Add(this.label8);
-            this.grpDetalleProducto.Controls.Add(this.txtCodigoPollo);
             this.grpDetalleProducto.Controls.Add(this.label7);
             this.grpDetalleProducto.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpDetalleProducto.ForeColor = System.Drawing.Color.White;
             this.grpDetalleProducto.Location = new System.Drawing.Point(3, 137);
             this.grpDetalleProducto.Name = "grpDetalleProducto";
             this.grpDetalleProducto.Size = new System.Drawing.Size(648, 123);
@@ -96,19 +141,88 @@
             this.grpDetalleProducto.TabStop = false;
             this.grpDetalleProducto.Text = "Detalle Producto";
             // 
-            // cmbRazaPollo
+            // txtCantidadFactura
             // 
-            this.cmbRazaPollo.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbRazaPollo.FormattingEnabled = true;
-            this.cmbRazaPollo.Items.AddRange(new object[] {
+            this.txtCantidadFactura.AutoSize = true;
+            this.txtCantidadFactura.BorderColor = System.Drawing.Color.Silver;
+            this.txtCantidadFactura.BorderRadius = 5;
+            this.txtCantidadFactura.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCantidadFactura.DefaultText = "";
+            this.txtCantidadFactura.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCantidadFactura.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCantidadFactura.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCantidadFactura.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCantidadFactura.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCantidadFactura.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCantidadFactura.ForeColor = System.Drawing.Color.Black;
+            this.txtCantidadFactura.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCantidadFactura.Location = new System.Drawing.Point(370, 22);
+            this.txtCantidadFactura.Name = "txtCantidadFactura";
+            this.txtCantidadFactura.PasswordChar = '\0';
+            this.txtCantidadFactura.PlaceholderText = "";
+            this.txtCantidadFactura.SelectedText = "";
+            this.txtCantidadFactura.Size = new System.Drawing.Size(58, 25);
+            this.txtCantidadFactura.TabIndex = 167;
+            // 
+            // txtPrecioUnitarioProducto
+            // 
+            this.txtPrecioUnitarioProducto.AutoSize = true;
+            this.txtPrecioUnitarioProducto.BorderColor = System.Drawing.Color.Silver;
+            this.txtPrecioUnitarioProducto.BorderRadius = 5;
+            this.txtPrecioUnitarioProducto.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPrecioUnitarioProducto.DefaultText = "";
+            this.txtPrecioUnitarioProducto.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPrecioUnitarioProducto.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPrecioUnitarioProducto.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPrecioUnitarioProducto.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPrecioUnitarioProducto.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPrecioUnitarioProducto.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrecioUnitarioProducto.ForeColor = System.Drawing.Color.Black;
+            this.txtPrecioUnitarioProducto.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPrecioUnitarioProducto.Location = new System.Drawing.Point(115, 66);
+            this.txtPrecioUnitarioProducto.Name = "txtPrecioUnitarioProducto";
+            this.txtPrecioUnitarioProducto.PasswordChar = '\0';
+            this.txtPrecioUnitarioProducto.PlaceholderText = "";
+            this.txtPrecioUnitarioProducto.SelectedText = "";
+            this.txtPrecioUnitarioProducto.Size = new System.Drawing.Size(191, 25);
+            this.txtPrecioUnitarioProducto.TabIndex = 168;
+            // 
+            // txtCodigoProducto
+            // 
+            this.txtCodigoProducto.AutoSize = true;
+            this.txtCodigoProducto.BorderColor = System.Drawing.Color.Silver;
+            this.txtCodigoProducto.BorderRadius = 5;
+            this.txtCodigoProducto.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCodigoProducto.DefaultText = "";
+            this.txtCodigoProducto.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCodigoProducto.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCodigoProducto.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCodigoProducto.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCodigoProducto.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCodigoProducto.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodigoProducto.ForeColor = System.Drawing.Color.Black;
+            this.txtCodigoProducto.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCodigoProducto.Location = new System.Drawing.Point(80, 28);
+            this.txtCodigoProducto.Name = "txtCodigoProducto";
+            this.txtCodigoProducto.PasswordChar = '\0';
+            this.txtCodigoProducto.PlaceholderText = "";
+            this.txtCodigoProducto.SelectedText = "";
+            this.txtCodigoProducto.Size = new System.Drawing.Size(191, 25);
+            this.txtCodigoProducto.TabIndex = 169;
+            // 
+            // cmbRazaPollofactura
+            // 
+            this.cmbRazaPollofactura.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbRazaPollofactura.FormattingEnabled = true;
+            this.cmbRazaPollofactura.Items.AddRange(new object[] {
             "Cobb 500",
             "Ross 308",
             "Hubbard",
             "Arbor Acres"});
-            this.cmbRazaPollo.Location = new System.Drawing.Point(504, 27);
-            this.cmbRazaPollo.Name = "cmbRazaPollo";
-            this.cmbRazaPollo.Size = new System.Drawing.Size(119, 21);
-            this.cmbRazaPollo.TabIndex = 31;
+            this.cmbRazaPollofactura.Location = new System.Drawing.Point(504, 27);
+            this.cmbRazaPollofactura.Name = "cmbRazaPollofactura";
+            this.cmbRazaPollofactura.Size = new System.Drawing.Size(119, 21);
+            this.cmbRazaPollofactura.TabIndex = 31;
             // 
             // label10
             // 
@@ -121,14 +235,6 @@
             this.label10.Text = "Raza";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtPrecioUnitarioF
-            // 
-            this.txtPrecioUnitarioF.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecioUnitarioF.Location = new System.Drawing.Point(118, 72);
-            this.txtPrecioUnitarioF.Name = "txtPrecioUnitarioF";
-            this.txtPrecioUnitarioF.Size = new System.Drawing.Size(71, 19);
-            this.txtPrecioUnitarioF.TabIndex = 29;
-            // 
             // label9
             // 
             this.label9.BackColor = System.Drawing.Color.Transparent;
@@ -140,14 +246,6 @@
             this.label9.Text = "Precio Unitario";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtCantidadPollo
-            // 
-            this.txtCantidadPollo.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCantidadPollo.Location = new System.Drawing.Point(375, 27);
-            this.txtCantidadPollo.Name = "txtCantidadPollo";
-            this.txtCantidadPollo.Size = new System.Drawing.Size(34, 19);
-            this.txtCantidadPollo.TabIndex = 27;
-            // 
             // label8
             // 
             this.label8.BackColor = System.Drawing.Color.Transparent;
@@ -158,14 +256,6 @@
             this.label8.TabIndex = 26;
             this.label8.Text = "Cantidad";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtCodigoPollo
-            // 
-            this.txtCodigoPollo.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigoPollo.Location = new System.Drawing.Point(93, 30);
-            this.txtCodigoPollo.Name = "txtCodigoPollo";
-            this.txtCodigoPollo.Size = new System.Drawing.Size(182, 19);
-            this.txtCodigoPollo.TabIndex = 25;
             // 
             // label7
             // 
@@ -180,20 +270,21 @@
             // 
             // grpDatosCliente
             // 
-            this.grpDatosCliente.BackColor = System.Drawing.Color.White;
-            this.grpDatosCliente.Controls.Add(this.txtApellidosClientes);
-            this.grpDatosCliente.Controls.Add(this.label6);
-            this.grpDatosCliente.Controls.Add(this.txtCorreoCliente);
-            this.grpDatosCliente.Controls.Add(this.txtNombreCliente);
-            this.grpDatosCliente.Controls.Add(this.txtTelefonoCliente);
-            this.grpDatosCliente.Controls.Add(this.cmbTipoCliente);
+            this.grpDatosCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(16)))), ((int)(((byte)(20)))));
+            this.grpDatosCliente.Controls.Add(this.txtNombresCliente);
             this.grpDatosCliente.Controls.Add(this.txtCodigoCliente);
+            this.grpDatosCliente.Controls.Add(this.txtCorreoCliente);
+            this.grpDatosCliente.Controls.Add(this.txtApellidosCliente);
+            this.grpDatosCliente.Controls.Add(this.txtTelefonoCliente);
+            this.grpDatosCliente.Controls.Add(this.label6);
+            this.grpDatosCliente.Controls.Add(this.cmbTipoCliente);
             this.grpDatosCliente.Controls.Add(this.label4);
             this.grpDatosCliente.Controls.Add(this.label5);
             this.grpDatosCliente.Controls.Add(this.label2);
             this.grpDatosCliente.Controls.Add(this.label13);
             this.grpDatosCliente.Controls.Add(this.label3);
             this.grpDatosCliente.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpDatosCliente.ForeColor = System.Drawing.Color.White;
             this.grpDatosCliente.Location = new System.Drawing.Point(3, 3);
             this.grpDatosCliente.Name = "grpDatosCliente";
             this.grpDatosCliente.Size = new System.Drawing.Size(648, 131);
@@ -201,48 +292,131 @@
             this.grpDatosCliente.TabStop = false;
             this.grpDatosCliente.Text = "Datos Cliente";
             // 
-            // txtApellidosClientes
+            // txtNombresCliente
             // 
-            this.txtApellidosClientes.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellidosClientes.Location = new System.Drawing.Point(445, 53);
-            this.txtApellidosClientes.Name = "txtApellidosClientes";
-            this.txtApellidosClientes.Size = new System.Drawing.Size(171, 19);
-            this.txtApellidosClientes.TabIndex = 28;
+            this.txtNombresCliente.AutoSize = true;
+            this.txtNombresCliente.BorderColor = System.Drawing.Color.Silver;
+            this.txtNombresCliente.BorderRadius = 5;
+            this.txtNombresCliente.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNombresCliente.DefaultText = "";
+            this.txtNombresCliente.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNombresCliente.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNombresCliente.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNombresCliente.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNombresCliente.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNombresCliente.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombresCliente.ForeColor = System.Drawing.Color.Black;
+            this.txtNombresCliente.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNombresCliente.Location = new System.Drawing.Point(105, 60);
+            this.txtNombresCliente.Name = "txtNombresCliente";
+            this.txtNombresCliente.PasswordChar = '\0';
+            this.txtNombresCliente.PlaceholderText = "";
+            this.txtNombresCliente.SelectedText = "";
+            this.txtNombresCliente.Size = new System.Drawing.Size(191, 25);
+            this.txtNombresCliente.TabIndex = 166;
+            // 
+            // txtCodigoCliente
+            // 
+            this.txtCodigoCliente.AutoSize = true;
+            this.txtCodigoCliente.BorderColor = System.Drawing.Color.Silver;
+            this.txtCodigoCliente.BorderRadius = 5;
+            this.txtCodigoCliente.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCodigoCliente.DefaultText = "";
+            this.txtCodigoCliente.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCodigoCliente.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCodigoCliente.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCodigoCliente.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCodigoCliente.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCodigoCliente.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodigoCliente.ForeColor = System.Drawing.Color.Black;
+            this.txtCodigoCliente.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCodigoCliente.Location = new System.Drawing.Point(105, 17);
+            this.txtCodigoCliente.Name = "txtCodigoCliente";
+            this.txtCodigoCliente.PasswordChar = '\0';
+            this.txtCodigoCliente.PlaceholderText = "";
+            this.txtCodigoCliente.SelectedText = "";
+            this.txtCodigoCliente.Size = new System.Drawing.Size(191, 25);
+            this.txtCodigoCliente.TabIndex = 165;
+            // 
+            // txtCorreoCliente
+            // 
+            this.txtCorreoCliente.AutoSize = true;
+            this.txtCorreoCliente.BorderColor = System.Drawing.Color.Silver;
+            this.txtCorreoCliente.BorderRadius = 5;
+            this.txtCorreoCliente.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCorreoCliente.DefaultText = "";
+            this.txtCorreoCliente.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCorreoCliente.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCorreoCliente.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCorreoCliente.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCorreoCliente.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCorreoCliente.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCorreoCliente.ForeColor = System.Drawing.Color.Black;
+            this.txtCorreoCliente.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCorreoCliente.Location = new System.Drawing.Point(432, 97);
+            this.txtCorreoCliente.Name = "txtCorreoCliente";
+            this.txtCorreoCliente.PasswordChar = '\0';
+            this.txtCorreoCliente.PlaceholderText = "";
+            this.txtCorreoCliente.SelectedText = "";
+            this.txtCorreoCliente.Size = new System.Drawing.Size(191, 25);
+            this.txtCorreoCliente.TabIndex = 163;
+            // 
+            // txtApellidosCliente
+            // 
+            this.txtApellidosCliente.AutoSize = true;
+            this.txtApellidosCliente.BorderColor = System.Drawing.Color.Silver;
+            this.txtApellidosCliente.BorderRadius = 5;
+            this.txtApellidosCliente.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtApellidosCliente.DefaultText = "";
+            this.txtApellidosCliente.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtApellidosCliente.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtApellidosCliente.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtApellidosCliente.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtApellidosCliente.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtApellidosCliente.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApellidosCliente.ForeColor = System.Drawing.Color.Black;
+            this.txtApellidosCliente.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtApellidosCliente.Location = new System.Drawing.Point(432, 57);
+            this.txtApellidosCliente.Name = "txtApellidosCliente";
+            this.txtApellidosCliente.PasswordChar = '\0';
+            this.txtApellidosCliente.PlaceholderText = "";
+            this.txtApellidosCliente.SelectedText = "";
+            this.txtApellidosCliente.Size = new System.Drawing.Size(191, 25);
+            this.txtApellidosCliente.TabIndex = 162;
+            // 
+            // txtTelefonoCliente
+            // 
+            this.txtTelefonoCliente.AutoSize = true;
+            this.txtTelefonoCliente.BorderColor = System.Drawing.Color.Silver;
+            this.txtTelefonoCliente.BorderRadius = 5;
+            this.txtTelefonoCliente.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTelefonoCliente.DefaultText = "";
+            this.txtTelefonoCliente.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTelefonoCliente.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTelefonoCliente.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTelefonoCliente.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTelefonoCliente.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTelefonoCliente.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefonoCliente.ForeColor = System.Drawing.Color.Black;
+            this.txtTelefonoCliente.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTelefonoCliente.Location = new System.Drawing.Point(105, 100);
+            this.txtTelefonoCliente.Name = "txtTelefonoCliente";
+            this.txtTelefonoCliente.PasswordChar = '\0';
+            this.txtTelefonoCliente.PlaceholderText = "";
+            this.txtTelefonoCliente.SelectedText = "";
+            this.txtTelefonoCliente.Size = new System.Drawing.Size(191, 25);
+            this.txtTelefonoCliente.TabIndex = 161;
             // 
             // label6
             // 
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(21, 85);
+            this.label6.Location = new System.Drawing.Point(21, 103);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(78, 19);
             this.label6.TabIndex = 27;
             this.label6.Text = "Telefono";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtCorreoCliente
-            // 
-            this.txtCorreoCliente.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCorreoCliente.Location = new System.Drawing.Point(445, 86);
-            this.txtCorreoCliente.Name = "txtCorreoCliente";
-            this.txtCorreoCliente.Size = new System.Drawing.Size(171, 19);
-            this.txtCorreoCliente.TabIndex = 26;
-            // 
-            // txtNombreCliente
-            // 
-            this.txtNombreCliente.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreCliente.Location = new System.Drawing.Point(111, 53);
-            this.txtNombreCliente.Name = "txtNombreCliente";
-            this.txtNombreCliente.Size = new System.Drawing.Size(182, 19);
-            this.txtNombreCliente.TabIndex = 25;
-            // 
-            // txtTelefonoCliente
-            // 
-            this.txtTelefonoCliente.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefonoCliente.Location = new System.Drawing.Point(111, 86);
-            this.txtTelefonoCliente.Name = "txtTelefonoCliente";
-            this.txtTelefonoCliente.Size = new System.Drawing.Size(182, 19);
-            this.txtTelefonoCliente.TabIndex = 24;
             // 
             // cmbTipoCliente
             // 
@@ -251,24 +425,16 @@
             this.cmbTipoCliente.Items.AddRange(new object[] {
             "Persona Juridica",
             "Persona Natural"});
-            this.cmbTipoCliente.Location = new System.Drawing.Point(445, 17);
+            this.cmbTipoCliente.Location = new System.Drawing.Point(432, 17);
             this.cmbTipoCliente.Name = "cmbTipoCliente";
-            this.cmbTipoCliente.Size = new System.Drawing.Size(171, 21);
+            this.cmbTipoCliente.Size = new System.Drawing.Size(191, 21);
             this.cmbTipoCliente.TabIndex = 23;
-            // 
-            // txtCodigoCliente
-            // 
-            this.txtCodigoCliente.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigoCliente.Location = new System.Drawing.Point(111, 22);
-            this.txtCodigoCliente.Name = "txtCodigoCliente";
-            this.txtCodigoCliente.Size = new System.Drawing.Size(182, 19);
-            this.txtCodigoCliente.TabIndex = 22;
             // 
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(335, 53);
+            this.label4.Location = new System.Drawing.Point(335, 59);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 19);
             this.label4.TabIndex = 21;
@@ -301,7 +467,7 @@
             // 
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(21, 51);
+            this.label13.Location = new System.Drawing.Point(21, 66);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(78, 19);
             this.label13.TabIndex = 20;
@@ -312,7 +478,7 @@
             // 
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(335, 85);
+            this.label3.Location = new System.Drawing.Point(335, 100);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(78, 19);
             this.label3.TabIndex = 3;
@@ -327,40 +493,6 @@
             this.groupBox1.TabIndex = 22;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
-            // 
-            // btnEliminarFactura
-            // 
-            this.btnEliminarFactura.BackColor = System.Drawing.Color.Silver;
-            this.btnEliminarFactura.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEliminarFactura.FlatAppearance.BorderSize = 0;
-            this.btnEliminarFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminarFactura.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarFactura.Image = global::Presentacion.Properties.Resources.icons8_eliminar_archivo_24;
-            this.btnEliminarFactura.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminarFactura.Location = new System.Drawing.Point(519, 265);
-            this.btnEliminarFactura.Name = "btnEliminarFactura";
-            this.btnEliminarFactura.Size = new System.Drawing.Size(125, 28);
-            this.btnEliminarFactura.TabIndex = 13;
-            this.btnEliminarFactura.Text = "Eliminar";
-            this.btnEliminarFactura.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEliminarFactura.UseVisualStyleBackColor = false;
-            // 
-            // btnAgregarFactura
-            // 
-            this.btnAgregarFactura.BackColor = System.Drawing.Color.Silver;
-            this.btnAgregarFactura.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAgregarFactura.FlatAppearance.BorderSize = 0;
-            this.btnAgregarFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarFactura.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarFactura.Image = global::Presentacion.Properties.Resources.receipt_add_icon_177414;
-            this.btnAgregarFactura.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarFactura.Location = new System.Drawing.Point(3, 265);
-            this.btnAgregarFactura.Name = "btnAgregarFactura";
-            this.btnAgregarFactura.Size = new System.Drawing.Size(127, 28);
-            this.btnAgregarFactura.TabIndex = 12;
-            this.btnAgregarFactura.Text = "Agregar";
-            this.btnAgregarFactura.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAgregarFactura.UseVisualStyleBackColor = false;
             // 
             // dgvFactura
             // 
@@ -378,7 +510,7 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.Silver;
+            this.label1.BackColor = System.Drawing.Color.LightBlue;
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(0, 0);
@@ -390,29 +522,34 @@
             // 
             // btnFacturar
             // 
-            this.btnFacturar.BackColor = System.Drawing.Color.Silver;
+            this.btnFacturar.BackColor = System.Drawing.Color.Transparent;
+            this.btnFacturar.BorderRadius = 12;
             this.btnFacturar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFacturar.FlatAppearance.BorderSize = 0;
-            this.btnFacturar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFacturar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFacturar.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.btnFacturar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnFacturar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnFacturar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnFacturar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnFacturar.FillColor = System.Drawing.Color.LightBlue;
+            this.btnFacturar.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnFacturar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
             this.btnFacturar.Image = global::Presentacion.Properties.Resources.icons8_factura_28;
-            this.btnFacturar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFacturar.Location = new System.Drawing.Point(323, 496);
+            this.btnFacturar.Location = new System.Drawing.Point(324, 492);
+            this.btnFacturar.Margin = new System.Windows.Forms.Padding(2);
             this.btnFacturar.Name = "btnFacturar";
-            this.btnFacturar.Size = new System.Drawing.Size(125, 30);
-            this.btnFacturar.TabIndex = 13;
+            this.btnFacturar.Size = new System.Drawing.Size(123, 35);
+            this.btnFacturar.TabIndex = 158;
             this.btnFacturar.Text = "Facturar";
-            this.btnFacturar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnFacturar.UseVisualStyleBackColor = false;
-            this.btnFacturar.Click += new System.EventHandler(this.BtnFacturar_Click);
+            this.btnFacturar.TextFormatNoPrefix = true;
             // 
             // frmFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(16)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(762, 531);
-            this.Controls.Add(this.btnFacturar);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnFacturar);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmFactura";
@@ -433,31 +570,31 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dgvFactura;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnAgregarFactura;
-        private System.Windows.Forms.Button btnEliminarFactura;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Button btnFacturar;
-        private System.Windows.Forms.GroupBox grpDatosCliente;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox grpDetalleProducto;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtCorreoCliente;
-        private System.Windows.Forms.TextBox txtNombreCliente;
-        private System.Windows.Forms.TextBox txtTelefonoCliente;
-        private System.Windows.Forms.ComboBox cmbTipoCliente;
-        private System.Windows.Forms.TextBox txtCodigoCliente;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtCantidadPollo;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtCodigoPollo;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtApellidosClientes;
-        private System.Windows.Forms.TextBox txtPrecioUnitarioF;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox cmbRazaPollo;
+        private System.Windows.Forms.ComboBox cmbRazaPollofactura;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.GroupBox grpDatosCliente;
+        private Guna.UI2.WinForms.Guna2TextBox txtTelefonoCliente;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cmbTipoCliente;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2Button btnAgregarFactura;
+        private Guna.UI2.WinForms.Guna2TextBox txtCantidadFactura;
+        private Guna.UI2.WinForms.Guna2TextBox txtPrecioUnitarioProducto;
+        private Guna.UI2.WinForms.Guna2TextBox txtCodigoProducto;
+        private Guna.UI2.WinForms.Guna2TextBox txtNombresCliente;
+        private Guna.UI2.WinForms.Guna2TextBox txtCodigoCliente;
+        private Guna.UI2.WinForms.Guna2TextBox txtCorreoCliente;
+        private Guna.UI2.WinForms.Guna2TextBox txtApellidosCliente;
+        private Guna.UI2.WinForms.Guna2Button btnEliminarFactura;
+        private Guna.UI2.WinForms.Guna2Button btnFacturar;
     }
 }

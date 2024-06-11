@@ -17,28 +17,28 @@ namespace Presentacion
             InitializeComponent();
         }
 
-        private void BtnAgregarA_Click(object sender, EventArgs e)
-        {
-            frmAgregarAlimento fmrAgregarAlimento = new frmAgregarAlimento();   
-            fmrAgregarAlimento.Show();  
-        }
-
-        private void TxtBusquedaAlimento_Enter(object sender, EventArgs e)
-        {
-            if (txtBusquedaAlimento.Text == "Busqueda")
-            {
-                txtBusquedaAlimento.Text = "";
-                txtBusquedaAlimento.ForeColor = Color.White;
-            }
-        }
-
-        private void TxtBusquedaAlimento_Leave(object sender, EventArgs e)
+        private void txtBusquedaAlimento_Leave_1(object sender, EventArgs e)
         {
             if (txtBusquedaAlimento.Text == "")
             {
                 txtBusquedaAlimento.Text = "Busqueda";
-                txtBusquedaAlimento.ForeColor = Color.White;
+                txtBusquedaAlimento.ForeColor = Color.Black;
             }
+        }
+
+        private void txtBusquedaAlimento_Enter_1(object sender, EventArgs e)
+        {
+            if (txtBusquedaAlimento.Text == "Busqueda")
+            {
+                txtBusquedaAlimento.Text = "";
+                txtBusquedaAlimento.ForeColor = Color.Black;
+            }
+        }
+
+        private void btnAñadirAlimento_Click(object sender, EventArgs e)
+        {
+            frmAgregarAlimento fmrAgregarAlimento = new frmAgregarAlimento();
+            fmrAgregarAlimento.Show();
         }
     }
 }

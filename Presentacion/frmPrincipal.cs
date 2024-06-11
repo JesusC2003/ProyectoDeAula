@@ -16,12 +16,28 @@ namespace Presentacion
 
     public partial class frmPrincipal : Form
     {
-            public frmPrincipal()
+        public string nombreUsuario;
+        public frmPrincipal(string nombreUsuario)
             {
                 InitializeComponent();
-                
+                this.Load += new EventHandler(frmPrincipal_Load);
+                this.nombreUsuario = nombreUsuario;
+                lblUsuario.Text = "Usuario: " + nombreUsuario;    
             }
+        private void ShowFormInPanel(Form form)
+        {
+            // Limpiar cualquier control existente en el panel
+            pnlContenedor.Controls.Clear();
 
+            // Configurar el formulario a mostrar
+            form.TopLevel = false;
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.Dock = DockStyle.Fill;
+
+            // Agregar el formulario al panel
+            pnlContenedor.Controls.Add(form);
+            form.Show();
+        }
         [DllImport("user32.dll", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.dll", EntryPoint = "SendMessage")]
@@ -49,15 +65,15 @@ namespace Presentacion
 
         public void AbrirFmr(object Fmr)
         {
-            if (this.PnlContenedor.Controls.Count > 0)
+            if (this.pnlContenedor.Controls.Count > 0)
             {
-                this.PnlContenedor.Controls.RemoveAt(0);
+                this.pnlContenedor.Controls.RemoveAt(0);
 
                 Form fm = Fmr as Form;
                 fm.TopLevel = false;
                 fm.Dock = DockStyle.Fill;
-                this.PnlContenedor.Controls.Add(fm);
-                this.PnlContenedor.Tag = fm;
+                this.pnlContenedor.Controls.Add(fm);
+                this.pnlContenedor.Tag = fm;
                 fm.Show();
             }
         }
@@ -96,13 +112,18 @@ namespace Presentacion
 
         private void BtnConfiguracion_Click(object sender, EventArgs e)
         {
-            if (pnlsubconfiguracion.Visible==false)
+            if (pnlContenedor.Controls.Count > 0 )
             {
-                pnlsubconfiguracion.Visible = true;
-            }
-            else
-            {
-                pnlsubconfiguracion.Visible=false;
+                if (pnlsubconfiguracion.Visible)
+                {
+                    pnlsubconfiguracion.Visible = false;
+                }
+                else
+                {
+                    pnlsubconfiguracion.Parent = this;
+                    pnlsubconfiguracion.BringToFront();
+                    pnlsubconfiguracion.Visible = true;
+                }
             }
 
         }
@@ -117,9 +138,12 @@ namespace Presentacion
 
         private void BtnCerrarSesion_Click(object sender, EventArgs e)
         {
-            this.Close();
-            frmIniciarSeccion fmrIniciarSeccion= new frmIniciarSeccion();
-            fmrIniciarSeccion.Show();
+            DialogResult resultado = MessageBox.Show("¿Está seguro de cerrar sesión, " + nombreUsuario + "?", "Cerrar Sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (resultado == DialogResult.Yes) { 
+                this.Close();
+                frmIniciarSession fmrIniciarSeccion = new frmIniciarSession();
+                fmrIniciarSeccion.Show();
+             }
         }
 
         private void BtnFactura_Click(object sender, EventArgs e)
@@ -129,39 +153,12 @@ namespace Presentacion
 
         private void BtnMenu_Click(object sender, EventArgs e)
         {
+            ShowFormInPanel(new frmmenuiniciar()); // Cambiar al formulario menuiniciar
         }
 
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
-
+            ShowFormInPanel(new frmmenuiniciar());
         }
-
-
-
-
-
-
-
-
-
-
-
-        //// public void AbrirFmr(object Fmr)
-        // {
-        //     if (this.panelContenedor.Controls.Count > 0)
-        //     {
-        //         this.panelContenedor.Controls.RemoveAt(0);
-
-        //         Form fm = Fmr as Form;
-        //         fm.TopLevel = false;
-        //         fm.Dock = DockStyle.Fill;
-        //         this.panelContenedor.Controls.Add(fm);
-        //         this.panelContenedor.Tag = fm;
-        //         fm.Show();
-        //         Titulo.Visible = false;
-        //         labelHora.Visible = false;
-        //         labelFecha.Visible = false;
-        //     }
-        // }
     }
 }

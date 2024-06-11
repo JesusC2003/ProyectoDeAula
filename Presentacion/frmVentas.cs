@@ -17,23 +17,24 @@ namespace Presentacion
             InitializeComponent();
         }
 
-        private void TxtBusquedaVentas_Leave(object sender, EventArgs e)
+        private void txtBusquedaVentas_Leave_1(object sender, EventArgs e)
         {
             if (txtBusquedaVentas.Text == "")
             {
                 txtBusquedaVentas.Text = "Busqueda";
-                txtBusquedaVentas.ForeColor = Color.White;
+                txtBusquedaVentas.ForeColor = Color.Black;
             }
         }
 
-        private void TxtBusquedaVentas_Enter(object sender, EventArgs e)
+        private void txtBusquedaVentas_Enter_1(object sender, EventArgs e)
         {
             if (txtBusquedaVentas.Text == "Busqueda")
             {
                 txtBusquedaVentas.Text = "";
-                txtBusquedaVentas.ForeColor = Color.White;
+                txtBusquedaVentas.ForeColor = Color.Black;
             }
         }
+
     }
  }
 

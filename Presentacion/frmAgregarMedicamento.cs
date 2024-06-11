@@ -17,7 +17,7 @@ namespace Presentacion
             InitializeComponent();
         }
 
-        private void BtnSalirM_Click(object sender, EventArgs e)
+        private void btnSalirMedicamento_Click(object sender, EventArgs e)
         {
             this.Close();
         }

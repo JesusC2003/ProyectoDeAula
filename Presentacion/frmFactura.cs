@@ -33,7 +33,7 @@ namespace Presentacion
             };
 
             string paginahtml = Properties.Resources.PlantillaFactura.ToString();
-            paginahtml = paginahtml.Replace("@Cliente", txtNombreCliente.Text); // Remplazando datos del PDF
+            paginahtml = paginahtml.Replace("@Cliente", txtNombresCliente.Text); // Remplazando datos del PDF
             paginahtml = paginahtml.Replace("@Documento", txtCodigoCliente.Text);
             paginahtml = paginahtml.Replace("@Telefono", txtTelefonoCliente.Text);
             paginahtml = paginahtml.Replace("@Correo", txtCorreoCliente.Text);

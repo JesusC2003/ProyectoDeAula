@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvGalpon = new System.Windows.Forms.DataGridView();
             this.cmbFiltradoG = new System.Windows.Forms.ComboBox();
-            this.btnAgregarG = new System.Windows.Forms.Button();
-            this.btnEliminarG = new System.Windows.Forms.Button();
-            this.btnVerG = new System.Windows.Forms.Button();
-            this.btnEditarG = new System.Windows.Forms.Button();
-            this.txtBusquedaGalpon = new System.Windows.Forms.TextBox();
             this.Controles = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtBusquedaGalpon = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnVerGalpon = new Guna.UI2.WinForms.Guna2Button();
+            this.btnEditarGalpon = new Guna.UI2.WinForms.Guna2Button();
+            this.btnEliminarGalpon = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAñadirGalpon = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGalpon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,23 +49,23 @@
             this.dgvGalpon.AllowUserToDeleteRows = false;
             this.dgvGalpon.AllowUserToResizeColumns = false;
             this.dgvGalpon.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Navy;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvGalpon.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.Navy;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvGalpon.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.dgvGalpon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvGalpon.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dgvGalpon.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvGalpon.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvGalpon.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvGalpon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvGalpon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.dgvGalpon.ColumnHeadersHeight = 24;
             this.dgvGalpon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvGalpon.EnableHeadersVisualStyles = false;
@@ -74,14 +74,14 @@
             this.dgvGalpon.MultiSelect = false;
             this.dgvGalpon.Name = "dgvGalpon";
             this.dgvGalpon.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvGalpon.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvGalpon.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
             this.dgvGalpon.RowHeadersVisible = false;
             this.dgvGalpon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvGalpon.Size = new System.Drawing.Size(732, 389);
@@ -97,86 +97,12 @@
             this.cmbFiltradoG.Size = new System.Drawing.Size(138, 25);
             this.cmbFiltradoG.TabIndex = 122;
             // 
-            // btnAgregarG
-            // 
-            this.btnAgregarG.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAgregarG.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAgregarG.FlatAppearance.BorderSize = 0;
-            this.btnAgregarG.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.btnAgregarG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarG.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarG.Image = global::Presentacion.Properties.Resources.icons8_añadir_32;
-            this.btnAgregarG.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarG.Location = new System.Drawing.Point(21, 92);
-            this.btnAgregarG.Name = "btnAgregarG";
-            this.btnAgregarG.Size = new System.Drawing.Size(101, 34);
-            this.btnAgregarG.TabIndex = 121;
-            this.btnAgregarG.Text = "Añadir";
-            this.btnAgregarG.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAgregarG.UseVisualStyleBackColor = true;
-            this.btnAgregarG.Click += new System.EventHandler(this.BtnAgregarG_Click);
-            // 
-            // btnEliminarG
-            // 
-            this.btnEliminarG.BackgroundImage = global::Presentacion.Properties.Resources.icons8_eliminar_32__1_;
-            this.btnEliminarG.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnEliminarG.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEliminarG.FlatAppearance.BorderSize = 0;
-            this.btnEliminarG.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.btnEliminarG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminarG.Location = new System.Drawing.Point(724, 101);
-            this.btnEliminarG.Name = "btnEliminarG";
-            this.btnEliminarG.Size = new System.Drawing.Size(29, 25);
-            this.btnEliminarG.TabIndex = 120;
-            this.btnEliminarG.UseVisualStyleBackColor = true;
-            // 
-            // btnVerG
-            // 
-            this.btnVerG.BackgroundImage = global::Presentacion.Properties.Resources.icons8_ver_24;
-            this.btnVerG.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnVerG.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnVerG.FlatAppearance.BorderSize = 0;
-            this.btnVerG.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.btnVerG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVerG.Location = new System.Drawing.Point(689, 101);
-            this.btnVerG.Name = "btnVerG";
-            this.btnVerG.Size = new System.Drawing.Size(29, 25);
-            this.btnVerG.TabIndex = 119;
-            this.btnVerG.UseVisualStyleBackColor = true;
-            // 
-            // btnEditarG
-            // 
-            this.btnEditarG.BackgroundImage = global::Presentacion.Properties.Resources.documentediting_editdocuments_text_documentedi_2820;
-            this.btnEditarG.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnEditarG.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEditarG.FlatAppearance.BorderSize = 0;
-            this.btnEditarG.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.btnEditarG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditarG.Location = new System.Drawing.Point(654, 101);
-            this.btnEditarG.Name = "btnEditarG";
-            this.btnEditarG.Size = new System.Drawing.Size(29, 25);
-            this.btnEditarG.TabIndex = 118;
-            this.btnEditarG.UseVisualStyleBackColor = true;
-            // 
-            // txtBusquedaGalpon
-            // 
-            this.txtBusquedaGalpon.BackColor = System.Drawing.Color.Gray;
-            this.txtBusquedaGalpon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtBusquedaGalpon.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBusquedaGalpon.ForeColor = System.Drawing.Color.White;
-            this.txtBusquedaGalpon.Location = new System.Drawing.Point(126, 49);
-            this.txtBusquedaGalpon.Name = "txtBusquedaGalpon";
-            this.txtBusquedaGalpon.Size = new System.Drawing.Size(483, 23);
-            this.txtBusquedaGalpon.TabIndex = 117;
-            this.txtBusquedaGalpon.Text = "Busqueda";
-            this.txtBusquedaGalpon.Enter += new System.EventHandler(this.TxtBusquedaGalpon_Enter);
-            this.txtBusquedaGalpon.Leave += new System.EventHandler(this.TxtBusquedaGalpon_Leave);
-            // 
             // Controles
             // 
             this.Controles.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Controles.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Controles.Location = new System.Drawing.Point(17, 50);
+            this.Controles.ForeColor = System.Drawing.Color.White;
+            this.Controles.Location = new System.Drawing.Point(18, 48);
             this.Controles.Name = "Controles";
             this.Controles.Size = new System.Drawing.Size(103, 23);
             this.Controles.TabIndex = 116;
@@ -184,7 +110,7 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.DarkGray;
+            this.label1.BackColor = System.Drawing.Color.LightBlue;
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(0, 0);
@@ -194,19 +120,131 @@
             this.label1.Text = "Formulario para  Galpon";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // txtBusquedaGalpon
+            // 
+            this.txtBusquedaGalpon.AutoSize = true;
+            this.txtBusquedaGalpon.BorderColor = System.Drawing.Color.Silver;
+            this.txtBusquedaGalpon.BorderRadius = 5;
+            this.txtBusquedaGalpon.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBusquedaGalpon.DefaultText = "Busqueda";
+            this.txtBusquedaGalpon.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtBusquedaGalpon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtBusquedaGalpon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBusquedaGalpon.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBusquedaGalpon.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBusquedaGalpon.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBusquedaGalpon.ForeColor = System.Drawing.Color.Black;
+            this.txtBusquedaGalpon.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBusquedaGalpon.Location = new System.Drawing.Point(126, 48);
+            this.txtBusquedaGalpon.Name = "txtBusquedaGalpon";
+            this.txtBusquedaGalpon.PasswordChar = '\0';
+            this.txtBusquedaGalpon.PlaceholderText = "";
+            this.txtBusquedaGalpon.SelectedText = "";
+            this.txtBusquedaGalpon.Size = new System.Drawing.Size(480, 25);
+            this.txtBusquedaGalpon.TabIndex = 160;
+            this.txtBusquedaGalpon.Enter += new System.EventHandler(this.txtBusquedaGalpon_Enter_1);
+            this.txtBusquedaGalpon.Leave += new System.EventHandler(this.txtBusquedaGalpon_Leave_1);
+            // 
+            // btnVerGalpon
+            // 
+            this.btnVerGalpon.BackColor = System.Drawing.Color.Transparent;
+            this.btnVerGalpon.BorderRadius = 12;
+            this.btnVerGalpon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVerGalpon.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.btnVerGalpon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnVerGalpon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnVerGalpon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnVerGalpon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnVerGalpon.FillColor = System.Drawing.Color.LightBlue;
+            this.btnVerGalpon.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnVerGalpon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
+            this.btnVerGalpon.Image = global::Presentacion.Properties.Resources.icons8_ver_24;
+            this.btnVerGalpon.Location = new System.Drawing.Point(670, 101);
+            this.btnVerGalpon.Margin = new System.Windows.Forms.Padding(2);
+            this.btnVerGalpon.Name = "btnVerGalpon";
+            this.btnVerGalpon.Size = new System.Drawing.Size(39, 25);
+            this.btnVerGalpon.TabIndex = 159;
+            this.btnVerGalpon.TextFormatNoPrefix = true;
+            // 
+            // btnEditarGalpon
+            // 
+            this.btnEditarGalpon.BackColor = System.Drawing.Color.Transparent;
+            this.btnEditarGalpon.BorderRadius = 12;
+            this.btnEditarGalpon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditarGalpon.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.btnEditarGalpon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnEditarGalpon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnEditarGalpon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEditarGalpon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnEditarGalpon.FillColor = System.Drawing.Color.LightBlue;
+            this.btnEditarGalpon.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnEditarGalpon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
+            this.btnEditarGalpon.Image = global::Presentacion.Properties.Resources.documentediting_editdocuments_text_documentedi_2820;
+            this.btnEditarGalpon.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnEditarGalpon.Location = new System.Drawing.Point(620, 101);
+            this.btnEditarGalpon.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEditarGalpon.Name = "btnEditarGalpon";
+            this.btnEditarGalpon.Size = new System.Drawing.Size(44, 25);
+            this.btnEditarGalpon.TabIndex = 158;
+            this.btnEditarGalpon.TextFormatNoPrefix = true;
+            // 
+            // btnEliminarGalpon
+            // 
+            this.btnEliminarGalpon.BackColor = System.Drawing.Color.Transparent;
+            this.btnEliminarGalpon.BorderRadius = 12;
+            this.btnEliminarGalpon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminarGalpon.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.btnEliminarGalpon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnEliminarGalpon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnEliminarGalpon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEliminarGalpon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnEliminarGalpon.FillColor = System.Drawing.Color.LightBlue;
+            this.btnEliminarGalpon.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnEliminarGalpon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
+            this.btnEliminarGalpon.Image = global::Presentacion.Properties.Resources.icons8_eliminar_32__1_;
+            this.btnEliminarGalpon.Location = new System.Drawing.Point(713, 101);
+            this.btnEliminarGalpon.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEliminarGalpon.Name = "btnEliminarGalpon";
+            this.btnEliminarGalpon.Size = new System.Drawing.Size(39, 25);
+            this.btnEliminarGalpon.TabIndex = 157;
+            this.btnEliminarGalpon.TextFormatNoPrefix = true;
+            // 
+            // btnAñadirGalpon
+            // 
+            this.btnAñadirGalpon.BackColor = System.Drawing.Color.Transparent;
+            this.btnAñadirGalpon.BorderRadius = 12;
+            this.btnAñadirGalpon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAñadirGalpon.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.btnAñadirGalpon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAñadirGalpon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAñadirGalpon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAñadirGalpon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAñadirGalpon.FillColor = System.Drawing.Color.LightBlue;
+            this.btnAñadirGalpon.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnAñadirGalpon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
+            this.btnAñadirGalpon.Image = global::Presentacion.Properties.Resources.icons8_añadir_32;
+            this.btnAñadirGalpon.Location = new System.Drawing.Point(21, 86);
+            this.btnAñadirGalpon.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAñadirGalpon.Name = "btnAñadirGalpon";
+            this.btnAñadirGalpon.Size = new System.Drawing.Size(100, 40);
+            this.btnAñadirGalpon.TabIndex = 156;
+            this.btnAñadirGalpon.Text = "Añadir";
+            this.btnAñadirGalpon.TextFormatNoPrefix = true;
+            this.btnAñadirGalpon.Click += new System.EventHandler(this.btnAñadirGalpon_Click);
+            // 
             // frmGalpon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(16)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(762, 531);
+            this.Controls.Add(this.txtBusquedaGalpon);
+            this.Controls.Add(this.btnVerGalpon);
+            this.Controls.Add(this.btnEditarGalpon);
+            this.Controls.Add(this.btnEliminarGalpon);
+            this.Controls.Add(this.btnAñadirGalpon);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbFiltradoG);
-            this.Controls.Add(this.btnAgregarG);
-            this.Controls.Add(this.btnEliminarG);
-            this.Controls.Add(this.btnVerG);
-            this.Controls.Add(this.btnEditarG);
-            this.Controls.Add(this.txtBusquedaGalpon);
             this.Controls.Add(this.Controles);
             this.Controls.Add(this.dgvGalpon);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -222,12 +260,12 @@
         #endregion
         private System.Windows.Forms.DataGridView dgvGalpon;
         private System.Windows.Forms.ComboBox cmbFiltradoG;
-        private System.Windows.Forms.Button btnAgregarG;
-        private System.Windows.Forms.Button btnEliminarG;
-        private System.Windows.Forms.Button btnVerG;
-        private System.Windows.Forms.Button btnEditarG;
-        private System.Windows.Forms.TextBox txtBusquedaGalpon;
         private System.Windows.Forms.Label Controles;
         private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2TextBox txtBusquedaGalpon;
+        private Guna.UI2.WinForms.Guna2Button btnVerGalpon;
+        private Guna.UI2.WinForms.Guna2Button btnEditarGalpon;
+        private Guna.UI2.WinForms.Guna2Button btnEliminarGalpon;
+        private Guna.UI2.WinForms.Guna2Button btnAñadirGalpon;
     }
 }

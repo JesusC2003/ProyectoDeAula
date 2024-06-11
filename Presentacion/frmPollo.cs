@@ -46,25 +46,25 @@ namespace Presentacion
         //}
   
 
-        private void TxtBusquedapollo_Enter(object sender, EventArgs e)
-        {
-            if (txtBusquedapollo.Text == "Busqueda")
-            {
-                txtBusquedapollo.Text = "";
-                txtBusquedapollo.ForeColor = Color.White;
-            }
-        }
-
-        private void TxtBusquedapollo_Leave(object sender, EventArgs e)
+        private void txtBusquedapollo_Leave_1(object sender, EventArgs e)
         {
             if (txtBusquedapollo.Text == "")
             {
                 txtBusquedapollo.Text = "Busqueda";
-                txtBusquedapollo.ForeColor = Color.White;
+                txtBusquedapollo.ForeColor = Color.Black;
             }
         }
 
-        private void btnAgregarpollo_Click(object sender, EventArgs e)
+        private void txtBusquedapollo_Enter_1(object sender, EventArgs e)
+        {
+            if (txtBusquedapollo.Text == "Busqueda")
+            {
+                txtBusquedapollo.Text = "";
+                txtBusquedapollo.ForeColor = Color.Black;
+            }
+        }
+
+        private void btnAñadirPollo_Click(object sender, EventArgs e)
         {
             frmAgregarPollo pollo = new frmAgregarPollo();
             pollo.Show();

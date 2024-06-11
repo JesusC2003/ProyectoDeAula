@@ -653,16 +653,6 @@ namespace Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Logo_Hensys {
-            get {
-                object obj = ResourceManager.GetObject("Logo_Hensys", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap LogoHensy {
             get {
                 object obj = ResourceManager.GetObject("LogoHensy", resourceCulture);

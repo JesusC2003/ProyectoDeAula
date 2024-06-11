@@ -16,31 +16,28 @@ namespace Presentacion
         {
             InitializeComponent();
         }
-
-
-
-        private void BtnAgregarM_Click(object sender, EventArgs e)
-        {
-            frmAgregarMedicamento fmrAgregarMedicamento = new frmAgregarMedicamento();
-            fmrAgregarMedicamento.Show();
-        }
-
-        private void TxtBusquedaMedicamento_Leave(object sender, EventArgs e)
+        private void txtBusquedaMedicamento_Leave_1(object sender, EventArgs e)
         {
             if (txtBusquedaMedicamento.Text == "")
             {
                 txtBusquedaMedicamento.Text = "Busqueda";
-                txtBusquedaMedicamento.ForeColor = Color.White;
+                txtBusquedaMedicamento.ForeColor = Color.Black;
             }
         }
 
-        private void TxtBusquedaMedicamento_Enter(object sender, EventArgs e)
+        private void txtBusquedaMedicamento_Enter_1(object sender, EventArgs e)
         {
             if (txtBusquedaMedicamento.Text == "Busqueda")
             {
                 txtBusquedaMedicamento.Text = "";
-                txtBusquedaMedicamento.ForeColor = Color.White;
+                txtBusquedaMedicamento.ForeColor = Color.Black;
             }
+        }
+
+        private void btnAñadirMedicamento_Click(object sender, EventArgs e)
+        {
+            frmAgregarMedicamento fmrAgregarMedicamento = new frmAgregarMedicamento();
+            fmrAgregarMedicamento.Show();
         }
     }
 }

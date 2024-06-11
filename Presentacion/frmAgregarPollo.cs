@@ -16,8 +16,7 @@ namespace Presentacion
         {
             InitializeComponent();
         }
-
-        private void BtnSalirPollo_Click(object sender, EventArgs e)
+        private void btnSalirPollo_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }

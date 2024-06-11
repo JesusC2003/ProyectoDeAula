@@ -17,35 +17,28 @@ namespace Presentacion
             InitializeComponent();
         }
 
-        private void BtnBuscarPersonal_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void TxtBusquedaPersonal_Leave(object sender, EventArgs e)
+        private void txtBusquedaPersonal_Leave_1(object sender, EventArgs e)
         {
             if (txtBusquedaPersonal.Text == "")
             {
                 txtBusquedaPersonal.Text = "Busqueda";
-                txtBusquedaPersonal.ForeColor = Color.White;
+                txtBusquedaPersonal.ForeColor = Color.Black;
             }
         }
 
-        private void TxtBusquedaPersonal_Enter(object sender, EventArgs e)
+        private void txtBusquedaPersonal_Enter_1(object sender, EventArgs e)
         {
             if (txtBusquedaPersonal.Text == "Busqueda")
             {
                 txtBusquedaPersonal.Text = "";
-                txtBusquedaPersonal.ForeColor = Color.White;
+                txtBusquedaPersonal.ForeColor = Color.Black;
             }
         }
 
-        private void BtnAgregarPersonal_Click(object sender, EventArgs e)
+        private void btnAñadirPersonal_Click(object sender, EventArgs e)
         {
-            frmAgregarPersonal fmrAgregarPersonal   = new frmAgregarPersonal();
+            frmAgregarPersonal fmrAgregarPersonal = new frmAgregarPersonal();
             fmrAgregarPersonal.Show();
         }
-
-
-
     }
 }

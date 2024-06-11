@@ -21,8 +21,7 @@ namespace Presentacion
         {
 
         }
-
-        private void BtnSalirPersonal_Click(object sender, EventArgs e)
+        private void btnSalirPersonal_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }

@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
-    public partial class frmIniciarSeccion : Form
+    public partial class frmIniciarSession : Form
     {
-        public frmIniciarSeccion()
+        public frmIniciarSession()
         {
             InitializeComponent();
         }
@@ -29,7 +29,7 @@ namespace Presentacion
 
             if (Usuario == "UNICESAR" && Contraseña == "12345")
             {
-                frmPrincipal fmrMenu = new frmPrincipal();
+                frmPrincipal fmrMenu = new frmPrincipal(txtUsuario.Text);
                 fmrMenu.Show();
                 this.Hide();
                 Vaciartodo();

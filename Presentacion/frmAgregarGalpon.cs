@@ -16,8 +16,7 @@ namespace Presentacion
         {
             InitializeComponent();
         }
-
-        private void BtnSalirGalpon_Click(object sender, EventArgs e)
+        private void btnSalirGalpon_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }
