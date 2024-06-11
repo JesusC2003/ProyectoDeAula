@@ -32,6 +32,46 @@ namespace Datos
                 conexion.Close();
             }
         }
+        protected OracleTransaction IniciarTransaccion()
+        {
+            try
+            {
+                AbrirConexion();
+                return conexion.BeginTransaction();
+            }
+            catch (OracleException ex)
+            {
+                CerrarConexion();
+                throw new Exception($"|ERROR DE TRANSACCION| - {ex.Message}");
+            }
+        }
+        protected void ConfirmarTransaccion(OracleTransaction transaccion)
+        {
+            try
+            {
+                transaccion.Commit();
+                CerrarConexion();
+            }
+            catch (OracleException ex)
+            {
+                transaccion.Rollback();
+                CerrarConexion();
+                throw new Exception($"|ERROR DE CONFIRMACION DE TRANSACCION| - {ex.Message}");
+            }
+        }
+        protected void DeshacerTransaccion(OracleTransaction transaccion)
+        {
+            try
+            {
+                transaccion.Rollback();
+                CerrarConexion();
+            }
+            catch (OracleException ex)
+            {
+                CerrarConexion();
+                throw new Exception($"|ERROR DE DESHACER TRANSACCION| - {ex.Message}");
+            }
+        }
         protected OracleConnection ObtenerConexion()
         {
             return conexion;

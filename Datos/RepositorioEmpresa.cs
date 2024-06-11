@@ -1,98 +1,120 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.IO;
-using System.Linq;
-using System.Security.Permissions;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Windows.Input;
-using Entidad;
+﻿using Entidad;
 using Oracle.ManagedDataAccess.Client;
+using System;
+using System.Data;
 
 namespace Datos
 {
     public class RepositorioEmpresa : BaseDatosConexion
     {
-        public RepositorioEmpresa() {  }
+        public RepositorioEmpresa() { }
 
-        //METODO PARA INSERTAR EMPRESA A LA BASE DE DATOS
-        public string InsertEmpresa(EntidadEmpresa empresa)
+        // Método para insertar una empresa en la base de datos
+        public string InsertarEmpresa(EntidadEmpresa empresa)
         {
             string query = "INSERT INTO EMPRESA (NIT, NOMBRE, TELEFONO, DIRECCION, CORREO) " +
                             "VALUES (:nit, :nombre, :telefono, :direccion, :correo)";
 
-            string mensajeConexion = AbrirConexion();
-            if (mensajeConexion.StartsWith("|ERROR DE CONEXION|"))
-            {
-                return mensajeConexion;
-            }
-            try 
-            {
-                using (OracleCommand Comando = new OracleCommand(query, ObtenerConexion()))
-                {
-                    return EjecutarInsercion(Comando, empresa);
-                }
-            } catch (OracleException ex) { return $"|ERROR|: {ex.Message}"; } 
-            finally { CerrarConexion(); }
-                     
-        } 
-        
-        //METODO INSERTAR INFORMACION AL COMANDO
-        private string EjecutarInsercion(OracleCommand COMANDO, EntidadEmpresa empresa ) 
-        {
+            OracleTransaction transaccion = IniciarTransaccion();
             try
-            {
-                COMANDO.Parameters.Add("nit", OracleDbType.Varchar2).Value = empresa.NIT;
-                COMANDO.Parameters.Add("nombre", OracleDbType.Varchar2).Value = empresa.Nombre;
-                COMANDO.Parameters.Add("telefono", OracleDbType.Varchar2).Value = empresa.Telefono;
-                COMANDO.Parameters.Add("direccion", OracleDbType.Varchar2).Value = empresa.Direccion;
-                COMANDO.Parameters.Add("correo", OracleDbType.Varchar2).Value = empresa.Correo;
-                int FilasAfectadas = COMANDO.ExecuteNonQuery();
-                return ConfirmarInsercion(FilasAfectadas);
-            }
-            catch (OracleException ex)
-            {
-                return $"|ERROR DE INSERCION| - El proceso no fue completado debido a: {ex.Message}";
-            }            
-        }
-        
-        //METODO PARA CONFIRMAR LA INSERCION DE LA INFORMACION DE EMPRESA
-        private string ConfirmarInsercion(int FilasAfectadas)
-        {
-            if (FilasAfectadas > 0)
-            {
-                return "La información fue";
-            }
-            else
-            {
-                return "La información no fue guardada";
-            }           
-        }
-        
-        //METODO PARA CONSULTAR INFORMACION DE EMPRESA EN LA BASE DE DATOS
-        public EntidadEmpresa SelectEmpresa() 
-        {
-            OracleDataReader Leer;
-            EntidadEmpresa empresa = new EntidadEmpresa();
-            string query = "SELECT * FROM EMPRESA";
-            try 
             {
                 using (OracleCommand comando = new OracleCommand(query, ObtenerConexion()))
                 {
-                    string mensajeConexion = AbrirConexion();
-                    Leer= comando.ExecuteReader();
-                    empresa = Map(Leer);
-                    Leer.Close();
-                    return empresa;
+                    comando.Transaction = transaccion;
+                    return EjecutarInsercion(comando, empresa);
                 }
-            }catch (OracleException ex) { throw ex; }
-            finally { CerrarConexion(); }
+            }
+            catch (Exception ex)
+            {
+                DeshacerTransaccion(transaccion);
+                return $"|ERROR|: {ex.Message}";
+            }
         }
 
-        //METODO PARA CONVERTIR EL TIPO DE LA INFORMACION TRAIDA DE LA BASE DE DATOS A EMPRESA
-        public EntidadEmpresa Map(OracleDataReader leer) 
+        // Método para insertar la información en el comando
+        private string EjecutarInsercion(OracleCommand comando, EntidadEmpresa empresa)
+        {
+            try
+            {
+                comando.Parameters.Add("nit", OracleDbType.Varchar2).Value = empresa.NIT;
+                comando.Parameters.Add("nombre", OracleDbType.Varchar2).Value = empresa.Nombre;
+                comando.Parameters.Add("telefono", OracleDbType.Varchar2).Value = empresa.Telefono;
+                comando.Parameters.Add("direccion", OracleDbType.Varchar2).Value = empresa.Direccion;
+                comando.Parameters.Add("correo", OracleDbType.Varchar2).Value = empresa.Correo;
+                int filasAfectadas = comando.ExecuteNonQuery();
+                ConfirmarTransaccion(comando.Transaction);
+                return ConfirmarInsercion(filasAfectadas);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        // Método para confirmar la inserción de la información de la empresa
+        private string ConfirmarInsercion(int filasAfectadas)
+        {
+            if (filasAfectadas > 0)
+            {
+                return "La información fue guardada correctamente.";
+            }
+            else
+            {
+                return "La información no fue guardada.";
+            }
+        }
+
+        // Método para consultar la información de la empresa en la base de datos
+        public EntidadEmpresa ConsultarEmpresa()
+        {
+            OracleDataReader lector;
+            EntidadEmpresa empresa = new EntidadEmpresa();
+            string query = "SELECT * FROM EMPRESA";
+            OracleTransaction transaccion = IniciarTransaccion();
+            try
+            {
+                using (OracleCommand comando = new OracleCommand(query, ObtenerConexion()))
+                {
+                    comando.Transaction = transaccion;
+                    lector = comando.ExecuteReader();
+                    empresa = Mapeo(lector);
+                    lector.Close();
+                    ConfirmarTransaccion(comando.Transaction);
+                    return empresa;
+                }
+            }
+            catch (Exception ex)
+            {
+                DeshacerTransaccion(transaccion);
+                throw ex;
+            }
+        }
+        public EntidadEmpresa ConsultarEmpresa(string nit)
+        {
+            OracleDataReader lector;
+            EntidadEmpresa empresa = new EntidadEmpresa();
+            string query = "SELECT * FROM EMPRESA";
+            OracleTransaction transaccion = IniciarTransaccion();
+            try
+            {
+                using (OracleCommand comando = new OracleCommand(query, ObtenerConexion()))
+                {
+                    comando.Transaction = transaccion;
+                    lector = comando.ExecuteReader();
+                    empresa = Mapeo(lector);
+                    lector.Close();
+                    ConfirmarTransaccion(comando.Transaction);
+                    return empresa;
+                }
+            }
+            catch (Exception ex)
+            {
+                DeshacerTransaccion(transaccion);
+                throw ex;
+            }
+        }
+        // Método para convertir el tipo de la información de la base de datos a empresa
+        private EntidadEmpresa Mapeo(OracleDataReader leer)
         {
             EntidadEmpresa empresa = new EntidadEmpresa();
             if (leer.Read())
@@ -106,16 +128,18 @@ namespace Datos
             return empresa;
         }
 
-        //METODO PARA ACTUALIZAR INFORMACION EN LA BASE DE DATOS
-        public string UpdateEmpresa(EntidadEmpresa empresa)
+        // Método para actualizar la información en la base de datos
+        public string ActualizarEmpresa(EntidadEmpresa empresa)
         {
             string query = "UPDATE EMPRESA SET NOMBRE = :nombre, TELEFONO = :telefono, DIRECCION = :direccion, CORREO = :correo " +
                            "WHERE NIT = :nit";
-            AbrirConexion();
+
+            OracleTransaction transaccion = IniciarTransaccion();
             try
             {
                 using (OracleCommand comando = new OracleCommand(query, ObtenerConexion()))
                 {
+                    comando.Transaction = transaccion;
                     comando.Parameters.Add("nombre", OracleDbType.Varchar2).Value = empresa.Nombre;
                     comando.Parameters.Add("telefono", OracleDbType.Varchar2).Value = empresa.Telefono;
                     comando.Parameters.Add("direccion", OracleDbType.Varchar2).Value = empresa.Direccion;
@@ -123,69 +147,67 @@ namespace Datos
                     comando.Parameters.Add("nit", OracleDbType.Varchar2).Value = empresa.NIT;
 
                     int filasAfectadas = comando.ExecuteNonQuery();
+                    ConfirmarTransaccion(comando.Transaction);
                     return ConfirmarInsercion(filasAfectadas);
                 }
             }
-            catch (OracleException ex)
+            catch (Exception ex)
             {
+                DeshacerTransaccion(transaccion);
                 return $"|ERROR|: {ex.Message}";
-            }
-            finally
-            {
-                CerrarConexion();
             }
         }
 
-        //METODO PARA CONFIRMAR SI EXISTE UN EMPRESA
+        // Método para verificar si existe una empresa
         public bool ExisteEmpresa()
         {
             string query = "SELECT COUNT(*) FROM EMPRESA";
+            OracleTransaction transaccion = IniciarTransaccion();
             try
             {
                 using (OracleCommand comando = new OracleCommand(query, ObtenerConexion()))
                 {
-                    string mensajeConexion = AbrirConexion();
-                    if (mensajeConexion.StartsWith("|ERROR DE CONEXION|"))
-                    {
-                        throw new InvalidOperationException(mensajeConexion);
-                    }
-
+                    comando.Transaction = transaccion;
                     int count = Convert.ToInt32(comando.ExecuteScalar());
+                    ConfirmarTransaccion(comando.Transaction);
                     return count > 0;
                 }
             }
-            catch (OracleException ex)
+            catch (Exception ex)
             {
+                DeshacerTransaccion(transaccion);
                 throw new Exception($"Error al verificar la existencia de empresas: {ex.Message}", ex);
-            }
-            finally
-            {
-                CerrarConexion();
             }
         }
 
-        //METODO PARA ELIMINAR LA INFORMCAION DE LA EMPRESA DE LA BASE DE DATOS
-        public string DeleteEmpresa()
+        // Método para eliminar la información de la empresa de la base de datos
+        public string EliminarEmpresa()
         {
             string query = "DELETE FROM EMPRESA";
+            OracleTransaction transaccion = IniciarTransaccion();
             try
             {
                 using (OracleCommand comando = new OracleCommand(query, ObtenerConexion()))
                 {
-                    AbrirConexion();
+                    comando.Transaction = transaccion;
                     int filasAfectadas = comando.ExecuteNonQuery();
                     if (filasAfectadas > 0)
                     {
+                        ConfirmarTransaccion(comando.Transaction);
                         return "|MENSAJE DE CONFIRMACIÓN| - La información fue eliminada correctamente.";
                     }
                     else
                     {
-                        return "|ADVERTENCIA| - No se encontró informacion en la base de datos.";
+                        DeshacerTransaccion(comando.Transaction);
+                        return "|ADVERTENCIA| - No se encontró información en la base de datos.";
                     }
                 }
             }
-            catch (OracleException ex) { return $"|ERROR|: {ex.Message}"; }
-            finally { CerrarConexion(); }
+            catch (Exception ex)
+            {
+                DeshacerTransaccion(transaccion);
+                return $"|ERROR|: {ex.Message}";
+            }
         }
     }
 }

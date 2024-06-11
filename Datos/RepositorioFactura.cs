@@ -7,7 +7,13 @@ namespace Datos
 {
     public class RepositorioFactura : BaseDatosConexion
     {
-        public RepositorioFactura() { }
+        RepositorioCliente repositorioCliente;
+        RepositorioEmpresa repositorioEmpresa;
+        public RepositorioFactura() 
+        {
+            repositorioCliente = new RepositorioCliente();
+            repositorioEmpresa = new RepositorioEmpresa();
+        }
 
         public int InsertarFactura(EntidadFactura factura)
         {
@@ -190,8 +196,8 @@ namespace Datos
             factura.CodigoFactura = leer.GetString(1);
             factura.FechaFactura = leer.GetDateTime(2);
             factura.MontoTotal = leer.GetDouble(3);
-            factura.IdCliente = new EntidadCliente() { Id = leer.GetInt32(4) };
-            factura.NitEmpresa = new EntidadEmpresa() { NIT = leer.GetString(5) };
+            factura.IdCliente = repositorioCliente.ConsultarCliente(leer.GetInt32(4));
+            factura.NitEmpresa = repositorioEmpresa.ConsultarEmpresa (leer.GetString(5));
 
             return factura;
         }

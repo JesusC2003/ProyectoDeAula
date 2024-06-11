@@ -19,13 +19,13 @@ namespace Logica
         //METODO PARA GUARDAR EMPRESA
         public string Guardar(EntidadEmpresa empresa)
         {
-            return $"{ repositorioEmpresa.InsertEmpresa(empresa)} guardada con exito";
+            return $"{ repositorioEmpresa.InsertarEmpresa(empresa)} guardada con exito";
         }
 
         //METODO PARA ACTUALIZAR EMPRESA
         public string Actualizar(EntidadEmpresa empresa)
         {
-            return $"{repositorioEmpresa.UpdateEmpresa(empresa)} actulizada con exito";
+            return $"{repositorioEmpresa.ActualizarEmpresa(empresa)} actulizada con exito";
         }
 
         //METODO PARA CARGAR INFORMACION EMPRESA
@@ -34,7 +34,7 @@ namespace Logica
             EntidadEmpresa empresa = new EntidadEmpresa();
             if (RespuestaExisteEmpresa())
             {
-                empresa = repositorioEmpresa.SelectEmpresa();
+                empresa = repositorioEmpresa.ConsultarEmpresa();
                 return empresa;
             }
             return empresa;
@@ -43,7 +43,7 @@ namespace Logica
         //METODO PARA ELIMINAR EMPRESA
         public string EliminarEmpresa()
         {
-            return repositorioEmpresa.DeleteEmpresa();
+            return repositorioEmpresa.EliminarEmpresa();
         }
         //METODO PARA SABER SI EXISTE EMPRESA
         public bool RespuestaExisteEmpresa()
