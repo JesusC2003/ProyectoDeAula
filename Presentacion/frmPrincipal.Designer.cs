@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.pnlBarra = new System.Windows.Forms.Panel();
-            this.btnConfiguracion = new System.Windows.Forms.Button();
-            this.btnCerrarPrograma = new System.Windows.Forms.Button();
-            this.btnMinimizar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.pnlsubconfiguracion = new System.Windows.Forms.Panel();
             this.btnDatosEmpresa = new System.Windows.Forms.Button();
             this.btnManualdeUso = new System.Windows.Forms.Button();
             this.btnCerrarSesion = new System.Windows.Forms.Button();
+            this.btnConfiguracion = new System.Windows.Forms.Button();
+            this.btnCerrarPrograma = new System.Windows.Forms.Button();
+            this.btnMinimizar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.pnlMenuVertical = new System.Windows.Forms.Panel();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -74,74 +74,6 @@
             this.pnlBarra.Size = new System.Drawing.Size(780, 35);
             this.pnlBarra.TabIndex = 0;
             this.pnlBarra.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBarra_MouseDown);
-            // 
-            // btnConfiguracion
-            // 
-            this.btnConfiguracion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnConfiguracion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnConfiguracion.FlatAppearance.BorderSize = 0;
-            this.btnConfiguracion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnConfiguracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConfiguracion.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfiguracion.ForeColor = System.Drawing.Color.White;
-            this.btnConfiguracion.Image = global::Presentacion.Properties.Resources.icons8_configuración_de_datos_20;
-            this.btnConfiguracion.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnConfiguracion.Location = new System.Drawing.Point(661, 3);
-            this.btnConfiguracion.Name = "btnConfiguracion";
-            this.btnConfiguracion.Size = new System.Drawing.Size(35, 29);
-            this.btnConfiguracion.TabIndex = 7;
-            this.btnConfiguracion.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnConfiguracion.UseVisualStyleBackColor = true;
-            this.btnConfiguracion.Click += new System.EventHandler(this.BtnConfiguracion_Click);
-            // 
-            // btnCerrarPrograma
-            // 
-            this.btnCerrarPrograma.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCerrarPrograma.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCerrarPrograma.FlatAppearance.BorderSize = 0;
-            this.btnCerrarPrograma.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnCerrarPrograma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrarPrograma.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrarPrograma.ForeColor = System.Drawing.Color.White;
-            this.btnCerrarPrograma.Image = global::Presentacion.Properties.Resources.icons8_cerrar_ventana_16;
-            this.btnCerrarPrograma.Location = new System.Drawing.Point(741, 5);
-            this.btnCerrarPrograma.Name = "btnCerrarPrograma";
-            this.btnCerrarPrograma.Size = new System.Drawing.Size(35, 26);
-            this.btnCerrarPrograma.TabIndex = 6;
-            this.btnCerrarPrograma.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCerrarPrograma.UseVisualStyleBackColor = true;
-            this.btnCerrarPrograma.Click += new System.EventHandler(this.BtnCerrarPrograma_Click_1);
-            // 
-            // btnMinimizar
-            // 
-            this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinimizar.FlatAppearance.BorderSize = 0;
-            this.btnMinimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimizar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMinimizar.ForeColor = System.Drawing.Color.White;
-            this.btnMinimizar.Image = global::Presentacion.Properties.Resources.window_minimize_icon_181229;
-            this.btnMinimizar.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnMinimizar.Location = new System.Drawing.Point(700, 1);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(35, 31);
-            this.btnMinimizar.TabIndex = 5;
-            this.btnMinimizar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnMinimizar.UseVisualStyleBackColor = true;
-            this.btnMinimizar.Click += new System.EventHandler(this.BtnMinimizar_Click);
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("MV Boli", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(3, 2);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 29);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Hensys";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlsubconfiguracion
             // 
@@ -211,6 +143,74 @@
             this.btnCerrarSesion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCerrarSesion.UseVisualStyleBackColor = true;
             this.btnCerrarSesion.Click += new System.EventHandler(this.BtnCerrarSesion_Click);
+            // 
+            // btnConfiguracion
+            // 
+            this.btnConfiguracion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnConfiguracion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnConfiguracion.FlatAppearance.BorderSize = 0;
+            this.btnConfiguracion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnConfiguracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfiguracion.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfiguracion.ForeColor = System.Drawing.Color.White;
+            this.btnConfiguracion.Image = global::Presentacion.Properties.Resources.icons8_configuración_de_datos_20;
+            this.btnConfiguracion.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnConfiguracion.Location = new System.Drawing.Point(661, 3);
+            this.btnConfiguracion.Name = "btnConfiguracion";
+            this.btnConfiguracion.Size = new System.Drawing.Size(35, 29);
+            this.btnConfiguracion.TabIndex = 7;
+            this.btnConfiguracion.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnConfiguracion.UseVisualStyleBackColor = true;
+            this.btnConfiguracion.Click += new System.EventHandler(this.BtnConfiguracion_Click);
+            // 
+            // btnCerrarPrograma
+            // 
+            this.btnCerrarPrograma.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCerrarPrograma.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrarPrograma.FlatAppearance.BorderSize = 0;
+            this.btnCerrarPrograma.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnCerrarPrograma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrarPrograma.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrarPrograma.ForeColor = System.Drawing.Color.White;
+            this.btnCerrarPrograma.Image = global::Presentacion.Properties.Resources.icons8_cerrar_ventana_16;
+            this.btnCerrarPrograma.Location = new System.Drawing.Point(741, 5);
+            this.btnCerrarPrograma.Name = "btnCerrarPrograma";
+            this.btnCerrarPrograma.Size = new System.Drawing.Size(35, 26);
+            this.btnCerrarPrograma.TabIndex = 6;
+            this.btnCerrarPrograma.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnCerrarPrograma.UseVisualStyleBackColor = true;
+            this.btnCerrarPrograma.Click += new System.EventHandler(this.BtnCerrarPrograma_Click_1);
+            // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimizar.FlatAppearance.BorderSize = 0;
+            this.btnMinimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimizar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMinimizar.ForeColor = System.Drawing.Color.White;
+            this.btnMinimizar.Image = global::Presentacion.Properties.Resources.window_minimize_icon_181229;
+            this.btnMinimizar.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnMinimizar.Location = new System.Drawing.Point(700, 1);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(35, 31);
+            this.btnMinimizar.TabIndex = 5;
+            this.btnMinimizar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnMinimizar.UseVisualStyleBackColor = true;
+            this.btnMinimizar.Click += new System.EventHandler(this.BtnMinimizar_Click);
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("MV Boli", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(3, 2);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(124, 29);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Hensys";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlMenuVertical
             // 
@@ -289,7 +289,7 @@
             this.btnMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenu.Location = new System.Drawing.Point(46, 20);
             this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(36, 30);
+            this.btnMenu.Size = new System.Drawing.Size(43, 35);
             this.btnMenu.TabIndex = 15;
             this.btnMenu.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnMenu.UseVisualStyleBackColor = false;
