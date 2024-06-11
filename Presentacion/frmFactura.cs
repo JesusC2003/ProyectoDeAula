@@ -52,7 +52,8 @@ namespace Presentacion
             paginahtml = paginahtml.Replace("@CorreoEmpresa", txtNombresCliente.Text);
             paginahtml = paginahtml.Replace("@IdFactura", txtNombresCliente.Text);
             paginahtml = paginahtml.Replace("@Cliente", txtNombresCliente.Text); // Remplazando datos del PDF
-            paginahtml = paginahtml.Replace("@Documento", txtidentificacionCliente.Text);
+            paginahtml = paginahtml.Replace("@Identificacion", txtidentificacionCliente.Text);
+            paginahtml = paginahtml.Replace("@@tipoidentificacion", cmbTipoCliente.Text);
             paginahtml = paginahtml.Replace("@Telefono", txtTelefonoCliente.Text);
             paginahtml = paginahtml.Replace("@Correo", txtCorreoCliente.Text);
             paginahtml = paginahtml.Replace("@Fecha", DateTime.Now.ToString("dd/MM/yyyy"));
