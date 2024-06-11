@@ -37,7 +37,6 @@
             this.btnCerrarPrograma = new System.Windows.Forms.Button();
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlMenuVertical = new System.Windows.Forms.Panel();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -58,7 +57,6 @@
             this.pnlContenedor = new System.Windows.Forms.Panel();
             this.pnlBarra.SuspendLayout();
             this.pnlsubconfiguracion.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlMenuVertical.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,7 +68,6 @@
             this.pnlBarra.Controls.Add(this.btnCerrarPrograma);
             this.pnlBarra.Controls.Add(this.btnMinimizar);
             this.pnlBarra.Controls.Add(this.label1);
-            this.pnlBarra.Controls.Add(this.pictureBox1);
             this.pnlBarra.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlBarra.Location = new System.Drawing.Point(0, 0);
             this.pnlBarra.Name = "pnlBarra";
@@ -207,24 +204,14 @@
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Pristina", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("MV Boli", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(46, 3);
+            this.label1.Location = new System.Drawing.Point(3, 2);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 29);
+            this.label1.Size = new System.Drawing.Size(124, 29);
             this.label1.TabIndex = 1;
             this.label1.Text = "Hensys";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Presentacion.Properties.Resources.fondo4;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(44, 32);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // pnlMenuVertical
             // 
@@ -501,7 +488,6 @@
             this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.pnlBarra.ResumeLayout(false);
             this.pnlsubconfiguracion.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlMenuVertical.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -512,7 +498,6 @@
         private System.Windows.Forms.Panel pnlBarra;
         private System.Windows.Forms.Panel pnlMenuVertical;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnPollo;
         private System.Windows.Forms.Panel panel3;

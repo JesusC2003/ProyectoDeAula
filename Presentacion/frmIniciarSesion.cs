@@ -80,23 +80,22 @@ namespace Presentacion
 
         private void linkLblRegistrar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            this.Close();
-            frmRegistrarUsuario frmRegistrarUsuario = new frmRegistrarUsuario();
-            frmRegistrarUsuario.Show();
-            txtContraseña.Text = "";
-            txtUsuario.Text = "";
+            
+            frmRegistrarUsuario RegistrarUsuario = new frmRegistrarUsuario();
+            RegistrarUsuario.Show();
+            this.Hide();
 
-        }
-
-        private void pnltitulo_Paint(object sender, PaintEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
         private void btniniciarsesion_Click(object sender, EventArgs e)
         {
             ValidarInfo();
+        }
+
+        private void pnltitulo_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
     }
 }

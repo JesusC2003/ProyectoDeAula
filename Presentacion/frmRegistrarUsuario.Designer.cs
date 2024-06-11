@@ -144,7 +144,7 @@
             this.pnltitulo.Name = "pnltitulo";
             this.pnltitulo.Size = new System.Drawing.Size(411, 36);
             this.pnltitulo.TabIndex = 154;
-            this.pnltitulo.Paint += new System.Windows.Forms.PaintEventHandler(this.pnltitulo_Paint);
+            this.pnltitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnltitulo_MouseDown);
             // 
             // BtnCerrar
             // 

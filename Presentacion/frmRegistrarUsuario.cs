@@ -36,6 +36,7 @@ namespace Presentacion
         {
             frmIniciarSesion frmIniciarSession = new frmIniciarSesion();
             frmIniciarSession.Show();
+            this.Hide();
         }
 
         private void btnOcultarContraseñaR_Click(object sender, EventArgs e)
@@ -58,7 +59,8 @@ namespace Presentacion
             btnOcultarContraseñaR.Visible = false;
         }
 
-        private void pnltitulo_Paint(object sender, PaintEventArgs e)
+
+        private void pnltitulo_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
