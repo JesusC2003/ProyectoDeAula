@@ -93,16 +93,6 @@ namespace Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _3643769_building_home_house_main_menu_start_113416__1_ {
-            get {
-                object obj = ResourceManager.GetObject("3643769-building-home-house-main-menu-start_113416 (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap _3844437_hamburger_list_menu_more_navigation_110311 {
             get {
                 object obj = ResourceManager.GetObject("3844437-hamburger-list-menu-more-navigation_110311", resourceCulture);
@@ -676,16 +666,6 @@ namespace Presentacion.Properties {
         internal static System.Drawing.Bitmap mbriclose_99502 {
             get {
                 object obj = ResourceManager.GetObject("mbriclose_99502", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap menu {
-            get {
-                object obj = ResourceManager.GetObject("menu", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

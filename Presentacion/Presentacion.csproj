@@ -518,5 +518,8 @@
   <ItemGroup>
     <None Include="Resources\LogoHensy.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menuprincipal.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

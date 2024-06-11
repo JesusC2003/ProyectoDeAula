@@ -22,7 +22,7 @@ namespace Presentacion
                 InitializeComponent();
                 this.Load += new EventHandler(frmPrincipal_Load);
                 this.nombreUsuario = nombreUsuario;
-                lblUsuario.Text = "Usuario: " + nombreUsuario;    
+                lblUsuario.Text = "Conectado A: " + nombreUsuario;    
             }
         private void ShowFormInPanel(Form form)
         {
