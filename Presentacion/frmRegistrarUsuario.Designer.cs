@@ -38,7 +38,7 @@
             this.BtnCerrar = new System.Windows.Forms.Button();
             this.BtnMinimizar = new System.Windows.Forms.Button();
             this.linkLblIniciarSesion = new System.Windows.Forms.LinkLabel();
-            this.btniniciarsesio = new Guna.UI2.WinForms.Guna2Button();
+            this.btnRegistrarse = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnOcultarContraseñaR = new Guna.UI2.WinForms.Guna2Button();
             this.btnmostrarcontraseñaR = new Guna.UI2.WinForms.Guna2Button();
@@ -197,26 +197,26 @@
             this.linkLblIniciarSesion.Text = "Inicia Sesion";
             this.linkLblIniciarSesion.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLblIniciarSesion_LinkClicked);
             // 
-            // btniniciarsesio
+            // btnRegistrarse
             // 
-            this.btniniciarsesio.BackColor = System.Drawing.Color.Transparent;
-            this.btniniciarsesio.BorderRadius = 12;
-            this.btniniciarsesio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btniniciarsesio.CustomBorderColor = System.Drawing.Color.Transparent;
-            this.btniniciarsesio.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btniniciarsesio.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btniniciarsesio.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btniniciarsesio.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btniniciarsesio.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(98)))), ((int)(((byte)(238)))));
-            this.btniniciarsesio.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btniniciarsesio.ForeColor = System.Drawing.Color.White;
-            this.btniniciarsesio.Location = new System.Drawing.Point(47, 411);
-            this.btniniciarsesio.Margin = new System.Windows.Forms.Padding(2);
-            this.btniniciarsesio.Name = "btniniciarsesio";
-            this.btniniciarsesio.Size = new System.Drawing.Size(315, 40);
-            this.btniniciarsesio.TabIndex = 156;
-            this.btniniciarsesio.Text = "Acceder";
-            this.btniniciarsesio.TextFormatNoPrefix = true;
+            this.btnRegistrarse.BackColor = System.Drawing.Color.Transparent;
+            this.btnRegistrarse.BorderRadius = 12;
+            this.btnRegistrarse.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRegistrarse.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.btnRegistrarse.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRegistrarse.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRegistrarse.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRegistrarse.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRegistrarse.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(98)))), ((int)(((byte)(238)))));
+            this.btnRegistrarse.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarse.ForeColor = System.Drawing.Color.White;
+            this.btnRegistrarse.Location = new System.Drawing.Point(47, 411);
+            this.btnRegistrarse.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRegistrarse.Name = "btnRegistrarse";
+            this.btnRegistrarse.Size = new System.Drawing.Size(315, 40);
+            this.btnRegistrarse.TabIndex = 156;
+            this.btnRegistrarse.Text = "Registrarse";
+            this.btnRegistrarse.TextFormatNoPrefix = true;
             // 
             // panel1
             // 
@@ -282,7 +282,7 @@
             this.Controls.Add(this.btnOcultarContraseñaR);
             this.Controls.Add(this.btnmostrarcontraseñaR);
             this.Controls.Add(this.linkLblIniciarSesion);
-            this.Controls.Add(this.btniniciarsesio);
+            this.Controls.Add(this.btnRegistrarse);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnltitulo);
             this.Controls.Add(this.label3);
@@ -316,7 +316,7 @@
         private System.Windows.Forms.Button BtnCerrar;
         private System.Windows.Forms.Button BtnMinimizar;
         private System.Windows.Forms.LinkLabel linkLblIniciarSesion;
-        private Guna.UI2.WinForms.Guna2Button btniniciarsesio;
+        private Guna.UI2.WinForms.Guna2Button btnRegistrarse;
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2Button btnOcultarContraseñaR;
         private Guna.UI2.WinForms.Guna2Button btnmostrarcontraseñaR;

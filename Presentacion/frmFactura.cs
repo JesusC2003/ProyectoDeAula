@@ -24,7 +24,20 @@ namespace Presentacion
             InitializeComponent();
         }
 
-        private void BtnFacturar_Click(object sender, EventArgs e)
+        private bool IsValidFilePath(string path)
+        {
+            char[] invalidChars = Path.GetInvalidPathChars();
+            foreach (char c in invalidChars)
+            {
+                if (path.Contains(c))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        private void btnFacturar_Click_1(object sender, EventArgs e)
         {
             SaveFileDialog guardar = new SaveFileDialog()
             {
@@ -34,7 +47,7 @@ namespace Presentacion
 
             string paginahtml = Properties.Resources.PlantillaFactura.ToString();
             paginahtml = paginahtml.Replace("@Cliente", txtNombresCliente.Text); // Remplazando datos del PDF
-            paginahtml = paginahtml.Replace("@Documento", txtCodigoCliente.Text);
+            paginahtml = paginahtml.Replace("@Documento", txtidentificacionCliente.Text);
             paginahtml = paginahtml.Replace("@Telefono", txtTelefonoCliente.Text);
             paginahtml = paginahtml.Replace("@Correo", txtCorreoCliente.Text);
             paginahtml = paginahtml.Replace("@Fecha", DateTime.Now.ToString("dd/MM/yyyy"));
@@ -82,19 +95,6 @@ namespace Presentacion
                     MessageBox.Show("La ruta del archivo contiene caracteres inválidos.");
                 }
             }
-        }
-
-        private bool IsValidFilePath(string path)
-        {
-            char[] invalidChars = Path.GetInvalidPathChars();
-            foreach (char c in invalidChars)
-            {
-                if (path.Contains(c))
-                {
-                    return false;
-                }
-            }
-            return true;
         }
     }
 }
