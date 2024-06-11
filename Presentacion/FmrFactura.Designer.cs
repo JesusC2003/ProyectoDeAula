@@ -28,15 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.grpDetalleProducto = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.txtMontoTotal = new Guna.UI2.WinForms.Guna2TextBox();
+            this.grpDetalleProducto = new System.Windows.Forms.GroupBox();
             this.txtCantidadFactura = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtPrecioUnitarioProducto = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtCodigoProducto = new Guna.UI2.WinForms.Guna2TextBox();
             this.cmbRazaPollofactura = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.grpDatosCliente = new System.Windows.Forms.GroupBox();
@@ -62,8 +64,7 @@
             this.btnAgregarFactura = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnFacturar = new Guna.UI2.WinForms.Guna2Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.cmbPesoPollo = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.grpDetalleProducto.SuspendLayout();
             this.grpDatosCliente.SuspendLayout();
@@ -85,25 +86,17 @@
             this.panel1.Size = new System.Drawing.Size(654, 457);
             this.panel1.TabIndex = 0;
             // 
-            // grpDetalleProducto
+            // label12
             // 
-            this.grpDetalleProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(16)))), ((int)(((byte)(20)))));
-            this.grpDetalleProducto.Controls.Add(this.txtCantidadFactura);
-            this.grpDetalleProducto.Controls.Add(this.txtPrecioUnitarioProducto);
-            this.grpDetalleProducto.Controls.Add(this.txtCodigoProducto);
-            this.grpDetalleProducto.Controls.Add(this.cmbRazaPollofactura);
-            this.grpDetalleProducto.Controls.Add(this.label10);
-            this.grpDetalleProducto.Controls.Add(this.label9);
-            this.grpDetalleProducto.Controls.Add(this.label8);
-            this.grpDetalleProducto.Controls.Add(this.label7);
-            this.grpDetalleProducto.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpDetalleProducto.ForeColor = System.Drawing.Color.White;
-            this.grpDetalleProducto.Location = new System.Drawing.Point(3, 175);
-            this.grpDetalleProducto.Name = "grpDetalleProducto";
-            this.grpDetalleProducto.Size = new System.Drawing.Size(648, 123);
-            this.grpDetalleProducto.TabIndex = 24;
-            this.grpDetalleProducto.TabStop = false;
-            this.grpDetalleProducto.Text = "Detalle Producto";
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(432, 432);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(106, 19);
+            this.label12.TabIndex = 171;
+            this.label12.Text = "Total";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtMontoTotal
             // 
@@ -121,13 +114,34 @@
             this.txtMontoTotal.ForeColor = System.Drawing.Color.Black;
             this.txtMontoTotal.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMontoTotal.Location = new System.Drawing.Point(544, 428);
-            this.txtMontoTotal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMontoTotal.Margin = new System.Windows.Forms.Padding(2);
             this.txtMontoTotal.Name = "txtMontoTotal";
             this.txtMontoTotal.PasswordChar = '\0';
             this.txtMontoTotal.PlaceholderText = "";
             this.txtMontoTotal.SelectedText = "";
             this.txtMontoTotal.Size = new System.Drawing.Size(105, 25);
             this.txtMontoTotal.TabIndex = 170;
+            // 
+            // grpDetalleProducto
+            // 
+            this.grpDetalleProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(16)))), ((int)(((byte)(20)))));
+            this.grpDetalleProducto.Controls.Add(this.cmbPesoPollo);
+            this.grpDetalleProducto.Controls.Add(this.txtCantidadFactura);
+            this.grpDetalleProducto.Controls.Add(this.txtPrecioUnitarioProducto);
+            this.grpDetalleProducto.Controls.Add(this.txtCodigoProducto);
+            this.grpDetalleProducto.Controls.Add(this.cmbRazaPollofactura);
+            this.grpDetalleProducto.Controls.Add(this.label10);
+            this.grpDetalleProducto.Controls.Add(this.label9);
+            this.grpDetalleProducto.Controls.Add(this.label8);
+            this.grpDetalleProducto.Controls.Add(this.label7);
+            this.grpDetalleProducto.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpDetalleProducto.ForeColor = System.Drawing.Color.White;
+            this.grpDetalleProducto.Location = new System.Drawing.Point(3, 175);
+            this.grpDetalleProducto.Name = "grpDetalleProducto";
+            this.grpDetalleProducto.Size = new System.Drawing.Size(648, 123);
+            this.grpDetalleProducto.TabIndex = 24;
+            this.grpDetalleProducto.TabStop = false;
+            this.grpDetalleProducto.Text = "Detalle Producto";
             // 
             // txtCantidadFactura
             // 
@@ -144,13 +158,13 @@
             this.txtCantidadFactura.Font = new System.Drawing.Font("Century Gothic", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCantidadFactura.ForeColor = System.Drawing.Color.Black;
             this.txtCantidadFactura.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCantidadFactura.Location = new System.Drawing.Point(280, 37);
+            this.txtCantidadFactura.Location = new System.Drawing.Point(266, 37);
             this.txtCantidadFactura.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCantidadFactura.Name = "txtCantidadFactura";
             this.txtCantidadFactura.PasswordChar = '\0';
             this.txtCantidadFactura.PlaceholderText = "";
             this.txtCantidadFactura.SelectedText = "";
-            this.txtCantidadFactura.Size = new System.Drawing.Size(32, 25);
+            this.txtCantidadFactura.Size = new System.Drawing.Size(49, 25);
             this.txtCantidadFactura.TabIndex = 167;
             // 
             // txtPrecioUnitarioProducto
@@ -226,11 +240,22 @@
             this.label10.Text = "Raza";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(15, 80);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(155, 19);
+            this.label9.TabIndex = 28;
+            this.label9.Text = "Precio Unitario";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // label8
             // 
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(243, 16);
+            this.label8.Location = new System.Drawing.Point(239, 16);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(109, 19);
             this.label8.TabIndex = 26;
@@ -532,14 +557,14 @@
             this.dgvFactura.AllowUserToDeleteRows = false;
             this.dgvFactura.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvFactura.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFactura.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFactura.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvFactura.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvFactura.Location = new System.Drawing.Point(2, 300);
             this.dgvFactura.Name = "dgvFactura";
@@ -627,28 +652,17 @@
             this.btnFacturar.TextFormatNoPrefix = true;
             this.btnFacturar.Click += new System.EventHandler(this.btnFacturar_Click_1);
             // 
-            // label9
+            // cmbPesoPollo
             // 
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(15, 80);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(155, 19);
-            this.label9.TabIndex = 28;
-            this.label9.Text = "Precio Unitario";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label12
-            // 
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(432, 432);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(106, 19);
-            this.label12.TabIndex = 171;
-            this.label12.Text = "Total";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.cmbPesoPollo.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbPesoPollo.FormattingEnabled = true;
+            this.cmbPesoPollo.Items.AddRange(new object[] {
+            "Kg",
+            "Lb"});
+            this.cmbPesoPollo.Location = new System.Drawing.Point(322, 37);
+            this.cmbPesoPollo.Name = "cmbPesoPollo";
+            this.cmbPesoPollo.Size = new System.Drawing.Size(46, 24);
+            this.cmbPesoPollo.TabIndex = 170;
             // 
             // frmFactura
             // 
@@ -715,5 +729,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtCodigoProducto;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox cmbPesoPollo;
     }
 }

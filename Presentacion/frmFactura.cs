@@ -46,11 +46,31 @@ namespace Presentacion
             };
 
             string paginahtml = Properties.Resources.PlantillaFactura.ToString();
+            paginahtml = paginahtml.Replace("@NIT", txtNombresCliente.Text);
+            paginahtml = paginahtml.Replace("@DireccionEmpresa", txtNombresCliente.Text); //cambiar por los txt correspondientes
+            paginahtml = paginahtml.Replace("@TelefonoEmpresa", txtNombresCliente.Text);
+            paginahtml = paginahtml.Replace("@CorreoEmpresa", txtNombresCliente.Text);
+            paginahtml = paginahtml.Replace("@IdFactura", txtNombresCliente.Text);
             paginahtml = paginahtml.Replace("@Cliente", txtNombresCliente.Text); // Remplazando datos del PDF
             paginahtml = paginahtml.Replace("@Documento", txtidentificacionCliente.Text);
             paginahtml = paginahtml.Replace("@Telefono", txtTelefonoCliente.Text);
             paginahtml = paginahtml.Replace("@Correo", txtCorreoCliente.Text);
             paginahtml = paginahtml.Replace("@Fecha", DateTime.Now.ToString("dd/MM/yyyy"));
+            //se crea un string para recorrer las columnas 
+            string fila = string.Empty;
+            decimal total = 0;
+            foreach (DataGridViewRow row in dgvFactura.Rows)//se recorre todo lo que tenga fila
+            {
+                fila += "<tr>";
+                fila += "<td>" + row.Cells["Item"].Value.ToString() + "</td>";
+                fila += "<td>" + row.Cells["Descripcion"].Value.ToString() + "</td>";
+                fila += "<td>" + row.Cells["Peso"].Value.ToString() + "</td>";
+                fila += "<td>" + row.Cells["P.Unitario"].Value.ToString() + "</td>";
+                fila += "</tr>";
+                total += decimal.Parse(row.Cells["P.Unitario"].Value.ToString());
+            }
+            paginahtml = paginahtml.Replace("@Filas", fila);
+            paginahtml = paginahtml.Replace("@Total",total.ToString());
 
             if (guardar.ShowDialog() == DialogResult.OK)
             {
