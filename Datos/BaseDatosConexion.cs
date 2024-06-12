@@ -23,7 +23,7 @@ namespace Datos
                 }
                 return false; // Ya está conectado a Oracle
             }
-            catch (OracleException ex){ throw new Exception($"|ERROR DE CONEXION| - {ex.Message}"); }
+            catch (OracleException ex){ throw new Exception($"|ERROR DE CONEXION|: {ex.Message}"); }
         }
         protected void CerrarConexion()
         {

@@ -42,5 +42,9 @@ namespace Logica
             }
             return "la informacion no fue borrada ";
         }
+        public EntidadLote Consultar(int idLote)
+        {
+            return repositorioLote.ConsultarLote(idLote);
+        }
     }
 }

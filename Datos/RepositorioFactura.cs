@@ -2,6 +2,8 @@
 using Oracle.ManagedDataAccess.Client;
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Windows.Forms;
 
 namespace Datos
 {
@@ -112,95 +114,88 @@ namespace Datos
             }
         }
 
-        public EntidadFactura ConsultarFactura(int idFactura)
+        public EntidadFactura ConsultarFactura(int IdFactura)
         {
-            if (AbrirConexion())
+            List<EntidadFactura> entidadFactura = ConsultarTodoFactura();
+            foreach (EntidadFactura Factura in entidadFactura)
             {
-                try
+                if (Factura.IdFactura == IdFactura)
                 {
-                    using (OracleCommand comando = new OracleCommand("F_ConsultarFactura", ObtenerConexion()))
-                    {
-                        comando.CommandType = System.Data.CommandType.StoredProcedure;
-                        comando.Parameters.Add("p_id_factura", OracleDbType.Int32).Value = idFactura;
-                        comando.Parameters.Add("resultado", OracleDbType.RefCursor).Direction = System.Data.ParameterDirection.ReturnValue;
-
-                        using (OracleDataReader lector = comando.ExecuteReader())
-                        {
-                            if (lector.Read())
-                            {
-                                return Mapeo(lector);
-                            }
-                            else
-                            {
-                                return null;
-                            }
-                        }
-                    }
-                }
-                catch (OracleException ex)
-                {
-                    throw new Exception($"|ERROR|: {ex.Message}");
-                }
-                finally
-                {
-                    CerrarConexion();
+                    return Factura;
                 }
             }
-            else
-            {
-                throw new Exception("Error al abrir la conexión.");
-            }
+            return null;
         }
 
-        public List<EntidadFactura> ConsultarTodasLasFacturas()
+        public List<EntidadFactura> ConsultarTodoFactura()
         {
-            List<EntidadFactura> listaFacturas = new List<EntidadFactura>();
-            if (AbrirConexion())
+            List<EntidadFactura> ListaDeFacturas = new List<EntidadFactura>();
+            try
             {
-                try
+                using (OracleConnection connection = ObtenerConexion())
                 {
-                    using (OracleCommand comando = new OracleCommand("F_ConsultarTodasLasFacturas", ObtenerConexion()))
+                    using (OracleCommand cmd = new OracleCommand("F_ConsultarTodasLasFacturas", connection))
                     {
-                        comando.CommandType = System.Data.CommandType.StoredProcedure;
-                        comando.Parameters.Add("resultado", OracleDbType.RefCursor).Direction = System.Data.ParameterDirection.ReturnValue;
+                        cmd.CommandType = CommandType.StoredProcedure;
 
-                        using (OracleDataReader lector = comando.ExecuteReader())
+                        // Crear y configurar el parámetro de salida para el cursor
+                        OracleParameter cursorParameter = new OracleParameter();
+                        cursorParameter.OracleDbType = OracleDbType.RefCursor;
+                        cursorParameter.Direction = ParameterDirection.ReturnValue;
+                        cmd.Parameters.Add(cursorParameter);
+
+                        AbrirConexion();
+                        using (OracleDataReader lector = cmd.ExecuteReader())
                         {
                             while (lector.Read())
                             {
-                                listaFacturas.Add(Mapeo(lector));
+                                ListaDeFacturas.Add(MapeoFactura(lector));
                             }
-                            return listaFacturas;
                         }
                     }
                 }
-                catch (OracleException ex)
-                {
-                    throw new Exception($"|ERROR|: {ex.Message}");
-                }
-                finally
-                {
-                    CerrarConexion();
-                }
             }
-            else
+            catch (OracleException ex)
             {
-                throw new Exception("Error al abrir la conexión.");
+                MessageBox.Show($"Error de Oracle al consultar las Facturas: {ex.Message}");
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al consultar las Facturas: {ex.Message}");
+            }
+            finally
+            {
+                CerrarConexion();
+            }
+            return ListaDeFacturas;
         }
 
-        private EntidadFactura Mapeo(OracleDataReader leer)
+        // Método para mapear de una fila de la tabla a la entidad Factura
+        private EntidadFactura MapeoFactura(OracleDataReader lector)
         {
             EntidadFactura factura = new EntidadFactura();
-            factura.IdFactura = leer.GetInt32(0);
-            factura.CodigoFactura = leer.GetString(1);
-            factura.FechaFactura = leer.GetDateTime(2);
-            factura.MontoTotal = leer.GetDouble(3);
-            factura.IdCliente = repositorioCliente.ConsultarCliente(leer.GetInt32(4));
-            factura.NitEmpresa = repositorioEmpresa.ConsultarEmpresa (leer.GetString(5));
+
+            try
+            {
+                factura.IdFactura = lector.GetInt32(lector.GetOrdinal("ID_FACTURA"));
+                factura.CodigoFactura = lector.GetString(lector.GetOrdinal("CODIGO_FACTURA"));
+                factura.FechaFactura = lector.GetDateTime(lector.GetOrdinal("FECHAFACTURA"));
+                factura.MontoTotal = lector.GetDouble(lector.GetOrdinal("MONTOTOTAL"));
+                factura.IdCliente = lector.GetInt32(lector.GetOrdinal("ID_CLIENTE"));
+                factura.NitEmpresa = repositorioEmpresa.ConsultarEmpresa( lector.GetString(lector.GetOrdinal("NITEMPRESA")));
+            }
+            catch (InvalidCastException ex)
+            {
+                throw new Exception($"Error de conversión en el mapeo de EntidadFactura: {ex.Message}");
+            }
+            catch (IndexOutOfRangeException ex)
+            {
+                throw new Exception($"Error de índice fuera de rango en el mapeo de EntidadFactura: {ex.Message}");
+            }
 
             return factura;
         }
+
     }
 }
 

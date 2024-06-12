@@ -2,6 +2,8 @@
 using Oracle.ManagedDataAccess.Client;
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Windows.Forms;
 
 namespace Datos
 {
@@ -106,89 +108,80 @@ namespace Datos
 
         public EntidadGalpon ConsultarGalpon(int idGalpon)
         {
-            if (AbrirConexion())
+            List<EntidadGalpon> Galpon = ConsultarTodoGalpon();
+            foreach (EntidadGalpon galpon in Galpon)
             {
-                try
+                if (galpon.IdGalpon ==idGalpon)
                 {
-                    using (OracleCommand comando = new OracleCommand("F_ConsultarGalpon", ObtenerConexion()))
-                    {
-                        comando.CommandType = System.Data.CommandType.StoredProcedure;
-                        comando.Parameters.Add("p_id_galpon", OracleDbType.Int32).Value = idGalpon;
-                        comando.Parameters.Add("resultado", OracleDbType.RefCursor).Direction = System.Data.ParameterDirection.ReturnValue;
-
-                        using (OracleDataReader lector = comando.ExecuteReader())
-                        {
-                            if (lector.Read())
-                            {
-                                return Mapeo(lector);
-                            }
-                            else
-                            {
-                                return null;
-                            }
-                        }
-                    }
-                }
-                catch (OracleException ex)
-                {
-                    throw new Exception($"|ERROR|: {ex.Message}");
-                }
-                finally
-                {
-                    CerrarConexion();
+                    return galpon;
                 }
             }
-            else
-            {
-                throw new Exception("Error al abrir la conexión.");
-            }
+            return null;
         }
 
-        public List<EntidadGalpon> ConsultarTodosLosGalpones()
+        public List<EntidadGalpon> ConsultarTodoGalpon()
         {
-            List<EntidadGalpon> listaGalpones = new List<EntidadGalpon>();
-            if (AbrirConexion())
+            List<EntidadGalpon> ListaDeGalpones = new List<EntidadGalpon>();
+            try
             {
-                try
+                using (OracleConnection connection = ObtenerConexion())
                 {
-                    using (OracleCommand comando = new OracleCommand("F_ConsultarTodosLosGalpones", ObtenerConexion()))
+                    using (OracleCommand cmd = new OracleCommand("F_ConsultarTodosLosGalpones", connection))
                     {
-                        comando.CommandType = System.Data.CommandType.StoredProcedure;
-                        comando.Parameters.Add("resultado", OracleDbType.RefCursor).Direction = System.Data.ParameterDirection.ReturnValue;
+                        cmd.CommandType = CommandType.StoredProcedure;
 
-                        using (OracleDataReader lector = comando.ExecuteReader())
+                        // Crear y configurar el parámetro de salida para el cursor
+                        OracleParameter cursorParameter = new OracleParameter();
+                        cursorParameter.OracleDbType = OracleDbType.RefCursor;
+                        cursorParameter.Direction = ParameterDirection.ReturnValue;
+                        cmd.Parameters.Add(cursorParameter);
+
+                        AbrirConexion();
+                        using (OracleDataReader lector = cmd.ExecuteReader())
                         {
                             while (lector.Read())
                             {
-                                listaGalpones.Add(Mapeo(lector));
+                                ListaDeGalpones.Add(MapeoGalpon(lector));
                             }
-                            return listaGalpones;
                         }
                     }
                 }
-                catch (OracleException ex)
-                {
-                    throw new Exception($"|ERROR|: {ex.Message}");
-                }
-                finally
-                {
-                    CerrarConexion();
-                }
             }
-            else
+            catch (OracleException ex)
             {
-                throw new Exception("Error al abrir la conexión.");
+                MessageBox.Show($"Error de Oracle al consultar los Galpones: {ex.Message}");
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al consultar los Galpones: {ex.Message}");
+            }
+            finally
+            {
+                CerrarConexion();
+            }
+            return ListaDeGalpones;
         }
 
-        private EntidadGalpon Mapeo(OracleDataReader leer)
+        private EntidadGalpon MapeoGalpon(OracleDataReader lector)
         {
             EntidadGalpon galpon = new EntidadGalpon();
-            galpon.IdGalpon = leer.GetInt32(0);
-            galpon.CodigoGalpon = leer.GetString(1);
-            galpon.NombreGalpon = leer.GetString(2);
-            galpon.AreaGalpon = leer.GetDouble(3);
-            galpon.EstadoGalpon = leer.GetString(4);
+
+            try
+            {
+                galpon.IdGalpon = lector.GetInt32(lector.GetOrdinal("ID_GALPON"));
+                galpon.CodigoGalpon = lector.GetString(lector.GetOrdinal("CODIGO_GALPON"));
+                galpon.NombreGalpon = lector.GetString(lector.GetOrdinal("NOMBRE_GALPON"));
+                galpon.AreaGalpon = lector.GetDouble(lector.GetOrdinal("AREAGALPON"));
+                galpon.EstadoGalpon = lector.GetString(lector.GetOrdinal("ESTADO_GALPON"));
+            }
+            catch (InvalidCastException ex)
+            {
+                throw new Exception($"Error de conversión en el mapeo de EntidadGalpon: {ex.Message}");
+            }
+            catch (IndexOutOfRangeException ex)
+            {
+                throw new Exception($"Error de índice fuera de rango en el mapeo de EntidadGalpon: {ex.Message}");
+            }
 
             return galpon;
         }

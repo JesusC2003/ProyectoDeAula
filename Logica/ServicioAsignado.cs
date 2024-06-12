@@ -20,11 +20,17 @@ namespace Logica
 
         public string GuardarAsginado(EntidadAsignado asignado)
         {
-            if (repositorioAsignado.InsertarAsignado(asignado) > 0)
+            if (asignado == new EntidadAsignado())
             {
-                return "La informacion fue guardada con exito";
+                return "no se recibio ninguna informacion";
             }
-            return "la informacion no fue guardada";
+            else { 
+                if (repositorioAsignado.InsertarAsignado(asignado) > 0)
+                {
+                    return "La informacion fue guardada con exito";
+                }
+                return "la informacion no fue guardada";
+            }
         }
         public string ActualizarAsginado(EntidadAsignado asignado)
         {

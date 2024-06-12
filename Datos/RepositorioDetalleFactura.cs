@@ -2,12 +2,18 @@
 using Oracle.ManagedDataAccess.Client;
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Windows.Forms;
 
 namespace Datos
 {
     public class RepositorioDetalleFactura : BaseDatosConexion
     {
-        public RepositorioDetalleFactura() { }
+        RepositorioFactura repositorioFactura;
+        public RepositorioDetalleFactura() 
+        { 
+            repositorioFactura = new RepositorioFactura(); 
+        }
 
         // Método para insertar un registro en la tabla DETALLE_FACTURA
         public int InsertarDetalleFactura(EntidadDetalleFactura detalleFactura)
@@ -106,94 +112,87 @@ namespace Datos
         }
 
         // Método para consultar un registro de la tabla DETALLE_FACTURA por su ID
-        public EntidadDetalleFactura ConsultarDetalleFactura(int idDetalleFactura)
+        public EntidadDetalleFactura ConsultarDetalleFactura(int idGalpon)
         {
-            if (AbrirConexion())
+            List<EntidadDetalleFactura> entidadDetalles = ConsultarTodoDetalleFactura();
+            foreach (EntidadDetalleFactura detalleFactura in entidadDetalles)
             {
-                try
+                if (detalleFactura.IdDetalleFactura == idGalpon)
                 {
-                    using (OracleCommand comando = new OracleCommand("F_ConsultarDetalleFactura", ObtenerConexion()))
-                    {
-                        comando.CommandType = System.Data.CommandType.StoredProcedure;
-                        comando.Parameters.Add("p_id_detalle_factura", OracleDbType.Int32).Value = idDetalleFactura;
-                        comando.Parameters.Add("resultado", OracleDbType.RefCursor).Direction = System.Data.ParameterDirection.ReturnValue;
-
-                        using (OracleDataReader lector = comando.ExecuteReader())
-                        {
-                            if (lector.Read())
-                            {
-                                return Mapeo(lector);
-                            }
-                            else
-                            {
-                                return null;
-                            }
-                        }
-                    }
-                }
-                catch (OracleException ex)
-                {
-                    throw new Exception($"|ERROR|: {ex.Message}");
-                }
-                finally
-                {
-                    CerrarConexion();
+                    return detalleFactura;
                 }
             }
-            else
-            {
-                throw new Exception("Error al abrir la conexión.");
-            }
+            return null;
         }
 
-        // Método para consultar todos los registros de la tabla DETALLE_FACTURA
-        public List<EntidadDetalleFactura> ConsultarTodosLosDetallesDeFactura()
-        {
-            List<EntidadDetalleFactura> listaDetallesFactura = new List<EntidadDetalleFactura>();
-            if (AbrirConexion())
-            {
-                try
-                {
-                    using (OracleCommand comando = new OracleCommand("F_ConsultarTodosLosDetallesDeFactura", ObtenerConexion()))
-                    {
-                        comando.CommandType = System.Data.CommandType.StoredProcedure;
-                        comando.Parameters.Add("resultado", OracleDbType.RefCursor).Direction = System.Data.ParameterDirection.ReturnValue;
 
-                        using (OracleDataReader lector = comando.ExecuteReader())
+        // Método para consultar todos los registros de la tabla DETALLE_FACTURA
+        public List<EntidadDetalleFactura> ConsultarTodoDetalleFactura()
+        {
+            List<EntidadDetalleFactura> ListaDeDetallesFactura = new List<EntidadDetalleFactura>();
+            try
+            {
+                using (OracleConnection connection = ObtenerConexion())
+                {
+                    using (OracleCommand cmd = new OracleCommand("F_ConsultarTodosLosDetallesFactura", connection))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+
+                        // Crear y configurar el parámetro de salida para el cursor
+                        OracleParameter cursorParameter = new OracleParameter();
+                        cursorParameter.OracleDbType = OracleDbType.RefCursor;
+                        cursorParameter.Direction = ParameterDirection.ReturnValue;
+                        cmd.Parameters.Add(cursorParameter);
+
+                        AbrirConexion();
+                        using (OracleDataReader lector = cmd.ExecuteReader())
                         {
                             while (lector.Read())
                             {
-                                listaDetallesFactura.Add(Mapeo(lector));
+                                ListaDeDetallesFactura.Add(MapeoDetalleFactura(lector));
                             }
-                            return listaDetallesFactura;
                         }
                     }
                 }
-                catch (OracleException ex)
-                {
-                    throw new Exception($"|ERROR|: {ex.Message}");
-                }
-                finally
-                {
-                    CerrarConexion();
-                }
             }
-            else
+            catch (OracleException ex)
             {
-                throw new Exception("Error al abrir la conexión.");
+                MessageBox.Show($"Error de Oracle al consultar los Detalles de Factura: {ex.Message}");
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al consultar los Detalles de Factura: {ex.Message}");
+            }
+            finally
+            {
+                CerrarConexion();
+            }
+            return ListaDeDetallesFactura;
         }
 
-        // Método para mapear de una fila de la tabla a la entidad DETALLE_FACTURA
-        private EntidadDetalleFactura Mapeo(OracleDataReader leer)
+        // Método para mapear de una fila de la tabla a la entidad DetalleFactura
+        private EntidadDetalleFactura MapeoDetalleFactura(OracleDataReader lector)
         {
             EntidadDetalleFactura detalleFactura = new EntidadDetalleFactura();
-            detalleFactura.IdDetalleFactura = leer.GetInt32(0);
-            detalleFactura.CantidadVenta = leer.GetInt32(1);
-            detalleFactura.PrecioUnitario = leer.GetDouble(2);
-            detalleFactura.IdFactura.IdFactura = leer.GetInt32(3);
+
+            try
+            {
+                detalleFactura.IdDetalleFactura = lector.GetInt32(lector.GetOrdinal("ID_DETALLE_FACTURA"));
+                detalleFactura.CantidadVenta = lector.GetInt32(lector.GetOrdinal("CANTIDAD"));
+                detalleFactura.PrecioUnitario = lector.GetDouble(lector.GetOrdinal("PRECIOUNITARIO"));
+                detalleFactura.IdFactura = repositorioFactura.ConsultarFactura( lector.GetInt32(lector.GetOrdinal("FK_FACTURA")));
+            }
+            catch (InvalidCastException ex)
+            {
+                throw new Exception($"Error de conversión en el mapeo de EntidadDetalleFactura: {ex.Message}");
+            }
+            catch (IndexOutOfRangeException ex)
+            {
+                throw new Exception($"Error de índice fuera de rango en el mapeo de EntidadDetalleFactura: {ex.Message}");
+            }
 
             return detalleFactura;
         }
+
     }
 }

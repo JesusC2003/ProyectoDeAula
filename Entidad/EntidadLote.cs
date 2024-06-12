@@ -8,11 +8,11 @@ namespace Entidad
         public EntidadLote() 
         {
             IdLote = 0;
-            NumeroLote = 0;
+            NumeroLote = string.Empty;
         }   
 
         public int IdLote { get; set; }
-        public int NumeroLote { get; set; }
+        public string NumeroLote { get; set; }
         public DateTime FechaIngreso { get; set; }
 
     }

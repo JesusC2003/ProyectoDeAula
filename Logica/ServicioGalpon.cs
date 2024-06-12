@@ -45,5 +45,10 @@ namespace Logica
             }
             return "la informacion no fue borrada";
         }
+
+        public EntidadGalpon Consultar(int idGalpon) 
+        {
+            return repositorioGalpon.ConsultarGalpon(idGalpon);
+        }
     }
 }
