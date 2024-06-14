@@ -10,6 +10,11 @@ namespace Logica
 {
     public class ServicioPollo
     {
+       //public List<EntidadPollo> ConsultarRaza(String raza)
+       // {
+
+       //     return repositorioPollo.FiltrarPollosPorRaza(raza);
+       // }
         private RepositorioPollo repositorioPollo;
         public ServicioPollo() { 
 
