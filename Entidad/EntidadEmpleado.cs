@@ -17,12 +17,10 @@ namespace Entidad
             Salario = 0;
             Departamento=string.Empty;
             NitEmpresa = new EntidadEmpresa();
-            IdUsuario = new EntidadUsuario();
         }
         public string Cargo { get; set; } 
         public double Salario { get; set; }
         public string Departamento { get; set; } 
         public EntidadEmpresa NitEmpresa { get; set; }
-        public EntidadUsuario IdUsuario { get; set; }
     }
 }

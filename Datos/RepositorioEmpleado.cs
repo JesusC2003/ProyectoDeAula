@@ -30,8 +30,7 @@ namespace Datos
                         comando.Parameters.Add("p_salario", OracleDbType.Double).Value = empleado.Salario;
                         comando.Parameters.Add("p_departamento", OracleDbType.Varchar2).Value = empleado.Departamento;
                         comando.Parameters.Add("p_fk_empresa", OracleDbType.Int32).Value = empleado.NitEmpresa.NIT;
-                        comando.Parameters.Add("p_fk_usuario", OracleDbType.Int32).Value = empleado.IdUsuario.IdUsuario;
-                        comando.Parameters.Add("p_id_usuario", OracleDbType.Int32).Value = empleado.IdUsuario;
+       
 
                         return comando.ExecuteNonQuery();
                     }
@@ -73,7 +72,6 @@ namespace Datos
                         comando.Parameters.Add("p_salario", OracleDbType.Double).Value = empleado.Salario;
                         comando.Parameters.Add("p_departamento", OracleDbType.Varchar2).Value = empleado.Departamento;
                         comando.Parameters.Add("p_nit_empresa", OracleDbType.Varchar2).Value = empleado.NitEmpresa;
-                        comando.Parameters.Add("p_id_usuario", OracleDbType.Int32).Value = empleado.IdUsuario;
 
                         return comando.ExecuteNonQuery();
                     }
@@ -215,7 +213,7 @@ namespace Datos
             empleado.Salario = leer.GetDouble(8);
             empleado.Departamento = leer.GetString(9);
             empleado.NitEmpresa = new EntidadEmpresa() { NIT = leer.GetString(10) };
-            empleado.IdUsuario = new EntidadUsuario() { IdUsuario = leer.GetInt32(11) };
+  
 
             return empleado;
         }

@@ -37,8 +37,7 @@ namespace Presentacion
 
         private void btnAñadirPersonal_Click(object sender, EventArgs e)
         {
-            frmAgregarPersonal fmrAgregarPersonal = new frmAgregarPersonal();
-            fmrAgregarPersonal.Show();
+      
         }
     }
 }

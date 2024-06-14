@@ -106,43 +106,31 @@ namespace Datos
 
         public EntidadGalpon ConsultarGalpon(int idGalpon)
         {
-            if (AbrirConexion())
+            EntidadGalpon entidadGalpon = new EntidadGalpon();
+            List<EntidadGalpon> listaGalpones = ConsultarTodosLosGalpones();
+            foreach (EntidadGalpon galpon in listaGalpones)
             {
-                try
+                if (galpon.IdGalpon == idGalpon)
                 {
-                    using (OracleCommand comando = new OracleCommand("F_ConsultarGalpon", ObtenerConexion()))
-                    {
-                        comando.CommandType = System.Data.CommandType.StoredProcedure;
-                        comando.Parameters.Add("p_id_galpon", OracleDbType.Int32).Value = idGalpon;
-                        comando.Parameters.Add("resultado", OracleDbType.RefCursor).Direction = System.Data.ParameterDirection.ReturnValue;
-
-                        using (OracleDataReader lector = comando.ExecuteReader())
-                        {
-                            if (lector.Read())
-                            {
-                                return Mapeo(lector);
-                            }
-                            else
-                            {
-                                return null;
-                            }
-                        }
-                    }
-                }
-                catch (OracleException ex)
-                {
-                    throw new Exception($"|ERROR|: {ex.Message}");
-                }
-                finally
-                {
-                    CerrarConexion();
+                    return galpon;
                 }
             }
-            else
-            {
-                throw new Exception("Error al abrir la conexión.");
-            }
+            return entidadGalpon;
         }
+        public EntidadGalpon ConsultarGalpon(string CodigoGalpon)
+        {
+            EntidadGalpon entidadGalpon = new EntidadGalpon();
+            List<EntidadGalpon> listaGalpones = ConsultarTodosLosGalpones();
+            foreach (EntidadGalpon galpon in listaGalpones)
+            {
+                if (galpon.CodigoGalpon == CodigoGalpon)
+                {
+                    return galpon;
+                }
+            }
+            return entidadGalpon;
+        }
+
 
         public List<EntidadGalpon> ConsultarTodosLosGalpones()
         {

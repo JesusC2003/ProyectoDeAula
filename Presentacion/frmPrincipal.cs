@@ -71,7 +71,7 @@ namespace Presentacion
 
                 Form fm = Fmr as Form;
                 fm.TopLevel = false;
-                fm.Dock = DockStyle.Fill;
+                //fm.Dock = DockStyle.Fill;
                 this.pnlContenedor.Controls.Add(fm);
                 this.pnlContenedor.Tag = fm;
                 fm.Show();
@@ -80,33 +80,37 @@ namespace Presentacion
 
         private void BtnPollo_Click(object sender, EventArgs e)
         {
+            lblTitulo.Text = "FORMULARIO DE POLLO";
             AbrirFmr(new frmPollo());   
         }
 
         private void BtnGalpon_Click(object sender, EventArgs e)
         {
+            lblTitulo.Text = "FORMULARIO DE GALPON";
             AbrirFmr(new frmGalpon());
         }
 
         private void BtnMedicamento_Click(object sender, EventArgs e)
         {
+            lblTitulo.Text = "FORMULARIO DE MEDICAMENTO";
             AbrirFmr(new frmMedicamento()); 
         }
 
         private void BtnAlimento_Click(object sender, EventArgs e)
         {
+            lblTitulo.Text = "FORMULARIO DE ALIMENTO";
             AbrirFmr(new frmAlimento());
         }
 
         private void BtnPersonal_Click(object sender, EventArgs e)
         {
+            lblTitulo.Text = "FORMULARIO DEL PERSONAL";
             AbrirFmr(new frmPersonal());
         }
 
-
-
         private void BtnVentas_Click(object sender, EventArgs e)
         {
+            lblTitulo.Text = "FORMULARIO DE VENTAS";
             AbrirFmr(new frmVentas());
         }
 
@@ -143,7 +147,8 @@ namespace Presentacion
                 this.Close();
                 frmIniciarSesion fmrIniciarSeccion = new frmIniciarSesion();
                 fmrIniciarSeccion.Show();
-             }
+            }
+            else { pnlsubconfiguracion.Visible=false; }
         }
 
         private void BtnFactura_Click(object sender, EventArgs e)
@@ -158,7 +163,8 @@ namespace Presentacion
 
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
-            ShowFormInPanel(new frmmenuiniciar());
+             lblTitulo.Text = string.Empty;
+;            ShowFormInPanel(new frmmenuiniciar());
         }
 
     }
