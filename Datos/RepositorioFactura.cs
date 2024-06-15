@@ -23,7 +23,7 @@ namespace Datos
             {
                 try
                 {
-                    using (OracleCommand comando = new OracleCommand("P_InsertarFactura", ObtenerConexion()))
+                    using (OracleCommand comando = new OracleCommand( ObtenerConexion()))
                     {
                         comando.CommandType = System.Data.CommandType.StoredProcedure;
 
@@ -181,7 +181,7 @@ namespace Datos
                 factura.CodigoFactura = lector.GetString(lector.GetOrdinal("CODIGO_FACTURA"));
                 factura.FechaFactura = lector.GetDateTime(lector.GetOrdinal("FECHAFACTURA"));
                 factura.MontoTotal = lector.GetDouble(lector.GetOrdinal("MONTOTOTAL"));
-               // factura.IdCliente = lector.GetInt32(lector.GetOrdinal("ID_CLIENTE"));
+                //factura.IdCliente = lector.GetInt32(lector.GetOrdinal("ID_CLIENTE"));
                 factura.NitEmpresa = repositorioEmpresa.ConsultarEmpresa( lector.GetString(lector.GetOrdinal("NITEMPRESA")));
             }
             catch (InvalidCastException ex)

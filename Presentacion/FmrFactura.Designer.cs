@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.txtMontoTotal = new Guna.UI2.WinForms.Guna2TextBox();
@@ -171,7 +171,7 @@
             this.txtCantidadFactura.ForeColor = System.Drawing.Color.Black;
             this.txtCantidadFactura.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCantidadFactura.Location = new System.Drawing.Point(266, 37);
-            this.txtCantidadFactura.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCantidadFactura.Margin = new System.Windows.Forms.Padding(2);
             this.txtCantidadFactura.Name = "txtCantidadFactura";
             this.txtCantidadFactura.PasswordChar = '\0';
             this.txtCantidadFactura.PlaceholderText = "";
@@ -195,7 +195,7 @@
             this.txtPrecioUnitarioProducto.ForeColor = System.Drawing.Color.Black;
             this.txtPrecioUnitarioProducto.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPrecioUnitarioProducto.Location = new System.Drawing.Point(175, 76);
-            this.txtPrecioUnitarioProducto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPrecioUnitarioProducto.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrecioUnitarioProducto.Name = "txtPrecioUnitarioProducto";
             this.txtPrecioUnitarioProducto.PasswordChar = '\0';
             this.txtPrecioUnitarioProducto.PlaceholderText = "";
@@ -219,7 +219,7 @@
             this.txtCodigoProducto.ForeColor = System.Drawing.Color.Black;
             this.txtCodigoProducto.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCodigoProducto.Location = new System.Drawing.Point(434, 37);
-            this.txtCodigoProducto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCodigoProducto.Margin = new System.Windows.Forms.Padding(2);
             this.txtCodigoProducto.Name = "txtCodigoProducto";
             this.txtCodigoProducto.PasswordChar = '\0';
             this.txtCodigoProducto.PlaceholderText = "";
@@ -419,7 +419,7 @@
             this.txtCorreoCliente.ForeColor = System.Drawing.Color.Black;
             this.txtCorreoCliente.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCorreoCliente.Location = new System.Drawing.Point(93, 138);
-            this.txtCorreoCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCorreoCliente.Margin = new System.Windows.Forms.Padding(2);
             this.txtCorreoCliente.Name = "txtCorreoCliente";
             this.txtCorreoCliente.PasswordChar = '\0';
             this.txtCorreoCliente.PlaceholderText = "";
@@ -569,14 +569,14 @@
             this.dgvFactura.AllowUserToDeleteRows = false;
             this.dgvFactura.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvFactura.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFactura.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFactura.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvFactura.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvFactura.Location = new System.Drawing.Point(2, 300);
             this.dgvFactura.Name = "dgvFactura";
@@ -678,7 +678,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmFactura";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FmrFactura";
+            this.Text = "1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.grpDetalleProducto.ResumeLayout(false);

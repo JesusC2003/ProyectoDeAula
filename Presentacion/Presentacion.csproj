@@ -159,12 +159,6 @@
     <Compile Include="frmPersonal.Designer.cs">
       <DependentUpon>frmPersonal.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPollo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmPollo.Designer.cs">
-      <DependentUpon>frmPollo.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmIniciarSesion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -226,9 +220,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPersonal.resx">
       <DependentUpon>frmPersonal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmPollo.resx">
-      <DependentUpon>frmPollo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
