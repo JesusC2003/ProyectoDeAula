@@ -81,7 +81,7 @@ namespace Presentacion
         private void BtnPollo_Click(object sender, EventArgs e)
         {
             lblTitulo.Text = "FORMULARIO DE POLLO";
-            AbrirFmr(new frmPollo());   
+           // AbrirFmr(new frmPollo());   
         }
 
         private void BtnGalpon_Click(object sender, EventArgs e)
