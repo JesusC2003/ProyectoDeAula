@@ -165,6 +165,12 @@
     <Compile Include="frmIniciarSesion.Designer.cs">
       <DependentUpon>frmIniciarSesion.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPollo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPollo.Designer.cs">
+      <DependentUpon>frmPollo.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>

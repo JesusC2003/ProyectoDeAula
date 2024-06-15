@@ -80,36 +80,39 @@ namespace Presentacion
 
         private void BtnPollo_Click(object sender, EventArgs e)
         {
+            OcultarPaneles(this.pnlMenuVertical);
+            panel2.Visible = true;
             lblTitulo.Text = "FORMULARIO DE POLLO";
            // AbrirFmr(new frmPollo());   
         }
 
         private void BtnGalpon_Click(object sender, EventArgs e)
         {
+            OcultarPaneles(this.pnlMenuVertical);
+            panel4.Visible= true;
             lblTitulo.Text = "FORMULARIO DE GALPON";
             AbrirFmr(new frmGalpon());
         }
 
         private void BtnMedicamento_Click(object sender, EventArgs e)
         {
+            panel3.Visible= true;
             lblTitulo.Text = "FORMULARIO DE MEDICAMENTO";
             AbrirFmr(new frmMedicamento()); 
         }
 
-        private void BtnAlimento_Click(object sender, EventArgs e)
-        {
-            lblTitulo.Text = "FORMULARIO DE ALIMENTO";
-            AbrirFmr(new frmAlimento());
-        }
-
         private void BtnPersonal_Click(object sender, EventArgs e)
         {
+            OcultarPaneles(this.pnlMenuVertical);
+            panel7.Visible= true;
             lblTitulo.Text = "FORMULARIO DEL PERSONAL";
             AbrirFmr(new frmPersonal());
         }
 
         private void BtnVentas_Click(object sender, EventArgs e)
         {
+            OcultarPaneles(this.pnlMenuVertical);
+            panel8.Visible= true;
             lblTitulo.Text = "FORMULARIO DE VENTAS";
             AbrirFmr(new frmVentas());
         }
@@ -153,6 +156,8 @@ namespace Presentacion
 
         private void BtnFactura_Click(object sender, EventArgs e)
         {
+            OcultarPaneles(this.pnlMenuVertical);
+            panel1.Visible=true;
             AbrirFmr(new frmFactura());
         }
 
@@ -163,9 +168,21 @@ namespace Presentacion
 
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
-             lblTitulo.Text = string.Empty;
+            OcultarPaneles(this.pnlMenuVertical);
+            lblTitulo.Text = string.Empty;
 ;            ShowFormInPanel(new frmmenuiniciar());
         }
 
+
+        public void OcultarPaneles(Panel contenedor)
+        {
+            foreach(Control control in contenedor.Controls)
+            {
+                if(control is Panel)
+                {
+                    control.Visible = false;
+                }
+            }
+        }
     }
 }
