@@ -14,11 +14,15 @@ using System.IO;
 using System.Drawing.Printing;
 using iTextSharp.tool.xml;
 using System.Text.Json.Serialization;
+using Logica;
+using Entidad;
 
 namespace Presentacion
 {
+   
     public partial class frmFactura : Form
     {
+        ServicioEmpresa servicioEmpresa;
         public frmFactura()
         {
             InitializeComponent();
@@ -39,6 +43,9 @@ namespace Presentacion
 
         private void btnFacturar_Click_1(object sender, EventArgs e)
         {
+            servicioEmpresa = new ServicioEmpresa();
+            EntidadEmpresa empresa= servicioEmpresa.GetEmpresa();
+
             SaveFileDialog guardar = new SaveFileDialog()
             {
                 FileName = DateTime.Now.ToString("ddMMyyyy") + ".pdf",
@@ -46,10 +53,10 @@ namespace Presentacion
             };
 
             string paginahtml = Properties.Resources.PlantillaFactura.ToString();
-            paginahtml = paginahtml.Replace("@NIT", txtNombresCliente.Text);
-            paginahtml = paginahtml.Replace("@DireccionEmpresa", txtNombresCliente.Text); //cambiar por los txt correspondientes
-            paginahtml = paginahtml.Replace("@TelefonoEmpresa", txtNombresCliente.Text);
-            paginahtml = paginahtml.Replace("@CorreoEmpresa", txtNombresCliente.Text);
+            paginahtml = paginahtml.Replace("@NIT", empresa.NIT);
+            paginahtml = paginahtml.Replace("@DireccionEmpresa", empresa.Direccion); //cambiar por los txt correspondientes
+            paginahtml = paginahtml.Replace("@TelefonoEmpresa", empresa.Telefono);
+            paginahtml = paginahtml.Replace("@CorreoEmpresa", empresa.Correo);
             paginahtml = paginahtml.Replace("@IdFactura", txtNombresCliente.Text);
             paginahtml = paginahtml.Replace("@Cliente", txtNombresCliente.Text); // Remplazando datos del PDF
             paginahtml = paginahtml.Replace("@Identificacion", txtidentificacionCliente.Text);
