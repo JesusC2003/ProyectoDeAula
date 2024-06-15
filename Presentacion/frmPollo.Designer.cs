@@ -28,65 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Guna2Button btnAñadir;
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Controles = new System.Windows.Forms.Label();
-            this.BtnEliminarP = new System.Windows.Forms.Button();
-            this.BtnVerP = new System.Windows.Forms.Button();
-            this.BtnEditarP = new System.Windows.Forms.Button();
-            this.txtBusquedapollo = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnEditarPollo = new Guna.UI2.WinForms.Guna2Button();
-            this.btnEliminarPollo = new Guna.UI2.WinForms.Guna2Button();
-            this.btnNuevo = new Guna.UI2.WinForms.Guna2Button();
-            this.dgvPollo = new System.Windows.Forms.DataGridView();
-            this.cmbFiltro = new System.Windows.Forms.ComboBox();
-            this.btnGuardar = new Guna.UI2.WinForms.Guna2Button();
-            this.btnCancelar = new Guna.UI2.WinForms.Guna2Button();
-            this.txtFechaIngreso = new System.Windows.Forms.TextBox();
-            this.pnlGestion = new Guna.UI2.WinForms.Guna2Panel();
-            this.txtLote = new System.Windows.Forms.TextBox();
-            this.txtRaza = new System.Windows.Forms.TextBox();
-            this.cmbEdad = new System.Windows.Forms.ComboBox();
-            this.cmbEstado = new System.Windows.Forms.ComboBox();
-            this.cmbGalpon = new System.Windows.Forms.ComboBox();
-            this.lblEdad = new System.Windows.Forms.Label();
-            this.lblEstado = new System.Windows.Forms.Label();
-            this.lblRaza = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblFechaIngreso = new System.Windows.Forms.Label();
-            btnAñadir = new Guna.UI2.WinForms.Guna2Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPollo)).BeginInit();
-            this.pnlGestion.SuspendLayout();
-            this.SuspendLayout();
-            // 
-            // btnAñadir
-            // 
-            btnAñadir.BackColor = System.Drawing.Color.Transparent;
-            btnAñadir.BorderRadius = 12;
-            btnAñadir.Cursor = System.Windows.Forms.Cursors.Hand;
-            btnAñadir.CustomBorderColor = System.Drawing.Color.Transparent;
-            btnAñadir.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            btnAñadir.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            btnAñadir.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            btnAñadir.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            btnAñadir.FillColor = System.Drawing.Color.LightBlue;
-            btnAñadir.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
-            btnAñadir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
-            btnAñadir.Image = global::Presentacion.Properties.Resources.edit_modify_icon_149489__1_;
-            btnAñadir.Location = new System.Drawing.Point(982, 23);
-            btnAñadir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            btnAñadir.Name = "btnAñadir";
-            btnAñadir.Size = new System.Drawing.Size(140, 40);
-            btnAñadir.TabIndex = 146;
-            btnAñadir.Text = "Añadir";
-            btnAñadir.TextFormatNoPrefix = true;
-            btnAñadir.Click += new System.EventHandler(this.btnAñadir_Click);
-            // 
             // Controles
             // 
             this.Controles.BackColor = System.Drawing.Color.Transparent;
@@ -147,6 +94,7 @@
             this.txtBusquedapollo.AutoSize = true;
             this.txtBusquedapollo.BorderColor = System.Drawing.Color.Silver;
             this.txtBusquedapollo.BorderRadius = 5;
+            this.txtBusquedapollo.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.txtBusquedapollo.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBusquedapollo.DefaultText = "Busqueda";
             this.txtBusquedapollo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -362,7 +310,6 @@
             this.pnlGestion.Controls.Add(this.txtFechaIngreso);
             this.pnlGestion.Controls.Add(this.btnCancelar);
             this.pnlGestion.Controls.Add(this.btnGuardar);
-            this.pnlGestion.Controls.Add(btnAñadir);
             this.pnlGestion.Location = new System.Drawing.Point(12, 44);
             this.pnlGestion.Name = "pnlGestion";
             this.pnlGestion.Size = new System.Drawing.Size(1152, 183);
@@ -489,6 +436,21 @@
             this.lblFechaIngreso.Size = new System.Drawing.Size(199, 29);
             this.lblFechaIngreso.TabIndex = 169;
             this.lblFechaIngreso.Text = "Fecha de Ingreso";
+
+            
+            // 
+            // cmbFiltro
+            // 
+            this.cmbFiltro.BackColor = System.Drawing.Color.Transparent;
+            this.cmbFiltro.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbFiltro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbFiltro.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbFiltro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbFiltro.ItemHeight = 30;
+            this.cmbFiltro.Location = new System.Drawing.Point(620, 48);
+            this.cmbFiltro.Name = "cmbFiltro";
+            this.cmbFiltro.Size = new System.Drawing.Size(132, 36);
+            this.cmbFiltro.TabIndex = 150;
             // 
             // frmPollo
             // 

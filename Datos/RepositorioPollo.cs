@@ -3,6 +3,7 @@ using Entidad;
 using Oracle.ManagedDataAccess.Client;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -11,6 +12,7 @@ namespace Datos
 {
     public class RepositorioPollo : BaseDatosConexion
     {
+        
         RepositorioGalpon RepositorioGalpon;
         RepositorioDetalleFactura RepositorioDetalleFactura;
 
@@ -153,7 +155,7 @@ namespace Datos
         public EntidadPollo ConsultarPollo(int IdPoLLO)
         {
             EntidadPollo entidadPollo = new EntidadPollo();
-            List<EntidadPollo> listapollos = ConsultarTodosLosPollos();
+            List<EntidadPollo> listapollos = ConsultarTodo();
             foreach (EntidadPollo pollo in listapollos)
             {
                 if (pollo.IdPollo == IdPoLLO)
@@ -166,7 +168,7 @@ namespace Datos
         public EntidadPollo ConsultarPollo(string CodigoPollo)
         {
             EntidadPollo entidadPollo = new EntidadPollo();
-            List<EntidadPollo> listapollos = ConsultarTodosLosPollos();
+            List<EntidadPollo> listapollos = ConsultarTodo();
             foreach (EntidadPollo pollo in listapollos)
             {
                 if (pollo.CodigoPollo == CodigoPollo)
@@ -176,49 +178,57 @@ namespace Datos
             }
             return entidadPollo;
         }
-
-        // Método para consultar todas las filas de la tabla POLLO
-        public List<EntidadPollo> ConsultarTodosLosPollos()
+       
+        //Metodo para consultar todas las filas de una tabla
+        public List<EntidadPollo> ConsultarTodo()
         {
-            List<EntidadPollo> listaPollos = new List<EntidadPollo>();
-            if (AbrirConexion())
+            List<EntidadPollo> ListaDePollos = new List<EntidadPollo>();
+            try
             {
-                try
+                using (OracleConnection connection = ObtenerConexion())
                 {
-                    using (OracleCommand comando = new OracleCommand("F_ConsultarTodosLosPollos", ObtenerConexion()))
+                    using (OracleCommand cmd = new OracleCommand("F_ConsultarTodosLosPollos", connection))
                     {
-                        comando.CommandType = System.Data.CommandType.StoredProcedure;
-                        comando.Parameters.Add("resultado", OracleDbType.RefCursor).Direction = System.Data.ParameterDirection.ReturnValue;
+                        cmd.CommandType = CommandType.StoredProcedure;
 
-                        using (OracleDataReader lector = comando.ExecuteReader())
+                        // Crear y configurar el parámetro de salida para el cursor
+                        OracleParameter cursorParameter = new OracleParameter();
+                        cursorParameter.OracleDbType = OracleDbType.RefCursor;
+                        cursorParameter.Direction = ParameterDirection.ReturnValue;
+                        cmd.Parameters.Add(cursorParameter);
+
+                        AbrirConexion();
+                        using (OracleDataReader lector = cmd.ExecuteReader())
                         {
                             while (lector.Read())
                             {
-                                listaPollos.Add(Mapeo(lector));
+                                ListaDePollos.Add(Mapeo(lector));
                             }
-                            return listaPollos;
+
                         }
                     }
                 }
-                catch (OracleException ex)
-                {
-                    throw new Exception($"|ERROR|: {ex.Message}");
-                }
-                finally
-                {
-                    CerrarConexion();
-                }
             }
-            else
+            catch (OracleException ex)
             {
-                throw new Exception("Error al abrir la conexión.");
+                MessageBox.Show($"Error de Oracle al consultar los Pollo: {ex.Message}");
             }
+            catch (Exception ex)
+            {
+               MessageBox.Show($"Error al consultar los Pollo: {ex.Message}");
+            }
+            finally
+            {
+                CerrarConexion();
+            }
+            return ListaDePollos;
         }
-
+        
         // Método para mapear de una fila de la tabla a la entidad POLLO
         private EntidadPollo Mapeo(OracleDataReader lector)
         {
             EntidadPollo pollo = new EntidadPollo();
+
             pollo.IdPollo = Convert.ToInt32(lector["ID_POLLO"]);
             pollo.CodigoPollo = Convert.ToString(lector["CODIGO_POLLO"]);
             pollo.RazaPollo = Convert.ToString(lector["RAZA_POLLO"]);
@@ -237,7 +247,7 @@ namespace Datos
         {
             try
             {
-                return ConsultarTodosLosPollos().Where(pollo => pollo.EstadoPollo.Equals(estadoDeseado)).ToList();
+                return ConsultarTodo().Where(pollo => pollo.EstadoPollo.Equals(estadoDeseado)).ToList();
             }
             catch (Exception ex) { throw new Exception($"Error al filtrar los pollos por Estado: {ex.Message}"); }
         }
@@ -245,7 +255,8 @@ namespace Datos
         {
             try
             {
-                return ConsultarTodosLosPollos().Where(pollo => pollo.RazaPollo.Equals(razaDeseada)).ToList();
+
+                return ConsultarTodo().Where(pollo => pollo.RazaPollo.Equals(razaDeseada)).ToList();
             }
             catch (Exception ex) { throw new Exception($"Error al filtrar los pollos por Raza {ex.Message}"); }
         }
@@ -253,14 +264,15 @@ namespace Datos
         {
             try
             {
-                return ConsultarTodosLosPollos().Where(pollo => pollo.IdGalpon.NombreGalpon.Equals(IdGalpon)).ToList();
+
+                return ConsultarTodo().Where(pollo => pollo.IdGalpon.NombreGalpon.Equals(IdGalpon)).ToList();
+
             }
             catch (Exception ex)
             {
                 throw new Exception($"Error al filtrar los pollos por galpón: {ex.Message}");
             }
         }
-
         private void Prueba(OracleDataReader lector)
         {
             StringBuilder mensaje = new StringBuilder();

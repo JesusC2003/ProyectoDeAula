@@ -11,23 +11,23 @@ namespace Logica
 {
     public class ServicioPollo
     {
-        private RepositorioPollo RepositorioPollo;
-        public ServicioPollo() { 
-
-               RepositorioPollo = new RepositorioPollo();
+        private RepositorioPollo repositorioPollo;
+        public ServicioPollo() 
+        { 
+                repositorioPollo = new RepositorioPollo();
         }
 
         public string GuardarPollo(List<EntidadPollo> pollos)
         {
             try
             {
-                return RepositorioPollo.InsertarPollos(pollos);
+                return repositorioPollo.InsertarPollos(pollos);
             }
             catch (Exception ex) {  return $"ERROR EN SERVICIO POLLO: {ex}"; }
         }
         public string ActualizarPollo(EntidadPollo pollo)
         {
-            if (RepositorioPollo.ActualizarPollo(pollo) > 0)
+            if (repositorioPollo.ActualizarPollo(pollo) > 0)
             {
                 return "La informacion fue actualizada con exito";
             }
@@ -35,25 +35,27 @@ namespace Logica
         }
         public string BorrarPollo(int idPollo)
         {
-            if (RepositorioPollo.EliminarPollo(idPollo) > 0)
+            if (repositorioPollo.EliminarPollo(idPollo) > 0)
             {
                 return "La informacion fue borrada con exito";
             }
             return "la informacion no fue borrada";
         }
+
         public List<EntidadPollo> listapollo()
         {
-            return RepositorioPollo.ConsultarTodosLosPollos();
+            return repositorioPollo.ConsultarTodo();
         }
         public bool existePollo(string ID)
         {
             EntidadPollo pollo = new EntidadPollo();
-            if (RepositorioPollo.ConsultarPollo(ID) == pollo )
+            if (repositorioPollo.ConsultarPollo(ID) == pollo )
             {
                 return true;
             }
             return false;
         }
         
+
     }
 }

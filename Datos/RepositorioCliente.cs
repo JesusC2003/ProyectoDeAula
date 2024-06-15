@@ -2,6 +2,8 @@
 using Oracle.ManagedDataAccess.Client;
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Windows.Forms;
 
 namespace Datos
 {
@@ -115,99 +117,91 @@ namespace Datos
         }
 
         // Método para consultar una fila de la tabla CLIENTE
-        public EntidadCliente ConsultarCliente(int idCliente)
-        {
-            if (AbrirConexion())
-            {
-                try
-                {
-                    using (OracleCommand comando = new OracleCommand("F_ConsultarCliente", ObtenerConexion()))
-                    {
-                        comando.CommandType = System.Data.CommandType.StoredProcedure;
-                        comando.Parameters.Add("p_id_cliente", OracleDbType.Int32).Value = idCliente;
-                        comando.Parameters.Add("resultado", OracleDbType.RefCursor).Direction = System.Data.ParameterDirection.ReturnValue;
 
-                        using (OracleDataReader lector = comando.ExecuteReader())
-                        {
-                            if (lector.Read())
-                            {
-                                return Mapeo(lector);
-                            }
-                            else
-                            {
-                                return null;
-                            }
-                        }
-                    }
-                }
-                catch (OracleException ex)
-                {
-                    throw new Exception($"|ERROR|: {ex.Message}");
-                }
-                finally
-                {
-                    CerrarConexion();
-                }
-            }
-            else
+        public EntidadCliente ConsultarGalpon(int idCliente)
+        {
+            List<EntidadCliente> Clientes = ConsultarTodoCliente();
+            foreach (EntidadCliente cliente in Clientes)
             {
-                throw new Exception("Error al abrir la conexión.");
+                if (cliente.Id == idCliente)
+                {
+                    return cliente;
+                }
             }
+            return null;
         }
 
-        // Método para consultar todas las filas de la tabla CLIENTE
-        public List<EntidadCliente> ConsultarTodosLosClientes()
+        public List<EntidadCliente> ConsultarTodoCliente()
         {
-            List<EntidadCliente> listaClientes = new List<EntidadCliente>();
-            if (AbrirConexion())
+            List<EntidadCliente> ListaDeClientes = new List<EntidadCliente>();
+            try
             {
-                try
+                using (OracleConnection connection = ObtenerConexion())
                 {
-                    using (OracleCommand comando = new OracleCommand("F_ConsultarTodosLosClientes", ObtenerConexion()))
+                    using (OracleCommand cmd = new OracleCommand("F_ConsultarTodosLosClientes", connection))
                     {
-                        comando.CommandType = System.Data.CommandType.StoredProcedure;
-                        comando.Parameters.Add("resultado", OracleDbType.RefCursor).Direction = System.Data.ParameterDirection.ReturnValue;
+                        cmd.CommandType = CommandType.StoredProcedure;
 
-                        using (OracleDataReader lector = comando.ExecuteReader())
+                        // Crear y configurar el parámetro de salida para el cursor
+                        OracleParameter cursorParameter = new OracleParameter();
+                        cursorParameter.OracleDbType = OracleDbType.RefCursor;
+                        cursorParameter.Direction = ParameterDirection.ReturnValue;
+                        cmd.Parameters.Add(cursorParameter);
+
+                        AbrirConexion();
+                        using (OracleDataReader lector = cmd.ExecuteReader())
                         {
                             while (lector.Read())
                             {
-                                listaClientes.Add(Mapeo(lector));
+                                ListaDeClientes.Add(MapeoCliente(lector));
                             }
-                            return listaClientes;
                         }
                     }
                 }
-                catch (OracleException ex)
-                {
-                    throw new Exception($"|ERROR|: {ex.Message}");
-                }
-                finally
-                {
-                    CerrarConexion();
-                }
             }
-            else
+            catch (OracleException ex)
             {
-                throw new Exception("Error al abrir la conexión.");
+                MessageBox.Show($"Error de Oracle al consultar los Clientes: {ex.Message}");
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al consultar los Clientes: {ex.Message}");
+            }
+            finally
+            {
+                CerrarConexion();
+            }
+            return ListaDeClientes;
         }
 
-        // Método para mapear de una fila de la tabla a la entidad CLIENTE
-        private EntidadCliente Mapeo(OracleDataReader leer)
+        // Método para mapear de una fila de la tabla a la entidad Cliente
+        private EntidadCliente MapeoCliente(OracleDataReader lector)
         {
             EntidadCliente cliente = new EntidadCliente();
-            cliente.Id = leer.GetInt32(0);
-            cliente.Identificacion = leer.GetString(1);
-            cliente.TipoIdentificacion = leer.GetString(2);
-            cliente.Nombres = leer.GetString(3);
-            cliente.Apellidos = leer.GetString(4);
-            cliente.Telefono = leer.GetString(5);
-            cliente.Correo = leer.GetString(6);
-            cliente.TipoCliente = leer.GetString(7);
+
+            try
+            {
+                cliente.Id = lector.GetInt32(lector.GetOrdinal("ID_CLIENTE"));
+                cliente.Identificacion = lector.GetString(lector.GetOrdinal("IDENTIFICACION"));
+                cliente.TipoIdentificacion = lector.GetString(lector.GetOrdinal("TIPO_IDENTIFICACION"));
+                cliente.Nombres = lector.GetString(lector.GetOrdinal("NOMBRES"));
+                cliente.Apellidos = lector.GetString(lector.GetOrdinal("APELLIDOS"));
+                cliente.Telefono = lector.GetString(lector.GetOrdinal("TELEFONO"));
+                cliente.Correo = lector.GetString(lector.GetOrdinal("CORREO"));
+                cliente.TipoCliente = lector.GetString(lector.GetOrdinal("TIPO_CLIENTE"));
+            }
+            catch (InvalidCastException ex)
+            {
+                throw new Exception($"Error de conversión en el mapeo de EntidadCliente: {ex.Message}");
+            }
+            catch (IndexOutOfRangeException ex)
+            {
+                throw new Exception($"Error de índice fuera de rango en el mapeo de EntidadCliente: {ex.Message}");
+            }
 
             return cliente;
         }
+
     }
 }
 
