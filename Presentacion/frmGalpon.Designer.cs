@@ -160,6 +160,7 @@
             this.btnAñadirRegistro.BorderRadius = 12;
             this.btnAñadirRegistro.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAñadirRegistro.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.btnAñadirRegistro.DefaultAutoSize = true;
             this.btnAñadirRegistro.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAñadirRegistro.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAñadirRegistro.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -167,12 +168,12 @@
             this.btnAñadirRegistro.FillColor = System.Drawing.Color.LightBlue;
             this.btnAñadirRegistro.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAñadirRegistro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
-            this.btnAñadirRegistro.Location = new System.Drawing.Point(566, 74);
+            this.btnAñadirRegistro.Location = new System.Drawing.Point(544, 76);
             this.btnAñadirRegistro.Margin = new System.Windows.Forms.Padding(2);
             this.btnAñadirRegistro.Name = "btnAñadirRegistro";
-            this.btnAñadirRegistro.Size = new System.Drawing.Size(154, 26);
+            this.btnAñadirRegistro.Size = new System.Drawing.Size(213, 28);
             this.btnAñadirRegistro.TabIndex = 194;
-            this.btnAñadirRegistro.Text = "Añadir Registro";
+            this.btnAñadirRegistro.Text = "Añadir Registro Alimenticio";
             this.btnAñadirRegistro.TextFormatNoPrefix = true;
             // 
             // btnRegistrarAlimento
@@ -195,6 +196,7 @@
             this.btnRegistrarAlimento.TabIndex = 193;
             this.btnRegistrarAlimento.Text = "Registrar Alimento";
             this.btnRegistrarAlimento.TextFormatNoPrefix = true;
+            this.btnRegistrarAlimento.Click += new System.EventHandler(this.btnRegistrarAlimento_Click);
             // 
             // label7
             // 

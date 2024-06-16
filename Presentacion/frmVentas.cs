@@ -17,6 +17,70 @@ namespace Presentacion
         {
             InitializeComponent();
         }
+        private void GraficaPastel()
+        {
+            // Crear el control Chart
+            Chart chart = new Chart();
+            chart.Dock = DockStyle.Fill;
+
+            // Crear un área de gráfico
+            ChartArea chartArea = new ChartArea();
+            chart.ChartAreas.Add(chartArea);
+
+            // Crear una serie y añadir datos
+            Series series = new Series
+            {
+                Name = "Series1",
+                IsVisibleInLegend = true,
+                ChartType = SeriesChartType.Pie
+            };
+
+            // Añadir datos a la serie
+            series.Points.AddXY("Vendido", 30);
+            series.Points.AddXY("Disponible", 50);
+
+            // Configurar las etiquetas para mostrar números
+            foreach (var point in series.Points)
+            {
+                point.Label = "#VALY"; // Mostrar el valor numérico
+                point.LegendText = "#VALX (#VALY)"; // Mostrar valor de la categoría y el número en la leyenda
+            }
+
+            // Añadir la serie al gráfico
+            chart.Series.Add(series);
+
+            // Calcular el total
+            double total = 0;
+            foreach (var point in series.Points)
+            {
+                total += point.YValues[0];
+            }
+
+            // Opcional: Personalizar la leyenda
+            Legend legend = new Legend
+            {
+                Name = "MiLeyenda",
+                Docking = Docking.Bottom,
+                Font = new System.Drawing.Font("Arial", 10, System.Drawing.FontStyle.Bold),
+                BackColor = System.Drawing.Color.LightGray
+            };
+
+            // Agregar la leyenda al gráfico
+            chart.Legends.Add(legend);
+
+            // Agregar una entrada personalizada para el total
+            LegendItem legendItem = new LegendItem
+            {
+                Name = "Total de Pollos: " + total,
+                BorderColor = System.Drawing.Color.Transparent
+            };
+            chart.Legends["MiLeyenda"].CustomItems.Add(legendItem);
+
+            // Añadir el control Chart al panel
+            this.pnlGraficaPastel.Controls.Add(chart);
+        }
+
+
 
         private void GraficaBarra()
         {
@@ -77,6 +141,7 @@ namespace Presentacion
         private void frmVentas_Load(object sender, EventArgs e)
         {
             GraficaBarra();
+            GraficaPastel();
         }
 
         private void txtBusquedaVentas_Leave(object sender, EventArgs e)

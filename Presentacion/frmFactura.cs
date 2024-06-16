@@ -67,7 +67,7 @@ namespace Presentacion
             //se crea un string para recorrer las columnas 
             string fila = string.Empty;
             decimal total = 0;
-            foreach (DataGridViewRow row in dgvFactura.Rows)//se recorre todo lo que tenga fila
+            foreach (DataGridViewRow row in dgvFacturacion.Rows)//se recorre todo lo que tenga fila
             {
                 fila += "<tr>";
                 fila += "<td>" + row.Cells["Item"].Value.ToString() + "</td>";

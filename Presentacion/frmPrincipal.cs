@@ -158,7 +158,9 @@ namespace Presentacion
         {
             OcultarPaneles(this.pnlMenuVertical);
             panel1.Visible=true;
-            AbrirFmr(new frmFactura());
+            AbrirFmr(new frmVentas());
+            frmFactura frmFactura  = new frmFactura();
+            frmFactura.Show();
         }
 
         private void BtnMenu_Click(object sender, EventArgs e)

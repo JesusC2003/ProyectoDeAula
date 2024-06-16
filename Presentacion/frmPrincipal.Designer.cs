@@ -327,7 +327,7 @@
             this.btnFactura.Name = "btnFactura";
             this.btnFactura.Size = new System.Drawing.Size(185, 50);
             this.btnFactura.TabIndex = 12;
-            this.btnFactura.Text = "Factura";
+            this.btnFactura.Text = "Facturar";
             this.btnFactura.UseVisualStyleBackColor = true;
             this.btnFactura.Click += new System.EventHandler(this.BtnFactura_Click);
             // 
