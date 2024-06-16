@@ -71,7 +71,7 @@ namespace Presentacion
 
                 Form fm = Fmr as Form;
                 fm.TopLevel = false;
-                //fm.Dock = DockStyle.Fill;
+                fm.Dock = DockStyle.Fill;
                 this.pnlContenedor.Controls.Add(fm);
                 this.pnlContenedor.Tag = fm;
                 fm.Show();
@@ -83,7 +83,7 @@ namespace Presentacion
             OcultarPaneles(this.pnlMenuVertical);
             panel2.Visible = true;
             lblTitulo.Text = "FORMULARIO DE POLLO";
-           // AbrirFmr(new frmPollo());   
+            AbrirFmr(new frmPollo());   
         }
 
         private void BtnGalpon_Click(object sender, EventArgs e)
