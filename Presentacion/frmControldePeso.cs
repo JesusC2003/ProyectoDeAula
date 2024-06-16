@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
-    public partial class frmAgregarMedicamento : Form
+    public partial class frmControldePeso : Form
     {
-        public frmAgregarMedicamento()
+        public frmControldePeso()
         {
             InitializeComponent();
         }
 
-        private void btnSalirMedicamento_Click(object sender, EventArgs e)
+        private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
         }

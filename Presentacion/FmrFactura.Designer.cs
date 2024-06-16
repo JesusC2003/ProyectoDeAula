@@ -68,13 +68,13 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dgvFactura = new System.Windows.Forms.DataGridView();
+            this.dgvFacturacion = new System.Windows.Forms.DataGridView();
             this.label14 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.grpDetalleProducto.SuspendLayout();
             this.grpDatosCliente.SuspendLayout();
             this.panelTipoCliente.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvFactura)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFacturacion)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -87,7 +87,7 @@
             this.panel1.Controls.Add(this.grpDetalleProducto);
             this.panel1.Controls.Add(this.grpDatosCliente);
             this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Controls.Add(this.dgvFactura);
+            this.panel1.Controls.Add(this.dgvFacturacion);
             this.panel1.Location = new System.Drawing.Point(17, 32);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(654, 582);
@@ -749,12 +749,12 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
-            // dgvFactura
+            // dgvFacturacion
             // 
-            this.dgvFactura.AllowUserToAddRows = false;
-            this.dgvFactura.AllowUserToDeleteRows = false;
-            this.dgvFactura.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvFactura.BackgroundColor = System.Drawing.Color.White;
+            this.dgvFacturacion.AllowUserToAddRows = false;
+            this.dgvFacturacion.AllowUserToDeleteRows = false;
+            this.dgvFacturacion.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvFacturacion.BackgroundColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -762,14 +762,14 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFactura.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvFactura.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFactura.Location = new System.Drawing.Point(13, 347);
-            this.dgvFactura.Name = "dgvFactura";
-            this.dgvFactura.ReadOnly = true;
-            this.dgvFactura.RowHeadersVisible = false;
-            this.dgvFactura.Size = new System.Drawing.Size(630, 125);
-            this.dgvFactura.TabIndex = 0;
+            this.dgvFacturacion.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvFacturacion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFacturacion.Location = new System.Drawing.Point(13, 347);
+            this.dgvFacturacion.Name = "dgvFacturacion";
+            this.dgvFacturacion.ReadOnly = true;
+            this.dgvFacturacion.RowHeadersVisible = false;
+            this.dgvFacturacion.Size = new System.Drawing.Size(630, 125);
+            this.dgvFacturacion.TabIndex = 0;
             // 
             // label14
             // 
@@ -804,7 +804,7 @@
             this.grpDatosCliente.PerformLayout();
             this.panelTipoCliente.ResumeLayout(false);
             this.panelTipoCliente.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvFactura)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFacturacion)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -812,7 +812,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dgvFactura;
+        private System.Windows.Forms.DataGridView dgvFacturacion;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox grpDetalleProducto;
         private System.Windows.Forms.Label label10;

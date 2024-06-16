@@ -42,7 +42,9 @@
             this.btnOcultarContraseña = new Guna.UI2.WinForms.Guna2Button();
             this.label3 = new System.Windows.Forms.Label();
             this.linkLblRegistrar = new System.Windows.Forms.LinkLabel();
+            this.label2 = new System.Windows.Forms.Label();
             this.pnltitulo.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,10 +100,11 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(38)))), ((int)(((byte)(70)))));
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 539);
+            this.panel1.Location = new System.Drawing.Point(0, 533);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(411, 15);
+            this.panel1.Size = new System.Drawing.Size(411, 21);
             this.panel1.TabIndex = 8;
             // 
             // label1
@@ -274,6 +277,18 @@
             this.linkLblRegistrar.Text = "Registrarse";
             this.linkLblRegistrar.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLblRegistrar_LinkClicked);
             // 
+            // label2
+            // 
+            this.label2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(411, 21);
+            this.label2.TabIndex = 148;
+            this.label2.Text = "INICIAR SESION";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // frmIniciarSesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -299,6 +314,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.frmIniciarSession_Load);
             this.pnltitulo.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -320,6 +336,7 @@
         private Guna.UI2.WinForms.Guna2Button btnOcultarContraseña;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.LinkLabel linkLblRegistrar;
+        private System.Windows.Forms.Label label2;
     }
 }
 

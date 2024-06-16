@@ -43,8 +43,12 @@ namespace Presentacion
 
         private void btnFacturar_Click_1(object sender, EventArgs e)
         {
+            GenerarFactura();
+        }
+        private void GenerarFactura()
+        {
             servicioEmpresa = new ServicioEmpresa();
-            EntidadEmpresa empresa= servicioEmpresa.GetEmpresa();
+            EntidadEmpresa empresa = servicioEmpresa.GetEmpresa();
 
             SaveFileDialog guardar = new SaveFileDialog()
             {
@@ -67,7 +71,7 @@ namespace Presentacion
             //se crea un string para recorrer las columnas 
             string fila = string.Empty;
             decimal total = 0;
-            foreach (DataGridViewRow row in dgvFactura.Rows)//se recorre todo lo que tenga fila
+            foreach (DataGridViewRow row in dgvFacturacion.Rows)//se recorre todo lo que tenga fila
             {
                 fila += "<tr>";
                 fila += "<td>" + row.Cells["Item"].Value.ToString() + "</td>";
@@ -78,7 +82,7 @@ namespace Presentacion
                 total += decimal.Parse(row.Cells["P.Unitario"].Value.ToString());
             }
             paginahtml = paginahtml.Replace("@Filas", fila);
-            paginahtml = paginahtml.Replace("@Total",total.ToString());
+            paginahtml = paginahtml.Replace("@Total", total.ToString());
 
             if (guardar.ShowDialog() == DialogResult.OK)
             {
@@ -124,7 +128,6 @@ namespace Presentacion
                 }
             }
         }
-
         private void btnCancelaroperacion_Click(object sender, EventArgs e)
         {
             this.Close();

@@ -116,5 +116,11 @@ namespace Presentacion
                 txtBusquedaEmpleado.ForeColor = Color.Black;
             }
         }
+
+        private void btnRegistrarAlimento_Click(object sender, EventArgs e)
+        {
+            frmAgregarAlimento Alimento = new frmAgregarAlimento();
+            Alimento.Show();
+        }
     }
 }
