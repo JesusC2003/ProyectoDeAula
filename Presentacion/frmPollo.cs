@@ -191,7 +191,7 @@ namespace Presentacion
                 {
                     comboBox.SelectedIndex = -1;
                 }
-                else if (control.HasChildren)
+                else if (control.HasChildren && control is Panel)
                 {
                     LimpiarControles((Panel)control);
                 }
@@ -251,10 +251,13 @@ namespace Presentacion
         {
             LimpiarControles(pnlGestionPollo);
             txtLote.Text = Lote;
+            
             txtFechaIngreso.Text = DateTime.Now.ToString("yyyy-MM-dd");
             cmbEstadoPollo.Text = "Vivo";
             cmbEstadoPollo.Enabled = false;
-            txtLote.Focus();
+            txtcodigoPollo.Enabled = false;
+            txtFechaIngreso.Enabled= false;
+            txtRazaPollo.Focus();
         }
         private bool ValidarDataGridView()
         {
