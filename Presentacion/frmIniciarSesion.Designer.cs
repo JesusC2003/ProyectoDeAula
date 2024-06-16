@@ -32,6 +32,7 @@
             this.BtnCerrarsesion = new System.Windows.Forms.Button();
             this.BtnMinimizarsesion = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtUsuario = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtContraseña = new Guna.UI2.WinForms.Guna2TextBox();
@@ -40,9 +41,6 @@
             this.btniniciarsesion = new Guna.UI2.WinForms.Guna2Button();
             this.btnmostrarcontraseña = new Guna.UI2.WinForms.Guna2Button();
             this.btnOcultarContraseña = new Guna.UI2.WinForms.Guna2Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.linkLblRegistrar = new System.Windows.Forms.LinkLabel();
-            this.label2 = new System.Windows.Forms.Label();
             this.pnltitulo.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -55,8 +53,9 @@
             this.pnltitulo.Controls.Add(this.BtnMinimizarsesion);
             this.pnltitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnltitulo.Location = new System.Drawing.Point(0, 0);
+            this.pnltitulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnltitulo.Name = "pnltitulo";
-            this.pnltitulo.Size = new System.Drawing.Size(411, 36);
+            this.pnltitulo.Size = new System.Drawing.Size(548, 44);
             this.pnltitulo.TabIndex = 7;
             this.pnltitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnltitulo_MouseDown);
             // 
@@ -70,9 +69,10 @@
             this.BtnCerrarsesion.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCerrarsesion.ForeColor = System.Drawing.Color.White;
             this.BtnCerrarsesion.Image = global::Presentacion.Properties.Resources.icons8_cerrar_ventana_32;
-            this.BtnCerrarsesion.Location = new System.Drawing.Point(373, 2);
+            this.BtnCerrarsesion.Location = new System.Drawing.Point(497, 2);
+            this.BtnCerrarsesion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnCerrarsesion.Name = "BtnCerrarsesion";
-            this.BtnCerrarsesion.Size = new System.Drawing.Size(35, 31);
+            this.BtnCerrarsesion.Size = new System.Drawing.Size(47, 38);
             this.BtnCerrarsesion.TabIndex = 10;
             this.BtnCerrarsesion.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnCerrarsesion.UseVisualStyleBackColor = true;
@@ -89,9 +89,10 @@
             this.BtnMinimizarsesion.ForeColor = System.Drawing.Color.White;
             this.BtnMinimizarsesion.Image = global::Presentacion.Properties.Resources.window_minimize_icon_181229;
             this.BtnMinimizarsesion.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnMinimizarsesion.Location = new System.Drawing.Point(332, 3);
+            this.BtnMinimizarsesion.Location = new System.Drawing.Point(443, 4);
+            this.BtnMinimizarsesion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnMinimizarsesion.Name = "BtnMinimizarsesion";
-            this.BtnMinimizarsesion.Size = new System.Drawing.Size(35, 31);
+            this.BtnMinimizarsesion.Size = new System.Drawing.Size(47, 38);
             this.BtnMinimizarsesion.TabIndex = 9;
             this.BtnMinimizarsesion.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnMinimizarsesion.UseVisualStyleBackColor = true;
@@ -102,18 +103,33 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(38)))), ((int)(((byte)(70)))));
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 533);
+            this.panel1.Location = new System.Drawing.Point(0, 656);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(411, 21);
+            this.panel1.Size = new System.Drawing.Size(548, 26);
             this.panel1.TabIndex = 8;
+            // 
+            // label2
+            // 
+            this.label2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(548, 26);
+            this.label2.TabIndex = 148;
+            this.label2.Text = "INICIAR SESION";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(53, 203);
+            this.label1.Location = new System.Drawing.Point(71, 250);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 26);
+            this.label1.Size = new System.Drawing.Size(159, 32);
             this.label1.TabIndex = 9;
             this.label1.Text = "Usuario";
             // 
@@ -132,13 +148,13 @@
             this.txtUsuario.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.ForeColor = System.Drawing.Color.Black;
             this.txtUsuario.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsuario.Location = new System.Drawing.Point(52, 233);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUsuario.Location = new System.Drawing.Point(69, 287);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.PasswordChar = '\0';
             this.txtUsuario.PlaceholderText = "";
             this.txtUsuario.SelectedText = "";
-            this.txtUsuario.Size = new System.Drawing.Size(315, 28);
+            this.txtUsuario.Size = new System.Drawing.Size(420, 34);
             this.txtUsuario.TabIndex = 134;
             // 
             // txtContraseña
@@ -156,31 +172,33 @@
             this.txtContraseña.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseña.ForeColor = System.Drawing.Color.Black;
             this.txtContraseña.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtContraseña.Location = new System.Drawing.Point(52, 324);
-            this.txtContraseña.Margin = new System.Windows.Forms.Padding(4);
+            this.txtContraseña.Location = new System.Drawing.Point(69, 399);
+            this.txtContraseña.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PasswordChar = '\0';
             this.txtContraseña.PlaceholderText = "";
             this.txtContraseña.SelectedText = "";
-            this.txtContraseña.Size = new System.Drawing.Size(315, 28);
+            this.txtContraseña.Size = new System.Drawing.Size(420, 34);
             this.txtContraseña.TabIndex = 136;
             // 
             // lblContra
             // 
             this.lblContra.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblContra.ForeColor = System.Drawing.Color.White;
-            this.lblContra.Location = new System.Drawing.Point(53, 294);
+            this.lblContra.Location = new System.Drawing.Point(71, 362);
+            this.lblContra.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblContra.Name = "lblContra";
-            this.lblContra.Size = new System.Drawing.Size(119, 26);
+            this.lblContra.Size = new System.Drawing.Size(159, 32);
             this.lblContra.TabIndex = 135;
             this.lblContra.Text = "Contraseña";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Presentacion.Properties.Resources.logohens;
-            this.pictureBox1.Location = new System.Drawing.Point(22, 40);
+            this.pictureBox1.Location = new System.Drawing.Point(29, 49);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(377, 152);
+            this.pictureBox1.Size = new System.Drawing.Size(503, 187);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 142;
             this.pictureBox1.TabStop = false;
@@ -198,10 +216,10 @@
             this.btniniciarsesion.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(98)))), ((int)(((byte)(238)))));
             this.btniniciarsesion.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btniniciarsesion.ForeColor = System.Drawing.Color.White;
-            this.btniniciarsesion.Location = new System.Drawing.Point(52, 403);
-            this.btniniciarsesion.Margin = new System.Windows.Forms.Padding(2);
+            this.btniniciarsesion.Location = new System.Drawing.Point(69, 496);
+            this.btniniciarsesion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btniniciarsesion.Name = "btniniciarsesion";
-            this.btniniciarsesion.Size = new System.Drawing.Size(315, 40);
+            this.btniniciarsesion.Size = new System.Drawing.Size(420, 49);
             this.btniniciarsesion.TabIndex = 143;
             this.btniniciarsesion.Text = "Acceder";
             this.btniniciarsesion.TextFormatNoPrefix = true;
@@ -222,10 +240,10 @@
             this.btnmostrarcontraseña.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnmostrarcontraseña.ForeColor = System.Drawing.Color.Transparent;
             this.btnmostrarcontraseña.Image = global::Presentacion.Properties.Resources.icons8_ver_24;
-            this.btnmostrarcontraseña.Location = new System.Drawing.Point(334, 327);
-            this.btnmostrarcontraseña.Margin = new System.Windows.Forms.Padding(2);
+            this.btnmostrarcontraseña.Location = new System.Drawing.Point(445, 402);
+            this.btnmostrarcontraseña.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnmostrarcontraseña.Name = "btnmostrarcontraseña";
-            this.btnmostrarcontraseña.Size = new System.Drawing.Size(31, 21);
+            this.btnmostrarcontraseña.Size = new System.Drawing.Size(41, 26);
             this.btnmostrarcontraseña.TabIndex = 144;
             this.btnmostrarcontraseña.TextFormatNoPrefix = true;
             this.btnmostrarcontraseña.Click += new System.EventHandler(this.btnmostrarcontraseña_Click);
@@ -245,58 +263,20 @@
             this.btnOcultarContraseña.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnOcultarContraseña.ForeColor = System.Drawing.Color.Transparent;
             this.btnOcultarContraseña.Image = global::Presentacion.Properties.Resources.icons8_ocultar_24;
-            this.btnOcultarContraseña.Location = new System.Drawing.Point(334, 327);
-            this.btnOcultarContraseña.Margin = new System.Windows.Forms.Padding(2);
+            this.btnOcultarContraseña.Location = new System.Drawing.Point(445, 402);
+            this.btnOcultarContraseña.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnOcultarContraseña.Name = "btnOcultarContraseña";
-            this.btnOcultarContraseña.Size = new System.Drawing.Size(31, 21);
+            this.btnOcultarContraseña.Size = new System.Drawing.Size(41, 26);
             this.btnOcultarContraseña.TabIndex = 145;
             this.btnOcultarContraseña.TextFormatNoPrefix = true;
             this.btnOcultarContraseña.Click += new System.EventHandler(this.btnOcultarContraseña_Click);
             // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(116, 473);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(139, 26);
-            this.label3.TabIndex = 147;
-            this.label3.Text = "¿No tienes Cuenta?";
-            // 
-            // linkLblRegistrar
-            // 
-            this.linkLblRegistrar.ActiveLinkColor = System.Drawing.Color.Green;
-            this.linkLblRegistrar.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLblRegistrar.ForeColor = System.Drawing.Color.Coral;
-            this.linkLblRegistrar.LinkColor = System.Drawing.Color.White;
-            this.linkLblRegistrar.Location = new System.Drawing.Point(237, 473);
-            this.linkLblRegistrar.Name = "linkLblRegistrar";
-            this.linkLblRegistrar.Size = new System.Drawing.Size(89, 25);
-            this.linkLblRegistrar.TabIndex = 148;
-            this.linkLblRegistrar.TabStop = true;
-            this.linkLblRegistrar.Text = "Registrarse";
-            this.linkLblRegistrar.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLblRegistrar_LinkClicked);
-            // 
-            // label2
-            // 
-            this.label2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(411, 21);
-            this.label2.TabIndex = 148;
-            this.label2.Text = "INICIAR SESION";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // frmIniciarSesion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(59)))), ((int)(((byte)(104)))));
-            this.ClientSize = new System.Drawing.Size(411, 554);
-            this.Controls.Add(this.linkLblRegistrar);
-            this.Controls.Add(this.label3);
+            this.ClientSize = new System.Drawing.Size(548, 682);
             this.Controls.Add(this.btnOcultarContraseña);
             this.Controls.Add(this.btnmostrarcontraseña);
             this.Controls.Add(this.btniniciarsesion);
@@ -308,7 +288,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnltitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmIniciarSesion";
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -334,8 +314,6 @@
         private Guna.UI2.WinForms.Guna2Button btniniciarsesion;
         private Guna.UI2.WinForms.Guna2Button btnmostrarcontraseña;
         private Guna.UI2.WinForms.Guna2Button btnOcultarContraseña;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.LinkLabel linkLblRegistrar;
         private System.Windows.Forms.Label label2;
     }
 }

@@ -78,15 +78,6 @@ namespace Presentacion
             btnOcultarContraseña.Visible=false;
         }
 
-        private void linkLblRegistrar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            
-            frmRegistrarUsuario RegistrarUsuario = new frmRegistrarUsuario();
-            RegistrarUsuario.Show();
-            this.Hide();
-
-        }
-
         private void btniniciarsesion_Click(object sender, EventArgs e)
         {
             ValidarInfo();
