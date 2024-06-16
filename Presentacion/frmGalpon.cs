@@ -19,29 +19,6 @@ namespace Presentacion
             InitializeComponent();
             CargarDataGridView();
         }
-        private void txtBusquedaGalpon_Leave_1(object sender, EventArgs e)
-        {
-            if (txtBusquedaGalpon.Text == "")
-            {
-                txtBusquedaGalpon.Text = "Busqueda";
-                txtBusquedaGalpon.ForeColor = Color.Black;
-            }
-        }
-
-        private void txtBusquedaGalpon_Enter_1(object sender, EventArgs e)
-        {
-            if (txtBusquedaGalpon.Text == "Busqueda")
-            {
-                txtBusquedaGalpon.Text = "";
-                txtBusquedaGalpon.ForeColor = Color.Black;
-            }
-        }
-
-        private void btnAñadirGalpon_Click(object sender, EventArgs e)
-        {
-            frmAgregarGalpon Agregargalpon = new frmAgregarGalpon();
-            Agregargalpon.Show();
-        }
 
         public void CargarDataGridView()
         {
@@ -102,6 +79,42 @@ namespace Presentacion
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void txtBusquedaGalpon_Leave(object sender, EventArgs e)
+        {
+            if (txtBusquedaGalpon.Text == "")
+            {
+                txtBusquedaGalpon.Text = "Busqueda";
+                txtBusquedaGalpon.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtBusquedaGalpon_Enter(object sender, EventArgs e)
+        {
+            if (txtBusquedaGalpon.Text == "Busqueda")
+            {
+                txtBusquedaGalpon.Text = "";
+                txtBusquedaGalpon.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtBusquedaEmpleado_Leave(object sender, EventArgs e)
+        {
+            if (txtBusquedaEmpleado.Text == "")
+            {
+                txtBusquedaEmpleado.Text = "Busqueda";
+                txtBusquedaEmpleado.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtBusquedaEmpleado_Enter(object sender, EventArgs e)
+        {
+            if (txtBusquedaEmpleado.Text == "Busqueda")
+            {
+                txtBusquedaEmpleado.Text = "";
+                txtBusquedaEmpleado.ForeColor = Color.Black;
+            }
         }
     }
 }
