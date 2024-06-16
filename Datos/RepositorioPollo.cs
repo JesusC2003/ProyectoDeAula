@@ -70,22 +70,6 @@ namespace Datos
             }
         }
 
-
-
-        // Método para confirmar la inserción de la información del pollo
-        private string ConfirmarInsercion(int filasAfectadas)
-        {
-            if (filasAfectadas > 0)
-            {
-                return "La información del pollo fue guardada correctamente.";
-            }
-            else
-            {
-                return "La información del pollo no fue guardada.";
-            }
-        }
-
-
         // Método para actualizar una fila en la tabla POLLO
         public int ActualizarPollo(EntidadPollo pollo)
         {
@@ -125,30 +109,27 @@ namespace Datos
         // Método para borrar una fila de la tabla POLLO
         public int EliminarPollo(int idPollo)
         {
-            if (AbrirConexion())
+            string query = "DELETE FROM POLLO WHERE ID_POLLO = ";
+            OracleTransaction transaccion = IniciarTransaccion();
+            try
             {
-                try
+                using (OracleCommand comando = new OracleCommand(query, ObtenerConexion()))
                 {
-                    using (OracleCommand comando = new OracleCommand("P_BorrarPollo", ObtenerConexion()))
+                    comando.Transaction = transaccion;
+                    int filasAfectadas = comando.ExecuteNonQuery();
+                    if (filasAfectadas > 0)
                     {
-                        comando.CommandType = System.Data.CommandType.StoredProcedure;
-                        comando.Parameters.Add("p_id_pollo", OracleDbType.Int32).Value = idPollo;
-                        return comando.ExecuteNonQuery();
+                        ConfirmarTransaccion(comando.Transaction);
+                        return filasAfectadas;
+                    }
+                    else
+                    {
+                        DeshacerTransaccion(comando.Transaction);
+                        return filasAfectadas;
                     }
                 }
-                catch (OracleException ex)
-                {
-                    throw new Exception($"|ERROR|: {ex.Message}");
-                }
-                finally
-                {
-                    CerrarConexion();
-                }
             }
-            else
-            {
-                throw new Exception("Error al abrir la conexión.");
-            }
+            catch (OracleException ex) { throw new Exception($"{ex}"); }
         }
 
         // Método para consultar una fila de la tabla POLLO
@@ -236,8 +217,7 @@ namespace Datos
             pollo.EdadPollo = Convert.ToString(lector["EDAD_POLLO"]);
             pollo.NumeroLote = Convert.ToString(lector["NUMERO_LOTE"]);
             pollo.FechaIngreso = Convert.ToDateTime(lector["FECHA_INGRESO"]);
-            pollo.IdGalpon = RepositorioGalpon.ConsultarGalpon(Convert.ToInt32(lector["FK_GALPON"]));
-            //pollo.IdDetalleFactura = RepositorioDetalleFactura.ConsultarDetalleFactura(Convert.ToInt32(lector["FK_DETALLEFACTURA"]));
+            //pollo.IdGalpon = RepositorioGalpon.ConsultarGalpon(Convert.ToInt32(lector["FK_GALPON"]));
 
             return pollo;
         }

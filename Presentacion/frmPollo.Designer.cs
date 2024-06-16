@@ -45,9 +45,9 @@
             this.btnCancelarPollo = new Guna.UI2.WinForms.Guna2Button();
             this.btnQuitarPollo = new Guna.UI2.WinForms.Guna2Button();
             this.cmbEdadPollo = new System.Windows.Forms.ComboBox();
-            this.txtlote = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtLote = new Guna.UI2.WinForms.Guna2TextBox();
             this.cmbEstadoPollo = new System.Windows.Forms.ComboBox();
-            this.txtRazapollo = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtRazaPollo = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtcodigoPollo = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -74,8 +74,9 @@
             this.panel1.Controls.Add(this.dgvPollo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1200, 600);
+            this.panel1.Size = new System.Drawing.Size(1600, 738);
             this.panel1.TabIndex = 0;
             // 
             // cmbFiltrado
@@ -85,9 +86,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbFiltrado.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbFiltrado.FormattingEnabled = true;
-            this.cmbFiltrado.Location = new System.Drawing.Point(525, 263);
+            this.cmbFiltrado.Location = new System.Drawing.Point(700, 324);
+            this.cmbFiltrado.Margin = new System.Windows.Forms.Padding(4);
             this.cmbFiltrado.Name = "cmbFiltrado";
-            this.cmbFiltrado.Size = new System.Drawing.Size(193, 24);
+            this.cmbFiltrado.Size = new System.Drawing.Size(256, 27);
             this.cmbFiltrado.TabIndex = 177;
             // 
             // btnNuevo
@@ -103,13 +105,14 @@
             this.btnNuevo.FillColor = System.Drawing.Color.LightBlue;
             this.btnNuevo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
-            this.btnNuevo.Location = new System.Drawing.Point(806, 257);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(2);
+            this.btnNuevo.Location = new System.Drawing.Point(1075, 316);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(116, 30);
+            this.btnNuevo.Size = new System.Drawing.Size(155, 37);
             this.btnNuevo.TabIndex = 176;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.TextFormatNoPrefix = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnEliminarPollo
             // 
@@ -124,13 +127,14 @@
             this.btnEliminarPollo.FillColor = System.Drawing.Color.LightBlue;
             this.btnEliminarPollo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarPollo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
-            this.btnEliminarPollo.Location = new System.Drawing.Point(1045, 257);
-            this.btnEliminarPollo.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEliminarPollo.Location = new System.Drawing.Point(1393, 316);
+            this.btnEliminarPollo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEliminarPollo.Name = "btnEliminarPollo";
-            this.btnEliminarPollo.Size = new System.Drawing.Size(120, 30);
+            this.btnEliminarPollo.Size = new System.Drawing.Size(160, 37);
             this.btnEliminarPollo.TabIndex = 175;
             this.btnEliminarPollo.Text = "Eliminar";
             this.btnEliminarPollo.TextFormatNoPrefix = true;
+            this.btnEliminarPollo.Click += new System.EventHandler(this.btnEliminarPollo_Click);
             // 
             // btnModificar
             // 
@@ -145,13 +149,14 @@
             this.btnModificar.FillColor = System.Drawing.Color.LightBlue;
             this.btnModificar.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
-            this.btnModificar.Location = new System.Drawing.Point(926, 257);
-            this.btnModificar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnModificar.Location = new System.Drawing.Point(1235, 316);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(115, 30);
+            this.btnModificar.Size = new System.Drawing.Size(153, 37);
             this.btnModificar.TabIndex = 174;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.TextFormatNoPrefix = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // pnlGestionPollo
             // 
@@ -161,9 +166,9 @@
             this.pnlGestionPollo.Controls.Add(this.btnCancelarPollo);
             this.pnlGestionPollo.Controls.Add(this.btnQuitarPollo);
             this.pnlGestionPollo.Controls.Add(this.cmbEdadPollo);
-            this.pnlGestionPollo.Controls.Add(this.txtlote);
+            this.pnlGestionPollo.Controls.Add(this.txtLote);
             this.pnlGestionPollo.Controls.Add(this.cmbEstadoPollo);
-            this.pnlGestionPollo.Controls.Add(this.txtRazapollo);
+            this.pnlGestionPollo.Controls.Add(this.txtRazaPollo);
             this.pnlGestionPollo.Controls.Add(this.txtcodigoPollo);
             this.pnlGestionPollo.Controls.Add(this.label6);
             this.pnlGestionPollo.Controls.Add(this.label5);
@@ -172,9 +177,10 @@
             this.pnlGestionPollo.Controls.Add(this.label2);
             this.pnlGestionPollo.Controls.Add(this.label1);
             this.pnlGestionPollo.Controls.Add(this.Controles);
-            this.pnlGestionPollo.Location = new System.Drawing.Point(56, 31);
+            this.pnlGestionPollo.Location = new System.Drawing.Point(75, 38);
+            this.pnlGestionPollo.Margin = new System.Windows.Forms.Padding(4);
             this.pnlGestionPollo.Name = "pnlGestionPollo";
-            this.pnlGestionPollo.Size = new System.Drawing.Size(1108, 179);
+            this.pnlGestionPollo.Size = new System.Drawing.Size(1477, 220);
             this.pnlGestionPollo.TabIndex = 173;
             // 
             // cmbGalpon
@@ -184,9 +190,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbGalpon.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbGalpon.FormattingEnabled = true;
-            this.cmbGalpon.Location = new System.Drawing.Point(320, 130);
+            this.cmbGalpon.Location = new System.Drawing.Point(427, 160);
+            this.cmbGalpon.Margin = new System.Windows.Forms.Padding(4);
             this.cmbGalpon.Name = "cmbGalpon";
-            this.cmbGalpon.Size = new System.Drawing.Size(143, 24);
+            this.cmbGalpon.Size = new System.Drawing.Size(189, 27);
             this.cmbGalpon.TabIndex = 145;
             // 
             // txtFechaIngreso
@@ -204,12 +211,13 @@
             this.txtFechaIngreso.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFechaIngreso.ForeColor = System.Drawing.Color.Black;
             this.txtFechaIngreso.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtFechaIngreso.Location = new System.Drawing.Point(46, 135);
+            this.txtFechaIngreso.Location = new System.Drawing.Point(61, 166);
+            this.txtFechaIngreso.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtFechaIngreso.Name = "txtFechaIngreso";
             this.txtFechaIngreso.PasswordChar = '\0';
             this.txtFechaIngreso.PlaceholderText = "";
             this.txtFechaIngreso.SelectedText = "";
-            this.txtFechaIngreso.Size = new System.Drawing.Size(178, 21);
+            this.txtFechaIngreso.Size = new System.Drawing.Size(237, 30);
             this.txtFechaIngreso.TabIndex = 144;
             // 
             // btnAgregarPollo
@@ -226,13 +234,14 @@
             this.btnAgregarPollo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarPollo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
             this.btnAgregarPollo.Image = global::Presentacion.Properties.Resources.new_file_40454;
-            this.btnAgregarPollo.Location = new System.Drawing.Point(970, 40);
-            this.btnAgregarPollo.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAgregarPollo.Location = new System.Drawing.Point(1293, 49);
+            this.btnAgregarPollo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAgregarPollo.Name = "btnAgregarPollo";
-            this.btnAgregarPollo.Size = new System.Drawing.Size(108, 30);
+            this.btnAgregarPollo.Size = new System.Drawing.Size(144, 37);
             this.btnAgregarPollo.TabIndex = 143;
             this.btnAgregarPollo.Text = "Agregar";
             this.btnAgregarPollo.TextFormatNoPrefix = true;
+            this.btnAgregarPollo.Click += new System.EventHandler(this.btnAgregarPollo_Click);
             // 
             // btnCancelarPollo
             // 
@@ -247,13 +256,14 @@
             this.btnCancelarPollo.FillColor = System.Drawing.Color.LightBlue;
             this.btnCancelarPollo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelarPollo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
-            this.btnCancelarPollo.Location = new System.Drawing.Point(970, 124);
-            this.btnCancelarPollo.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCancelarPollo.Location = new System.Drawing.Point(1293, 153);
+            this.btnCancelarPollo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelarPollo.Name = "btnCancelarPollo";
-            this.btnCancelarPollo.Size = new System.Drawing.Size(108, 30);
+            this.btnCancelarPollo.Size = new System.Drawing.Size(144, 37);
             this.btnCancelarPollo.TabIndex = 142;
             this.btnCancelarPollo.Text = "Cancelar";
             this.btnCancelarPollo.TextFormatNoPrefix = true;
+            this.btnCancelarPollo.Click += new System.EventHandler(this.btnCancelarPollo_Click);
             // 
             // btnQuitarPollo
             // 
@@ -269,13 +279,14 @@
             this.btnQuitarPollo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuitarPollo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
             this.btnQuitarPollo.Image = global::Presentacion.Properties.Resources.file_delete_114438;
-            this.btnQuitarPollo.Location = new System.Drawing.Point(970, 83);
-            this.btnQuitarPollo.Margin = new System.Windows.Forms.Padding(2);
+            this.btnQuitarPollo.Location = new System.Drawing.Point(1293, 102);
+            this.btnQuitarPollo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnQuitarPollo.Name = "btnQuitarPollo";
-            this.btnQuitarPollo.Size = new System.Drawing.Size(108, 30);
+            this.btnQuitarPollo.Size = new System.Drawing.Size(144, 37);
             this.btnQuitarPollo.TabIndex = 141;
             this.btnQuitarPollo.Text = "Quitar";
             this.btnQuitarPollo.TextFormatNoPrefix = true;
+            this.btnQuitarPollo.Click += new System.EventHandler(this.btnQuitarPollo_Click);
             // 
             // cmbEdadPollo
             // 
@@ -284,33 +295,35 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbEdadPollo.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbEdadPollo.FormattingEnabled = true;
-            this.cmbEdadPollo.Location = new System.Drawing.Point(695, 46);
+            this.cmbEdadPollo.Location = new System.Drawing.Point(927, 57);
+            this.cmbEdadPollo.Margin = new System.Windows.Forms.Padding(4);
             this.cmbEdadPollo.Name = "cmbEdadPollo";
-            this.cmbEdadPollo.Size = new System.Drawing.Size(120, 24);
+            this.cmbEdadPollo.Size = new System.Drawing.Size(159, 27);
             this.cmbEdadPollo.TabIndex = 139;
             // 
-            // txtlote
+            // txtLote
             // 
-            this.txtlote.AutoSize = true;
-            this.txtlote.BorderColor = System.Drawing.Color.Silver;
-            this.txtlote.BorderRadius = 5;
-            this.txtlote.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtlote.DefaultText = "";
-            this.txtlote.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtlote.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtlote.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtlote.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtlote.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtlote.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtlote.ForeColor = System.Drawing.Color.Black;
-            this.txtlote.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtlote.Location = new System.Drawing.Point(542, 130);
-            this.txtlote.Name = "txtlote";
-            this.txtlote.PasswordChar = '\0';
-            this.txtlote.PlaceholderText = "";
-            this.txtlote.SelectedText = "";
-            this.txtlote.Size = new System.Drawing.Size(144, 21);
-            this.txtlote.TabIndex = 138;
+            this.txtLote.AutoSize = true;
+            this.txtLote.BorderColor = System.Drawing.Color.Silver;
+            this.txtLote.BorderRadius = 5;
+            this.txtLote.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtLote.DefaultText = "";
+            this.txtLote.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtLote.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtLote.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtLote.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtLote.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtLote.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLote.ForeColor = System.Drawing.Color.Black;
+            this.txtLote.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtLote.Location = new System.Drawing.Point(723, 160);
+            this.txtLote.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtLote.Name = "txtLote";
+            this.txtLote.PasswordChar = '\0';
+            this.txtLote.PlaceholderText = "";
+            this.txtLote.SelectedText = "";
+            this.txtLote.Size = new System.Drawing.Size(192, 30);
+            this.txtLote.TabIndex = 138;
             // 
             // cmbEstadoPollo
             // 
@@ -323,33 +336,35 @@
             "Vivo",
             "Muerto",
             "Enfermo"});
-            this.cmbEstadoPollo.Location = new System.Drawing.Point(457, 47);
+            this.cmbEstadoPollo.Location = new System.Drawing.Point(609, 58);
+            this.cmbEstadoPollo.Margin = new System.Windows.Forms.Padding(4);
             this.cmbEstadoPollo.Name = "cmbEstadoPollo";
-            this.cmbEstadoPollo.Size = new System.Drawing.Size(136, 24);
+            this.cmbEstadoPollo.Size = new System.Drawing.Size(180, 27);
             this.cmbEstadoPollo.TabIndex = 136;
             // 
-            // txtRazapollo
+            // txtRazaPollo
             // 
-            this.txtRazapollo.AutoSize = true;
-            this.txtRazapollo.BorderColor = System.Drawing.Color.Silver;
-            this.txtRazapollo.BorderRadius = 5;
-            this.txtRazapollo.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtRazapollo.DefaultText = "";
-            this.txtRazapollo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtRazapollo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtRazapollo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtRazapollo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtRazapollo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtRazapollo.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRazapollo.ForeColor = System.Drawing.Color.Black;
-            this.txtRazapollo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtRazapollo.Location = new System.Drawing.Point(254, 51);
-            this.txtRazapollo.Name = "txtRazapollo";
-            this.txtRazapollo.PasswordChar = '\0';
-            this.txtRazapollo.PlaceholderText = "";
-            this.txtRazapollo.SelectedText = "";
-            this.txtRazapollo.Size = new System.Drawing.Size(139, 21);
-            this.txtRazapollo.TabIndex = 135;
+            this.txtRazaPollo.AutoSize = true;
+            this.txtRazaPollo.BorderColor = System.Drawing.Color.Silver;
+            this.txtRazaPollo.BorderRadius = 5;
+            this.txtRazaPollo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtRazaPollo.DefaultText = "";
+            this.txtRazaPollo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtRazaPollo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtRazaPollo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtRazaPollo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtRazaPollo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtRazaPollo.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRazaPollo.ForeColor = System.Drawing.Color.Black;
+            this.txtRazaPollo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtRazaPollo.Location = new System.Drawing.Point(339, 63);
+            this.txtRazaPollo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtRazaPollo.Name = "txtRazaPollo";
+            this.txtRazaPollo.PasswordChar = '\0';
+            this.txtRazaPollo.PlaceholderText = "";
+            this.txtRazaPollo.SelectedText = "";
+            this.txtRazaPollo.Size = new System.Drawing.Size(185, 30);
+            this.txtRazaPollo.TabIndex = 135;
             // 
             // txtcodigoPollo
             // 
@@ -366,12 +381,13 @@
             this.txtcodigoPollo.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcodigoPollo.ForeColor = System.Drawing.Color.Black;
             this.txtcodigoPollo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtcodigoPollo.Location = new System.Drawing.Point(46, 51);
+            this.txtcodigoPollo.Location = new System.Drawing.Point(61, 63);
+            this.txtcodigoPollo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtcodigoPollo.Name = "txtcodigoPollo";
             this.txtcodigoPollo.PasswordChar = '\0';
             this.txtcodigoPollo.PlaceholderText = "";
             this.txtcodigoPollo.SelectedText = "";
-            this.txtcodigoPollo.Size = new System.Drawing.Size(153, 21);
+            this.txtcodigoPollo.Size = new System.Drawing.Size(204, 30);
             this.txtcodigoPollo.TabIndex = 134;
             // 
             // label6
@@ -379,9 +395,10 @@
             this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(61, 104);
+            this.label6.Location = new System.Drawing.Point(81, 128);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(138, 23);
+            this.label6.Size = new System.Drawing.Size(184, 28);
             this.label6.TabIndex = 123;
             this.label6.Text = "Fecha Ingreso";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -391,9 +408,10 @@
             this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(316, 104);
+            this.label5.Location = new System.Drawing.Point(421, 128);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(124, 23);
+            this.label5.Size = new System.Drawing.Size(165, 28);
             this.label5.TabIndex = 122;
             this.label5.Text = "Galpon";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -403,9 +421,10 @@
             this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(250, 21);
+            this.label4.Location = new System.Drawing.Point(333, 26);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(124, 23);
+            this.label4.Size = new System.Drawing.Size(165, 28);
             this.label4.TabIndex = 121;
             this.label4.Text = "Raza";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -415,9 +434,10 @@
             this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(691, 21);
+            this.label3.Location = new System.Drawing.Point(921, 26);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(124, 23);
+            this.label3.Size = new System.Drawing.Size(165, 28);
             this.label3.TabIndex = 120;
             this.label3.Text = "Edad";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -427,9 +447,10 @@
             this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(453, 21);
+            this.label2.Location = new System.Drawing.Point(604, 26);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(124, 23);
+            this.label2.Size = new System.Drawing.Size(165, 28);
             this.label2.TabIndex = 119;
             this.label2.Text = "Estado";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -439,9 +460,10 @@
             this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(538, 101);
+            this.label1.Location = new System.Drawing.Point(717, 124);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 23);
+            this.label1.Size = new System.Drawing.Size(165, 28);
             this.label1.TabIndex = 118;
             this.label1.Text = "Lote";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -451,9 +473,10 @@
             this.Controles.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Controles.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Controles.ForeColor = System.Drawing.Color.White;
-            this.Controles.Location = new System.Drawing.Point(61, 22);
+            this.Controles.Location = new System.Drawing.Point(81, 27);
+            this.Controles.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Controles.Name = "Controles";
-            this.Controles.Size = new System.Drawing.Size(106, 23);
+            this.Controles.Size = new System.Drawing.Size(141, 28);
             this.Controles.TabIndex = 117;
             this.Controles.Text = "Codigo";
             this.Controles.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -473,13 +496,13 @@
             this.txtBusquedaPollo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBusquedaPollo.ForeColor = System.Drawing.Color.Black;
             this.txtBusquedaPollo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBusquedaPollo.Location = new System.Drawing.Point(37, 261);
-            this.txtBusquedaPollo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtBusquedaPollo.Location = new System.Drawing.Point(49, 321);
+            this.txtBusquedaPollo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtBusquedaPollo.Name = "txtBusquedaPollo";
             this.txtBusquedaPollo.PasswordChar = '\0';
             this.txtBusquedaPollo.PlaceholderText = "";
             this.txtBusquedaPollo.SelectedText = "";
-            this.txtBusquedaPollo.Size = new System.Drawing.Size(482, 27);
+            this.txtBusquedaPollo.Size = new System.Drawing.Size(643, 33);
             this.txtBusquedaPollo.TabIndex = 172;
             this.txtBusquedaPollo.Enter += new System.EventHandler(this.txtBusquedaPollo_Enter);
             this.txtBusquedaPollo.Leave += new System.EventHandler(this.txtBusquedaPollo_Leave);
@@ -514,8 +537,8 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvPollo.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvPollo.Location = new System.Drawing.Point(37, 294);
-            this.dgvPollo.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvPollo.Location = new System.Drawing.Point(49, 362);
+            this.dgvPollo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvPollo.Name = "dgvPollo";
             this.dgvPollo.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -534,18 +557,19 @@
             this.dgvPollo.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvPollo.RowTemplate.Height = 24;
             this.dgvPollo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPollo.Size = new System.Drawing.Size(1128, 275);
+            this.dgvPollo.Size = new System.Drawing.Size(1504, 338);
             this.dgvPollo.TabIndex = 171;
             // 
             // frmPollo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(16)))), ((int)(((byte)(20)))));
-            this.ClientSize = new System.Drawing.Size(1200, 600);
+            this.ClientSize = new System.Drawing.Size(1600, 738);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPollo";
             this.Text = "frmPollo";
             this.panel1.ResumeLayout(false);
@@ -571,9 +595,9 @@
         private Guna.UI2.WinForms.Guna2Button btnCancelarPollo;
         private Guna.UI2.WinForms.Guna2Button btnQuitarPollo;
         private System.Windows.Forms.ComboBox cmbEdadPollo;
-        private Guna.UI2.WinForms.Guna2TextBox txtlote;
+        private Guna.UI2.WinForms.Guna2TextBox txtLote;
         private System.Windows.Forms.ComboBox cmbEstadoPollo;
-        private Guna.UI2.WinForms.Guna2TextBox txtRazapollo;
+        private Guna.UI2.WinForms.Guna2TextBox txtRazaPollo;
         private Guna.UI2.WinForms.Guna2TextBox txtcodigoPollo;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;

@@ -40,11 +40,17 @@ namespace Logica
         }
         public string BorrarPollo(int idPollo)
         {
-            if (repositorioPollo.EliminarPollo(idPollo) > 0)
+            try 
             {
-                return "La informacion fue borrada con exito";
+                int numRegistros = repositorioPollo.EliminarPollo(idPollo);
+                if (numRegistros > 0)
+                {
+                    return $"Se eliminó {numRegistros} registro de la base de datos";
+                }
+                return "Por algún motivo que desconozco, no se eliminó la información";
             }
-            return "la informacion no fue borrada";
+            catch (Exception e) { return $"ERROR EN SERVICIOS: {e}"; }
+           
         }
 
         public List<EntidadPollo> listapollo()
