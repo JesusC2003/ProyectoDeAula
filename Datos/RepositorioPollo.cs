@@ -217,7 +217,7 @@ namespace Datos
             pollo.EdadPollo = Convert.ToString(lector["EDAD_POLLO"]);
             pollo.NumeroLote = Convert.ToString(lector["NUMERO_LOTE"]);
             pollo.FechaIngreso = Convert.ToDateTime(lector["FECHA_INGRESO"]);
-            pollo.IdGalpon = RepositorioGalpon.ConsultarGalpon(Convert.ToInt32(lector["FK_GALPON"]));
+            //pollo.IdGalpon = RepositorioGalpon.ConsultarGalpon(Convert.ToInt32(lector["FK_GALPON"]));
 
             return pollo;
         }

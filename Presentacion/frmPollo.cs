@@ -83,7 +83,7 @@ namespace Presentacion
 
         private void btnCancelarPollo_Click(object sender, EventArgs e)
         {
-
+           new frmPollo();
         }
 
         //METODOS
@@ -141,7 +141,7 @@ namespace Presentacion
                 row["EDAD POLLO"] = pollo.EdadPollo;
                 row["NUMERO LOTE"] = pollo.NumeroLote;
                 row["FECHA INGRESO"] = pollo.FechaIngreso;
-                row["GALPON"] = pollo.IdGalpon.NombreGalpon;
+                //row["GALPON"] = pollo.IdGalpon.NombreGalpon;
 
                 dataTable.Rows.Add(row);
             }

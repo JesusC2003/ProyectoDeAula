@@ -167,9 +167,9 @@ namespace Datos
             {
                 MessageBox.Show($"Error de Oracle al consultar los Galpones: {ex.Message}");
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                MessageBox.Show($"Error al consultar los Galpones: {ex.Message}");
+                MessageBox.Show($"Error al consultar los Galpones: {e.Message}");
             }
             finally
             {
