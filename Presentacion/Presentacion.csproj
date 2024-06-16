@@ -88,6 +88,7 @@
       <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
     </Reference>
     <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -105,23 +106,11 @@
     <Compile Include="frmAgregarAlimento.Designer.cs">
       <DependentUpon>frmAgregarAlimento.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAgregarGalpon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmAgregarGalpon.Designer.cs">
-      <DependentUpon>frmAgregarGalpon.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmAgregarMedicamento.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmAgregarMedicamento.Designer.cs">
       <DependentUpon>frmAgregarMedicamento.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmAlimento.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmAlimento.Designer.cs">
-      <DependentUpon>frmAlimento.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEmpresa.cs">
       <SubType>Form</SubType>
@@ -141,11 +130,11 @@
     <Compile Include="frmGalpon.Designer.cs">
       <DependentUpon>frmGalpon.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMedicamento.cs">
+    <Compile Include="frmSalud.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMedicamento.Designer.cs">
-      <DependentUpon>frmMedicamento.cs</DependentUpon>
+    <Compile Include="frmSalud.Designer.cs">
+      <DependentUpon>frmSalud.cs</DependentUpon>
     </Compile>
     <Compile Include="frmmenuiniciar.cs">
       <SubType>Form</SubType>
@@ -195,16 +184,9 @@
       <DependentUpon>frmAgregarAlimento.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAgregarGalpon.resx">
-      <DependentUpon>frmAgregarGalpon.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmAgregarMedicamento.resx">
       <DependentUpon>frmAgregarMedicamento.cs</DependentUpon>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmAlimento.resx">
-      <DependentUpon>frmAlimento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEmpresa.resx">
       <DependentUpon>frmEmpresa.cs</DependentUpon>
@@ -218,8 +200,8 @@
     <EmbeddedResource Include="frmIniciarSesion.resx">
       <DependentUpon>frmIniciarSesion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMedicamento.resx">
-      <DependentUpon>frmMedicamento.cs</DependentUpon>
+    <EmbeddedResource Include="frmSalud.resx">
+      <DependentUpon>frmSalud.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmmenuiniciar.resx">
       <DependentUpon>frmmenuiniciar.cs</DependentUpon>

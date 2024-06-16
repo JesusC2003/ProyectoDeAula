@@ -124,6 +124,11 @@ namespace Presentacion
                 }
             }
         }
+
+        private void btnCancelaroperacion_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
 

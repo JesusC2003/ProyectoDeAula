@@ -30,9 +30,17 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCancelaroperacion = new Guna.UI2.WinForms.Guna2Button();
+            this.btnFacturar = new Guna.UI2.WinForms.Guna2Button();
             this.label12 = new System.Windows.Forms.Label();
             this.txtMontoTotal = new Guna.UI2.WinForms.Guna2TextBox();
             this.grpDetalleProducto = new System.Windows.Forms.GroupBox();
+            this.txtedad = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnbusquedacodigo = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.txtRaza = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnAgregarFactura = new Guna.UI2.WinForms.Guna2Button();
+            this.btnEliminarFactura = new Guna.UI2.WinForms.Guna2Button();
             this.txtlote = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtPrecioUnitario = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtCodigo = new Guna.UI2.WinForms.Guna2TextBox();
@@ -41,6 +49,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.grpDatosCliente = new System.Windows.Forms.GroupBox();
+            this.btnmodificarfactura = new Guna.UI2.WinForms.Guna2Button();
+            this.btnbusquedaidentificacion = new Guna.UI2.WinForms.Guna2CircleButton();
             this.panelTipoCliente = new System.Windows.Forms.Panel();
             this.rdonatural = new System.Windows.Forms.RadioButton();
             this.rdojuridica = new System.Windows.Forms.RadioButton();
@@ -59,17 +69,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvFactura = new System.Windows.Forms.DataGridView();
-            this.btnEliminarFactura = new Guna.UI2.WinForms.Guna2Button();
-            this.btnAgregarFactura = new Guna.UI2.WinForms.Guna2Button();
-            this.btnFacturar = new Guna.UI2.WinForms.Guna2Button();
-            this.btnbusquedaidentificacion = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.txtRaza = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnbusquedacodigo = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.txtedad = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnmodificarfactura = new Guna.UI2.WinForms.Guna2Button();
             this.label14 = new System.Windows.Forms.Label();
-            this.btnCancelaroperacion = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.grpDetalleProducto.SuspendLayout();
             this.grpDatosCliente.SuspendLayout();
@@ -92,6 +92,51 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(654, 582);
             this.panel1.TabIndex = 0;
+            // 
+            // btnCancelaroperacion
+            // 
+            this.btnCancelaroperacion.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancelaroperacion.BorderRadius = 12;
+            this.btnCancelaroperacion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancelaroperacion.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.btnCancelaroperacion.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCancelaroperacion.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCancelaroperacion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCancelaroperacion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCancelaroperacion.FillColor = System.Drawing.Color.LightBlue;
+            this.btnCancelaroperacion.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnCancelaroperacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
+            this.btnCancelaroperacion.Location = new System.Drawing.Point(326, 523);
+            this.btnCancelaroperacion.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCancelaroperacion.Name = "btnCancelaroperacion";
+            this.btnCancelaroperacion.Size = new System.Drawing.Size(216, 25);
+            this.btnCancelaroperacion.TabIndex = 172;
+            this.btnCancelaroperacion.Text = "Cancelar Operacion";
+            this.btnCancelaroperacion.TextFormatNoPrefix = true;
+            this.btnCancelaroperacion.Click += new System.EventHandler(this.btnCancelaroperacion_Click);
+            // 
+            // btnFacturar
+            // 
+            this.btnFacturar.BackColor = System.Drawing.Color.Transparent;
+            this.btnFacturar.BorderRadius = 12;
+            this.btnFacturar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFacturar.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.btnFacturar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnFacturar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnFacturar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnFacturar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnFacturar.FillColor = System.Drawing.Color.LightBlue;
+            this.btnFacturar.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnFacturar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
+            this.btnFacturar.Image = global::Presentacion.Properties.Resources.icons8_factura_28;
+            this.btnFacturar.Location = new System.Drawing.Point(149, 523);
+            this.btnFacturar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnFacturar.Name = "btnFacturar";
+            this.btnFacturar.Size = new System.Drawing.Size(123, 25);
+            this.btnFacturar.TabIndex = 158;
+            this.btnFacturar.Text = "Facturar";
+            this.btnFacturar.TextFormatNoPrefix = true;
+            this.btnFacturar.Click += new System.EventHandler(this.btnFacturar_Click_1);
             // 
             // label12
             // 
@@ -153,6 +198,123 @@
             this.grpDetalleProducto.TabIndex = 24;
             this.grpDetalleProducto.TabStop = false;
             this.grpDetalleProducto.Text = "Detalle Producto";
+            // 
+            // txtedad
+            // 
+            this.txtedad.AutoSize = true;
+            this.txtedad.BorderColor = System.Drawing.Color.Silver;
+            this.txtedad.BorderRadius = 5;
+            this.txtedad.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtedad.DefaultText = "";
+            this.txtedad.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtedad.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtedad.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtedad.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtedad.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtedad.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtedad.ForeColor = System.Drawing.Color.Black;
+            this.txtedad.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtedad.Location = new System.Drawing.Point(234, 103);
+            this.txtedad.Margin = new System.Windows.Forms.Padding(2);
+            this.txtedad.Name = "txtedad";
+            this.txtedad.PasswordChar = '\0';
+            this.txtedad.PlaceholderText = "";
+            this.txtedad.SelectedText = "";
+            this.txtedad.Size = new System.Drawing.Size(118, 20);
+            this.txtedad.TabIndex = 173;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(240, 82);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(92, 19);
+            this.label1.TabIndex = 172;
+            this.label1.Text = "Edad";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // btnbusquedacodigo
+            // 
+            this.btnbusquedacodigo.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnbusquedacodigo.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnbusquedacodigo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnbusquedacodigo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnbusquedacodigo.FillColor = System.Drawing.Color.LightBlue;
+            this.btnbusquedacodigo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnbusquedacodigo.ForeColor = System.Drawing.Color.White;
+            this.btnbusquedacodigo.Image = global::Presentacion.Properties.Resources.busqueda;
+            this.btnbusquedacodigo.Location = new System.Drawing.Point(173, 34);
+            this.btnbusquedacodigo.Name = "btnbusquedacodigo";
+            this.btnbusquedacodigo.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnbusquedacodigo.Size = new System.Drawing.Size(30, 28);
+            this.btnbusquedacodigo.TabIndex = 171;
+            // 
+            // txtRaza
+            // 
+            this.txtRaza.AutoSize = true;
+            this.txtRaza.BorderColor = System.Drawing.Color.Silver;
+            this.txtRaza.BorderRadius = 5;
+            this.txtRaza.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtRaza.DefaultText = "";
+            this.txtRaza.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtRaza.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtRaza.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtRaza.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtRaza.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtRaza.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRaza.ForeColor = System.Drawing.Color.Black;
+            this.txtRaza.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtRaza.Location = new System.Drawing.Point(234, 37);
+            this.txtRaza.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRaza.Name = "txtRaza";
+            this.txtRaza.PasswordChar = '\0';
+            this.txtRaza.PlaceholderText = "";
+            this.txtRaza.SelectedText = "";
+            this.txtRaza.Size = new System.Drawing.Size(118, 20);
+            this.txtRaza.TabIndex = 170;
+            // 
+            // btnAgregarFactura
+            // 
+            this.btnAgregarFactura.BackColor = System.Drawing.Color.Transparent;
+            this.btnAgregarFactura.BorderRadius = 12;
+            this.btnAgregarFactura.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregarFactura.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.btnAgregarFactura.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAgregarFactura.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAgregarFactura.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAgregarFactura.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAgregarFactura.FillColor = System.Drawing.Color.LightBlue;
+            this.btnAgregarFactura.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnAgregarFactura.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
+            this.btnAgregarFactura.Location = new System.Drawing.Point(392, 122);
+            this.btnAgregarFactura.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAgregarFactura.Name = "btnAgregarFactura";
+            this.btnAgregarFactura.Size = new System.Drawing.Size(121, 23);
+            this.btnAgregarFactura.TabIndex = 157;
+            this.btnAgregarFactura.Text = "Agregar";
+            this.btnAgregarFactura.TextFormatNoPrefix = true;
+            // 
+            // btnEliminarFactura
+            // 
+            this.btnEliminarFactura.BackColor = System.Drawing.Color.Transparent;
+            this.btnEliminarFactura.BorderRadius = 12;
+            this.btnEliminarFactura.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminarFactura.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.btnEliminarFactura.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnEliminarFactura.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnEliminarFactura.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEliminarFactura.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnEliminarFactura.FillColor = System.Drawing.Color.LightBlue;
+            this.btnEliminarFactura.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnEliminarFactura.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
+            this.btnEliminarFactura.Location = new System.Drawing.Point(518, 122);
+            this.btnEliminarFactura.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEliminarFactura.Name = "btnEliminarFactura";
+            this.btnEliminarFactura.Size = new System.Drawing.Size(121, 23);
+            this.btnEliminarFactura.TabIndex = 159;
+            this.btnEliminarFactura.Text = "Eliminar";
+            this.btnEliminarFactura.TextFormatNoPrefix = true;
             // 
             // txtlote
             // 
@@ -297,6 +459,43 @@
             this.grpDatosCliente.TabIndex = 23;
             this.grpDatosCliente.TabStop = false;
             this.grpDatosCliente.Text = "Datos Cliente";
+            // 
+            // btnmodificarfactura
+            // 
+            this.btnmodificarfactura.BackColor = System.Drawing.Color.Transparent;
+            this.btnmodificarfactura.BorderRadius = 12;
+            this.btnmodificarfactura.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnmodificarfactura.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.btnmodificarfactura.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnmodificarfactura.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnmodificarfactura.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnmodificarfactura.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnmodificarfactura.FillColor = System.Drawing.Color.LightBlue;
+            this.btnmodificarfactura.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnmodificarfactura.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
+            this.btnmodificarfactura.Location = new System.Drawing.Point(518, 138);
+            this.btnmodificarfactura.Margin = new System.Windows.Forms.Padding(2);
+            this.btnmodificarfactura.Name = "btnmodificarfactura";
+            this.btnmodificarfactura.Size = new System.Drawing.Size(121, 23);
+            this.btnmodificarfactura.TabIndex = 170;
+            this.btnmodificarfactura.Text = "Modificar";
+            this.btnmodificarfactura.TextFormatNoPrefix = true;
+            // 
+            // btnbusquedaidentificacion
+            // 
+            this.btnbusquedaidentificacion.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnbusquedaidentificacion.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnbusquedaidentificacion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnbusquedaidentificacion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnbusquedaidentificacion.FillColor = System.Drawing.Color.LightBlue;
+            this.btnbusquedaidentificacion.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnbusquedaidentificacion.ForeColor = System.Drawing.Color.White;
+            this.btnbusquedaidentificacion.Image = global::Presentacion.Properties.Resources.busqueda;
+            this.btnbusquedaidentificacion.Location = new System.Drawing.Point(185, 38);
+            this.btnbusquedaidentificacion.Name = "btnbusquedaidentificacion";
+            this.btnbusquedaidentificacion.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnbusquedaidentificacion.Size = new System.Drawing.Size(30, 28);
+            this.btnbusquedaidentificacion.TabIndex = 169;
             // 
             // panelTipoCliente
             // 
@@ -572,183 +771,6 @@
             this.dgvFactura.Size = new System.Drawing.Size(630, 125);
             this.dgvFactura.TabIndex = 0;
             // 
-            // btnEliminarFactura
-            // 
-            this.btnEliminarFactura.BackColor = System.Drawing.Color.Transparent;
-            this.btnEliminarFactura.BorderRadius = 12;
-            this.btnEliminarFactura.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEliminarFactura.CustomBorderColor = System.Drawing.Color.Transparent;
-            this.btnEliminarFactura.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnEliminarFactura.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnEliminarFactura.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnEliminarFactura.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnEliminarFactura.FillColor = System.Drawing.Color.LightBlue;
-            this.btnEliminarFactura.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnEliminarFactura.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
-            this.btnEliminarFactura.Location = new System.Drawing.Point(550, 124);
-            this.btnEliminarFactura.Margin = new System.Windows.Forms.Padding(2);
-            this.btnEliminarFactura.Name = "btnEliminarFactura";
-            this.btnEliminarFactura.Size = new System.Drawing.Size(89, 21);
-            this.btnEliminarFactura.TabIndex = 159;
-            this.btnEliminarFactura.Text = "Eliminar";
-            this.btnEliminarFactura.TextFormatNoPrefix = true;
-            // 
-            // btnAgregarFactura
-            // 
-            this.btnAgregarFactura.BackColor = System.Drawing.Color.Transparent;
-            this.btnAgregarFactura.BorderRadius = 12;
-            this.btnAgregarFactura.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAgregarFactura.CustomBorderColor = System.Drawing.Color.Transparent;
-            this.btnAgregarFactura.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAgregarFactura.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAgregarFactura.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAgregarFactura.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAgregarFactura.FillColor = System.Drawing.Color.LightBlue;
-            this.btnAgregarFactura.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnAgregarFactura.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
-            this.btnAgregarFactura.Location = new System.Drawing.Point(448, 124);
-            this.btnAgregarFactura.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAgregarFactura.Name = "btnAgregarFactura";
-            this.btnAgregarFactura.Size = new System.Drawing.Size(89, 21);
-            this.btnAgregarFactura.TabIndex = 157;
-            this.btnAgregarFactura.Text = "Agregar";
-            this.btnAgregarFactura.TextFormatNoPrefix = true;
-            // 
-            // btnFacturar
-            // 
-            this.btnFacturar.BackColor = System.Drawing.Color.Transparent;
-            this.btnFacturar.BorderRadius = 12;
-            this.btnFacturar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFacturar.CustomBorderColor = System.Drawing.Color.Transparent;
-            this.btnFacturar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnFacturar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnFacturar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnFacturar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnFacturar.FillColor = System.Drawing.Color.LightBlue;
-            this.btnFacturar.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnFacturar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
-            this.btnFacturar.Image = global::Presentacion.Properties.Resources.icons8_factura_28;
-            this.btnFacturar.Location = new System.Drawing.Point(188, 523);
-            this.btnFacturar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnFacturar.Name = "btnFacturar";
-            this.btnFacturar.Size = new System.Drawing.Size(123, 25);
-            this.btnFacturar.TabIndex = 158;
-            this.btnFacturar.Text = "Facturar";
-            this.btnFacturar.TextFormatNoPrefix = true;
-            this.btnFacturar.Click += new System.EventHandler(this.btnFacturar_Click_1);
-            // 
-            // btnbusquedaidentificacion
-            // 
-            this.btnbusquedaidentificacion.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnbusquedaidentificacion.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnbusquedaidentificacion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnbusquedaidentificacion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnbusquedaidentificacion.FillColor = System.Drawing.Color.LightBlue;
-            this.btnbusquedaidentificacion.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnbusquedaidentificacion.ForeColor = System.Drawing.Color.White;
-            this.btnbusquedaidentificacion.Image = global::Presentacion.Properties.Resources.busqueda;
-            this.btnbusquedaidentificacion.Location = new System.Drawing.Point(185, 38);
-            this.btnbusquedaidentificacion.Name = "btnbusquedaidentificacion";
-            this.btnbusquedaidentificacion.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnbusquedaidentificacion.Size = new System.Drawing.Size(30, 28);
-            this.btnbusquedaidentificacion.TabIndex = 169;
-            // 
-            // txtRaza
-            // 
-            this.txtRaza.AutoSize = true;
-            this.txtRaza.BorderColor = System.Drawing.Color.Silver;
-            this.txtRaza.BorderRadius = 5;
-            this.txtRaza.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtRaza.DefaultText = "";
-            this.txtRaza.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtRaza.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtRaza.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtRaza.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtRaza.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtRaza.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRaza.ForeColor = System.Drawing.Color.Black;
-            this.txtRaza.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtRaza.Location = new System.Drawing.Point(234, 37);
-            this.txtRaza.Margin = new System.Windows.Forms.Padding(2);
-            this.txtRaza.Name = "txtRaza";
-            this.txtRaza.PasswordChar = '\0';
-            this.txtRaza.PlaceholderText = "";
-            this.txtRaza.SelectedText = "";
-            this.txtRaza.Size = new System.Drawing.Size(118, 20);
-            this.txtRaza.TabIndex = 170;
-            // 
-            // btnbusquedacodigo
-            // 
-            this.btnbusquedacodigo.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnbusquedacodigo.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnbusquedacodigo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnbusquedacodigo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnbusquedacodigo.FillColor = System.Drawing.Color.LightBlue;
-            this.btnbusquedacodigo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnbusquedacodigo.ForeColor = System.Drawing.Color.White;
-            this.btnbusquedacodigo.Image = global::Presentacion.Properties.Resources.busqueda;
-            this.btnbusquedacodigo.Location = new System.Drawing.Point(173, 34);
-            this.btnbusquedacodigo.Name = "btnbusquedacodigo";
-            this.btnbusquedacodigo.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnbusquedacodigo.Size = new System.Drawing.Size(30, 28);
-            this.btnbusquedacodigo.TabIndex = 171;
-            // 
-            // txtedad
-            // 
-            this.txtedad.AutoSize = true;
-            this.txtedad.BorderColor = System.Drawing.Color.Silver;
-            this.txtedad.BorderRadius = 5;
-            this.txtedad.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtedad.DefaultText = "";
-            this.txtedad.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtedad.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtedad.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtedad.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtedad.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtedad.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtedad.ForeColor = System.Drawing.Color.Black;
-            this.txtedad.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtedad.Location = new System.Drawing.Point(234, 103);
-            this.txtedad.Margin = new System.Windows.Forms.Padding(2);
-            this.txtedad.Name = "txtedad";
-            this.txtedad.PasswordChar = '\0';
-            this.txtedad.PlaceholderText = "";
-            this.txtedad.SelectedText = "";
-            this.txtedad.Size = new System.Drawing.Size(118, 20);
-            this.txtedad.TabIndex = 173;
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(240, 82);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 19);
-            this.label1.TabIndex = 172;
-            this.label1.Text = "Edad";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // btnmodificarfactura
-            // 
-            this.btnmodificarfactura.BackColor = System.Drawing.Color.Transparent;
-            this.btnmodificarfactura.BorderRadius = 12;
-            this.btnmodificarfactura.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnmodificarfactura.CustomBorderColor = System.Drawing.Color.Transparent;
-            this.btnmodificarfactura.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnmodificarfactura.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnmodificarfactura.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnmodificarfactura.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnmodificarfactura.FillColor = System.Drawing.Color.LightBlue;
-            this.btnmodificarfactura.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnmodificarfactura.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
-            this.btnmodificarfactura.Location = new System.Drawing.Point(534, 140);
-            this.btnmodificarfactura.Margin = new System.Windows.Forms.Padding(2);
-            this.btnmodificarfactura.Name = "btnmodificarfactura";
-            this.btnmodificarfactura.Size = new System.Drawing.Size(105, 21);
-            this.btnmodificarfactura.TabIndex = 170;
-            this.btnmodificarfactura.Text = "Modificar";
-            this.btnmodificarfactura.TextFormatNoPrefix = true;
-            // 
             // label14
             // 
             this.label14.BackColor = System.Drawing.Color.LightBlue;
@@ -761,27 +783,6 @@
             this.label14.TabIndex = 6;
             this.label14.Text = "Formulario de Facturacion";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnCancelaroperacion
-            // 
-            this.btnCancelaroperacion.BackColor = System.Drawing.Color.Transparent;
-            this.btnCancelaroperacion.BorderRadius = 12;
-            this.btnCancelaroperacion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancelaroperacion.CustomBorderColor = System.Drawing.Color.Transparent;
-            this.btnCancelaroperacion.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCancelaroperacion.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCancelaroperacion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCancelaroperacion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCancelaroperacion.FillColor = System.Drawing.Color.LightBlue;
-            this.btnCancelaroperacion.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnCancelaroperacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
-            this.btnCancelaroperacion.Location = new System.Drawing.Point(359, 523);
-            this.btnCancelaroperacion.Margin = new System.Windows.Forms.Padding(2);
-            this.btnCancelaroperacion.Name = "btnCancelaroperacion";
-            this.btnCancelaroperacion.Size = new System.Drawing.Size(193, 25);
-            this.btnCancelaroperacion.TabIndex = 172;
-            this.btnCancelaroperacion.Text = "Cancelar Operacion";
-            this.btnCancelaroperacion.TextFormatNoPrefix = true;
             // 
             // frmFactura
             // 

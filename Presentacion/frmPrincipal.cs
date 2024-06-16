@@ -97,8 +97,8 @@ namespace Presentacion
         private void BtnMedicamento_Click(object sender, EventArgs e)
         {
             panel3.Visible= true;
-            lblTitulo.Text = "FORMULARIO DE MEDICAMENTO";
-            AbrirFmr(new frmMedicamento()); 
+            lblTitulo.Text = "FORMULARIO DE SALUD";
+            AbrirFmr(new frmSalud()); 
         }
 
         private void BtnPersonal_Click(object sender, EventArgs e)
@@ -163,6 +163,7 @@ namespace Presentacion
 
         private void BtnMenu_Click(object sender, EventArgs e)
         {
+            lblTitulo.Text = "";
             ShowFormInPanel(new frmmenuiniciar()); 
         }
 

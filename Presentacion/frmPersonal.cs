@@ -16,8 +16,7 @@ namespace Presentacion
         {
             InitializeComponent();
         }
-
-        private void txtBusquedaPersonal_Leave_1(object sender, EventArgs e)
+        private void txtBusquedaPersonal_Leave(object sender, EventArgs e)
         {
             if (txtBusquedaPersonal.Text == "")
             {
@@ -26,18 +25,13 @@ namespace Presentacion
             }
         }
 
-        private void txtBusquedaPersonal_Enter_1(object sender, EventArgs e)
+        private void txtBusquedaPersonal_Enter(object sender, EventArgs e)
         {
             if (txtBusquedaPersonal.Text == "Busqueda")
             {
                 txtBusquedaPersonal.Text = "";
                 txtBusquedaPersonal.ForeColor = Color.Black;
             }
-        }
-
-        private void btnAñadirPersonal_Click(object sender, EventArgs e)
-        {
-      
         }
     }
 }

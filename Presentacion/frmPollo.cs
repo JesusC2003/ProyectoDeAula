@@ -16,5 +16,23 @@ namespace Presentacion
         {
             InitializeComponent();
         }
+
+        private void txtBusquedaPollo_Leave(object sender, EventArgs e)
+        {
+            if (txtBusquedaPollo.Text == "")
+            {
+                txtBusquedaPollo.Text = "Busqueda";
+                txtBusquedaPollo.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtBusquedaPollo_Enter(object sender, EventArgs e)
+        {
+            if (txtBusquedaPollo.Text == "Busqueda")
+            {
+                txtBusquedaPollo.Text = "";
+                txtBusquedaPollo.ForeColor = Color.Black;
+            }
+        }
     }
 }
