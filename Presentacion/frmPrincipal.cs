@@ -163,6 +163,7 @@ namespace Presentacion
 
         private void BtnMenu_Click(object sender, EventArgs e)
         {
+            lblTitulo.Text = "";
             ShowFormInPanel(new frmmenuiniciar()); 
         }
 
