@@ -37,7 +37,7 @@
             this.cmbFiltrado = new System.Windows.Forms.ComboBox();
             this.btnNuevo = new Guna.UI2.WinForms.Guna2Button();
             this.btnEliminarPollo = new Guna.UI2.WinForms.Guna2Button();
-            this.txtModificar = new Guna.UI2.WinForms.Guna2Button();
+            this.btnModificar = new Guna.UI2.WinForms.Guna2Button();
             this.pnlGestionPollo = new System.Windows.Forms.Panel();
             this.cmbGalpon = new System.Windows.Forms.ComboBox();
             this.txtFechaIngreso = new Guna.UI2.WinForms.Guna2TextBox();
@@ -68,7 +68,7 @@
             this.panel1.Controls.Add(this.cmbFiltrado);
             this.panel1.Controls.Add(this.btnNuevo);
             this.panel1.Controls.Add(this.btnEliminarPollo);
-            this.panel1.Controls.Add(this.txtModificar);
+            this.panel1.Controls.Add(this.btnModificar);
             this.panel1.Controls.Add(this.pnlGestionPollo);
             this.panel1.Controls.Add(this.txtBusquedaPollo);
             this.panel1.Controls.Add(this.dgvPollo);
@@ -132,26 +132,26 @@
             this.btnEliminarPollo.Text = "Eliminar";
             this.btnEliminarPollo.TextFormatNoPrefix = true;
             // 
-            // txtModificar
+            // btnModificar
             // 
-            this.txtModificar.BackColor = System.Drawing.Color.Transparent;
-            this.txtModificar.BorderRadius = 12;
-            this.txtModificar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.txtModificar.CustomBorderColor = System.Drawing.Color.Transparent;
-            this.txtModificar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.txtModificar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.txtModificar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.txtModificar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.txtModificar.FillColor = System.Drawing.Color.LightBlue;
-            this.txtModificar.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtModificar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
-            this.txtModificar.Location = new System.Drawing.Point(926, 257);
-            this.txtModificar.Margin = new System.Windows.Forms.Padding(2);
-            this.txtModificar.Name = "txtModificar";
-            this.txtModificar.Size = new System.Drawing.Size(115, 30);
-            this.txtModificar.TabIndex = 174;
-            this.txtModificar.Text = "Modificar";
-            this.txtModificar.TextFormatNoPrefix = true;
+            this.btnModificar.BackColor = System.Drawing.Color.Transparent;
+            this.btnModificar.BorderRadius = 12;
+            this.btnModificar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnModificar.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.btnModificar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnModificar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnModificar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnModificar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnModificar.FillColor = System.Drawing.Color.LightBlue;
+            this.btnModificar.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
+            this.btnModificar.Location = new System.Drawing.Point(926, 257);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(115, 30);
+            this.btnModificar.TabIndex = 174;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.TextFormatNoPrefix = true;
             // 
             // pnlGestionPollo
             // 
@@ -563,7 +563,7 @@
         private System.Windows.Forms.ComboBox cmbFiltrado;
         private Guna.UI2.WinForms.Guna2Button btnNuevo;
         private Guna.UI2.WinForms.Guna2Button btnEliminarPollo;
-        private Guna.UI2.WinForms.Guna2Button txtModificar;
+        private Guna.UI2.WinForms.Guna2Button btnModificar;
         private System.Windows.Forms.Panel pnlGestionPollo;
         private System.Windows.Forms.ComboBox cmbGalpon;
         private Guna.UI2.WinForms.Guna2TextBox txtFechaIngreso;

@@ -68,10 +68,11 @@ namespace Presentacion
             paginahtml = paginahtml.Replace("@Telefono", txtTelefonoCliente.Text);
             paginahtml = paginahtml.Replace("@Correo", txtCorreoCliente.Text);
             paginahtml = paginahtml.Replace("@Fecha", DateTime.Now.ToString("dd/MM/yyyy"));
+
             //se crea un string para recorrer las columnas 
             string fila = string.Empty;
             decimal total = 0;
-            foreach (DataGridViewRow row in dgvFacturacion.Rows)//se recorre todo lo que tenga fila
+            foreach (DataGridViewRow row in dgvFacturacion.Rows) //se recorre todo lo que tenga fila
             {
                 fila += "<tr>";
                 fila += "<td>" + row.Cells["Item"].Value.ToString() + "</td>";
@@ -83,6 +84,10 @@ namespace Presentacion
             }
             paginahtml = paginahtml.Replace("@Filas", fila);
             paginahtml = paginahtml.Replace("@Total", total.ToString());
+
+            // Añadir un marcador de posición para la firma que será reemplazado con la imagen de la firma
+            string firmaPlaceholder = "<img src='@firma' width='150' height='50' />";
+            paginahtml = paginahtml.Replace("@firma", firmaPlaceholder);
 
             if (guardar.ShowDialog() == DialogResult.OK)
             {
@@ -99,11 +104,18 @@ namespace Presentacion
                             pdfdoc.Open();
                             pdfdoc.Add(new Phrase(""));
 
+                            // Añadir la imagen de fondo (opcional)
                             iTextSharp.text.Image img = iTextSharp.text.Image.GetInstance(Properties.Resources.fondo4, System.Drawing.Imaging.ImageFormat.Png);
                             img.ScaleToFit(80, 60);
                             img.Alignment = iTextSharp.text.Image.UNDERLYING;
                             img.SetAbsolutePosition(pdfdoc.LeftMargin, pdfdoc.Top - 60);
                             pdfdoc.Add(img);
+
+                            // Añadir la firma (imagen) en lugar del marcador de posición
+                            iTextSharp.text.Image firmaImg = iTextSharp.text.Image.GetInstance("ruta/a/tu/imagen/firma.png");
+                            firmaImg.ScaleToFit(150, 50);
+                            firmaImg.Alignment = iTextSharp.text.Image.ALIGN_CENTER;
+                            pdfdoc.Add(firmaImg);
 
                             using (StringReader reader = new StringReader(paginahtml))
                             {
@@ -128,6 +140,9 @@ namespace Presentacion
                 }
             }
         }
+
+
+
         private void btnCancelaroperacion_Click(object sender, EventArgs e)
         {
             this.Close();

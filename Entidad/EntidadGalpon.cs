@@ -11,6 +11,7 @@ namespace Entidad
             NombreGalpon=string.Empty;
             AreaGalpon = 0;
             EstadoGalpon = string.Empty;
+            PolloPorArea = 0;
         }
 
         public int CalcularCapacidad(int AreaGalpon)
@@ -25,7 +26,7 @@ namespace Entidad
         public string NombreGalpon { get; set; }
         public double AreaGalpon { get; set; }
         public string EstadoGalpon { get; set; }       
-
+        public int PolloPorArea {  get; set; }
     }
 }
     
