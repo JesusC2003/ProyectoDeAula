@@ -25,7 +25,7 @@ namespace Presentacion
             ServicioGalpon servicioGalpon = new ServicioGalpon();
             try
             {
-                DataTable dataTable = ConvertirListaADataTable(servicioGalpon.listaGalpon());
+                DataTable dataTable = ConvertirListaADataTable(servicioGalpon.ConsultarLosGalpones());
                 dgvGalpon.DataSource = dataTable;
             }
             catch (Exception ex)

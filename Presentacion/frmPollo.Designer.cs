@@ -295,6 +295,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbEdadPollo.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbEdadPollo.FormattingEnabled = true;
+            this.cmbEdadPollo.Items.AddRange(new object[] {
+            "Cría",
+            "Pollito",
+            "Pollo"});
             this.cmbEdadPollo.Location = new System.Drawing.Point(927, 57);
             this.cmbEdadPollo.Margin = new System.Windows.Forms.Padding(4);
             this.cmbEdadPollo.Name = "cmbEdadPollo";
@@ -335,7 +339,8 @@
             this.cmbEstadoPollo.Items.AddRange(new object[] {
             "Vivo",
             "Muerto",
-            "Enfermo"});
+            "Enfermo",
+            "Vnedido"});
             this.cmbEstadoPollo.Location = new System.Drawing.Point(609, 58);
             this.cmbEstadoPollo.Margin = new System.Windows.Forms.Padding(4);
             this.cmbEstadoPollo.Name = "cmbEstadoPollo";

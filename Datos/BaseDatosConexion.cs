@@ -3,24 +3,26 @@ using System;
 
 namespace Datos
 {
-    public abstract class BaseDatosConexion
+    public abstract class BaseDatosConexion 
     {
         private string cadenaConexion = @"Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521)))" +
                                          "(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=XEPDB1)));User Id=AdminHensys;Password=2024;";
-        private OracleConnection conexion;
+        OracleConnection conexion;
         protected BaseDatosConexion()
         {
             conexion = new OracleConnection(cadenaConexion);
         }
 
-        protected void AbrirConexion()
+        protected bool AbrirConexion()
         {
             try
             {
                 if (conexion.State != System.Data.ConnectionState.Open)
                 {
                     conexion.Open();
+                    return true;
                 }
+                return false;
             }
             catch (OracleException ex)
             {
@@ -45,6 +47,7 @@ namespace Datos
             }
             catch (OracleException ex)
             {
+                CerrarConexion();
                 throw new Exception($"Error al iniciar la transacción: {ex.Message}", ex);
             }
         }
@@ -58,6 +61,7 @@ namespace Datos
             catch (OracleException ex)
             {
                 transaccion.Rollback();
+                CerrarConexion();
                 throw new Exception($"Error al confirmar la transacción: {ex.Message}", ex);
             }
             finally
@@ -74,6 +78,7 @@ namespace Datos
             }
             catch (OracleException ex)
             {
+                CerrarConexion();
                 throw new Exception($"Error al deshacer la transacción: {ex.Message}", ex);
             }
             finally
@@ -85,12 +90,6 @@ namespace Datos
         protected OracleConnection ObtenerConexion()
         {
             return conexion;
-        }
-
-        public void Dispose()
-        {
-            CerrarConexion();
-            conexion.Dispose();
         }
 
     }

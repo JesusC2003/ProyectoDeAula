@@ -19,42 +19,42 @@ namespace Logica
         {
             repositorioGalpon = new RepositorioGalpon();
         }
-
         public string GuardarGalpon(EntidadGalpon galpon)
         {
-            if (repositorioGalpon.InsertarGalpon(galpon) > 0)
+            int numeroFilasAfectadas = repositorioGalpon.InsertarGalpon(galpon);
+            if ( numeroFilasAfectadas > 0)
             {
-                return "La informacion fue guardada con exito";
+                return $"{numeroFilasAfectadas} Fila insertada con exito!!!";
             }
-            return "la informacion no fue guardada";
+            return "|ERROR|- No se guardo la información";
         }
-
         public string ActualizarGalpon(EntidadGalpon galpon)
         {
-            if (repositorioGalpon.ActualizarGalpon(galpon) > 0)
+            int numeroFilasAfectadas = repositorioGalpon.ActualizarGalpon(galpon);
+            if (numeroFilasAfectadas > 0)
             {
-                return "La informacion fue actualizada con exito";
+                return $"{numeroFilasAfectadas} Fila actualizada con exito!!!";
             }
-            return "la informacion no fue actualizada";
+            return "|ERROR| - La información no fue actualizada";
         }
-
         public string BorrarGalpon(int idGalpon)
         {
-            if (repositorioGalpon.BorrarGalpon(idGalpon) > 0)
+            int numeroFilasAfectadas = repositorioGalpon.BorrarGalpon(idGalpon);
+            if (numeroFilasAfectadas > 0)
             {
-                return "La informacion fue borrada con exito";
+                return $"{numeroFilasAfectadas} Fila borrada con exito!!!";
             }
-            return "la informacion no fue borrada";
+            return "|ERROR| - La información no fue borrada";
         }
-        public List<EntidadGalpon> listaGalpon() 
+        public List<EntidadGalpon> ConsultarLosGalpones() 
         {
             return repositorioGalpon.ConsultarTodosLosGalpones();
         }
-        public EntidadGalpon ConsultaGalpon(string codigo)
+        public EntidadGalpon ConsultarGalpon(string codigo)
         {
             return repositorioGalpon.ConsultarGalpon(codigo);
         }
-        public EntidadGalpon ConsultaGalpon(int codigo)
+        public EntidadGalpon ConsultarGalpon(int codigo)
         {
             return repositorioGalpon.ConsultarGalpon(codigo);
         }

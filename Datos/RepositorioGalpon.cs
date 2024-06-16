@@ -10,131 +10,160 @@ namespace Datos
     public class RepositorioGalpon : BaseDatosConexion
     {
         public RepositorioGalpon() { }
-
         public int InsertarGalpon(EntidadGalpon galpon)
         {
-            if (AbrirConexion())
+            string query = "INSERT INTO GALPON (ID_GALPON, CODIGO_GALPON, NOMBRE_GALPON, AREAGALPON, ESTADO_GALPON) " +
+                           "VALUES ( :codigoGalpon, :nombreGalpon, :areaGalpon, :estadoGalpon)";
+
+            OracleTransaction transaccion = IniciarTransaccion();
+            try
             {
-                try
+                using (OracleCommand comando = new OracleCommand(query, ObtenerConexion()))
                 {
-                    using (OracleCommand comando = new OracleCommand("P_InsertarGalpon", ObtenerConexion()))
-                    {
-                        comando.CommandType = System.Data.CommandType.StoredProcedure;
-
-                        comando.Parameters.Add("p_codigo_galpon", OracleDbType.Varchar2).Value = galpon.CodigoGalpon;
-                        comando.Parameters.Add("p_nombre_galpon", OracleDbType.Varchar2).Value = galpon.NombreGalpon;
-                        comando.Parameters.Add("p_area_galpon", OracleDbType.Double).Value = galpon.AreaGalpon;
-                        comando.Parameters.Add("p_estado_galpon", OracleDbType.Varchar2).Value = galpon.EstadoGalpon;
-
-                        return comando.ExecuteNonQuery();
-                    }
-                }
-                catch (OracleException ex)
-                {
-                    throw new Exception($"|ERROR|: {ex.Message}");
-                }
-                finally
-                {
-                    CerrarConexion();
+                    comando.Transaction = transaccion;
+                    return EjecutarInsercion(comando, galpon);
                 }
             }
-            else
+            catch (Exception ex)
             {
-                throw new Exception("Error al abrir la conexión.");
+                DeshacerTransaccion(transaccion);
+                MessageBox.Show(ex.Message);
+                return 0;
             }
         }
-
+        // Método para insertar la información en el comando
+        private int EjecutarInsercion(OracleCommand comando, EntidadGalpon galpon)
+        {
+            try
+            {                
+                comando.Parameters.Add("codigoGalpon", OracleDbType.Varchar2).Value = galpon.CodigoGalpon;
+                comando.Parameters.Add("nombreGalpon", OracleDbType.Varchar2).Value = galpon.NombreGalpon;
+                comando.Parameters.Add("areaGalpon", OracleDbType.Decimal).Value = galpon.AreaGalpon;
+                comando.Parameters.Add("estadoGalpon", OracleDbType.Varchar2).Value = galpon.EstadoGalpon;
+                int filasAfectadas = comando.ExecuteNonQuery();
+                ConfirmarTransaccion(comando.Transaction);
+                return filasAfectadas;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         public int ActualizarGalpon(EntidadGalpon galpon)
         {
-            if (AbrirConexion())
+            string query = "UPDATE GALPON SET NOMBRE_GALPON = :nombreGalpon, AREAGALPON = :areaGalpon, ESTADO_GALPON = :estadoGalpon " +
+                           "WHERE ID_GALPON = :idGalpon";
+
+            OracleTransaction transaccion = IniciarTransaccion();
+            try
             {
-                try
+                using (OracleCommand comando = new OracleCommand(query, ObtenerConexion()))
                 {
-                    using (OracleCommand comando = new OracleCommand("P_ActualizarGalpon", ObtenerConexion()))
-                    {
-                        comando.CommandType = System.Data.CommandType.StoredProcedure;
+                    comando.Transaction = transaccion;
+                    comando.Parameters.Add("nombreGalpon", OracleDbType.Varchar2).Value = galpon.NombreGalpon;
+                    comando.Parameters.Add("areaGalpon", OracleDbType.Decimal).Value = galpon.AreaGalpon;
+                    comando.Parameters.Add("estadoGalpon", OracleDbType.Varchar2).Value = galpon.EstadoGalpon;
+                    comando.Parameters.Add("idGalpon", OracleDbType.Int32).Value = galpon.IdGalpon;
 
-                        comando.Parameters.Add("p_id_galpon", OracleDbType.Int32).Value = galpon.IdGalpon;
-                        comando.Parameters.Add("p_codigo_galpon", OracleDbType.Varchar2).Value = galpon.CodigoGalpon;
-                        comando.Parameters.Add("p_nombre_galpon", OracleDbType.Varchar2).Value = galpon.NombreGalpon;
-                        comando.Parameters.Add("p_area_galpon", OracleDbType.Double).Value = galpon.AreaGalpon;
-                        comando.Parameters.Add("p_estado_galpon", OracleDbType.Varchar2).Value = galpon.EstadoGalpon;
-
-                        return comando.ExecuteNonQuery();
-                    }
-                }
-                catch (OracleException ex)
-                {
-                    throw new Exception($"|ERROR|: {ex.Message}");
-                }
-                finally
-                {
-                    CerrarConexion();
+                    int filasAfectadas = comando.ExecuteNonQuery();
+                    ConfirmarTransaccion(comando.Transaction);
+                    return filasAfectadas;
                 }
             }
-            else
+            catch (Exception ex)
             {
-                throw new Exception("Error al abrir la conexión.");
+                DeshacerTransaccion(transaccion);
+                MessageBox.Show(ex.Message);
+                return 0;
             }
         }
-
         public int BorrarGalpon(int idGalpon)
         {
-            if (AbrirConexion())
+            string query = "DELETE FROM GALPON WHERE ID_GALPON = :idGalpon";
+
+            OracleTransaction transaccion = IniciarTransaccion();
+            try
             {
-                try
+                using (OracleCommand comando = new OracleCommand(query, ObtenerConexion()))
                 {
-                    using (OracleCommand comando = new OracleCommand("P_BorrarGalpon", ObtenerConexion()))
-                    {
-                        comando.CommandType = System.Data.CommandType.StoredProcedure;
-                        comando.Parameters.Add("p_id_galpon", OracleDbType.Int32).Value = idGalpon;
-                        return comando.ExecuteNonQuery();
-                    }
-                }
-                catch (OracleException ex)
-                {
-                    throw new Exception($"|ERROR|: {ex.Message}");
-                }
-                finally
-                {
-                    CerrarConexion();
+                    comando.Transaction = transaccion;
+                    comando.Parameters.Add("idGalpon", OracleDbType.Int32).Value = idGalpon;
+
+                    int filasAfectadas = comando.ExecuteNonQuery();
+                    ConfirmarTransaccion(comando.Transaction);
+                    return filasAfectadas;
                 }
             }
-            else
+            catch (Exception)
             {
-                throw new Exception("Error al abrir la conexión.");
+                DeshacerTransaccion(transaccion);
+                return 0;
+            }
+            finally
+            {
+                CerrarConexion();
             }
         }
-
         public EntidadGalpon ConsultarGalpon(int idGalpon)
         {
-
-            EntidadGalpon entidadGalpon = new EntidadGalpon();
-            List<EntidadGalpon> listaGalpones = ConsultarTodosLosGalpones();
-            foreach (EntidadGalpon galpon in listaGalpones)
+            OracleDataReader lector;
+            EntidadGalpon galpon = new EntidadGalpon();
+            string query = "SELECT ID_GALPON, CODIGO_GALPON, NOMBRE_GALPON, AREAGALPON, ESTADO_GALPON FROM GALPON WHERE ID_GALPON = :idGalpon";
+            OracleTransaction transaccion = IniciarTransaccion();
+            try
             {
-                if (galpon.IdGalpon == idGalpon)
+                using (OracleCommand comando = new OracleCommand(query, ObtenerConexion()))
                 {
+                    comando.Transaction = transaccion;
+                    comando.Parameters.Add(new OracleParameter("idGalpon", idGalpon));
+                    lector = comando.ExecuteReader();
+                    if (lector.Read())
+                    {
+                        galpon = MapeoGalpon(lector);
+                    }    
+                    lector.Close();
+                    ConfirmarTransaccion(comando.Transaction);
                     return galpon;
                 }
             }
-            return entidadGalpon;
+            catch (Exception ex)
+            {
+                DeshacerTransaccion(transaccion);
+                throw ex;
+            }
         }
-        public EntidadGalpon ConsultarGalpon(string CodigoGalpon)
+        public EntidadGalpon ConsultarGalpon(string codigoGalpon)
         {
-            EntidadGalpon entidadGalpon = new EntidadGalpon();
-            List<EntidadGalpon> listaGalpones = ConsultarTodosLosGalpones();
-            foreach (EntidadGalpon galpon in listaGalpones)
+            OracleDataReader lector;
+            EntidadGalpon galpon = new EntidadGalpon();
+            string query = "SELECT ID_GALPON, CODIGO_GALPON, NOMBRE_GALPON, AREAGALPON, ESTADO_GALPON FROM GALPON WHERE CODIGO_GALPON = :codigoGalpon";
+            OracleTransaction transaccion = IniciarTransaccion();
+            try
             {
-                if (galpon.CodigoGalpon == CodigoGalpon)
+                using (OracleCommand comando = new OracleCommand(query, ObtenerConexion()))
                 {
+                    comando.Transaction = transaccion;
+                    comando.Parameters.Add(new OracleParameter("codigoGalpon", codigoGalpon));
+                    lector = comando.ExecuteReader();
+                    if (lector.Read()) 
+                    {
+                        galpon = MapeoGalpon(lector);
+                    }                    
+                    lector.Close();
+                    ConfirmarTransaccion(comando.Transaction);
                     return galpon;
                 }
             }
-            return entidadGalpon;
+            catch (Exception ex)
+            {
+                DeshacerTransaccion(transaccion);
+                throw ex;
+            }
+            finally
+            {
+                CerrarConexion();
+            }
         }
-
-
         public List<EntidadGalpon> ConsultarTodosLosGalpones()
         {
             List<EntidadGalpon> ListaDeGalpones = new List<EntidadGalpon>();
@@ -177,7 +206,6 @@ namespace Datos
             }
             return ListaDeGalpones;
         }
-
         private EntidadGalpon MapeoGalpon(OracleDataReader lector)
         {
             EntidadGalpon galpon = new EntidadGalpon();

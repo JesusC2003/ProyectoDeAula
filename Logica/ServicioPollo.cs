@@ -11,49 +11,54 @@ namespace Logica
 {
     public class ServicioPollo
     {
-       //public List<EntidadPollo> ConsultarRaza(String raza)
-       // {
-
-       //     return repositorioPollo.FiltrarPollosPorRaza(raza);
-       // }
+   
         private RepositorioPollo repositorioPollo;
         public ServicioPollo() 
         { 
                 repositorioPollo = new RepositorioPollo();
         }
-
-        public string GuardarPollo(List<EntidadPollo> pollos)
+        public string GuardarPollo(List <EntidadPollo> pollos)
         {
-            try
+            int numeroFilasAfectadas = repositorioPollo.InsertarPollos(pollos);
+            if (numeroFilasAfectadas > 0)
             {
-                return repositorioPollo.InsertarPollos(pollos);
+                return $"{numeroFilasAfectadas} Fila insertada con éxito!!!";
             }
-            catch (Exception ex) {  return $"ERROR EN SERVICIO POLLO: {ex}"; }
+            return "|ERROR| - No se guardó la información";
         }
         public string ActualizarPollo(EntidadPollo pollo)
         {
-            if (repositorioPollo.ActualizarPollo(pollo) > 0)
+            try
             {
-                return "La informacion fue actualizada con exito";
+                int numRegistros = repositorioPollo.ActualizarPollo(pollo);
+                if (numRegistros > 0)
+                {
+                    return $"La información del pollo con ID {pollo.IdPollo} fue actualizada con éxito";
+                }
+                return "La información del pollo no fue actualizada";
             }
-            return "la informacion no fue actualizada";
+            catch (Exception ex)
+            {
+                return $"Error al actualizar el pollo: {ex.Message}";
+            }
         }
         public string BorrarPollo(int idPollo)
         {
-            try 
+            try
             {
-                int numRegistros = repositorioPollo.EliminarPollo(idPollo);
+                int numRegistros = repositorioPollo.BorrarPollo(idPollo);
                 if (numRegistros > 0)
                 {
-                    return $"Se eliminó {numRegistros} registro de la base de datos";
+                    return $"Se eliminó el pollo con ID {idPollo} de la base de datos";
                 }
-                return "Por algún motivo que desconozco, no se eliminó la información";
+                return "No se encontró el pollo para eliminar";
             }
-            catch (Exception e) { return $"ERROR EN SERVICIOS: {e}"; }
-           
+            catch (Exception ex)
+            {
+                return $"Error al intentar eliminar el pollo: {ex.Message}";
+            }
         }
-
-        public List<EntidadPollo> listapollo()
+        public List<EntidadPollo> ConsultarPollos()
         {
             return repositorioPollo.ConsultarTodo();
         }
@@ -66,7 +71,5 @@ namespace Logica
             }
             return false;
         }
-        
-
     }
 }

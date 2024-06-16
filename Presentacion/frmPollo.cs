@@ -48,7 +48,7 @@ namespace Presentacion
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             pnlGestionPollo.Enabled = true;
-            txtLote.Focus();
+            txtRazaPollo.Focus();
             dgvPollo.Columns.Clear();
             opcion = 1;
             InicializarDataTable();
@@ -78,12 +78,35 @@ namespace Presentacion
 
         private void btnQuitarPollo_Click(object sender, EventArgs e)
         {
+            // Verificar si hay alguna fila seleccionada
+            if (dgvPollo.SelectedRows.Count > 0)
+            {
+                DialogResult resultado = MessageBox.Show("¿Está seguro que desea eliminar las filas seleccionadas?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
+                if (resultado == DialogResult.Yes)
+                {
+                    // Iterar sobre todas las filas seleccionadas y eliminarlas
+                    foreach (DataGridViewRow filaSeleccionada in dgvPollo.SelectedRows)
+                    {
+                        dgvPollo.Rows.Remove(filaSeleccionada);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Por favor, seleccione una fila para eliminar.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void btnCancelarPollo_Click(object sender, EventArgs e)
         {
-           new frmPollo();
+            DialogResult respuesta = MessageBox.Show("Si cancela la operación no se guardara ningún cambio ¿Está seguro de que desea cancelar la operación?","CANCELAR",MessageBoxButtons.YesNo,MessageBoxIcon.Exclamation);
+            if (respuesta == DialogResult.Yes)
+            {
+                LimpiarControles(pnlGestionPollo);
+                CargarVista();
+            }
+            
         }
 
         //METODOS
@@ -101,7 +124,7 @@ namespace Presentacion
                     pollo.EstadoPollo = Convert.ToString(row["EstadoPollo"]);
                     pollo.NumeroLote = Convert.ToString(row["NumeroLote"]);
                     pollo.EdadPollo = Convert.ToString(row["EdadPollo"]);
-                    pollo.IdGalpon = servicioGalpon.ConsultaGalpon(Convert.ToInt32(row["Galpon"]));
+                    pollo.IdGalpon = servicioGalpon.ConsultarGalpon(Convert.ToInt32(row["Galpon"]));
                     pollo.RazaPollo = Convert.ToString(row["RazaPollo"]);
 
 
@@ -141,7 +164,7 @@ namespace Presentacion
                 row["EDAD POLLO"] = pollo.EdadPollo;
                 row["NUMERO LOTE"] = pollo.NumeroLote;
                 row["FECHA INGRESO"] = pollo.FechaIngreso;
-                //row["GALPON"] = pollo.IdGalpon.NombreGalpon;
+                row["GALPON"] = pollo.IdGalpon.NombreGalpon;
 
                 dataTable.Rows.Add(row);
             }
@@ -169,7 +192,7 @@ namespace Presentacion
                         return true;
                     }
                 }
-                else if (control.HasChildren)
+                else if (control.HasChildren && control is Panel)
                 {
                     if (EncontrarControleVacíos((Panel)control))
                     {
@@ -231,14 +254,25 @@ namespace Presentacion
             servicioPollo = new ServicioPollo();
             try
             {
+                LlenarcmbGalpon();
                 dataTable = new DataTable();
-                dataTable = MapeoADataTable(servicioPollo.listapollo());
+                dataTable = MapeoADataTable(servicioPollo.ConsultarPollos());
                 dgvPollo.DataSource = dataTable;
                 BloquearControles();
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Error al cargar los datos: {ex.Message}");
+            }
+        }
+        private void LlenarcmbGalpon()
+        {
+            List<EntidadGalpon> listaGalpones = servicioGalpon.ConsultarLosGalpones();
+            cmbGalpon.Items.Clear();
+
+            foreach (EntidadGalpon galpon in listaGalpones)
+            {
+                cmbGalpon.Items.Add(galpon.NombreGalpon);
             }
         }
         private void BloquearControles()
