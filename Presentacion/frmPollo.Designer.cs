@@ -523,6 +523,7 @@
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Black;
             this.dgvPollo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvPollo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPollo.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvPollo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;

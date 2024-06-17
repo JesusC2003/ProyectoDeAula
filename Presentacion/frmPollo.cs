@@ -47,9 +47,11 @@ namespace Presentacion
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
+            LlenarcmbGalpon();
             pnlGestionPollo.Enabled = true;
             txtRazaPollo.Focus();
             dgvPollo.Columns.Clear();
+            btnModificar.Enabled = false;
             opcion = 1;
             InicializarDataTable();
             NuevoPanel();
@@ -57,7 +59,39 @@ namespace Presentacion
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            opcion = 2; 
+            try
+            {
+                if (dgvPollo.SelectedRows.Count > 0)
+                {
+                    LlenarcmbGalpon();
+                    pnlGestionPollo.Enabled = true;
+                    txtRazaPollo.Focus();
+                    dgvPollo.Columns.Clear();
+                    btnNuevo.Enabled = false;
+                    opcion = 2;
+                    InicializarDataTable();
+                    NuevoPanel();
+
+                    DataGridViewRow filaSeleccionada = dgvPollo.SelectedRows[0];
+
+                    int valorColumna = Convert.ToInt32(filaSeleccionada.Cells["ID POLLO"].Value);
+                    servicioPollo = new ServicioPollo();
+                    EntidadPollo pollo = new EntidadPollo();
+                    pollo = servicioPollo.ConsultarPollo(valorColumna);
+                    txtcodigoPollo.Text = pollo.CodigoPollo;
+                    txtFechaIngreso.Text = Convert.ToString(pollo.FechaIngreso);
+                    txtRazaPollo.Text = pollo.RazaPollo;
+                    txtLote.Text = pollo.NumeroLote;
+                    cmbEdadPollo.Text = pollo.EdadPollo;
+                    cmbEstadoPollo.Text = pollo.EstadoPollo;
+                    cmbGalpon.Text = pollo.IdGalpon.IdGalpon.ToString();
+
+
+                }
+                else { MessageBox.Show("seleccione una fila"); }
+            }catch (Exception ex) { MessageBox.Show($"No hay fila seleccionada {ex}"); }
+            
+           
         }
 
         private void btnEliminarPollo_Click(object sender, EventArgs e)
@@ -70,8 +104,10 @@ namespace Presentacion
             switch (opcion) 
             {
                 case 1: GuardarInfo();
+                    btnModificar.Enabled=true;
                     break;
                 case 2: MessageBox.Show("AQUI VA MODIFICAR INFO");
+                    btnNuevo.Enabled = true;
                     break;
             }
         }
@@ -239,10 +275,10 @@ namespace Presentacion
             {
                 DataRow row = dataTable.NewRow();
                 row["FechaIngreso"] = Convert.ToDateTime(txtFechaIngreso.Text);
-                row["EstadoPollo"] = cmbEstadoPollo.SelectedItem.ToString(); // Usar SelectedItem para obtener el texto
+                row["EstadoPollo"] = cmbEstadoPollo.SelectedItem.ToString(); 
                 row["NumeroLote"] = txtLote.Text;
-                row["EdadPollo"] = cmbEdadPollo.SelectedItem.ToString(); // Usar SelectedItem para obtener el texto
-                row["Galpon"] = cmbGalpon.SelectedItem.ToString(); // Usar SelectedItem para obtener el texto
+                row["EdadPollo"] = cmbEdadPollo.SelectedItem.ToString(); 
+                row["Galpon"] = cmbGalpon.SelectedValue.ToString();
                 row["RazaPollo"] = txtRazaPollo.Text;
 
                 dataTable.Rows.Add(row);
@@ -254,7 +290,6 @@ namespace Presentacion
             servicioPollo = new ServicioPollo();
             try
             {
-                LlenarcmbGalpon();
                 dataTable = new DataTable();
                 dataTable = MapeoADataTable(servicioPollo.ConsultarPollos());
                 dgvPollo.DataSource = dataTable;
@@ -267,13 +302,12 @@ namespace Presentacion
         }
         private void LlenarcmbGalpon()
         {
-            List<EntidadGalpon> listaGalpones = servicioGalpon.ConsultarLosGalpones();
-            cmbGalpon.Items.Clear();
+            cmbGalpon.SelectedIndex = -1;
+            cmbGalpon.DataSource = servicioGalpon.ConsultarLosGalpones();
+            cmbGalpon.DisplayMember = "NombreGalpon";
+            cmbGalpon.ValueMember = "IdGalpon";
 
-            foreach (EntidadGalpon galpon in listaGalpones)
-            {
-                cmbGalpon.Items.Add(galpon.NombreGalpon);
-            }
+            
         }
         private void BloquearControles()
         {

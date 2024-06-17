@@ -30,6 +30,10 @@ namespace Datos
                 MessageBox.Show(ex.Message);
                 return 0;
             }
+            finally
+            {
+                CerrarConexion();
+            }
         }
         // Método para insertar la información en el comando
         private int EjecutarInsercion(OracleCommand comando, EntidadGalpon galpon)
@@ -47,6 +51,10 @@ namespace Datos
             catch (Exception ex)
             {
                 throw ex;
+            }
+            finally
+            {
+                CerrarConexion();
             }
         }
         public int ActualizarGalpon(EntidadGalpon galpon)
@@ -75,6 +83,10 @@ namespace Datos
                 DeshacerTransaccion(transaccion);
                 MessageBox.Show(ex.Message);
                 return 0;
+            }
+            finally
+            {
+                CerrarConexion();
             }
         }
         public int BorrarGalpon(int idGalpon)
@@ -130,6 +142,10 @@ namespace Datos
             {
                 DeshacerTransaccion(transaccion);
                 throw ex;
+            }
+            finally
+            {
+                CerrarConexion();
             }
         }
         public EntidadGalpon ConsultarGalpon(string codigoGalpon)

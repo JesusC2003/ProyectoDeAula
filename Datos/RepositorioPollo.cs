@@ -49,6 +49,10 @@ namespace Datos
                 MessageBox.Show(ex.ToString());
                 return 0;
             }
+            finally
+            {
+                CerrarConexion();
+            }
         }
 
         // Método para insertar la información en el comando
@@ -68,6 +72,10 @@ namespace Datos
             catch (Exception ex)
             {
                 throw ex;
+            }
+            finally
+            {
+                CerrarConexion();
             }
         }
 
@@ -103,6 +111,10 @@ namespace Datos
                 DeshacerTransaccion(transaccion);
                 MessageBox.Show(ex.Message); 
                 return 0;
+            }
+            finally
+            {
+                CerrarConexion();
             }
         }
 
@@ -162,6 +174,10 @@ namespace Datos
                 DeshacerTransaccion(transaccion);
                 throw ex;
             }
+            finally
+            {
+                CerrarConexion();
+            }
         }
         // Método para consultar una fila de la tabla POLLO
         public EntidadPollo ConsultarPollo(int idPollo)
@@ -191,6 +207,10 @@ namespace Datos
             {
                 DeshacerTransaccion(transaccion);
                 throw ex;
+            }
+            finally
+            {
+                CerrarConexion();
             }
         }
         public List<EntidadPollo> ConsultarTodo()

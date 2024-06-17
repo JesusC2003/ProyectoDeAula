@@ -26,6 +26,7 @@ namespace Datos
             }
             catch (OracleException ex)
             {
+                CerrarConexion();
                 throw new Exception($"Error al abrir la conexión: {ex.Message}", ex);
             }
         }
@@ -78,7 +79,7 @@ namespace Datos
             }
             catch (OracleException ex)
             {
-                CerrarConexion();
+                
                 throw new Exception($"Error al deshacer la transacción: {ex.Message}", ex);
             }
             finally

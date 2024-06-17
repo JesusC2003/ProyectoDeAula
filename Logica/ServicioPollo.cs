@@ -71,5 +71,10 @@ namespace Logica
             }
             return false;
         }
+        public EntidadPollo ConsultarPollo(int idpollo)
+        {
+           return repositorioPollo.ConsultarPollo(idpollo);
+        }
+    
     }
 }
